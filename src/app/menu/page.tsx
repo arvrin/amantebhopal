@@ -51,7 +51,7 @@ export default function MenuLanding() {
               alt="Amante"
               width={1600}
               height={480}
-              className="h-56 md:h-72 lg:h-80 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              className="h-64 md:h-80 lg:h-96 w-auto cursor-pointer hover:opacity-80 transition-opacity"
               priority
             />
           </Link>
