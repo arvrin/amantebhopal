@@ -37,16 +37,15 @@ const categories = [
 
 export default function MenuLanding() {
   return (
-    <div className="h-screen overflow-hidden bg-gradient-to-br from-[#FFF5F0] via-white to-[#FFF0F5] flex items-center">
-      {/* Header */}
-      <div className="container mx-auto px-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#FFF5F0] via-white to-[#FFF0F5] py-6 md:py-8">
+      <div className="container mx-auto px-4 max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-6"
+          className="text-center mb-8"
         >
           {/* Logo */}
-          <div className="mb-4">
+          <div className="mb-6">
             <div className="flex justify-center">
               <Link href="/">
                 <Image
@@ -54,14 +53,14 @@ export default function MenuLanding() {
                   alt="Amante"
                   width={1600}
                   height={480}
-                  className="h-80 md:h-96 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                  className="h-32 md:h-40 w-auto cursor-pointer hover:opacity-80 transition-opacity"
                   priority
                 />
               </Link>
             </div>
-            <div className="flex items-center justify-center gap-3 mt-2">
+            <div className="flex items-center justify-center gap-3 mt-3">
               <div className="w-20 h-px bg-gradient-to-r from-transparent to-[#8B1538]/40"></div>
-              <span className="text-[#8B1538] text-3xl">♦</span>
+              <span className="text-[#8B1538] text-2xl">♦</span>
               <div className="w-20 h-px bg-gradient-to-l from-transparent to-[#8B1538]/40"></div>
             </div>
           </div>
@@ -69,7 +68,7 @@ export default function MenuLanding() {
           <h2 className="font-serif text-2xl md:text-3xl text-[#8B1538] mb-2 tracking-wide">
             Explore Our Menus
           </h2>
-          <p className="text-gray-600 text-base max-w-md mx-auto italic">
+          <p className="text-gray-600 text-sm md:text-base max-w-md mx-auto italic">
             A celebration of passion on a plate
           </p>
         </motion.div>
@@ -133,15 +132,10 @@ export default function MenuLanding() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="text-center mt-8"
+          className="text-center mt-10 pt-6 border-t border-gray-200"
         >
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <div className="w-12 h-px bg-gradient-to-r from-transparent to-[#8B1538]/30"></div>
-            <span className="text-[#8B1538] text-lg">♦</span>
-            <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#8B1538]/30"></div>
-          </div>
-          <p className="text-gray-600 text-xs mb-1">1, Mahendra Business Square, MP Nagar, Bhopal</p>
-          <p className="text-gray-500 text-xs mb-3">
+          <p className="text-gray-600 text-xs mb-1">1, Mahendra Business Square, Bawadia Kalan, Bhopal</p>
+          <p className="text-gray-500 text-xs mb-4">
             <a href="mailto:contact.cafeamante@gmail.com" className="hover:text-[#8B1538] transition-colors">
               contact.cafeamante@gmail.com
             </a>
