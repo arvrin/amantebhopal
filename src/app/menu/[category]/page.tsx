@@ -318,7 +318,16 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
       {/* Footer */}
       <div className="text-center py-8 text-gray-500 text-sm border-t border-gray-200 mt-8">
         <p className="mb-2">All prices are inclusive of taxes</p>
-        <p>♦ AMANTE ♦</p>
+        <p className="mb-4">♦ AMANTE ♦</p>
+        <a
+          href="https://restronaut.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1 text-xs text-gray-400 hover:text-[#8B1538] transition-colors"
+        >
+          <span>Powered by</span>
+          <span className="font-semibold">Restronaut</span>
+        </a>
       </div>
     </div>
   );
