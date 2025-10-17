@@ -47,7 +47,7 @@ export default function MenuLanding() {
         <div className="flex justify-center">
           <Link href="/">
             <Image
-              src="/assets/logos/Primary Logo/PNG/Red Logo.png"
+              src="/assets/logos/Primary Logo/SVG/Red Logo.svg"
               alt="Amante"
               width={1600}
               height={480}

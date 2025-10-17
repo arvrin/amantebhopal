@@ -129,11 +129,11 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
           <div className="flex justify-center mb-2">
             <Link href="/menu">
               <Image
-                src="/assets/logos/Primary Logo/PNG/Red Logo.png"
+                src="/assets/logos/Primary Logo/SVG/Red Logo.svg"
                 alt="Amante"
                 width={800}
                 height={240}
-                className="h-28 md:h-32 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                className="h-32 md:h-40 w-auto cursor-pointer hover:opacity-80 transition-opacity"
               />
             </Link>
           </div>
