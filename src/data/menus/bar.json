@@ -38,6 +38,22 @@
         },
         {
           "id": "bar-sig-004",
+          "name": "FLORAL CRUSH",
+          "description": "Gin with elder flower, dash of ginger juice topped with tonic water",
+          "price": 699,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-005",
+          "name": "AMANTE MINT LEMONADE",
+          "description": "Gin with fresh mint, coconut water topped with lemonade",
+          "price": 699,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-006",
           "name": "DETOX PUNCH",
           "description": "Vodka, cold pressed green apple, beetroot, basil",
           "price": 649,
@@ -45,7 +61,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-sig-005",
+          "id": "bar-sig-007",
           "name": "BERRY DILICIOUS",
           "description": "Raspberry infused vodka, blueberry puree and grape juice & lime juice",
           "price": 649,
@@ -54,7 +70,15 @@
           "isAvailable": true
         },
         {
-          "id": "bar-sig-006",
+          "id": "bar-sig-008",
+          "name": "LOVE SUPREME",
+          "description": "Cardamom infused vodka, fresh blueberries in cranberry juice & lime juice, dash of bitter",
+          "price": 649,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-009",
           "name": "KOKUMPOLITAN",
           "description": "Vodka with kokum and jaggery syrup, crushed ice",
           "price": 649,
@@ -62,7 +86,15 @@
           "isAvailable": true
         },
         {
-          "id": "bar-sig-007",
+          "id": "bar-sig-010",
+          "name": "KIWI BASIL SMASH",
+          "description": "Vodka with basil leaves, fresh kiwi chunks topped with ginger ale",
+          "price": 649,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-011",
           "name": "MEXICAN MARGARITA",
           "description": "Tequila with lime juice, orange liqueur & olives",
           "price": 699,
@@ -70,7 +102,15 @@
           "isAvailable": true
         },
         {
-          "id": "bar-sig-008",
+          "id": "bar-sig-012",
+          "name": "YELLOW TONIC",
+          "description": "Tequila with peach cordial, saffron water, lime juice, pinch of salt topped with tonic water",
+          "price": 699,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-013",
           "name": "ORANGE BLOSSOM",
           "description": "White rum with homemade orange marmalade made with fresh orange and cinnamon & fresh orange juice",
           "price": 649,
@@ -78,7 +118,15 @@
           "isAvailable": true
         },
         {
-          "id": "bar-sig-009",
+          "id": "bar-sig-014",
+          "name": "JUNGLE BIRD",
+          "description": "Rum with Campari, pineapple juice, lime juice, passion fruit syrup & pineapple wedges",
+          "price": 649,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-015",
           "name": "SPICY MAIDEN",
           "description": "Cinnamon infused bourbon whisky with jalapeño, mint leaves and lemon chunks, sweet & sour, orange juice",
           "price": 699,
@@ -86,7 +134,23 @@
           "isAvailable": true
         },
         {
-          "id": "bar-sig-010",
+          "id": "bar-sig-016",
+          "name": "SOUR STORY",
+          "description": "Bourbon whisky with egg white, bitter, sweet and sour, orange blossom water",
+          "price": 699,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-017",
+          "name": "TROPICAL NECTAR",
+          "description": "Bourbon whisky with fresh pineapple juice, kaffir lime and saffron",
+          "price": 699,
+          "category": "signature-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-sig-018",
           "name": "AMANTE OLD FASHION",
           "description": "Cinnamon and hibiscus infused with bourbon whisky and bitter",
           "price": 699,
@@ -105,6 +169,14 @@
       "items": [
         {
           "id": "bar-classic-001",
+          "name": "BAR TENDER SPECIAL",
+          "description": "Ask your bartender for today's special creation",
+          "price": 799,
+          "category": "classic-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-classic-002",
           "name": "BLOODY MARY",
           "description": "Vodka, lime wedges, lime & tomato juice, tobasco & worcestershire sauce, spices",
           "price": 699,
@@ -112,7 +184,15 @@
           "isAvailable": true
         },
         {
-          "id": "bar-classic-002",
+          "id": "bar-classic-003",
+          "name": "CAIPRIOSKA",
+          "description": "Lime wedges, lime juice, brown sugar, vodka & topup with soda",
+          "price": 699,
+          "category": "classic-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-classic-004",
           "name": "COSMOPOLITAN",
           "description": "Vodka, cranberry juice, triple sec & freshly squeezed sweetened lime juice",
           "price": 699,
@@ -121,7 +201,15 @@
           "isAvailable": true
         },
         {
-          "id": "bar-classic-003",
+          "id": "bar-classic-005",
+          "name": "CUBA LIBRE",
+          "description": "Lime wedges, brown sugar, white rum & coke",
+          "price": 699,
+          "category": "classic-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-classic-006",
           "name": "GIMLET",
           "description": "Gin, lime & sugar syrup, lime cordial",
           "price": 699,
@@ -129,7 +217,39 @@
           "isAvailable": true
         },
         {
-          "id": "bar-classic-004",
+          "id": "bar-classic-007",
+          "name": "GREEN APPLE MARTINI",
+          "description": "Green apple vodka, sour apple pucker, apple juice & lime juice",
+          "price": 699,
+          "category": "classic-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-classic-008",
+          "name": "GUAVA MARY",
+          "description": "Bloody Mary made with guava juice",
+          "price": 699,
+          "category": "classic-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-classic-009",
+          "name": "HOT TODDY",
+          "description": "Mixed cocktail made of whisky and water with honey, herbs & spices",
+          "price": 699,
+          "category": "classic-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-classic-010",
+          "name": "RED WINE SANGRIA",
+          "description": "Wine consists of brandy, passionfruit syrup, orange juice, apple juice with chopped fruits",
+          "price": 749,
+          "category": "classic-cocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-classic-011",
           "name": "WHISKY SOUR",
           "description": "Lemon juice, sugar syrup, pineapple juice & optionally dash of egg white",
           "price": 749,
@@ -188,6 +308,38 @@
       "items": [
         {
           "id": "bar-mocktail-001",
+          "name": "LEMON ICED TEA",
+          "description": "Refreshing iced tea with lemon",
+          "price": 249,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-002",
+          "name": "FRESH LIME SODA",
+          "description": "Fresh lime with soda",
+          "price": 149,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-003",
+          "name": "COLD PRESSED JUICE",
+          "description": "Fresh cold pressed juice",
+          "price": 299,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-004",
+          "name": "MASALA SODA",
+          "description": "Spiced soda with Indian masala",
+          "price": 149,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-005",
           "name": "VIRGIN MOJITO",
           "description": "Lemon juice, sugar syrup, mint & sprite",
           "price": 349,
@@ -196,7 +348,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mocktail-002",
+          "id": "bar-mocktail-006",
           "name": "BASIL WATERMELON ICED TEA",
           "description": "Basil leaves, watermelon syrup, lime juice, iced tea",
           "price": 349,
@@ -204,7 +356,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mocktail-003",
+          "id": "bar-mocktail-007",
           "name": "AMANTE BLACK MAGIC",
           "description": "Kala khatta, lemon juice, black currant & cranberry juice",
           "price": 349,
@@ -212,15 +364,39 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mocktail-004",
-          "name": "BLUE BUTTERFLY",
-          "description": "Blue curaçao syrup, lime juice, pineapple juice & soda",
+          "id": "bar-mocktail-008",
+          "name": "AMANTE CRANE",
+          "description": "Apple juice, lime juice & cranberry juice",
           "price": 349,
           "category": "mocktails",
           "isAvailable": true
         },
         {
-          "id": "bar-mocktail-005",
+          "id": "bar-mocktail-009",
+          "name": "AMANTE VALENTINE'S",
+          "description": "Rose syrup, cranberry juice and fresh cream",
+          "price": 349,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-010",
+          "name": "AMANTE KIWI",
+          "description": "Kiwi syrup, lime juice & pineapple juice",
+          "price": 349,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-011",
+          "name": "LITCHI PASSION",
+          "description": "Litchi crush and cranberry juice",
+          "price": 349,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-012",
           "name": "MANGO DELIGHT",
           "description": "Bubblegum syrup, rose syrup, mango juice & fresh cream",
           "price": 349,
@@ -228,9 +404,33 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mocktail-006",
+          "id": "bar-mocktail-013",
+          "name": "BLUE BUTTERFLY",
+          "description": "Blue curaçao syrup, lime juice, pineapple juice & soda",
+          "price": 349,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-014",
+          "name": "SWEET HEART",
+          "description": "Vanilla syrup, fresh cream and iced tea",
+          "price": 349,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-015",
           "name": "NATURES HEART",
           "description": "Cold pressed pomegranate juice, basil, coconut water",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-016",
+          "name": "SAFFRON AROMA",
+          "description": "Cold pressed pineapple juice, basil, saffron",
           "price": 399,
           "category": "mocktails",
           "isAvailable": true
@@ -253,6 +453,22 @@
         },
         {
           "id": "bar-whisky-002",
+          "name": "ROYAL SALUTE 21YR",
+          "description": "30ml",
+          "price": 1299,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-003",
+          "name": "JW GOLD LABEL",
+          "description": "30ml",
+          "price": 699,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-004",
           "name": "JW BLACK LABEL",
           "description": "30ml",
           "price": 499,
@@ -261,7 +477,79 @@
           "isAvailable": true
         },
         {
-          "id": "bar-whisky-003",
+          "id": "bar-whisky-005",
+          "name": "JW DOUBLE BLACK",
+          "description": "30ml",
+          "price": 649,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-006",
+          "name": "JW BLONDE",
+          "description": "30ml",
+          "price": 399,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-007",
+          "name": "BLACKDOG 8 YEARS",
+          "description": "30ml",
+          "price": 349,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-008",
+          "name": "BLACK & WHITE",
+          "description": "30ml",
+          "price": 349,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-009",
+          "name": "DEWARS WHITE LABEL",
+          "description": "30ml",
+          "price": 349,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-010",
+          "name": "JW RED LABEL",
+          "description": "30ml",
+          "price": 349,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-011",
+          "name": "MONKEY SHOULDER",
+          "description": "30ml",
+          "price": 549,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-012",
+          "name": "BALLANTINE'S 7YRS",
+          "description": "30ml",
+          "price": 399,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-013",
+          "name": "CHIVAS REGAL 15YRS",
+          "description": "30ml",
+          "price": 649,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-014",
           "name": "CHIVAS REGAL 12YRS",
           "description": "30ml",
           "price": 499,
@@ -269,10 +557,50 @@
           "isAvailable": true
         },
         {
-          "id": "bar-whisky-004",
-          "name": "MONKEY SHOULDER",
+          "id": "bar-whisky-015",
+          "name": "BALLANTINE'S 12YRS",
           "description": "30ml",
-          "price": 549,
+          "price": 399,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-016",
+          "name": "BALLANTINE'S FINEST",
+          "description": "30ml",
+          "price": 349,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-017",
+          "name": "100 PIPERS 8YRS",
+          "description": "30ml",
+          "price": 349,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-018",
+          "name": "100 PIPERS 12YRS",
+          "description": "30ml",
+          "price": 399,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-019",
+          "name": "TEACHER'S 50",
+          "description": "30ml",
+          "price": 399,
+          "category": "whisky",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-020",
+          "name": "TEACHER'S HIGHLAND",
+          "description": "30ml",
+          "price": 349,
           "category": "whisky",
           "isAvailable": true
         }
@@ -286,19 +614,19 @@
       "items": [
         {
           "id": "bar-malt-001",
+          "name": "GLENFIDDICH 15YRS",
+          "description": "30ml",
+          "price": 799,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-002",
           "name": "GLENFIDDICH 12YRS",
           "description": "30ml",
           "price": 649,
           "category": "single-malt",
           "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "bar-malt-002",
-          "name": "THE GLENLIVET 12YRS",
-          "description": "30ml",
-          "price": 649,
-          "category": "single-malt",
           "isAvailable": true
         },
         {
@@ -311,10 +639,154 @@
         },
         {
           "id": "bar-malt-004",
+          "name": "BALVENIE",
+          "description": "30ml",
+          "price": 849,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-005",
+          "name": "THE GLENLIVET 15YRS",
+          "description": "30ml",
+          "price": 799,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-006",
+          "name": "GLENMORANGE ORIGINAL",
+          "description": "30ml",
+          "price": 749,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-007",
+          "name": "THE GLENLIVET 12YRS",
+          "description": "30ml",
+          "price": 649,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-008",
+          "name": "ABERLOUR 12YRS",
+          "description": "30ml",
+          "price": 799,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-009",
+          "name": "TALISKER 10 YRS",
+          "description": "30ml",
+          "price": 549,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-010",
+          "name": "LAGAVULIN 16YRS",
+          "description": "30ml",
+          "price": 799,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-011",
+          "name": "MACALLAN",
+          "description": "30ml",
+          "price": 749,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-012",
           "name": "PAUL JOHN NIRVANA",
           "description": "30ml",
           "price": 349,
           "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-013",
+          "name": "GRANT'S",
+          "description": "30ml",
+          "price": 329,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-014",
+          "name": "RAMPUR ASAVA",
+          "description": "30ml",
+          "price": 649,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-015",
+          "name": "RAMPUR DOUBLE CASK",
+          "description": "30ml",
+          "price": 549,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-016",
+          "name": "SANGAM WORLD MALT",
+          "description": "30ml",
+          "price": 449,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-017",
+          "name": "GODAWAN",
+          "description": "30ml",
+          "price": 649,
+          "category": "single-malt",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-malt-018",
+          "name": "SINGLETON 12 YRS",
+          "description": "30ml",
+          "price": 649,
+          "category": "single-malt",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "bourbon",
+      "name": "American/Irish/Bourbon Whisky",
+      "description": "Premium bourbon and American whiskies",
+      "displayOrder": 7,
+      "items": [
+        {
+          "id": "bar-bourbon-001",
+          "name": "TOKI",
+          "description": "90ml",
+          "price": 549,
+          "category": "bourbon",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-bourbon-002",
+          "name": "JIM BEAM",
+          "description": "90ml",
+          "price": 399,
+          "category": "bourbon",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-bourbon-003",
+          "name": "JAMESON",
+          "description": "90ml",
+          "price": 399,
+          "category": "bourbon",
           "isAvailable": true
         }
       ]
@@ -323,10 +795,18 @@
       "id": "vodka",
       "name": "Vodka",
       "description": "Premium vodkas",
-      "displayOrder": 7,
+      "displayOrder": 8,
       "items": [
         {
           "id": "bar-vodka-001",
+          "name": "ROBERTO CAVALLI",
+          "description": "90ml",
+          "price": 699,
+          "category": "vodka",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-vodka-002",
           "name": "GREY GOOSE",
           "description": "90ml",
           "price": 549,
@@ -335,7 +815,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-vodka-002",
+          "id": "bar-vodka-003",
           "name": "CIROC",
           "description": "90ml",
           "price": 549,
@@ -343,7 +823,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-vodka-003",
+          "id": "bar-vodka-004",
           "name": "ABSOLUT",
           "description": "90ml",
           "price": 449,
@@ -351,7 +831,31 @@
           "isAvailable": true
         },
         {
-          "id": "bar-vodka-004",
+          "id": "bar-vodka-005",
+          "name": "BELVEDRE",
+          "description": "90ml",
+          "price": 549,
+          "category": "vodka",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-vodka-006",
+          "name": "SAUSAGE TREE IRISH",
+          "description": "90ml",
+          "price": 649,
+          "category": "vodka",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-vodka-007",
+          "name": "MAGIC MOMENT",
+          "description": "90ml",
+          "price": 299,
+          "category": "vodka",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-vodka-008",
           "name": "SMIRNOFF",
           "description": "90ml",
           "price": 329,
@@ -361,10 +865,42 @@
       ]
     },
     {
+      "id": "tequila",
+      "name": "Tequila",
+      "description": "Premium tequilas",
+      "displayOrder": 9,
+      "items": [
+        {
+          "id": "bar-tequila-001",
+          "name": "PATRON SILVER",
+          "description": "30ml",
+          "price": 649,
+          "category": "tequila",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-tequila-002",
+          "name": "CAMINO",
+          "description": "30ml",
+          "price": 499,
+          "category": "tequila",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-tequila-003",
+          "name": "DONJULIO",
+          "description": "30ml",
+          "price": 649,
+          "category": "tequila",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
       "id": "gin",
       "name": "Gin",
       "description": "Premium gins",
-      "displayOrder": 8,
+      "displayOrder": 10,
       "items": [
         {
           "id": "bar-gin-001",
@@ -377,7 +913,7 @@
         },
         {
           "id": "bar-gin-002",
-          "name": "TANQUERAY",
+          "name": "NICOBAR",
           "description": "30ml",
           "price": 399,
           "category": "gin",
@@ -385,6 +921,22 @@
         },
         {
           "id": "bar-gin-003",
+          "name": "BEEFEATER",
+          "description": "30ml",
+          "price": 399,
+          "category": "gin",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-gin-004",
+          "name": "TANQUERAY",
+          "description": "30ml",
+          "price": 399,
+          "category": "gin",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-gin-005",
           "name": "ROKU",
           "description": "30ml",
           "price": 549,
@@ -392,7 +944,23 @@
           "isAvailable": true
         },
         {
-          "id": "bar-gin-004",
+          "id": "bar-gin-006",
+          "name": "GREATER THAN",
+          "description": "30ml",
+          "price": 349,
+          "category": "gin",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-gin-007",
+          "name": "JAISALMER",
+          "description": "30ml",
+          "price": 549,
+          "category": "gin",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-gin-008",
           "name": "HENDRICKS",
           "description": "30ml",
           "price": 549,
@@ -402,15 +970,167 @@
       ]
     },
     {
+      "id": "rum",
+      "name": "Rum",
+      "description": "Premium rums",
+      "displayOrder": 11,
+      "items": [
+        {
+          "id": "bar-rum-001",
+          "name": "BACARDI WHITE",
+          "description": "30ml",
+          "price": 299,
+          "category": "rum",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-rum-002",
+          "name": "BACARDI LEMON",
+          "description": "30ml",
+          "price": 299,
+          "category": "rum",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-rum-003",
+          "name": "BACARDI BLACK",
+          "description": "30ml",
+          "price": 299,
+          "category": "rum",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-rum-004",
+          "name": "HAVANA",
+          "description": "30ml",
+          "price": 349,
+          "category": "rum",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-rum-005",
+          "name": "OLD MONK",
+          "description": "30ml",
+          "price": 249,
+          "category": "rum",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "brandy",
+      "name": "Brandy",
+      "description": "Premium brandies",
+      "displayOrder": 12,
+      "items": [
+        {
+          "id": "bar-brandy-001",
+          "name": "HENNESSEY VS",
+          "description": "30ml",
+          "price": 549,
+          "category": "brandy",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-brandy-002",
+          "name": "MORPHEUS",
+          "description": "30ml",
+          "price": 249,
+          "category": "brandy",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "liqueurs",
+      "name": "Liqueurs",
+      "description": "Premium liqueurs",
+      "displayOrder": 13,
+      "items": [
+        {
+          "id": "bar-liqueur-001",
+          "name": "KAHLUA",
+          "description": "30ml",
+          "price": 349,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-002",
+          "name": "BAILEYS",
+          "description": "30ml",
+          "price": 399,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-003",
+          "name": "JAGERMEISTER",
+          "description": "30ml",
+          "price": 499,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-004",
+          "name": "APEROL",
+          "description": "30ml",
+          "price": 349,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-005",
+          "name": "CAMPARI",
+          "description": "30ml",
+          "price": 349,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-006",
+          "name": "MALIBU",
+          "description": "30ml",
+          "price": 349,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-007",
+          "name": "COINTREAU",
+          "description": "30ml",
+          "price": 349,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-008",
+          "name": "FIREBALL",
+          "description": "30ml",
+          "price": 299,
+          "category": "liqueurs",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-liqueur-009",
+          "name": "SAMBUCA",
+          "description": "30ml",
+          "price": 349,
+          "category": "liqueurs",
+          "isAvailable": true
+        }
+      ]
+    },
+    {
       "id": "wines",
       "name": "Wines",
       "description": "Curated wine selection",
-      "displayOrder": 9,
+      "displayOrder": 14,
       "items": [
         {
           "id": "bar-wine-001",
-          "name": "JACOB'S SHIRAZ (Red)",
-          "description": "150ml glass",
+          "name": "JACOB'S SHIRAZ",
+          "description": "Red Wine - 150ml glass",
           "price": 699,
           "category": "wines",
           "isRecommended": true,
@@ -418,24 +1138,24 @@
         },
         {
           "id": "bar-wine-002",
-          "name": "SULA CABERNET SHIRAZ (Red)",
-          "description": "150ml glass",
+          "name": "SULA CABERNET SHIRAZ",
+          "description": "Red Wine - 150ml glass",
           "price": 649,
           "category": "wines",
           "isAvailable": true
         },
         {
           "id": "bar-wine-003",
-          "name": "JACOB'S CREEK (White)",
-          "description": "150ml glass",
+          "name": "JACOB'S CREEK",
+          "description": "White Wine - 150ml glass",
           "price": 699,
           "category": "wines",
           "isAvailable": true
         },
         {
           "id": "bar-wine-004",
-          "name": "SULA CHENIN BLANC (White)",
-          "description": "150ml glass",
+          "name": "SULA CHENIN BLANC",
+          "description": "White Wine - 150ml glass",
           "price": 649,
           "category": "wines",
           "isAvailable": true
@@ -446,7 +1166,7 @@
       "id": "champagne",
       "name": "Champagne",
       "description": "Celebrate in style",
-      "displayOrder": 10,
+      "displayOrder": 15,
       "items": [
         {
           "id": "bar-champ-001",
@@ -467,9 +1187,25 @@
         },
         {
           "id": "bar-champ-003",
+          "name": "GH MUMM",
+          "description": "Bottle",
+          "price": 14999,
+          "category": "champagne",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-champ-004",
           "name": "SULA BRUT",
           "description": "Bottle",
           "price": 4999,
+          "category": "champagne",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-champ-005",
+          "name": "SULA SECO",
+          "description": "Bottle",
+          "price": 3999,
           "category": "champagne",
           "isAvailable": true
         }
@@ -479,7 +1215,7 @@
       "id": "beers",
       "name": "Beers",
       "description": "Refreshing brews",
-      "displayOrder": 11,
+      "displayOrder": 16,
       "items": [
         {
           "id": "bar-beer-001",
@@ -492,6 +1228,14 @@
         },
         {
           "id": "bar-beer-002",
+          "name": "KINGFISHER PREMIUM",
+          "description": "650ml",
+          "price": 599,
+          "category": "beers",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-beer-003",
           "name": "HEINEKEN",
           "description": "330ml",
           "price": 499,
@@ -499,7 +1243,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-beer-003",
+          "id": "bar-beer-004",
           "name": "CORONA",
           "description": "330ml",
           "price": 649,
@@ -507,10 +1251,26 @@
           "isAvailable": true
         },
         {
-          "id": "bar-beer-004",
+          "id": "bar-beer-005",
+          "name": "HOGARDEN",
+          "description": "330ml",
+          "price": 649,
+          "category": "beers",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-beer-006",
           "name": "BUDWEISER",
           "description": "330ml",
           "price": 499,
+          "category": "beers",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-beer-007",
+          "name": "BREEZER",
+          "description": "Cranberry / Jamaican / Blackberry",
+          "price": 349,
           "category": "beers",
           "isAvailable": true
         }
@@ -520,7 +1280,7 @@
       "id": "shots",
       "name": "Shots",
       "description": "Party starters",
-      "displayOrder": 12,
+      "displayOrder": 17,
       "items": [
         {
           "id": "bar-shot-001",
@@ -532,9 +1292,9 @@
         },
         {
           "id": "bar-shot-002",
-          "name": "TEQUILLA GOLD",
-          "description": "Premium tequila shot",
-          "price": 449,
+          "name": "GOLD BULLET",
+          "description": "Premium shot",
+          "price": 399,
           "category": "shots",
           "isAvailable": true
         },
@@ -545,9 +1305,57 @@
           "price": 249,
           "category": "shots",
           "isAvailable": true
+        },
+        {
+          "id": "bar-shot-004",
+          "name": "KISS ME",
+          "description": "Sweet shot",
+          "price": 249,
+          "category": "shots",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-shot-005",
+          "name": "TILL YOU DIE",
+          "description": "Strong shot",
+          "price": 249,
+          "category": "shots",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-shot-006",
+          "name": "NIGHT STAND",
+          "description": "Party shot",
+          "price": 399,
+          "category": "shots",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-shot-007",
+          "name": "THE TERMINATOR",
+          "description": "Intense shot",
+          "price": 399,
+          "category": "shots",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-shot-008",
+          "name": "LIQUID ACID",
+          "description": "Sour shot",
+          "price": 249,
+          "category": "shots",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-shot-009",
+          "name": "TEQUILLA GOLD",
+          "description": "Premium tequila shot",
+          "price": 449,
+          "category": "shots",
+          "isAvailable": true
         }
       ]
     }
   ],
-  "lastUpdated": "2025-10-17T00:00:00Z"
+  "lastUpdated": "2025-10-17T12:00:00Z"
 }
