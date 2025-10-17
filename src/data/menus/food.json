@@ -16,7 +16,9 @@
           "description": "Zucchini, broccoli, bell pepper, tofu, spring onion, yakitori sauce - Japanese vegetable skewers",
           "price": 549,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -25,7 +27,9 @@
           "description": "Crispy fried imported lotus stem tossed in plum chili sauce",
           "price": 549,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -34,7 +38,9 @@
           "description": "Sriracha spicy mayo, roasted chili sauce, teriyaki sauce",
           "price": 499,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -43,7 +49,9 @@
           "description": "Broccoli, bamboo shoots, carrot, zucchini, onion, bell pepper, togarashi spice sauce",
           "price": 549,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -52,7 +60,9 @@
           "description": "Marinated stuffed cottage cheese with Indian spice",
           "price": 599,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -62,7 +72,9 @@
           "description": "Peri peri spiced truffle fries",
           "price": 299,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -71,7 +83,9 @@
           "description": "Tossed mushroom, brown bread, parmesan, truffle oil",
           "price": 599,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -80,7 +94,9 @@
           "description": "Crunchy sheets, Asian greens, glass noodle, sweet chili sauce",
           "price": 599,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -89,7 +105,9 @@
           "description": "Stir fry crispy corn, celery and burnt chili, togarashi",
           "price": 499,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "spiceLevel": 4,
           "isAvailable": true
         },
@@ -99,7 +117,9 @@
           "description": "Fresh mushroom mince, Indian aroma, smoky flavor served with ulta tawa paratha",
           "price": 699,
           "category": "appetizers",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isChefSpecial": true,
           "isAvailable": true
         },
@@ -109,7 +129,9 @@
           "description": "Togarashi aioli, spring onion, lime, tiger milk spicy mayo",
           "price": 799,
           "category": "appetizers",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -118,7 +140,9 @@
           "description": "Teriyaki chicken skewers, seven spice mix and scallion",
           "price": 599,
           "category": "appetizers",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -127,7 +151,9 @@
           "description": "Classic chicken lollipop",
           "price": 699,
           "category": "appetizers",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -136,7 +162,9 @@
           "description": "Marinated stuffed chicken breast in Indian spice",
           "price": 699,
           "category": "appetizers",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": 3,
           "isAvailable": true
         },
@@ -146,7 +174,9 @@
           "description": "Garlic flavor murg tikka served with garlic yogurt chutney",
           "price": 599,
           "category": "appetizers",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -156,7 +186,9 @@
           "description": "Desi chicken marinated spicy with yogurt, nutmeg flavored",
           "price": 1499,
           "category": "appetizers",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isChefSpecial": true,
           "spiceLevel": 4,
           "isAvailable": true
@@ -167,8 +199,153 @@
           "description": "Mutton mince, Indian spicy, smoky flavored served with ulta tawa paratha",
           "price": 999,
           "category": "appetizers",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-019",
+          "name": "Crispy Togarashi Fried Corn Kernels",
+          "description": "Japanese shichimi spice crispy corn chili oil",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-020",
+          "name": "Hunan Chilli Tofu",
+          "description": "Sliced Silken Tofu, cottage cheese celery and burnt chili",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-021",
+          "name": "Malai Lahsuni Soya Chap",
+          "description": "Yogurt, creamy, garlic, Indian spice hari chutney",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-022",
+          "name": "Mango Makai Chonda Ki Tiki",
+          "description": "Crispy fried makai ki tiki served with dip",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-023",
+          "name": "Spinach Ricotta Vol-au-vent",
+          "description": "Crispy puff creamy spinach served with ricotta herb cheese",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-024",
+          "name": "Corn and Truffle Mushroom Crispy Ravioli",
+          "description": "Crispy fried ravioli creamy spinach served with anticuchera sauce",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-025",
+          "name": "Sumac Spice Crispy Fried Fish",
+          "description": "Avocado puree, sumac spice, ponzu mayo chimichuri",
+          "price": 899,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-027",
+          "name": "Dry Nuts Gilafi Mutton Seekh Kebab",
+          "description": "Indian spiced minced lamb with mint chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-028",
+          "name": "Nawabi Tangdi Kebab",
+          "description": "Stuffed chicken drumsticks leg, served with Dhaniya pudina ki chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-029",
+          "name": "Bhopali Murgh Tikka Mirza",
+          "description": "Marinated boneless chicken in Indian spice",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-030",
+          "name": "Schezwan King Prawns",
+          "description": "RCP crisp prawns' chef interactive on flavored",
+          "price": 999,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-031",
+          "name": "Tandoori Fish Tikka",
+          "description": "Murrel fish Indian spice served with green chutney",
+          "price": 899,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-032",
+          "name": "Amante Special Tandoori Bater (Quail)",
+          "description": "Garlic flavor tandoori quail's tikka served with garlic yogurt green chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -185,7 +362,9 @@
           "description": "Pok choy, Asian vegetables, edamame, asparagus, fried dumpling, coral tuile",
           "price": 699,
           "category": "dim-sums",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -194,7 +373,9 @@
           "description": "Black fungus shitake, Asian vegetables, asparagus, tomato garlic sauce",
           "price": 699,
           "category": "dim-sums",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -203,7 +384,9 @@
           "description": "Steamed shrimps and water chestnut dumplings served with scallion sauce",
           "price": 799,
           "category": "dim-sums",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -212,7 +395,9 @@
           "description": "Pickled ginger, chicken, carrot, spring onion, pan fried dumpling",
           "price": 699,
           "category": "dim-sums",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -221,7 +406,9 @@
           "description": "Crispy chicken, Aji Amarillo, Asian vegetables and hoi sin sauce",
           "price": 799,
           "category": "dim-sums",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -238,7 +425,9 @@
           "description": "Baby spinach, chimichurri, smoked avocado, miso yuzu, lemon zest dressing, cherry tomato, fresh blueberry",
           "price": 599,
           "category": "salads",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -247,7 +436,9 @@
           "description": "Thinly sliced grilled chicken, olive oil, spring mix Asian vegetable, toasted basil sesame",
           "price": 799,
           "category": "salads",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -256,7 +447,9 @@
           "description": "Garlic hummus, beetroot hummus, pickled vegetables, baba ghanous, tzatziki, lavash, pita bread, and falafel",
           "price": 899,
           "category": "salads",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -266,7 +459,10 @@
           "description": "Crisp iceberg, parmesan, garlic croutons, and creamy Caesar dressing",
           "price": 699,
           "category": "salads",
-          "dietary": ["veg", "contains-egg"],
+          "dietary": [
+            "veg",
+            "contains-egg"
+          ],
           "isAvailable": true
         },
         {
@@ -275,7 +471,65 @@
           "description": "Crisp iceberg, parmesan, garlic croutons, creamy Caesar dressing with grilled chicken",
           "price": 799,
           "category": "salads",
-          "dietary": ["non-veg", "contains-egg"],
+          "dietary": [
+            "non-veg",
+            "contains-egg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-salad-006",
+          "name": "Mélange of Nuts Mix Fruits Chat",
+          "description": "Orange segments, Caramelized cashew nut & nuts, fresh mint, iceberg lettuce",
+          "price": 799,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-salad-007",
+          "name": "Nachos King Founded Platter",
+          "description": "Avocado salsa, tomato salsa crispy nachos, sour cream, Dijon mustard mayo",
+          "price": 699,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-salad-008",
+          "name": "Healthy Garden Green Sprout Salad",
+          "description": "Mix sprout flax seed and pumpkin seed, version olive oil with caramelized walnuts",
+          "price": 699,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-salad-009",
+          "name": "Chef Interactive Greek Salad",
+          "description": "Fresh garden green capsicum, feta, onion, cucumber, Cherry tomato",
+          "price": 599,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-salad-010",
+          "name": "Indian Garden Green Salad",
+          "description": "Seasonal local vegetable salad",
+          "price": 299,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -292,7 +546,9 @@
           "description": "Oven roasted tomato basil creamy soup",
           "price": 399,
           "category": "soups",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -301,7 +557,9 @@
           "description": "Ponzu broth, tofu, bamboo shoots, bok choy, mushroom",
           "price": 599,
           "category": "soups",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -310,7 +568,9 @@
           "description": "Mushroom, quinoa and broth",
           "price": 499,
           "category": "soups",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -319,7 +579,9 @@
           "description": "Thai herb, basil, spice signature broth",
           "price": 499,
           "category": "soups",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "spiceLevel": 3,
           "isRecommended": true,
           "isAvailable": true
@@ -330,7 +592,9 @@
           "description": "Thai herb, basil, spice signature broth with chicken",
           "price": 599,
           "category": "soups",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": 3,
           "isRecommended": true,
           "isAvailable": true
@@ -341,7 +605,98 @@
           "description": "Spiced chicken broth, panko crumbed chicken, marinated eggs, bamboo shoots, bok choy",
           "price": 599,
           "category": "soups",
-          "dietary": ["non-veg", "contains-egg"],
+          "dietary": [
+            "non-veg",
+            "contains-egg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-008",
+          "name": "Tomato Dhaniya Ka Shorba",
+          "description": "Vegetable stock tomato coriander Indian spice broth",
+          "price": 399,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-009",
+          "name": "Hong Kong Hot and Sour Soup",
+          "description": "Vegetable stock bamboo shoot coriander scallion and Asian bread",
+          "price": 399,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-010",
+          "name": "Hungarian Mushroom Soup",
+          "description": "Hungarian style cream of Mushroom soup",
+          "price": 599,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-012",
+          "name": "Smoked Chicken Tomato and Almond Soup",
+          "description": "Tomato, basil, smoked chicken, Almond Flake",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-013",
+          "name": "Thai Signature Tom Yum Soup",
+          "description": "Thai herb, basil, spice signature broth (Veg/Chicken/Prawns)",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-014",
+          "name": "Mutton Yakini Shorba",
+          "description": "Bhopal mutton Indian spice shorba, Almond Flake",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-015",
+          "name": "Badami Murgh Yakini Shorba",
+          "description": "Bhopal murgh Indian spice shorba, Almond Flake",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-016",
+          "name": "Burmese Khowsuey",
+          "description": "Burmese traditional coconut creamy soup serve with noodle and rice",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -358,7 +713,9 @@
           "description": "Avocado, asparagus, tender spinach, dry miso and Japanese mayo",
           "price": 899,
           "category": "sushi",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -367,7 +724,9 @@
           "description": "Avocado & asparagus tempura, teriyaki sauce, cream cheese",
           "price": 1199,
           "category": "sushi",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -377,7 +736,9 @@
           "description": "Tempura fried prawns, cucumber, asparagus, avocado, cream cheese",
           "price": 1299,
           "category": "sushi",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -387,8 +748,43 @@
           "description": "Chicken, avocado, togarashi mayo, wasabi vegetable tobiko",
           "price": 1099,
           "category": "sushi",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": 3,
+          "isAvailable": true
+        },
+        {
+          "id": "food-sushi-005",
+          "name": "Vegetable Tempura Uramaki",
+          "description": "Vegetable & king mushroom tempura, teriyaki sauce, Cream cheese",
+          "price": 999,
+          "category": "sushi",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-sushi-006",
+          "name": "Pickled Wild Mushroom and Tofu Roll",
+          "description": "Pickled mushroom, teriyaki glaze tofu, soy sauce, Cream cheese, gari",
+          "price": 999,
+          "category": "sushi",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-sushi-008",
+          "name": "Sushi Fish Tempura Rolls",
+          "description": "Tempura fish, avocado, pickled cucumber, wasabi tobiko",
+          "price": 1299,
+          "category": "sushi",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -405,7 +801,9 @@
           "description": "Minced grilled vegetable patties, iceberg lettuce and tomato",
           "price": 499,
           "category": "burgers-sandwiches",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -414,7 +812,9 @@
           "description": "Minced grilled chicken patties, iceberg lettuce and tomato",
           "price": 599,
           "category": "burgers-sandwiches",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -423,7 +823,9 @@
           "description": "Toasted bread, cheese, chicken served with French fries and mustard sauce",
           "price": 699,
           "category": "burgers-sandwiches",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -432,7 +834,31 @@
           "description": "Toasted bread, cheese, vegetable served with French fries and mustard sauce",
           "price": 599,
           "category": "burgers-sandwiches",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-burger-007",
+          "name": "Amante Chef Special Vegetable Grilled Sandwich",
+          "description": "Grilled vegetable lettuce tomato cucumber with French fries and mustard sauce",
+          "price": 499,
+          "category": "burgers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-burger-008",
+          "name": "Amante Chef Special Chicken Grilled Sandwich",
+          "description": "Grilled vegetable lettuce chicken with French fries and mustard sauce",
+          "price": 599,
+          "category": "burgers",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -449,7 +875,9 @@
           "description": "Burrata, Napolitana sauce, rocket leaves, olive dust, drizzle with basil oil",
           "price": 699,
           "category": "pizza",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -458,7 +886,9 @@
           "description": "Thin base, basil leaves, pesto oil, and drizzle",
           "price": 899,
           "category": "pizza",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -467,7 +897,9 @@
           "description": "Grilled vegetable, paneer tikka, tomato sauce, mozzarella",
           "price": 999,
           "category": "pizza",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -477,7 +909,9 @@
           "description": "Grilled chicken, Kalamata olives, ricotta, tomato sauce, basil, mozzarella",
           "price": 1099,
           "category": "pizza",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -486,7 +920,42 @@
           "description": "Imported lamb pepperoni, cheese, tomato, bell peppers, basil",
           "price": 1399,
           "category": "pizza",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pizza-006",
+          "name": "Pizza Latin Aioli & Quattro Fromage",
+          "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella",
+          "price": 999,
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pizza-007",
+          "name": "Amante Special Interactive Garden Green Pizza",
+          "description": "Crispy kale with harissa and sundried tomatoes on a tomato and herb base, topped with pesto aioli",
+          "price": 899,
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pizza-008",
+          "name": "Pizza Pollo Indiana",
+          "description": "Indian Spiced Chicken, cheese, tomato, bell peppers, onion",
+          "price": 899,
+          "category": "pizza",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -503,8 +972,13 @@
           "description": "Cottage cheese, dry fruits, fresh fruits with creamy cashew gravy",
           "price": 599,
           "category": "indian-mains",
-          "dietary": ["veg"],
-          "allergens": ["nuts", "dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "nuts",
+            "dairy"
+          ],
           "isAvailable": true
         },
         {
@@ -513,8 +987,13 @@
           "description": "Roasted cashew, makhana, Amante rich gravy",
           "price": 699,
           "category": "indian-mains",
-          "dietary": ["veg"],
-          "allergens": ["nuts", "dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "nuts",
+            "dairy"
+          ],
           "isChefSpecial": true,
           "isAvailable": true
         },
@@ -524,7 +1003,9 @@
           "description": "Spicy cottage cheese, tomato, Indian spice",
           "price": 699,
           "category": "indian-mains",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "spiceLevel": 2,
           "isRecommended": true,
           "isAvailable": true
@@ -535,7 +1016,9 @@
           "description": "Lentil cooked in tomato, Indian spice",
           "price": 599,
           "category": "indian-mains",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -544,7 +1027,9 @@
           "description": "Black lentil cooked in creamy tomato, Indian spice",
           "price": 699,
           "category": "indian-mains",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isChefSpecial": true,
           "isRecommended": true,
           "isAvailable": true
@@ -555,7 +1040,9 @@
           "description": "Amante chef special Bhopali chicken, red gravy, buttery, creamy base, Indian spice",
           "price": 699,
           "category": "indian-mains",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": 2,
           "isChefSpecial": true,
           "isRecommended": true,
@@ -567,7 +1054,9 @@
           "description": "Bhopal mutton nali, Amante chef special rich gravy",
           "price": 999,
           "category": "indian-mains",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": 3,
           "isChefSpecial": true,
           "isAvailable": true
@@ -578,9 +1067,132 @@
           "description": "KadakNath chicken, chef special Indian spices, cooked with chop base gravy",
           "price": 1499,
           "category": "indian-mains",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": 4,
           "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-010",
+          "name": "Amante Gunchaw Subzi",
+          "description": "Minced cauliflower with vilayeti subzi, green chili coriander",
+          "price": 499,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-011",
+          "name": "Chefs' Special Vegetable Korma",
+          "description": "Seasonal local vegetable potato, green peas",
+          "price": 599,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-012",
+          "name": "Lehsuni Bhuna Palak",
+          "description": "Minced spinach with garlic tomato and chili",
+          "price": 599,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-013",
+          "name": "Subz Nizami Handi",
+          "description": "Mix seasonal local vegetable spinach Indian spice",
+          "price": 699,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-015",
+          "name": "Mutton Rogan Josh",
+          "description": "Bhopali mutton Amante chef special rogan josh",
+          "price": 999,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-016",
+          "name": "Bhopali Mutton Rezala",
+          "description": "Bhupali mutton Amante chef special rich coriander gravy",
+          "price": 1099,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-017",
+          "name": "Chef Special Chicken Tikka Keema Masala",
+          "description": "Amante chef special Bhopali minced chicken, Indian spice",
+          "price": 899,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-018",
+          "name": "Kacchi Mirchi Ka Murgh",
+          "description": "Boneless chicken tempered with chilies, coriander seeds and cooked with fresh tomato",
+          "price": 799,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-019",
+          "name": "Chef Special Bhopali Kadak Nath",
+          "description": "KadakNath chicken chef special Indian spices, cooked with chop base gravy",
+          "price": 1499,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-020",
+          "name": "Chef Special Bhopali Bater",
+          "description": "Slow cook Quail in chef choice spices",
+          "price": 999,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-021",
+          "name": "Chef Interactive Flavored Grilled Bhupali Lamb Chop",
+          "description": "Bhupali mutton chop chef special aroma sauce",
+          "price": 1499,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -597,7 +1209,9 @@
           "description": "Tawa style vegetable pulao",
           "price": 499,
           "category": "rice-biryani",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -606,7 +1220,9 @@
           "description": "Slow cooked vegetable pulao",
           "price": 599,
           "category": "rice-biryani",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -615,7 +1231,9 @@
           "description": "Authentic Hyderabadi style chicken biryani",
           "price": 799,
           "category": "rice-biryani",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -625,7 +1243,9 @@
           "description": "Authentic Hyderabadi style mutton biryani",
           "price": 999,
           "category": "rice-biryani",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -635,7 +1255,9 @@
           "description": "Dry fruits, long grain rice, saffron, khada masala",
           "price": 699,
           "category": "rice-biryani",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isChefSpecial": true,
           "isAvailable": true
         },
@@ -645,7 +1267,20 @@
           "description": "Stir-fried rice with burnt garlic and chicken",
           "price": 599,
           "category": "rice-biryani",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-rice-009",
+          "name": "Steamed Rice, Jeera Rice, Curd Rice",
+          "description": "Choice of steamed, jeera or curd rice",
+          "price": 499,
+          "category": "rice",
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -662,8 +1297,12 @@
           "description": "Classic tandoori roti",
           "price": 59,
           "category": "breads",
-          "dietary": ["veg"],
-          "allergens": ["gluten"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
           "isAvailable": true
         },
         {
@@ -672,8 +1311,12 @@
           "description": "Gram flour roti",
           "price": 79,
           "category": "breads",
-          "dietary": ["veg"],
-          "allergens": ["gluten"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
           "isAvailable": true
         },
         {
@@ -682,8 +1325,13 @@
           "description": "Leavened garlic naan",
           "price": 99,
           "category": "breads",
-          "dietary": ["veg"],
-          "allergens": ["gluten", "dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
           "isAvailable": true
         },
         {
@@ -692,8 +1340,13 @@
           "description": "Multi-layered paratha",
           "price": 110,
           "category": "breads",
-          "dietary": ["veg"],
-          "allergens": ["gluten", "dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
           "isAvailable": true
         },
         {
@@ -702,8 +1355,13 @@
           "description": "Cheese stuffed naan with chili and garlic",
           "price": 119,
           "category": "breads",
-          "dietary": ["veg"],
-          "allergens": ["gluten", "dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -713,8 +1371,13 @@
           "description": "Special lachha naan with garlic",
           "price": 149,
           "category": "breads",
-          "dietary": ["veg"],
-          "allergens": ["gluten", "dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
           "isChefSpecial": true,
           "isAvailable": true
         }
@@ -732,8 +1395,12 @@
           "description": "Homemade fettuccini pasta, asparagus, cherry tomato, zucchini",
           "price": 799,
           "category": "pasta",
-          "dietary": ["veg"],
-          "allergens": ["gluten"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
           "isAvailable": true
         },
         {
@@ -742,8 +1409,14 @@
           "description": "Handmade ravioli filled with ricotta, lemon zest, fresh basil, butter sauce, toasted almond, gremolata",
           "price": 699,
           "category": "pasta",
-          "dietary": ["veg"],
-          "allergens": ["gluten", "dairy", "nuts"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy",
+            "nuts"
+          ],
           "isAvailable": true
         },
         {
@@ -752,9 +1425,46 @@
           "description": "Mushroom, parmesan, porcini dust",
           "price": 799,
           "category": "pasta",
-          "dietary": ["veg"],
-          "allergens": ["dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
           "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-004",
+          "name": "Amante Classic Vegetable Lasagna",
+          "description": "Homemade lasagna pasta, asparagus, broccoli, zucchini cheese sauce",
+          "price": 899,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-005",
+          "name": "Grilled Mascarpone Polenta with Roasted Pine Nuts",
+          "description": "Seared polenta cakes, creamy tomato, white balsamic, roasted bell pepper coulis",
+          "price": 699,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-006",
+          "name": "Japanese Curry Bowl – Vegetarian Donburi",
+          "description": "Teppanyaki style vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
+          "price": 899,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -771,7 +1481,9 @@
           "description": "Yuzu miso, Tokyo fries, house salad, thyme jus served with mashed potato",
           "price": 799,
           "category": "grills",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -780,7 +1492,9 @@
           "description": "Hoi sin, miso, Tokyo grilled vegetable, house salad (order 24hrs in advance)",
           "price": 4999,
           "category": "grills",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isChefSpecial": true,
           "isAvailable": true
         },
@@ -790,7 +1504,9 @@
           "description": "Grilled lamb chop, red wine jus, truffle mash, Huancaina, roast vegetables",
           "price": 1499,
           "category": "grills",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -799,7 +1515,9 @@
           "description": "Chimichurri, lemon butter sauce, mash potato, roast vegetables",
           "price": 999,
           "category": "grills",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -808,8 +1526,32 @@
           "description": "Mustard and parsley marinated prawns, potato millefeuille, habanero, and lemon zest",
           "price": 1199,
           "category": "grills",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-grill-007",
+          "name": "Lemon & Thyme Chicken Milanese",
+          "description": "Crispy breaded chicken cutlet, lemon butter sauce, lemon wedge, light mesclun and cherry tomato salad",
+          "price": 799,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-grill-008",
+          "name": "Japanese Curry Bowl – Chicken Donburi",
+          "description": "Teppanyaki style chicken, vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
+          "price": 799,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         }
       ]
@@ -826,7 +1568,9 @@
           "description": "Asian vegetable, wild mushroom",
           "price": 599,
           "category": "noodles",
-          "dietary": ["veg"],
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         },
         {
@@ -835,7 +1579,9 @@
           "description": "Asian vegetable, chicken",
           "price": 699,
           "category": "noodles",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
@@ -844,8 +1590,12 @@
           "description": "Rice stick noodle, vegetable, peanut, bean sprout",
           "price": 699,
           "category": "noodles",
-          "dietary": ["veg"],
-          "allergens": ["nuts"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "nuts"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -855,8 +1605,12 @@
           "description": "Rice stick noodle, prawns, peanut, bean sprout",
           "price": 799,
           "category": "noodles",
-          "dietary": ["non-veg"],
-          "allergens": ["nuts"],
+          "dietary": [
+            "non-veg"
+          ],
+          "allergens": [
+            "nuts"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -866,7 +1620,9 @@
           "description": "Asian farm green vegetable, chicken, served with jasmine rice",
           "price": 799,
           "category": "noodles",
-          "dietary": ["non-veg"],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": 3,
           "isAvailable": true
         }
@@ -884,8 +1640,12 @@
           "description": "64% chocolate mousse with fresh cream",
           "price": 699,
           "category": "desserts",
-          "dietary": ["veg"],
-          "allergens": ["dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
           "isAvailable": true
         },
         {
@@ -894,8 +1654,15 @@
           "description": "Ladyfinger biscuit dipped in coffee, mascarpone cream",
           "price": 499,
           "category": "desserts",
-          "dietary": ["veg", "contains-egg"],
-          "allergens": ["dairy", "eggs", "gluten"],
+          "dietary": [
+            "veg",
+            "contains-egg"
+          ],
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -905,8 +1672,13 @@
           "description": "Almond flour, fresh fruits, white chocolate dome",
           "price": 599,
           "category": "desserts",
-          "dietary": ["veg"],
-          "allergens": ["dairy", "nuts"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
           "isAvailable": true
         },
         {
@@ -915,8 +1687,12 @@
           "description": "Seasonal toppings",
           "price": 399,
           "category": "desserts",
-          "dietary": ["veg"],
-          "allergens": ["dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
           "isAvailable": true
         },
         {
@@ -925,8 +1701,13 @@
           "description": "Chocolate, saffron & pista",
           "price": 300,
           "category": "desserts",
-          "dietary": ["veg"],
-          "allergens": ["dairy", "nuts"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
           "isAvailable": true
         },
         {
@@ -935,8 +1716,16 @@
           "description": "Amante chef special desserts serve with choice of ice cream",
           "price": 599,
           "category": "desserts",
-          "dietary": ["veg", "contains-egg"],
-          "allergens": ["dairy", "eggs", "nuts", "gluten"],
+          "dietary": [
+            "veg",
+            "contains-egg"
+          ],
+          "allergens": [
+            "dairy",
+            "eggs",
+            "nuts",
+            "gluten"
+          ],
           "isRecommended": true,
           "isAvailable": true
         },
@@ -946,8 +1735,12 @@
           "description": "Cold cottage cheese dumplings, saffron milk syrup",
           "price": 449,
           "category": "desserts",
-          "dietary": ["veg"],
-          "allergens": ["dairy"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
           "isAvailable": true
         },
         {
@@ -956,9 +1749,102 @@
           "description": "Creamy crispy golden kunafa pistachio dust with ice cream",
           "price": 599,
           "category": "desserts",
-          "dietary": ["veg"],
-          "allergens": ["dairy", "nuts"],
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
           "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-011",
+          "name": "Mawa Bati",
+          "description": "Saffron & Pista, almond stuffed fried dip in syrup interactive desserts",
+          "price": 599,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-012",
+          "name": "Akhrot Halwa",
+          "description": "Saffron & Pista, almond stuffed chef interactive desserts",
+          "price": 799,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-013",
+          "name": "Vaklaba",
+          "description": "Traditional Indian sweet",
+          "price": 499,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-014",
+          "name": "Amante Kulfi Faluda Delite",
+          "description": "Saffron & Pista, almond stuffed Faluda chef interactive desserts",
+          "price": 499,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-015",
+          "name": "Belgium Chocolate Mousse",
+          "description": "Toasted marshmallow, caramelized nuts, served with choice of ice cream",
+          "price": 659,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-016",
+          "name": "Mix Fruits Cremieux",
+          "description": "Fresh fruits, cream custard, Vanilla ice cream",
+          "price": 399,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-017",
+          "name": "Baked Cheese Cake with Sour Cherry Compote",
+          "description": "Amante chef special desserts serve with choice of ice cream",
+          "price": 449,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-018",
+          "name": "Apple Cinnamon Tart with Vanilla Ice Cream",
+          "description": "Amante chef special desserts serve with choice of ice cream",
+          "price": 449,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         }
       ]
