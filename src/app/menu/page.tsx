@@ -21,8 +21,8 @@ const categories = [
     icon: Wine,
     description: 'Craft cocktails & premium spirits',
     href: '/menu/bar',
-    color: '#7C3AED',
-    gradient: 'from-purple-100 to-purple-50'
+    color: '#8B1538',
+    gradient: 'from-[#8B1538]/10 to-[#FFF0F5]'
   },
   {
     id: 'cafe',
@@ -30,8 +30,8 @@ const categories = [
     icon: Coffee,
     description: 'Artisan coffee & fresh delights',
     href: '/menu/cafe',
-    color: '#059669',
-    gradient: 'from-emerald-100 to-emerald-50'
+    color: '#8B1538',
+    gradient: 'from-[#8B1538]/10 to-[#FFF0F5]'
   }
 ];
 
@@ -52,9 +52,9 @@ export default function MenuLanding() {
                 <Image
                   src="/assets/logos/Primary Logo/PNG/Red Logo.png"
                   alt="Amante"
-                  width={800}
-                  height={240}
-                  className="h-48 md:h-56 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                  width={1600}
+                  height={480}
+                  className="h-96 md:h-[450px] w-auto cursor-pointer hover:opacity-80 transition-opacity"
                   priority
                 />
               </Link>
