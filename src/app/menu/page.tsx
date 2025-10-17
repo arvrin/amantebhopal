@@ -37,34 +37,40 @@ const categories = [
 
 export default function MenuLanding() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FFF5F0] via-white to-[#FFF0F5] py-4 md:py-6">
+    <div className="min-h-screen bg-gradient-to-br from-[#FFF5F0] via-white to-[#FFF0F5]">
+      {/* Logo Section - Full Width */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="text-center py-4 md:py-6"
+      >
+        <div className="flex justify-center">
+          <Link href="/">
+            <Image
+              src="/assets/logos/Primary Logo/PNG/Red Logo.png"
+              alt="Amante"
+              width={1600}
+              height={480}
+              className="h-56 md:h-72 lg:h-80 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+              priority
+            />
+          </Link>
+        </div>
+        <div className="flex items-center justify-center gap-4 mt-6">
+          <div className="w-24 h-px bg-gradient-to-r from-transparent to-[#8B1538]/40"></div>
+          <span className="text-[#8B1538] text-3xl">♦</span>
+          <div className="w-24 h-px bg-gradient-to-l from-transparent to-[#8B1538]/40"></div>
+        </div>
+      </motion.div>
+
+      {/* Content Section - With Container */}
       <div className="container mx-auto px-4 max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
           className="text-center mb-6 md:mb-8"
         >
-          {/* Logo */}
-          <div className="mb-8 md:mb-10">
-            <div className="flex justify-center">
-              <Link href="/">
-                <Image
-                  src="/assets/logos/Primary Logo/PNG/Red Logo.png"
-                  alt="Amante"
-                  width={1600}
-                  height={480}
-                  className="h-56 md:h-72 lg:h-80 w-auto cursor-pointer hover:opacity-80 transition-opacity"
-                  priority
-                />
-              </Link>
-            </div>
-            <div className="flex items-center justify-center gap-4 mt-6">
-              <div className="w-24 h-px bg-gradient-to-r from-transparent to-[#8B1538]/40"></div>
-              <span className="text-[#8B1538] text-3xl">♦</span>
-              <div className="w-24 h-px bg-gradient-to-l from-transparent to-[#8B1538]/40"></div>
-            </div>
-          </div>
-
           <h2 className="font-serif text-2xl md:text-3xl text-[#8B1538] mb-2 tracking-wide">
             Explore Our Menus
           </h2>
