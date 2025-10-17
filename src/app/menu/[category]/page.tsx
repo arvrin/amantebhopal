@@ -29,6 +29,7 @@ interface MenuItem {
   name: string;
   description: string;
   price: number;
+  bottlePrice?: number;
   category: string;
   dietary?: string[];
   spiceLevel?: number;
@@ -294,6 +295,14 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                       >
                         ₹{item.price}
                       </p>
+                      {item.bottlePrice && (
+                        <p
+                          className="text-sm font-semibold mt-1"
+                          style={{ color: themeColor }}
+                        >
+                          ₹{item.bottlePrice.toLocaleString('en-IN')} (Bottle)
+                        </p>
+                      )}
                       <p className="text-xs text-gray-500 mt-1">
                         {item.categoryName}
                       </p>

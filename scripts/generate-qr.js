@@ -22,31 +22,34 @@ const config = {
   }
 };
 
+// Production URL
+const PRODUCTION_URL = 'https://amante-coming-soon-4jdpv85ml-aaryavars-projects.vercel.app';
+
 // URLs to generate QR codes for
 const urls = [
   {
-    url: 'https://cafeamante.com/menu',
-    name: 'menu-main',
+    url: `${PRODUCTION_URL}/menu`,
+    name: 'menu-main-production',
     size: 1000,
-    description: 'Main Menu Landing Page'
+    description: 'Main Menu Landing Page (Production)'
   },
   {
-    url: 'https://cafeamante.com/menu/food',
-    name: 'menu-food',
+    url: `${PRODUCTION_URL}/menu/food`,
+    name: 'menu-food-production',
     size: 800,
-    description: 'Direct to Food Menu'
+    description: 'Direct to Food Menu (Production)'
   },
   {
-    url: 'https://cafeamante.com/menu/bar',
-    name: 'menu-bar',
+    url: `${PRODUCTION_URL}/menu/bar`,
+    name: 'menu-bar-production',
     size: 800,
-    description: 'Direct to Bar Menu'
+    description: 'Direct to Bar Menu (Production)'
   },
   {
-    url: 'https://cafeamante.com/menu/cafe',
-    name: 'menu-cafe',
+    url: `${PRODUCTION_URL}/menu/cafe`,
+    name: 'menu-cafe-production',
     size: 800,
-    description: 'Direct to Café Menu'
+    description: 'Direct to Café Menu (Production)'
   }
 ];
 
