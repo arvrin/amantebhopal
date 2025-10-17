@@ -141,7 +141,7 @@ export default function MenuLanding() {
             <div className="w-12 h-px bg-gradient-to-l from-transparent to-[#8B1538]/30"></div>
           </div>
           <p className="text-gray-600 text-xs mb-1">1, Mahendra Business Square, MP Nagar, Bhopal</p>
-          <p className="text-gray-500 text-xs">
+          <p className="text-gray-500 text-xs mb-3">
             <a href="mailto:contact.cafeamante@gmail.com" className="hover:text-[#8B1538] transition-colors">
               contact.cafeamante@gmail.com
             </a>
@@ -150,6 +150,15 @@ export default function MenuLanding() {
               www.cafeamante.com
             </a>
           </p>
+          <a
+            href="https://restronaut.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 text-xs text-gray-400 hover:text-[#8B1538] transition-colors"
+          >
+            <span>Powered by</span>
+            <span className="font-semibold">Restronaut</span>
+          </a>
         </motion.div>
       </div>
     </div>
