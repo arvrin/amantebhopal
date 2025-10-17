@@ -62,6 +62,17 @@
         },
         {
           "id": "cafe-hot-007",
+          "name": "Piccolo (Cortado)",
+          "description": "Small latte, perfect balance of espresso and milk",
+          "price": 189,
+          "category": "hot-coffee",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-hot-007",
           "name": "Macchiato",
           "description": "Espresso marked with foam",
           "price": 169,
