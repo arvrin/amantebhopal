@@ -43,23 +43,23 @@ export default function MenuLanding() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-8"
+          className="text-center mb-6"
         >
           {/* Logo */}
-          <div className="mb-6">
-            <div className="flex justify-center mb-3">
+          <div className="mb-4">
+            <div className="flex justify-center">
               <Link href="/">
                 <Image
                   src="/assets/logos/Primary Logo/PNG/Red Logo.png"
                   alt="Amante"
                   width={1600}
                   height={480}
-                  className="h-96 md:h-[450px] w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                  className="h-80 md:h-96 w-auto cursor-pointer hover:opacity-80 transition-opacity"
                   priority
                 />
               </Link>
             </div>
-            <div className="flex items-center justify-center gap-3 mt-3">
+            <div className="flex items-center justify-center gap-3 mt-2">
               <div className="w-20 h-px bg-gradient-to-r from-transparent to-[#8B1538]/40"></div>
               <span className="text-[#8B1538] text-3xl">♦</span>
               <div className="w-20 h-px bg-gradient-to-l from-transparent to-[#8B1538]/40"></div>
