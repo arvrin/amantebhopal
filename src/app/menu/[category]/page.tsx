@@ -182,19 +182,21 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
 
           {/* Filters */}
           <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
-            <button
-              onClick={() => setShowVegOnly(!showVegOnly)}
-              className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                showVegOnly
-                  ? 'bg-green-600 text-white'
-                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-              }`}
-            >
-              <span className="flex items-center gap-1.5">
-                <Leaf size={16} />
-                Veg Only
-              </span>
-            </button>
+            {resolvedParams.category === 'food' && (
+              <button
+                onClick={() => setShowVegOnly(!showVegOnly)}
+                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
+                  showVegOnly
+                    ? 'bg-green-600 text-white'
+                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                }`}
+              >
+                <span className="flex items-center gap-1.5">
+                  <Leaf size={16} />
+                  Veg Only
+                </span>
+              </button>
+            )}
             {menu.categories.map(cat => (
               <button
                 key={cat.id}
