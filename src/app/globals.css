@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import "tailwindcss";
 
+/* Brand Colors - Updated to match red background with light pink logo */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #B91C1C;
+  --foreground: #FCE7F3;
+  --amante-red: #B91C1C;
+  --amante-red-dark: #991B1B;
+  --amante-red-light: #DC2626;
+  --amante-pink: #F8BBD9;
+  --amante-pink-light: #FCE7F3;
+  --amante-pink-dark: #F3A8CC;
+  --amante-black: #1F1F1F;
+  --amante-white: #FFFFFF;
+  --amante-gold: #D4AF37;
 }
 
 @theme inline {
@@ -12,15 +24,465 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom Font Classes - Brand Accurate */
+.font-laginchy {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.font-laginchy-bold {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-baskerville {
+  font-family: 'Baskerville', 'Times New Roman', serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.font-avenir {
+  font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+
+.font-avenir-bold {
+  font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+/* Brand-specific classes - Updated Color Scheme */
+.text-amante-red {
+  color: var(--amante-red);
+}
+
+.text-amante-pink {
+  color: var(--amante-pink);
+}
+
+.text-amante-pink-light {
+  color: var(--amante-pink-light);
+}
+
+.bg-amante-red {
+  background-color: var(--amante-red);
+}
+
+.bg-amante-red-dark {
+  background-color: var(--amante-red-dark);
+}
+
+.bg-amante-pink {
+  background-color: var(--amante-pink);
+}
+
+.bg-amante-pink-light {
+  background-color: var(--amante-pink-light);
+}
+
+.border-amante-red {
+  border-color: var(--amante-red);
+}
+
+.border-amante-pink {
+  border-color: var(--amante-pink);
+}
+
+.border-amante-pink-light {
+  border-color: var(--amante-pink-light);
+}
+
+/* Diamond decoration elements matching brand */
+.diamond-border {
+  position: relative;
+}
+
+.diamond-border::before,
+.diamond-border::after {
+  content: '♦';
+  position: absolute;
+  color: var(--amante-red);
+  font-size: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.diamond-border::before {
+  left: -2rem;
+}
+
+.diamond-border::after {
+  right: -2rem;
+}
+
+/* Smooth animations */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--amante-pink-light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--amante-red);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #991b1b;
+}
+
+/* Heart symbol styling */
+.heart-symbol {
+  color: var(--amante-red);
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Luxury overlay effects */
+.luxury-gradient {
+  background: linear-gradient(135deg, var(--amante-pink-light) 0%, var(--amante-pink) 100%);
+}
+
+/* Premium gradient backgrounds for agency-level design */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
+.shadow-amante-red\/20 {
+  --tw-shadow-color: rgba(185, 28, 28, 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.text-luxury {
+  background: linear-gradient(135deg, var(--amante-red), var(--amante-black));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Interactive elements */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(185, 28, 28, 0.2);
+}
+
+/* Coming soon specific styles - Red Background Theme */
+.coming-soon-bg {
+  background: linear-gradient(135deg, var(--amante-red) 0%, var(--amante-red-dark) 50%, var(--amante-red) 100%);
+  min-height: 100vh;
+  color: var(--amante-pink-light);
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--amante-red);
+  position: relative;
+}
+
+.timeline-dot::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--amante-red);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Enhanced Mobile Optimizations - Agency Standard */
+@media (max-width: 768px) {
+  .coming-soon-bg {
+    background-attachment: scroll;
+    min-height: 100vh;
+  }
+  
+  /* Hero Section Mobile Optimization */
+  .hero-mobile-spacing {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Typography Mobile Optimization */
+  .mobile-title {
+    font-size: 2.5rem !important;
+    line-height: 0.85 !important;
+    margin-bottom: 1.5rem !important;
+  }
+  
+  .mobile-subtitle {
+    font-size: 1.125rem !important;
+    line-height: 1.4 !important;
+    padding: 0 1rem;
+  }
+  
+  .mobile-logo {
+    max-width: 280px !important;
+    padding: 1rem !important;
+  }
+  
+  .mobile-banner {
+    font-size: 1rem !important;
+    padding: 0.75rem 1.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  .mobile-location {
+    font-size: 0.875rem !important;
+    padding: 0.75rem 1rem !important;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .mobile-cta-stack {
+    flex-direction: column !important;
+    gap: 1rem !important;
+    width: 100%;
+  }
+  
+  .mobile-cta-button {
+    width: 100% !important;
+    min-width: unset !important;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+  
+  .mobile-social-proof {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    text-align: center;
+  }
+  
+  .diamond-border::before,
+  .diamond-border::after {
+    display: none;
+  }
+  
+  .hover-lift:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  /* Performance: Reduce animations on mobile */
+  .mobile-reduced-motion {
+    animation: none !important;
+    transition: all 0.2s ease !important;
+  }
+  
+  /* Improved touch targets */
+  button, .cursor-pointer {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  /* Reduce motion for mobile performance */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.2s !important;
+    }
+  }
+}
+
+/* Enhanced tablet optimizations */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .font-laginchy-bold {
+    line-height: 0.85;
+  }
+}
+
+/* Enhanced Performance optimizations */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* GPU acceleration for animations */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Smooth scrolling with better performance */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
+
+/* Optimize images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Enhanced touch targets */
+@media (pointer: coarse) {
+  button, a, input, select, textarea {
+    min-height: 48px;
+    min-width: 48px;
+  }
+  
+  /* Improve tap responsiveness */
+  button {
+    touch-action: manipulation;
+  }
+}
+
+/* Prevent horizontal scroll */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Agency-level spacing system */
+.section-spacing-sm {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.section-spacing-md {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.section-spacing-lg {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.section-spacing-xl {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+/* Premium container widths */
+.container-agency {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 1280px) {
+  .container-agency {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Loading states */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Agency-level visual effects */
+.glow-effect {
+  filter: drop-shadow(0 0 20px rgba(185, 28, 28, 0.3));
+}
+
+.blur-backdrop {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Enhanced focus states for accessibility */
+.focus-ring:focus-visible {
+  outline: 2px solid var(--amante-red);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* Improved contrast ratios */
+.text-high-contrast {
+  color: #1a1a1a;
+}
+
+.text-medium-contrast {
+  color: #4a4a4a;
+}
+
+/* Premium animation easing */
+.ease-luxury {
+  transition-timing-function: cubic-bezier(0.6, -0.05, 0.01, 0.99);
+}
+
+.ease-bounce-in {
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
