@@ -20,8 +20,8 @@ const menus = {
 
 const categoryColors = {
   food: '#8B1538',
-  bar: '#7C3AED',
-  cafe: '#059669'
+  bar: '#8B1538',
+  cafe: '#8B1538'
 };
 
 interface MenuItem {
@@ -123,16 +123,16 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
     <div className="min-h-screen bg-[#FFF5F0]">
       {/* Header */}
       <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 py-3">
           {/* Logo */}
-          <div className="flex justify-center mb-3">
+          <div className="flex justify-center mb-2">
             <Link href="/menu">
               <Image
                 src="/assets/logos/Primary Logo/PNG/Red Logo.png"
                 alt="Amante"
-                width={400}
-                height={120}
-                className="h-20 md:h-24 w-auto cursor-pointer hover:opacity-80 transition-opacity"
+                width={800}
+                height={240}
+                className="h-28 md:h-32 w-auto cursor-pointer hover:opacity-80 transition-opacity"
               />
             </Link>
           </div>
