@@ -1783,8 +1783,8 @@
         },
         {
           "id": "food-dessert-013",
-          "name": "Vaklaba",
-          "description": "Traditional Indian sweet",
+          "name": "Baklava",
+          "description": "Layered phyllo pastry with honey, nuts and aromatic spices",
           "price": 499,
           "category": "desserts",
           "dietary": [
