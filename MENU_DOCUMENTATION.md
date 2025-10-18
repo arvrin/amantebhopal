@@ -19,10 +19,10 @@
 The Amante menu system is a Next.js 15.5.2 application that provides an interactive digital menu experience for three venues: Food, Bar, and Café. The system uses TypeScript, Tailwind CSS, and Framer Motion for a modern, responsive interface.
 
 ### Key Statistics
-- **Food Menu**: 146 items across 15 categories (70.4% coverage from source PDF)
+- **Food Menu**: 129 items across 15 categories (updated October 2025)
 - **Bar Menu**: 149 items with bottle pricing options
 - **Café Menu**: 45 items across 7 categories (100% coverage)
-- **Total Items**: 340+ menu items
+- **Total Items**: 323 menu items
 
 ---
 
@@ -742,8 +742,8 @@ npx tsc --noEmit
 ### Build Sizes
 - **Main Page**: 58.5 kB
 - **Menu Landing**: 5.12 kB
-- **Category Pages**: 19.5 kB (dynamic)
-- **First Load JS**: ~162-177 kB
+- **Category Pages**: 18.9 kB (dynamic, reduced from 19.5 kB after item removal)
+- **First Load JS**: ~162-176 kB
 
 ### Optimization Techniques
 1. **SVG Logos**: Vector format for scalability
@@ -833,26 +833,45 @@ All external links use security attributes:
 
 ## Version History
 
-### Current Version: 1.0.0
+### Current Version: 1.1.0
 
 **Changes Log**:
 
+#### 2025-10-18 (Latest)
+- **MAJOR**: Removed 17 discontinued items from food menu (146 → 129 items)
+  - Removed items across 8 categories (Appetizers, Soups, Sushi, Pizza, Indian, Pasta, Grills, Desserts)
+  - Updated bundle size: Category pages reduced from 19.5 kB to 18.9 kB
+  - Created automated removal script: `scripts/remove-specified-items.js`
+  - Full verification report: `scripts/remove-items-report.txt`
+- Fixed dessert item name: "Vaklaba" → "Baklava" with proper description
+- Updated total menu items: 340+ → 323 items
+
+**Removed Items Details**:
+- 4 Appetizers (including Mushroom Galouti Kebab, KadakNath Tandoori, Murrel Fish items)
+- 2 Soups (Smoked Chicken Tomato Almond, Mutton Yakini Shorba)
+- 2 Sushi items (Vegetable Tempura Uramaki, Pickled Mushroom Roll)
+- 2 Pizzas (Lamb Pepperoni, Interactive Garden Green)
+- 2 Indian dishes (Bhopali Mutton Rezala, Bhupali Lamb Chop)
+- 2 Pasta dishes (Lemon Ricotta Ravioli, Mascarpone Polenta)
+- 1 Grill (Amante Peaking Chicken - ₹4,999)
+- 2 Desserts (Kulfi Faluda, Belgium Chocolate Mousse)
+
 #### 2025-10-17
-- Switched from PNG to SVG logo format
-- Increased logo sizes on all pages
-- Removed container padding from logo section
-- Optimized logo sizes for category pages (h-32/h-40)
-- Updated address to "Bawadia Kalan"
-- Added "Powered by Restronaut" footer link
-- Removed Veg Only filter from bar and café menus
+- Switched from PNG to SVG logo format for all pages
+- Increased logo sizes: Main menu (h-64/h-80/h-96), Category pages (h-32/h-40)
+- Removed container padding from logo section on main menu page
+- Updated address from "MP Nagar" to "Bawadia Kalan"
+- Added "Powered by Restronaut" footer link with external link to restronaut.in
+- Removed Veg Only filter from bar and café menus (food menu only)
+- Created comprehensive documentation (MENU_DOCUMENTATION.md)
 
 #### Previous Updates
-- Added 59 missing food items (70.4% coverage achieved)
+- Added 59 missing food items (70.4% coverage achieved from source PDF)
 - Added missing café item: Piccolo (Cortado) - ₹189 (100% coverage)
 - Implemented bottle pricing for bar menu items
-- Created verification and addition scripts
+- Created verification and addition scripts for menu management
 - Improved menu page layout and spacing
-- Enhanced responsive design
+- Enhanced responsive design across all breakpoints
 
 ---
 
@@ -894,6 +913,6 @@ Before each deployment:
 
 ---
 
-**Last Updated**: October 17, 2025
-**Document Version**: 1.0.0
+**Last Updated**: October 18, 2025
+**Document Version**: 1.1.0
 **Maintained by**: Amante Team with Restronaut
