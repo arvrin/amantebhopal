@@ -112,18 +112,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-010",
-          "name": "Mushroom Galouti Kebab",
-          "description": "Fresh mushroom mince, Indian aroma, smoky flavor served with ulta tawa paratha",
-          "price": 699,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isChefSpecial": true,
-          "isAvailable": true
-        },
-        {
           "id": "food-app-011",
           "name": "Shrimp Tempura",
           "description": "Togarashi aioli, spring onion, lime, tiger milk spicy mayo",
@@ -178,31 +166,6 @@
             "non-veg"
           ],
           "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-016",
-          "name": "Amante Special KadakNath Tandoori",
-          "description": "Desi chicken marinated spicy with yogurt, nutmeg flavored",
-          "price": 1499,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isChefSpecial": true,
-          "spiceLevel": 4,
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-017",
-          "name": "Amante Special Mutton Galouti Kebab",
-          "description": "Mutton mince, Indian spicy, smoky flavored served with ulta tawa paratha",
-          "price": 999,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isChefSpecial": true,
           "isAvailable": true
         },
         {
@@ -320,17 +283,6 @@
           "name": "Schezwan King Prawns",
           "description": "RCP crisp prawns' chef interactive on flavored",
           "price": 999,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-031",
-          "name": "Tandoori Fish Tikka",
-          "description": "Murrel fish Indian spice served with green chutney",
-          "price": 899,
           "category": "appetizers",
           "dietary": [
             "non-veg"
@@ -645,17 +597,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-soup-012",
-          "name": "Smoked Chicken Tomato and Almond Soup",
-          "description": "Tomato, basil, smoked chicken, Almond Flake",
-          "price": 499,
-          "category": "soups",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-soup-013",
           "name": "Thai Signature Tom Yum Soup",
           "description": "Thai herb, basil, spice signature broth (Veg/Chicken/Prawns)",
@@ -663,17 +604,6 @@
           "category": "soups",
           "dietary": [
             "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-soup-014",
-          "name": "Mutton Yakini Shorba",
-          "description": "Bhopal mutton Indian spice shorba, Almond Flake",
-          "price": 499,
-          "category": "soups",
-          "dietary": [
-            "non-veg"
           ],
           "isAvailable": true
         },
@@ -752,28 +682,6 @@
             "non-veg"
           ],
           "spiceLevel": 3,
-          "isAvailable": true
-        },
-        {
-          "id": "food-sushi-005",
-          "name": "Vegetable Tempura Uramaki",
-          "description": "Vegetable & king mushroom tempura, teriyaki sauce, Cream cheese",
-          "price": 999,
-          "category": "sushi",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-sushi-006",
-          "name": "Pickled Wild Mushroom and Tofu Roll",
-          "description": "Pickled mushroom, teriyaki glaze tofu, soy sauce, Cream cheese, gari",
-          "price": 999,
-          "category": "sushi",
-          "dietary": [
-            "veg"
-          ],
           "isAvailable": true
         },
         {
@@ -915,32 +823,10 @@
           "isAvailable": true
         },
         {
-          "id": "food-pizza-005",
-          "name": "Lamb Pepperoni Pizza",
-          "description": "Imported lamb pepperoni, cheese, tomato, bell peppers, basil",
-          "price": 1399,
-          "category": "pizza",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-pizza-006",
           "name": "Pizza Latin Aioli & Quattro Fromage",
           "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella",
           "price": 999,
-          "category": "pizza",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-pizza-007",
-          "name": "Amante Special Interactive Garden Green Pizza",
-          "description": "Crispy kale with harissa and sundried tomatoes on a tomato and herb base, topped with pesto aioli",
-          "price": 899,
           "category": "pizza",
           "dietary": [
             "veg"
@@ -1130,17 +1016,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-indian-016",
-          "name": "Bhopali Mutton Rezala",
-          "description": "Bhupali mutton Amante chef special rich coriander gravy",
-          "price": 1099,
-          "category": "indian",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-indian-017",
           "name": "Chef Special Chicken Tikka Keema Masala",
           "description": "Amante chef special Bhopali minced chicken, Indian spice",
@@ -1178,17 +1053,6 @@
           "name": "Chef Special Bhopali Bater",
           "description": "Slow cook Quail in chef choice spices",
           "price": 999,
-          "category": "indian",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-indian-021",
-          "name": "Chef Interactive Flavored Grilled Bhupali Lamb Chop",
-          "description": "Bhupali mutton chop chef special aroma sauce",
-          "price": 1499,
           "category": "indian",
           "dietary": [
             "non-veg"
@@ -1404,22 +1268,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-pasta-002",
-          "name": "Lemon Ricotta Ravioli",
-          "description": "Handmade ravioli filled with ricotta, lemon zest, fresh basil, butter sauce, toasted almond, gremolata",
-          "price": 699,
-          "category": "pasta",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "gluten",
-            "dairy",
-            "nuts"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-pasta-003",
           "name": "Wild Mushroom Risotto with Porcini Cream",
           "description": "Mushroom, parmesan, porcini dust",
@@ -1439,17 +1287,6 @@
           "name": "Amante Classic Vegetable Lasagna",
           "description": "Homemade lasagna pasta, asparagus, broccoli, zucchini cheese sauce",
           "price": 899,
-          "category": "pasta",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-pasta-005",
-          "name": "Grilled Mascarpone Polenta with Roasted Pine Nuts",
-          "description": "Seared polenta cakes, creamy tomato, white balsamic, roasted bell pepper coulis",
-          "price": 699,
           "category": "pasta",
           "dietary": [
             "veg"
@@ -1484,18 +1321,6 @@
           "dietary": [
             "non-veg"
           ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-grill-002",
-          "name": "Amante Peaking Chicken",
-          "description": "Hoi sin, miso, Tokyo grilled vegetable, house salad (order 24hrs in advance)",
-          "price": 4999,
-          "category": "grills",
-          "dietary": [
-            "non-veg"
-          ],
-          "isChefSpecial": true,
           "isAvailable": true
         },
         {
@@ -1786,28 +1611,6 @@
           "name": "Baklava",
           "description": "Layered phyllo pastry with honey, nuts and aromatic spices",
           "price": 499,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-014",
-          "name": "Amante Kulfi Faluda Delite",
-          "description": "Saffron & Pista, almond stuffed Faluda chef interactive desserts",
-          "price": 499,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-015",
-          "name": "Belgium Chocolate Mousse",
-          "description": "Toasted marshmallow, caramelized nuts, served with choice of ice cream",
-          "price": 659,
           "category": "desserts",
           "dietary": [
             "veg"

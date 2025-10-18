@@ -1,0 +1,30 @@
+ITEMS TO REMOVE - FOUND IN MENU
+=================================
+
+FOUND (18 items):
+1. ✓ Mushroom Galouti Kebab (line 116)
+2. ✓ Amante Special KadakNath Tandoori (line 185)
+3. ✓ Amante Special Mutton Galouti Kebab (line 198)
+4. ✓ Smoked Chicken Tomato and Almond Soup (line 649)
+5. ✓ Mutton Yakini Shorba (line 671)
+6. ✓ Vegetable Tempura Uramaki (line 759)
+7. ✓ Pickled Wild Mushroom and Tofu Roll (line 770)
+8. ✓ Amante Special Interactive Garden Green Pizza (line 941)
+9. ✓ Lamb Pepperoni Pizza (line 919)
+10. ✓ Bhopali Mutton Rezala (line 1134)
+11. ✓ Chef Interactive Flavored Grilled Bhupali Lamb Chop (line 1189)
+12. ✓ Lemon Ricotta Ravioli (line 1408)
+13. ✓ Grilled Mascarpone Polenta with Roasted Pine Nuts (line 1450)
+14. ✓ Amante Peaking Chicken (line 1491)
+15. ✓ Grilled Murrel Fish (referenced in description line 332)
+16. ✓ Amante Kulfi Faluda Delite (line 1797)
+17. ✓ Belgium Chocolate Mousse (line 1808)
+
+NOT FOUND (7 items):
+1. ✗ Burmese kowsuey
+2. ✗ Subz badami kali mirch shorba
+3. ✗ Pickled vegetable futumaki
+4. ✗ Kali mirch ka murgh
+5. ✗ Mushroom jewel box clay pot
+6. ✗ Jaconde fresh fruits dome entremets, Baileys honey darshan with icecream
+7. ✗ Baked cheesecake with sour cherry compote
