@@ -806,7 +806,7 @@
         {
           "id": "bar-bourbon-001",
           "name": "TOKI",
-          "description": "90ml",
+          "description": "30ml",
           "price": 549,
           "category": "bourbon",
           "isAvailable": true,
@@ -815,7 +815,7 @@
         {
           "id": "bar-bourbon-002",
           "name": "JIM BEAM",
-          "description": "90ml",
+          "description": "30ml",
           "price": 399,
           "category": "bourbon",
           "isAvailable": true,
@@ -824,7 +824,7 @@
         {
           "id": "bar-bourbon-003",
           "name": "JAMESON",
-          "description": "90ml",
+          "description": "30ml",
           "price": 399,
           "category": "bourbon",
           "isAvailable": true,
@@ -841,7 +841,7 @@
         {
           "id": "bar-vodka-001",
           "name": "ROBERTO CAVALLI",
-          "description": "90ml",
+          "description": "30ml",
           "price": 699,
           "category": "vodka",
           "isAvailable": true,
@@ -850,7 +850,7 @@
         {
           "id": "bar-vodka-002",
           "name": "GREY GOOSE",
-          "description": "90ml",
+          "description": "30ml",
           "price": 549,
           "category": "vodka",
           "isRecommended": true,
@@ -860,7 +860,7 @@
         {
           "id": "bar-vodka-003",
           "name": "CIROC",
-          "description": "90ml",
+          "description": "30ml",
           "price": 549,
           "category": "vodka",
           "isAvailable": true,
@@ -869,7 +869,7 @@
         {
           "id": "bar-vodka-004",
           "name": "ABSOLUT",
-          "description": "90ml",
+          "description": "30ml",
           "price": 449,
           "category": "vodka",
           "isAvailable": true,
@@ -878,7 +878,7 @@
         {
           "id": "bar-vodka-005",
           "name": "BELVEDRE",
-          "description": "90ml",
+          "description": "30ml",
           "price": 549,
           "category": "vodka",
           "isAvailable": true,
@@ -887,7 +887,7 @@
         {
           "id": "bar-vodka-006",
           "name": "SAUSAGE TREE IRISH",
-          "description": "90ml",
+          "description": "30ml",
           "price": 649,
           "category": "vodka",
           "isAvailable": true,
@@ -896,7 +896,7 @@
         {
           "id": "bar-vodka-007",
           "name": "MAGIC MOMENT",
-          "description": "90ml",
+          "description": "30ml",
           "price": 299,
           "category": "vodka",
           "isAvailable": true,
@@ -905,7 +905,7 @@
         {
           "id": "bar-vodka-008",
           "name": "SMIRNOFF",
-          "description": "90ml",
+          "description": "30ml",
           "price": 329,
           "category": "vodka",
           "isAvailable": true,

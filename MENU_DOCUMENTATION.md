@@ -833,11 +833,20 @@ All external links use security attributes:
 
 ## Version History
 
-### Current Version: 1.1.0
+### Current Version: 1.2.0
 
 **Changes Log**:
 
-#### 2025-10-18 (Latest)
+#### 2025-10-19 (Latest)
+- **Bar Menu Serving Size Standardization**: Updated 11 drinks from 90ml to 30ml
+  - 3 Bourbon/Irish/American Whisky items: TOKI, JIM BEAM, JAMESON
+  - 8 Vodka items: ROBERTO CAVALLI, GREY GOOSE, CIROC, ABSOLUT, BELVEDRE, SAUSAGE TREE IRISH, MAGIC MOMENT, SMIRNOFF
+  - **Rationale**: Standardized all spirits to industry-standard 30ml (1 oz) serving
+  - **Impact**: Improved menu consistency and portion control
+  - File modified: `src/data/menus/bar.json` (lines 809, 818, 827, 844, 853, 863, 872, 881, 890, 899, 908)
+  - Deployed to Vercel Production: https://amante-coming-soon-7fi3o3jbq-aaryavars-projects.vercel.app
+
+#### 2025-10-18
 - **MAJOR**: Removed 17 discontinued items from food menu (146 → 129 items)
   - Removed items across 8 categories (Appetizers, Soups, Sushi, Pizza, Indian, Pasta, Grills, Desserts)
   - Updated bundle size: Category pages reduced from 19.5 kB to 18.9 kB
@@ -913,6 +922,6 @@ Before each deployment:
 
 ---
 
-**Last Updated**: October 18, 2025
-**Document Version**: 1.1.0
+**Last Updated**: October 19, 2025
+**Document Version**: 1.2.0
 **Maintained by**: Amante Team with Restronaut

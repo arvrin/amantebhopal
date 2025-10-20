@@ -6,6 +6,50 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.2.0] - 2025-10-19
+
+### Changed
+
+#### Bar Menu Serving Size Standardization
+- **Updated serving size from 90ml to 30ml** for 11 drinks
+- **Impact**: Standardized all spirit servings to 30ml across the entire bar menu
+- **Categories affected**: Bourbon/Irish/American Whisky (3 items) and Vodka (8 items)
+
+**Bourbon/Irish/American Whisky Category**:
+1. TOKI - 90ml → 30ml
+2. JIM BEAM - 90ml → 30ml
+3. JAMESON - 90ml → 30ml
+
+**Vodka Category**:
+4. ROBERTO CAVALLI - 90ml → 30ml
+5. GREY GOOSE - 90ml → 30ml
+6. CIROC - 90ml → 30ml
+7. ABSOLUT - 90ml → 30ml
+8. BELVEDRE - 90ml → 30ml
+9. SAUSAGE TREE IRISH - 90ml → 30ml
+10. MAGIC MOMENT - 90ml → 30ml
+11. SMIRNOFF - 90ml → 30ml
+
+**Technical Details**:
+- File modified: `src/data/menus/bar.json`
+- Lines affected: 809, 818, 827, 844, 853, 863, 872, 881, 890, 899, 908
+- Build status: ✅ Successful
+- Deployment: ✅ Vercel Production
+
+**Rationale**:
+- Industry standard serving size for spirits is 30ml (1 oz)
+- Ensures consistency across all premium spirits categories
+- All Whisky, Single Malt, Tequila, Gin, Rum, Brandy, and Liqueurs already use 30ml
+- Improves menu clarity and portion control
+
+### Deployed
+- **Production URL**: https://amante-coming-soon-7fi3o3jbq-aaryavars-projects.vercel.app
+- **Deployment Date**: October 19, 2025
+- **Build Time**: ~2.1s (Turbopack)
+- **Status**: ✅ Live
+
+---
+
 ## [1.1.0] - 2025-10-18
 
 ### Major Changes
@@ -147,6 +191,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 | Version | Food Items | Bar Items | Café Items | Total Items |
 |---------|-----------|-----------|------------|-------------|
+| 1.2.0   | 129       | 149       | 45         | 323         |
 | 1.1.0   | 129       | 149       | 45         | 323         |
 | 1.0.0   | 146       | 149       | 45         | 340         |
 | Pre-1.0 | 87        | 149       | 44         | 280         |
@@ -183,12 +228,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## Deployment History
 
 All versions deployed to Vercel production:
+- **v1.2.0**: October 19, 2025
 - **v1.1.0**: October 18, 2025
 - **v1.0.0**: October 17, 2025
 
 ---
 
 ## Breaking Changes
+
+### v1.2.0
+- None (serving size update only, no API changes)
 
 ### v1.1.0
 - None (items removed from menu, no API changes)
@@ -199,6 +248,11 @@ All versions deployed to Vercel production:
 ---
 
 ## Migration Notes
+
+### From v1.1.0 to v1.2.0
+No migration needed. Changes are:
+- Data-only (serving size standardization: 90ml → 30ml)
+- No structural or API changes
 
 ### From v1.0.0 to v1.1.0
 No migration needed. Changes are:
