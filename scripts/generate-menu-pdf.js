@@ -118,7 +118,7 @@ function generateCoverPage() {
         <div class="tax-info-cover">
           <p><strong>All prices exclusive of taxes</strong></p>
           <p>Food & Café: GST 5%</p>
-          <p>Bar: GST 18% + VAT 18%</p>
+          <p>Bar: VAT 18%</p>
         </div>
       </div>
     </div>
@@ -642,7 +642,7 @@ function generateHTML() {
         </div>
         ${generateCategory(category, 'bar')}
         <div class="page-footer">
-          All prices exclusive of taxes | Bar: GST 18% + VAT 18%
+          All prices exclusive of taxes | Bar: VAT 18%
         </div>
       </div>
     `;
