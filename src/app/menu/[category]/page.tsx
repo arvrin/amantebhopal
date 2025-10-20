@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Search, X, Leaf, Drumstick, Circle } from 'lucide-react';
-import { use } from 'react';
 
 // Import menu data
 import foodMenu from '@/data/menus/food.json';
@@ -56,14 +55,13 @@ interface Menu {
   categories: MenuCategory[];
 }
 
-export default function MenuPage({ params }: { params: Promise<{ category: string }> }) {
-  const resolvedParams = use(params);
+export default function MenuPage({ params }: { params: { category: string } }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showVegOnly, setShowVegOnly] = useState(false);
 
-  const menu = menus[resolvedParams.category as keyof typeof menus] as Menu;
-  const themeColor = categoryColors[resolvedParams.category as keyof typeof categoryColors];
+  const menu = menus[params.category as keyof typeof menus] as Menu;
+  const themeColor = categoryColors[params.category as keyof typeof categoryColors];
 
   // Flatten all items and filter
   const allItems = useMemo(() => {
@@ -182,7 +180,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
 
           {/* Filters */}
           <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
-            {resolvedParams.category === 'food' && (
+            {params.category === 'food' && (
               <button
                 onClick={() => setShowVegOnly(!showVegOnly)}
                 className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
