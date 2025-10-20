@@ -140,6 +140,11 @@ export default function MenuLanding() {
           transition={{ delay: 0.6 }}
           className="text-center mt-10 pt-6 border-t border-gray-200"
         >
+          <p className="text-[#8B1538] text-base font-semibold mb-2">
+            <a href="tel:+919893779100" className="hover:opacity-80 transition-opacity">
+              +91 98937 79100
+            </a>
+          </p>
           <p className="text-gray-600 text-xs mb-1">1, Mahendra Business Square, Bawadia Kalan, Bhopal</p>
           <p className="text-gray-500 text-xs mb-4">
             <a href="mailto:contact.cafeamante@gmail.com" className="hover:text-[#8B1538] transition-colors">
