@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from './HeroSection';
 import LeadCaptureForm from './LeadCaptureForm';
-import { Coffee, Utensils, Wine, Music, Heart, Sparkles, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Coffee, Utensils, Wine, Music, Heart, Sparkles, MapPin, Instagram, Facebook, Twitter, Phone } from 'lucide-react';
 import Image from 'next/image';
 
 export default function CleanComingSoon() {
@@ -107,13 +107,21 @@ export default function CleanComingSoon() {
           </div>
 
           {/* Contact Info */}
-          <div className="grid md:grid-cols-2 gap-8 mb-12 max-w-2xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 mb-12 max-w-4xl mx-auto">
             <div className="text-center">
               <div className="w-12 h-12 bg-amante-red/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-6 h-6 text-amante-pink-light" />
               </div>
               <a href="https://www.cafeamante.com" className="text-amante-pink-light hover:text-white transition-colors">
                 www.cafeamante.com
+              </a>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-amante-red/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="w-6 h-6 text-amante-pink-light" />
+              </div>
+              <a href="tel:+919893779100" className="text-amante-pink-light hover:text-white transition-colors">
+                +91 98937 79100
               </a>
             </div>
             <div className="text-center">
