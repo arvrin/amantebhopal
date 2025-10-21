@@ -299,6 +299,105 @@
             "non-veg"
           ],
           "isAvailable": true
+        },
+        {
+          "id": "food-app-033",
+          "name": "Crispy Chilli Baby Corn",
+          "description": "Crispy baby corn tossed in spicy chili sauce",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-034",
+          "name": "Paneer Peshawari Tikka",
+          "description": "Marinated stuffed cottage cheese with Indian spices",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-035",
+          "name": "Hunan Chilli Tofu",
+          "description": "Sliced silken tofu, celery and burnt chili",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-036",
+          "name": "Hunan Chilli Cottage Cheese",
+          "description": "Sliced cottage cheese, celery and burnt chili",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-037",
+          "name": "Soya Chaap Achari",
+          "description": "Yogurt, creamy, garlic, Indian spice with tangy pickle flavor",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-038",
+          "name": "Soya Chaap Malai",
+          "description": "Creamy yogurt and garlic marinated soya chaap with hari chutney",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-039",
+          "name": "Bhutte De Kebab",
+          "description": "Crispy fried corn patties served with dip",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-040",
+          "name": "Lukhnawi Mutton Galouti Kebab",
+          "description": "Mutton mince with Indian spices, smoky flavored, served with warqi paratha",
+          "price": 999,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-041",
+          "name": "Mushroom Cream Cheese Dimsum",
+          "description": "Delicate dumplings filled with mushroom and cream cheese",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
         }
       ]
     },
@@ -1058,6 +1157,139 @@
             "non-veg"
           ],
           "isAvailable": true
+        },
+        {
+          "id": "food-indian-021",
+          "name": "Vilayti Subzi",
+          "description": "Minced cauliflower with exotic vegetables, green chili and coriander",
+          "price": 499,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-022",
+          "name": "Aloo Gobhi Adrak",
+          "description": "Mixed seasonal local vegetables with spinach and Indian spices",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-023",
+          "name": "Paneer Lababdar",
+          "description": "Rich cottage cheese curry in creamy tomato gravy",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-024",
+          "name": "Shahi Paneer",
+          "description": "Cottage cheese in rich, creamy cashew and tomato gravy",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-025",
+          "name": "Paneer Butter Masala",
+          "description": "Cottage cheese in smooth butter tomato sauce",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-026",
+          "name": "Paneer Tikka Masala",
+          "description": "Grilled cottage cheese in spiced tomato curry",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-027",
+          "name": "Lehsuni Palak Paneer",
+          "description": "Cottage cheese in garlic-flavored spinach gravy",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-028",
+          "name": "Chef Special Laal Maas",
+          "description": "Authentic Rajasthani mutton with Indian spices",
+          "price": 1099,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "isChefSpecial": true
+        },
+        {
+          "id": "food-indian-029",
+          "name": "Home Style Curry Chicken",
+          "description": "Boneless chicken tempered with chilies, coriander seeds and cooked with fresh tomato",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-030",
+          "name": "Home Style Curry Egg",
+          "description": "Eggs tempered with chilies, coriander seeds and cooked with fresh tomato",
+          "price": 499,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-031",
+          "name": "Wild Mushroom Risotto",
+          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
+          "price": 799,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-032",
+          "name": "Grilled Chicken with Baby Potato",
+          "description": "Tender grilled chicken served with roasted baby potatoes",
+          "price": 799,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
         }
       ]
     },
@@ -1243,6 +1475,50 @@
             "dairy"
           ],
           "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-bread-007",
+          "name": "Naan",
+          "description": "Classic Indian flatbread baked in tandoor",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-bread-008",
+          "name": "Garlic Naan",
+          "description": "Naan topped with fresh garlic and butter",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-bread-009",
+          "name": "Butter Naan",
+          "description": "Soft naan brushed with butter",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-bread-010",
+          "name": "Missi Roti",
+          "description": "Traditional Indian flatbread made with gram flour and spices",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
           "isAvailable": true
         }
       ]
