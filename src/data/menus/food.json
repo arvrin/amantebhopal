@@ -1739,7 +1739,7 @@
           "id": "food-dessert-001",
           "name": "Single Origin Chocolate Marquis",
           "description": "64% chocolate mousse with fresh cream",
-          "price": 699,
+          "price": 499,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1753,7 +1753,7 @@
           "id": "food-dessert-002",
           "name": "Classic Tiramisu",
           "description": "Ladyfinger biscuit dipped in coffee, mascarpone cream",
-          "price": 499,
+          "price": 399,
           "category": "desserts",
           "dietary": [
             "veg",
@@ -1771,7 +1771,7 @@
           "id": "food-dessert-003",
           "name": "Joconde Fresh Fruits Dome Entremets",
           "description": "Almond flour, fresh fruits, white chocolate dome",
-          "price": 599,
+          "price": 499,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1800,7 +1800,7 @@
           "id": "food-dessert-005",
           "name": "Gelato and Chef Choice Ice Cream",
           "description": "Chocolate, saffron & pista",
-          "price": 300,
+          "price": 299,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1815,7 +1815,7 @@
           "id": "food-dessert-006",
           "name": "Classic Walnut Brownie with Vanilla Ice Cream",
           "description": "Amante chef special desserts serve with choice of ice cream",
-          "price": 599,
+          "price": 399,
           "category": "desserts",
           "dietary": [
             "veg",
@@ -1834,7 +1834,7 @@
           "id": "food-dessert-007",
           "name": "Kesari Rasmalai",
           "description": "Cold cottage cheese dumplings, saffron milk syrup",
-          "price": 449,
+          "price": 399,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1848,7 +1848,7 @@
           "id": "food-dessert-008",
           "name": "Classic Pistachio Shahi Kunafa",
           "description": "Creamy crispy golden kunafa pistachio dust with ice cream",
-          "price": 599,
+          "price": 399,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1864,7 +1864,7 @@
           "id": "food-dessert-011",
           "name": "Mawa Bati",
           "description": "Saffron & Pista, almond stuffed fried dip in syrup interactive desserts",
-          "price": 599,
+          "price": 399,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1875,7 +1875,7 @@
           "id": "food-dessert-012",
           "name": "Akhrot Halwa",
           "description": "Saffron & Pista, almond stuffed chef interactive desserts",
-          "price": 799,
+          "price": 499,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1897,7 +1897,7 @@
           "id": "food-dessert-016",
           "name": "Mix Fruits Cremieux",
           "description": "Fresh fruits, cream custard, Vanilla ice cream",
-          "price": 399,
+          "price": 299,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1908,7 +1908,7 @@
           "id": "food-dessert-017",
           "name": "Baked Cheese Cake with Sour Cherry Compote",
           "description": "Amante chef special desserts serve with choice of ice cream",
-          "price": 449,
+          "price": 349,
           "category": "desserts",
           "dietary": [
             "veg"
@@ -1919,11 +1919,42 @@
           "id": "food-dessert-018",
           "name": "Apple Cinnamon Tart with Vanilla Ice Cream",
           "description": "Amante chef special desserts serve with choice of ice cream",
-          "price": 449,
+          "price": 299,
           "category": "desserts",
           "dietary": [
             "veg"
           ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-019",
+          "name": "Amante Kulfi Faluda Delite",
+          "description": "Saffron & Pista, almond stuffed Faluda chef interactive desserts",
+          "price": 299,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dessert-020",
+          "name": "Belgium Chocolate Mousse",
+          "description": "Toasted marshmallow, caramelized nuts, served with choice of ice cream",
+          "price": 459,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
+          "isChefSpecial": true,
           "isAvailable": true
         }
       ]
