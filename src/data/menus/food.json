@@ -55,18 +55,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-005",
-          "name": "Bharwan Paneer Tikka",
-          "description": "Marinated stuffed cottage cheese with Indian spice",
-          "price": 599,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isRecommended": true,
-          "isAvailable": true
-        },
-        {
           "id": "food-app-006",
           "name": "Peri Peri Truffle Fries",
           "description": "Peri peri spiced truffle fries",
@@ -184,28 +172,6 @@
           "name": "Hunan Chilli Tofu",
           "description": "Sliced Silken Tofu, cottage cheese celery and burnt chili",
           "price": 699,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-021",
-          "name": "Malai Lahsuni Soya Chap",
-          "description": "Yogurt, creamy, garlic, Indian spice hari chutney",
-          "price": 599,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-022",
-          "name": "Mango Makai Chonda Ki Tiki",
-          "description": "Crispy fried makai ki tiki served with dip",
-          "price": 499,
           "category": "appetizers",
           "dietary": [
             "veg"
@@ -392,6 +358,17 @@
           "id": "food-app-041",
           "name": "Mushroom Cream Cheese Dimsum",
           "description": "Delicate dumplings filled with mushroom and cream cheese",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-042",
+          "name": "Veg Galouti Kebab",
+          "description": "Melt-in-mouth vegetarian kebab with aromatic spices, served with warqi paratha",
           "price": 699,
           "category": "appetizers",
           "dietary": [
@@ -689,17 +666,6 @@
           "name": "Hungarian Mushroom Soup",
           "description": "Hungarian style cream of Mushroom soup",
           "price": 599,
-          "category": "soups",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-soup-013",
-          "name": "Thai Signature Tom Yum Soup",
-          "description": "Thai herb, basil, spice signature broth (Veg/Chicken/Prawns)",
-          "price": 499,
           "category": "soups",
           "dietary": [
             "veg"
@@ -1126,17 +1092,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-indian-018",
-          "name": "Kacchi Mirchi Ka Murgh",
-          "description": "Boneless chicken tempered with chilies, coriander seeds and cooked with fresh tomato",
-          "price": 799,
-          "category": "indian",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-indian-019",
           "name": "Chef Special Bhopali Kadak Nath",
           "description": "KadakNath chicken chef special Indian spices, cooked with chop base gravy",
@@ -1259,17 +1214,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-indian-030",
-          "name": "Home Style Curry Egg",
-          "description": "Eggs tempered with chilies, coriander seeds and cooked with fresh tomato",
-          "price": 499,
-          "category": "indian-mains",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-indian-031",
           "name": "Wild Mushroom Risotto",
           "description": "Creamy arborio rice with mushrooms, parmesan and cream",
@@ -1299,17 +1243,6 @@
       "description": "Aromatic rice dishes",
       "displayOrder": 9,
       "items": [
-        {
-          "id": "food-rice-001",
-          "name": "Vegetable Tawa Pulao",
-          "description": "Tawa style vegetable pulao",
-          "price": 499,
-          "category": "rice-biryani",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
         {
           "id": "food-rice-002",
           "name": "Dum Pukht Vegetable Pulao",
