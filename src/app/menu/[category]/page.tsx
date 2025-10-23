@@ -55,13 +55,15 @@ interface Menu {
   categories: MenuCategory[];
 }
 
-export default function MenuPage({ params }: { params: { category: string } }) {
+export default function MenuPage({ params }: { params: Promise<{ category: string }> | { category: string } }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showVegOnly, setShowVegOnly] = useState(false);
 
-  const menu = menus[params.category as keyof typeof menus] as Menu;
-  const themeColor = categoryColors[params.category as keyof typeof categoryColors];
+  // Handle both sync and async params for Next.js 15 compatibility
+  const category = 'category' in params ? params.category : 'food';
+  const menu = menus[category as keyof typeof menus] as Menu;
+  const themeColor = categoryColors[category as keyof typeof categoryColors];
 
   // Flatten all items and filter
   const allItems = useMemo(() => {
@@ -180,7 +182,7 @@ export default function MenuPage({ params }: { params: { category: string } }) {
 
           {/* Filters */}
           <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
-            {params.category === 'food' && (
+            {category === 'food' && (
               <button
                 onClick={() => setShowVegOnly(!showVegOnly)}
                 className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${

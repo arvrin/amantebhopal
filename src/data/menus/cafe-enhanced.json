@@ -1,0 +1,631 @@
+{
+  "venue": "cafe",
+  "name": "Caf\u00e9 Menu",
+  "description": "Artisan coffee & fresh delights",
+  "tagline": "Your daily dose of happiness",
+  "categories": [
+    {
+      "id": "hot-coffee",
+      "name": "Hot Coffee",
+      "description": "Freshly brewed classics",
+      "displayOrder": 1,
+      "items": [
+        {
+          "id": "cafe-hot-001",
+          "name": "Espresso",
+          "description": "40ml",
+          "price": 149,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-002",
+          "name": "Doppio",
+          "description": "80ml double shot",
+          "price": 179,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-003",
+          "name": "Americano",
+          "description": "Espresso with hot water",
+          "price": 179,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-004",
+          "name": "Cappuccino",
+          "description": "Espresso with steamed milk foam",
+          "price": 199,
+          "category": "hot-coffee",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": [
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-hot-005",
+          "name": "Caf\u00e9 Latte",
+          "description": "Smooth espresso with steamed milk",
+          "price": 199,
+          "category": "hot-coffee",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": [
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-hot-006",
+          "name": "Flat White",
+          "description": "Ristretto with microfoam",
+          "price": 199,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-007",
+          "name": "Piccolo (Cortado)",
+          "description": "Small latte, perfect balance of espresso and milk",
+          "price": 189,
+          "category": "hot-coffee",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-007",
+          "name": "Macchiato",
+          "description": "Espresso marked with foam",
+          "price": 169,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-008",
+          "name": "Dark Mocha",
+          "description": "Espresso with dark chocolate",
+          "price": 219,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-009",
+          "name": "Hot Chocolate",
+          "description": "Rich creamy hot chocolate",
+          "price": 219,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-010",
+          "name": "Nutella Caf\u00e9",
+          "description": "Espresso with Nutella",
+          "price": 249,
+          "category": "hot-coffee",
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        },
+        {
+          "id": "cafe-hot-011",
+          "name": "Affogato Chocolate",
+          "description": "Espresso shot over ice cream",
+          "price": 239,
+          "category": "hot-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "hot",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "iced-coffee",
+      "name": "Iced Coffee",
+      "description": "Cool & refreshing",
+      "displayOrder": 2,
+      "items": [
+        {
+          "id": "cafe-iced-001",
+          "name": "Iced Americano",
+          "description": "Espresso over ice with cold water",
+          "price": 199,
+          "category": "iced-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "iced"
+          ]
+        },
+        {
+          "id": "cafe-iced-002",
+          "name": "Iced Latte",
+          "description": "Espresso with cold milk over ice",
+          "price": 199,
+          "category": "iced-coffee",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "iced",
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-iced-003",
+          "name": "Iced Mocha",
+          "description": "Espresso with chocolate and cold milk",
+          "price": 229,
+          "category": "iced-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "iced"
+          ]
+        },
+        {
+          "id": "cafe-iced-004",
+          "name": "Iced Flat White",
+          "description": "Ristretto with cold microfoam",
+          "price": 199,
+          "category": "iced-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "iced"
+          ]
+        },
+        {
+          "id": "cafe-iced-005",
+          "name": "Iced Amante House Brew",
+          "description": "Our signature cold brew",
+          "price": 199,
+          "category": "iced-coffee",
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "iced"
+          ]
+        },
+        {
+          "id": "cafe-iced-006",
+          "name": "Tonic Water Espresso",
+          "description": "Espresso with tonic water",
+          "price": 249,
+          "category": "iced-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "iced"
+          ]
+        },
+        {
+          "id": "cafe-iced-007",
+          "name": "Tropical Iced Americano",
+          "description": "Americano with tropical twist",
+          "price": 249,
+          "category": "iced-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "iced"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flavoured-coffee",
+      "name": "Flavoured Coffee",
+      "description": "Hot or iced with your choice of flavor",
+      "displayOrder": 3,
+      "items": [
+        {
+          "id": "cafe-flav-001",
+          "name": "Vanilla Cappuccino/Latte",
+          "description": "Hot or iced",
+          "price": 219,
+          "category": "flavoured-coffee",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "flavored",
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-flav-002",
+          "name": "Hazelnut Cappuccino/Latte",
+          "description": "Hot or iced",
+          "price": 219,
+          "category": "flavoured-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "flavored"
+          ]
+        },
+        {
+          "id": "cafe-flav-003",
+          "name": "Caramel Cappuccino/Latte",
+          "description": "Hot or iced",
+          "price": 219,
+          "category": "flavoured-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "flavored"
+          ]
+        },
+        {
+          "id": "cafe-flav-004",
+          "name": "Irish Cappuccino/Latte",
+          "description": "Hot or iced",
+          "price": 219,
+          "category": "flavoured-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "flavored"
+          ]
+        },
+        {
+          "id": "cafe-flav-005",
+          "name": "Pumpkin Cappuccino/Latte",
+          "description": "Hot or iced",
+          "price": 219,
+          "category": "flavoured-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "flavored"
+          ]
+        },
+        {
+          "id": "cafe-flav-006",
+          "name": "Lavender Cappuccino/Latte",
+          "description": "Hot or iced",
+          "price": 219,
+          "category": "flavoured-coffee",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "flavored"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frappes",
+      "name": "Frapp\u00e9s",
+      "description": "Blended cold coffee drinks",
+      "displayOrder": 4,
+      "items": [
+        {
+          "id": "cafe-frappe-001",
+          "name": "Caf\u00e9 Frapp\u00e9",
+          "description": "Classic blended coffee",
+          "price": 269,
+          "category": "frappes",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "blended",
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-frappe-002",
+          "name": "Salted Caramel Frapp\u00e9",
+          "description": "Caramel with a hint of salt",
+          "price": 299,
+          "category": "frappes",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "blended"
+          ]
+        },
+        {
+          "id": "cafe-frappe-003",
+          "name": "Matcha Frapp\u00e9",
+          "description": "Japanese green tea blend",
+          "price": 309,
+          "category": "frappes",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "blended"
+          ]
+        },
+        {
+          "id": "cafe-frappe-004",
+          "name": "Vanilla Frapp\u00e9",
+          "description": "Smooth vanilla blend",
+          "price": 289,
+          "category": "frappes",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "blended"
+          ]
+        },
+        {
+          "id": "cafe-frappe-005",
+          "name": "Hazelnut Frapp\u00e9",
+          "description": "Nutty and delicious",
+          "price": 299,
+          "category": "frappes",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "blended"
+          ]
+        },
+        {
+          "id": "cafe-frappe-006",
+          "name": "Pumpkin Frapp\u00e9",
+          "description": "Seasonal favorite",
+          "price": 309,
+          "category": "frappes",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "blended"
+          ]
+        },
+        {
+          "id": "cafe-frappe-007",
+          "name": "Irish Frapp\u00e9",
+          "description": "Irish cream blend",
+          "price": 299,
+          "category": "frappes",
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "cold",
+          "tags": [
+            "blended"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shakes",
+      "name": "Shakes",
+      "description": "Thick & creamy milkshakes",
+      "displayOrder": 5,
+      "items": [
+        {
+          "id": "cafe-shake-001",
+          "name": "Vanilla Shake",
+          "description": "Classic vanilla milkshake",
+          "price": 279,
+          "category": "shakes",
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": []
+        },
+        {
+          "id": "cafe-shake-002",
+          "name": "Mango Shake",
+          "description": "Fresh mango milkshake",
+          "price": 289,
+          "category": "shakes",
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": []
+        },
+        {
+          "id": "cafe-shake-003",
+          "name": "Oreo Shake",
+          "description": "Cookies & cream delight",
+          "price": 329,
+          "category": "shakes",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": [
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-shake-004",
+          "name": "KitKat Shake",
+          "description": "Chocolate wafer shake",
+          "price": 329,
+          "category": "shakes",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": [
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-shake-005",
+          "name": "Lotus Biscoff Shake",
+          "description": "Caramelized biscuit shake",
+          "price": 339,
+          "category": "shakes",
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": []
+        },
+        {
+          "id": "cafe-shake-006",
+          "name": "Ferrero Rocher Shake",
+          "description": "Hazelnut chocolate shake",
+          "price": 339,
+          "category": "shakes",
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": []
+        },
+        {
+          "id": "cafe-shake-007",
+          "name": "Brownie Shake",
+          "description": "Chocolate brownie blend",
+          "price": 299,
+          "category": "shakes",
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": []
+        },
+        {
+          "id": "cafe-shake-008",
+          "name": "Pumpkin Shake",
+          "description": "Spiced pumpkin shake",
+          "price": 339,
+          "category": "shakes",
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": []
+        },
+        {
+          "id": "cafe-shake-009",
+          "name": "Pistachio Shake",
+          "description": "Creamy pistachio shake",
+          "price": 339,
+          "category": "shakes",
+          "isAvailable": true,
+          "beverageType": "shakes",
+          "temperature": "cold",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "id": "specials",
+      "name": "Specials",
+      "description": "Amante signature creations",
+      "displayOrder": 6,
+      "items": [
+        {
+          "id": "cafe-special-001",
+          "name": "Affogato Coffee",
+          "description": "Espresso shot poured over vanilla ice cream",
+          "price": 259,
+          "category": "specials",
+          "isRecommended": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "signature",
+            "popular"
+          ]
+        },
+        {
+          "id": "cafe-special-002",
+          "name": "Pistachio Affogato",
+          "description": "Espresso over pistachio ice cream",
+          "price": 279,
+          "category": "specials",
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "beverageType": "coffee",
+          "temperature": "both",
+          "tags": [
+            "signature"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "add-ons",
+      "name": "Add-ons & Options",
+      "description": "Customize your drink",
+      "displayOrder": 7,
+      "items": [
+        {
+          "id": "cafe-addon-001",
+          "name": "Extra Espresso Shot",
+          "description": "Add an extra shot to any drink",
+          "price": 59,
+          "category": "add-ons",
+          "isAvailable": true,
+          "beverageType": "add-ons",
+          "temperature": "n/a",
+          "tags": []
+        },
+        {
+          "id": "cafe-addon-002",
+          "name": "Alternative Milk",
+          "description": "Oat / Soy / Almond / Coconut milk",
+          "price": 70,
+          "category": "add-ons",
+          "isAvailable": true,
+          "beverageType": "add-ons",
+          "temperature": "n/a",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2025-10-17T00:00:00Z"
+}

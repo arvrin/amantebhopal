@@ -1,0 +1,2814 @@
+{
+  "venue": "food",
+  "name": "Food Menu",
+  "description": "Chowing down on the good stuff from the world",
+  "tagline": "A celebration of passion on a plate",
+  "categories": [
+    {
+      "id": "appetizers",
+      "name": "Appetizers & Starters",
+      "description": "Start your culinary journey",
+      "displayOrder": 1,
+      "items": [
+        {
+          "id": "food-app-001",
+          "name": "Yasai Yakitori",
+          "description": "Zucchini, broccoli, bell pepper, tofu, spring onion, yakitori sauce - Japanese vegetable skewers",
+          "price": 549,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-002",
+          "name": "Crispy Lotus Stem Plum Chili Sauce",
+          "description": "Crispy fried imported lotus stem tossed in plum chili sauce",
+          "price": 549,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-003",
+          "name": "Silken Tofu Tempura Tacos Bao",
+          "description": "Sriracha spicy mayo, roasted chili sauce, teriyaki sauce",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-004",
+          "name": "Vegetable Togarashi Tempura",
+          "description": "Broccoli, bamboo shoots, carrot, zucchini, onion, bell pepper, togarashi spice sauce",
+          "price": 549,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-006",
+          "name": "Peri Peri Truffle Fries",
+          "description": "Peri peri spiced truffle fries",
+          "price": 299,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-007",
+          "name": "Truffle Mushroom Bruschetta",
+          "description": "Tossed mushroom, brown bread, parmesan, truffle oil",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-008",
+          "name": "Thai Glass Noodle Vegetable Spring Roll",
+          "description": "Crunchy sheets, Asian greens, glass noodle, sweet chili sauce",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-009",
+          "name": "Hunan Chilli Crispy Corn Kernels",
+          "description": "Stir fry crispy corn, celery and burnt chili, togarashi",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": 4,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-011",
+          "name": "Shrimp Tempura",
+          "description": "Togarashi aioli, spring onion, lime, tiger milk spicy mayo",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-012",
+          "name": "Chicken Teriyaki Skewers",
+          "description": "Teriyaki chicken skewers, seven spice mix and scallion",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-013",
+          "name": "Chicken Lollipop",
+          "description": "Classic chicken lollipop",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-014",
+          "name": "Bharwan Angara Murgh Tikka",
+          "description": "Marinated stuffed chicken breast in Indian spice",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-015",
+          "name": "Lehsuni Malai Murg Tikka",
+          "description": "Garlic flavor murg tikka served with garlic yogurt chutney",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-019",
+          "name": "Crispy Togarashi Fried Corn Kernels",
+          "description": "Japanese shichimi spice crispy corn chili oil",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-020",
+          "name": "Hunan Chilli Tofu",
+          "description": "Sliced Silken Tofu, cottage cheese celery and burnt chili",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-023",
+          "name": "Spinach Ricotta Vol-au-vent",
+          "description": "Crispy puff creamy spinach served with ricotta herb cheese",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-024",
+          "name": "Corn and Truffle Mushroom Crispy Ravioli",
+          "description": "Crispy fried ravioli creamy spinach served with anticuchera sauce",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-025",
+          "name": "Sumac Spice Crispy Fried Fish",
+          "description": "Avocado puree, sumac spice, ponzu mayo chimichuri",
+          "price": 899,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-027",
+          "name": "Dry Nuts Gilafi Mutton Seekh Kebab",
+          "description": "Indian spiced minced lamb with mint chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-028",
+          "name": "Nawabi Tangdi Kebab",
+          "description": "Stuffed chicken drumsticks leg, served with Dhaniya pudina ki chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-029",
+          "name": "Bhopali Murgh Tikka Mirza",
+          "description": "Marinated boneless chicken in Indian spice",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-030",
+          "name": "Schezwan King Prawns",
+          "description": "RCP crisp prawns' chef interactive on flavored",
+          "price": 999,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-032",
+          "name": "Amante Special Tandoori Bater (Quail)",
+          "description": "Garlic flavor tandoori quail's tikka served with garlic yogurt green chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-033",
+          "name": "Crispy Chilli Baby Corn",
+          "description": "Crispy baby corn tossed in spicy chili sauce",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-034",
+          "name": "Paneer Peshawari Tikka",
+          "description": "Marinated stuffed cottage cheese with Indian spices",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-035",
+          "name": "Hunan Chilli Tofu",
+          "description": "Sliced silken tofu, celery and burnt chili",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-036",
+          "name": "Hunan Chilli Cottage Cheese",
+          "description": "Sliced cottage cheese, celery and burnt chili",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-037",
+          "name": "Soya Chaap Achari",
+          "description": "Yogurt, creamy, garlic, Indian spice with tangy pickle flavor",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-038",
+          "name": "Soya Chaap Malai",
+          "description": "Creamy yogurt and garlic marinated soya chaap with hari chutney",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-039",
+          "name": "Bhutte De Kebab",
+          "description": "Crispy fried corn patties served with dip",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-040",
+          "name": "Lukhnawi Mutton Galouti Kebab",
+          "description": "Mutton mince with Indian spices, smoky flavored, served with warqi paratha",
+          "price": 999,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-app-041",
+          "name": "Mushroom Cream Cheese Dimsum",
+          "description": "Delicate dumplings filled with mushroom and cream cheese",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-app-042",
+          "name": "Veg Galouti Kebab",
+          "description": "Melt-in-mouth vegetarian kebab with aromatic spices, served with warqi paratha",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        }
+      ]
+    },
+    {
+      "id": "dim-sums",
+      "name": "Dim Sums, Bao & Gyoza",
+      "description": "Asian delicacies",
+      "displayOrder": 2,
+      "items": [
+        {
+          "id": "food-dim-001",
+          "name": "Vegetable Edamame Asparagus Gyoza",
+          "description": "Pok choy, Asian vegetables, edamame, asparagus, fried dumpling, coral tuile",
+          "price": 699,
+          "category": "dim-sums",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dim-002",
+          "name": "Wild Mushroom Asparagus Crystal Dumpling",
+          "description": "Black fungus shitake, Asian vegetables, asparagus, tomato garlic sauce",
+          "price": 699,
+          "category": "dim-sums",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-dim-003",
+          "name": "Prawn and Water Chestnut Hargao",
+          "description": "Steamed shrimps and water chestnut dumplings served with scallion sauce",
+          "price": 799,
+          "category": "dim-sums",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-dim-004",
+          "name": "Pickled Celery Ginger Chicken Gyoza",
+          "description": "Pickled ginger, chicken, carrot, spring onion, pan fried dumpling",
+          "price": 699,
+          "category": "dim-sums",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-dim-005",
+          "name": "Katsu Hoi Sin Chicken Bao Wagamama",
+          "description": "Crispy chicken, Aji Amarillo, Asian vegetables and hoi sin sauce",
+          "price": 799,
+          "category": "dim-sums",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "Salads",
+      "description": "Fresh & healthy options",
+      "displayOrder": 3,
+      "items": [
+        {
+          "id": "food-salad-001",
+          "name": "Bamboo Shoots Avocado Salad",
+          "description": "Baby spinach, chimichurri, smoked avocado, miso yuzu, lemon zest dressing, cherry tomato, fresh blueberry",
+          "price": 599,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-salad-002",
+          "name": "Thai Grilled Chicken Salad",
+          "description": "Thinly sliced grilled chicken, olive oil, spring mix Asian vegetable, toasted basil sesame",
+          "price": 799,
+          "category": "salads",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-salad-003",
+          "name": "Lebanese Mezze Platter",
+          "description": "Garlic hummus, beetroot hummus, pickled vegetables, baba ghanous, tzatziki, lavash, pita bread, and falafel",
+          "price": 899,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-salad-004",
+          "name": "Classic Caesar Salad",
+          "description": "Crisp iceberg, parmesan, garlic croutons, and creamy Caesar dressing",
+          "price": 699,
+          "category": "salads",
+          "dietary": [
+            "veg",
+            "contains-egg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-salad-005",
+          "name": "Classic Caesar Salad with Chicken",
+          "description": "Crisp iceberg, parmesan, garlic croutons, creamy Caesar dressing with grilled chicken",
+          "price": 799,
+          "category": "salads",
+          "dietary": [
+            "non-veg",
+            "contains-egg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-salad-006",
+          "name": "M\u00e9lange of Nuts Mix Fruits Chat",
+          "description": "Orange segments, Caramelized cashew nut & nuts, fresh mint, iceberg lettuce",
+          "price": 799,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-salad-007",
+          "name": "Nachos King Founded Platter",
+          "description": "Avocado salsa, tomato salsa crispy nachos, sour cream, Dijon mustard mayo",
+          "price": 699,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-salad-008",
+          "name": "Healthy Garden Green Sprout Salad",
+          "description": "Mix sprout flax seed and pumpkin seed, version olive oil with caramelized walnuts",
+          "price": 699,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-salad-009",
+          "name": "Chef Interactive Greek Salad",
+          "description": "Fresh garden green capsicum, feta, onion, cucumber, Cherry tomato",
+          "price": 599,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-salad-010",
+          "name": "Indian Garden Green Salad",
+          "description": "Seasonal local vegetable salad",
+          "price": 299,
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        }
+      ]
+    },
+    {
+      "id": "soups",
+      "name": "Soups, Broth & Ramen",
+      "description": "Warm and comforting",
+      "displayOrder": 4,
+      "items": [
+        {
+          "id": "food-soup-001",
+          "name": "Cream of Tomato Soup",
+          "description": "Oven roasted tomato basil creamy soup",
+          "price": 399,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-soup-002",
+          "name": "Vegetable Ramen",
+          "description": "Ponzu broth, tofu, bamboo shoots, bok choy, mushroom",
+          "price": 599,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-soup-003",
+          "name": "Wild Mushroom Quinoa Soup",
+          "description": "Mushroom, quinoa and broth",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-soup-004",
+          "name": "Thai Signature Tom Yum Soup (Veg)",
+          "description": "Thai herb, basil, spice signature broth",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": 3,
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "popular",
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-soup-005",
+          "name": "Thai Signature Tom Yum Soup (Chicken)",
+          "description": "Thai herb, basil, spice signature broth with chicken",
+          "price": 599,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "popular",
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-soup-006",
+          "name": "Chicken Shio Ramen",
+          "description": "Spiced chicken broth, panko crumbed chicken, marinated eggs, bamboo shoots, bok choy",
+          "price": 599,
+          "category": "soups",
+          "dietary": [
+            "non-veg",
+            "contains-egg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-soup-008",
+          "name": "Tomato Dhaniya Ka Shorba",
+          "description": "Vegetable stock tomato coriander Indian spice broth",
+          "price": 399,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-soup-009",
+          "name": "Hong Kong Hot and Sour Soup",
+          "description": "Vegetable stock bamboo shoot coriander scallion and Asian bread",
+          "price": 399,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-soup-010",
+          "name": "Hungarian Mushroom Soup",
+          "description": "Hungarian style cream of Mushroom soup",
+          "price": 599,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-soup-015",
+          "name": "Badami Murgh Yakini Shorba",
+          "description": "Bhopal murgh Indian spice shorba, Almond Flake",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-soup-016",
+          "name": "Burmese Khowsuey",
+          "description": "Burmese traditional coconut creamy soup serve with noodle and rice",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "description": "Fresh Japanese rolls",
+      "displayOrder": 5,
+      "items": [
+        {
+          "id": "food-sushi-001",
+          "name": "Amante Midori Roll",
+          "description": "Avocado, asparagus, tender spinach, dry miso and Japanese mayo",
+          "price": 899,
+          "category": "sushi",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-sushi-002",
+          "name": "Crisp Amante Uramaki",
+          "description": "Avocado & asparagus tempura, teriyaki sauce, cream cheese",
+          "price": 1199,
+          "category": "sushi",
+          "dietary": [
+            "veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-sushi-003",
+          "name": "Shrimp Tempura Crispy Uramaki",
+          "description": "Tempura fried prawns, cucumber, asparagus, avocado, cream cheese",
+          "price": 1299,
+          "category": "sushi",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-sushi-004",
+          "name": "Grilled Chicken Avocado Spicy Roll",
+          "description": "Chicken, avocado, togarashi mayo, wasabi vegetable tobiko",
+          "price": 1099,
+          "category": "sushi",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-sushi-008",
+          "name": "Sushi Fish Tempura Rolls",
+          "description": "Tempura fish, avocado, pickled cucumber, wasabi tobiko",
+          "price": 1299,
+          "category": "sushi",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "burgers-sandwiches",
+      "name": "Burgers & Sandwiches",
+      "description": "Choice of white, brown, or multigrain bread",
+      "displayOrder": 6,
+      "items": [
+        {
+          "id": "food-burger-001",
+          "name": "Amante Special Vegetable Burger",
+          "description": "Minced grilled vegetable patties, iceberg lettuce and tomato",
+          "price": 499,
+          "category": "burgers-sandwiches",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-burger-002",
+          "name": "Amante Special Chicken Burger",
+          "description": "Minced grilled chicken patties, iceberg lettuce and tomato",
+          "price": 599,
+          "category": "burgers-sandwiches",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-sandwich-001",
+          "name": "Amante Chef Special Chicken Club Sandwich",
+          "description": "Toasted bread, cheese, chicken served with French fries and mustard sauce",
+          "price": 699,
+          "category": "burgers-sandwiches",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-sandwich-002",
+          "name": "Amante Chef Special Vegetable Club Sandwich",
+          "description": "Toasted bread, cheese, vegetable served with French fries and mustard sauce",
+          "price": 599,
+          "category": "burgers-sandwiches",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-burger-007",
+          "name": "Amante Chef Special Vegetable Grilled Sandwich",
+          "description": "Grilled vegetable lettuce tomato cucumber with French fries and mustard sauce",
+          "price": 499,
+          "category": "burgers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-burger-008",
+          "name": "Amante Chef Special Chicken Grilled Sandwich",
+          "description": "Grilled vegetable lettuce chicken with French fries and mustard sauce",
+          "price": 599,
+          "category": "burgers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "description": "Italian classics",
+      "displayOrder": 7,
+      "items": [
+        {
+          "id": "food-pizza-001",
+          "name": "Classic Burrata Pizza",
+          "description": "Burrata, Napolitana sauce, rocket leaves, olive dust, drizzle with basil oil",
+          "price": 699,
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-pizza-002",
+          "name": "Classic Margarita Pizza",
+          "description": "Thin base, basil leaves, pesto oil, and drizzle",
+          "price": 899,
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-pizza-003",
+          "name": "Pizza Paneer Tikka",
+          "description": "Grilled vegetable, paneer tikka, tomato sauce, mozzarella",
+          "price": 999,
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-pizza-004",
+          "name": "Pizza Grilled Chicken Divola",
+          "description": "Grilled chicken, Kalamata olives, ricotta, tomato sauce, basil, mozzarella",
+          "price": 1099,
+          "category": "pizza",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-pizza-006",
+          "name": "Pizza Latin Aioli & Quattro Fromage",
+          "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella",
+          "price": 999,
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-pizza-008",
+          "name": "Pizza Pollo Indiana",
+          "description": "Indian Spiced Chicken, cheese, tomato, bell peppers, onion",
+          "price": 899,
+          "category": "pizza",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "indian-mains",
+      "name": "Indian Main Course",
+      "description": "Authentic Indian flavors",
+      "displayOrder": 8,
+      "items": [
+        {
+          "id": "food-indian-001",
+          "name": "Faldaari Kofta Curry",
+          "description": "Cottage cheese, dry fruits, fresh fruits with creamy cashew gravy",
+          "price": 599,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "nuts",
+            "dairy"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-002",
+          "name": "Amante Chef Interactive Kaju Makhana Curry",
+          "description": "Roasted cashew, makhana, Amante rich gravy",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "nuts",
+            "dairy"
+          ],
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-003",
+          "name": "Paneer Makhani",
+          "description": "Spicy cottage cheese, tomato, Indian spice",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": 2,
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "popular"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-004",
+          "name": "Dal Double Tadka",
+          "description": "Lentil cooked in tomato, Indian spice",
+          "price": 599,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-005",
+          "name": "Amante Chef Special Dal Makhani",
+          "description": "Black lentil cooked in creamy tomato, Indian spice",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isChefSpecial": true,
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-006",
+          "name": "Chef Special Butter Chicken",
+          "description": "Amante chef special Bhopali chicken, red gravy, buttery, creamy base, Indian spice",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 2,
+          "isChefSpecial": true,
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "popular"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-007",
+          "name": "Bhopali Mutton Nihari",
+          "description": "Bhopal mutton nali, Amante chef special rich gravy",
+          "price": 999,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-008",
+          "name": "Chef Special Bhopali KadakNath",
+          "description": "KadakNath chicken, chef special Indian spices, cooked with chop base gravy",
+          "price": 1499,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 4,
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-010",
+          "name": "Amante Gunchaw Subzi",
+          "description": "Minced cauliflower with vilayeti subzi, green chili coriander",
+          "price": 499,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-011",
+          "name": "Chefs' Special Vegetable Korma",
+          "description": "Seasonal local vegetable potato, green peas",
+          "price": 599,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-012",
+          "name": "Lehsuni Bhuna Palak",
+          "description": "Minced spinach with garlic tomato and chili",
+          "price": 599,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-013",
+          "name": "Subz Nizami Handi",
+          "description": "Mix seasonal local vegetable spinach Indian spice",
+          "price": 699,
+          "category": "indian",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-015",
+          "name": "Mutton Rogan Josh",
+          "description": "Bhopali mutton Amante chef special rogan josh",
+          "price": 999,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-017",
+          "name": "Chef Special Chicken Tikka Keema Masala",
+          "description": "Amante chef special Bhopali minced chicken, Indian spice",
+          "price": 899,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-019",
+          "name": "Chef Special Bhopali Kadak Nath",
+          "description": "KadakNath chicken chef special Indian spices, cooked with chop base gravy",
+          "price": 1499,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-020",
+          "name": "Chef Special Bhopali Bater",
+          "description": "Slow cook Quail in chef choice spices",
+          "price": 999,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-021",
+          "name": "Vilayti Subzi",
+          "description": "Minced cauliflower with exotic vegetables, green chili and coriander",
+          "price": 499,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-022",
+          "name": "Aloo Gobhi Adrak",
+          "description": "Mixed seasonal local vegetables with spinach and Indian spices",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-023",
+          "name": "Paneer Lababdar",
+          "description": "Rich cottage cheese curry in creamy tomato gravy",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-024",
+          "name": "Shahi Paneer",
+          "description": "Cottage cheese in rich, creamy cashew and tomato gravy",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-025",
+          "name": "Paneer Butter Masala",
+          "description": "Cottage cheese in smooth butter tomato sauce",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-026",
+          "name": "Paneer Tikka Masala",
+          "description": "Grilled cottage cheese in spiced tomato curry",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-027",
+          "name": "Lehsuni Palak Paneer",
+          "description": "Cottage cheese in garlic-flavored spinach gravy",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-028",
+          "name": "Chef Special Laal Maas",
+          "description": "Authentic Rajasthani mutton with Indian spices",
+          "price": 1099,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "isChefSpecial": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-029",
+          "name": "Home Style Curry Chicken",
+          "description": "Boneless chicken tempered with chilies, coriander seeds and cooked with fresh tomato",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-indian-031",
+          "name": "Wild Mushroom Risotto",
+          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
+          "price": 799,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-indian-032",
+          "name": "Grilled Chicken with Baby Potato",
+          "description": "Tender grilled chicken served with roasted baby potatoes",
+          "price": 799,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "rice-biryani",
+      "name": "Rice, Pulao & Biryani",
+      "description": "Aromatic rice dishes",
+      "displayOrder": 9,
+      "items": [
+        {
+          "id": "food-rice-002",
+          "name": "Dum Pukht Vegetable Pulao",
+          "description": "Slow cooked vegetable pulao",
+          "price": 599,
+          "category": "rice-biryani",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-rice-003",
+          "name": "Hyderabadi Chicken Dum Biryani",
+          "description": "Authentic Hyderabadi style chicken biryani",
+          "price": 799,
+          "category": "rice-biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-rice-004",
+          "name": "Hyderabadi Mutton Dum Biryani",
+          "description": "Authentic Hyderabadi style mutton biryani",
+          "price": 999,
+          "category": "rice-biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-rice-005",
+          "name": "Amante Chef Signature Pulao",
+          "description": "Dry fruits, long grain rice, saffron, khada masala",
+          "price": 699,
+          "category": "rice-biryani",
+          "dietary": [
+            "veg"
+          ],
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-rice-006",
+          "name": "Burnt Garlic Chicken Fried Rice",
+          "description": "Stir-fried rice with burnt garlic and chicken",
+          "price": 599,
+          "category": "rice-biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-rice-009",
+          "name": "Steamed Rice, Jeera Rice, Curd Rice",
+          "description": "Choice of steamed, jeera or curd rice",
+          "price": 499,
+          "category": "rice",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        }
+      ]
+    },
+    {
+      "id": "breads",
+      "name": "Hot Clay Pot & Tandoor",
+      "description": "Fresh baked breads",
+      "displayOrder": 10,
+      "items": [
+        {
+          "id": "food-bread-001",
+          "name": "Tandoori Roti",
+          "description": "Classic tandoori roti",
+          "price": 59,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-bread-002",
+          "name": "Missi Roti",
+          "description": "Gram flour roti",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-bread-003",
+          "name": "Khamiri Garlic Naan",
+          "description": "Leavened garlic naan",
+          "price": 99,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-bread-004",
+          "name": "Lachha Paratha",
+          "description": "Multi-layered paratha",
+          "price": 110,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-bread-005",
+          "name": "Cheese Chilli Garlic Naan",
+          "description": "Cheese stuffed naan with chili and garlic",
+          "price": 119,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-bread-006",
+          "name": "Chef Signature Lachha Garlic Naan",
+          "description": "Special lachha naan with garlic",
+          "price": 149,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-bread-007",
+          "name": "Naan",
+          "description": "Classic Indian flatbread baked in tandoor",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-bread-008",
+          "name": "Garlic Naan",
+          "description": "Naan topped with fresh garlic and butter",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-bread-009",
+          "name": "Butter Naan",
+          "description": "Soft naan brushed with butter",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-bread-010",
+          "name": "Missi Roti",
+          "description": "Traditional Indian flatbread made with gram flour and spices",
+          "price": 79,
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "indian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta, Ravioli & Risotto",
+      "description": "Italian comfort food",
+      "displayOrder": 11,
+      "items": [
+        {
+          "id": "food-pasta-001",
+          "name": "Fettuccini Primavera with Basil Pesto",
+          "description": "Homemade fettuccini pasta, asparagus, cherry tomato, zucchini",
+          "price": 799,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-pasta-003",
+          "name": "Wild Mushroom Risotto with Porcini Cream",
+          "description": "Mushroom, parmesan, porcini dust",
+          "price": 799,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-pasta-004",
+          "name": "Amante Classic Vegetable Lasagna",
+          "description": "Homemade lasagna pasta, asparagus, broccoli, zucchini cheese sauce",
+          "price": 899,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-pasta-006",
+          "name": "Japanese Curry Bowl \u2013 Vegetarian Donburi",
+          "description": "Teppanyaki style vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
+          "price": 899,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        }
+      ]
+    },
+    {
+      "id": "grills",
+      "name": "Grills & Mains",
+      "description": "Premium proteins",
+      "displayOrder": 12,
+      "items": [
+        {
+          "id": "food-grill-001",
+          "name": "Grilled Baby Chicken",
+          "description": "Yuzu miso, Tokyo fries, house salad, thyme jus served with mashed potato",
+          "price": 799,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-grill-003",
+          "name": "Grilled Moroccan Lamb Chop",
+          "description": "Grilled lamb chop, red wine jus, truffle mash, Huancaina, roast vegetables",
+          "price": 1499,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-grill-004",
+          "name": "Chimichurri Red Mural Fish",
+          "description": "Chimichurri, lemon butter sauce, mash potato, roast vegetables",
+          "price": 999,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-grill-005",
+          "name": "Grilled King Prawns",
+          "description": "Mustard and parsley marinated prawns, potato millefeuille, habanero, and lemon zest",
+          "price": 1199,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-grill-007",
+          "name": "Lemon & Thyme Chicken Milanese",
+          "description": "Crispy breaded chicken cutlet, lemon butter sauce, lemon wedge, light mesclun and cherry tomato salad",
+          "price": 799,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-grill-008",
+          "name": "Japanese Curry Bowl \u2013 Chicken Donburi",
+          "description": "Teppanyaki style chicken, vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
+          "price": 799,
+          "category": "grills",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "continental",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "noodles",
+      "name": "Noodle Bowls",
+      "description": "Asian noodle specialties",
+      "displayOrder": 13,
+      "items": [
+        {
+          "id": "food-noodle-001",
+          "name": "Hakka Noodle Bowl (Veg)",
+          "description": "Asian vegetable, wild mushroom",
+          "price": 599,
+          "category": "noodles",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-noodle-002",
+          "name": "Hakka Noodle Bowl (Chicken)",
+          "description": "Asian vegetable, chicken",
+          "price": 699,
+          "category": "noodles",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-noodle-003",
+          "name": "Pad Thai Noodle Bowl (Veg)",
+          "description": "Rice stick noodle, vegetable, peanut, bean sprout",
+          "price": 699,
+          "category": "noodles",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-noodle-004",
+          "name": "Pad Thai Noodle Bowl (Prawns)",
+          "description": "Rice stick noodle, prawns, peanut, bean sprout",
+          "price": 799,
+          "category": "noodles",
+          "dietary": [
+            "non-veg"
+          ],
+          "allergens": [
+            "nuts"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        },
+        {
+          "id": "food-noodle-005",
+          "name": "Green Thai Curry Bowl (Chicken)",
+          "description": "Asian farm green vegetable, chicken, served with jasmine rice",
+          "price": 799,
+          "category": "noodles",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isAvailable": true,
+          "cuisine": "asian",
+          "tags": [
+            "spicy"
+          ],
+          "localDescription": "",
+          "isJainFriendly": false
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Sweet endings",
+      "displayOrder": 14,
+      "items": [
+        {
+          "id": "food-dessert-001",
+          "name": "Single Origin Chocolate Marquis",
+          "description": "64% chocolate mousse with fresh cream",
+          "price": 499,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-002",
+          "name": "Classic Tiramisu",
+          "description": "Ladyfinger biscuit dipped in coffee, mascarpone cream",
+          "price": 399,
+          "category": "desserts",
+          "dietary": [
+            "veg",
+            "contains-egg"
+          ],
+          "allergens": [
+            "dairy",
+            "eggs",
+            "gluten"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-003",
+          "name": "Joconde Fresh Fruits Dome Entremets",
+          "description": "Almond flour, fresh fruits, white chocolate dome",
+          "price": 499,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-004",
+          "name": "Earl Grey Panna Cotta",
+          "description": "Seasonal toppings",
+          "price": 399,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-005",
+          "name": "Gelato and Chef Choice Ice Cream",
+          "description": "Chocolate, saffron & pista",
+          "price": 299,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-006",
+          "name": "Classic Walnut Brownie with Vanilla Ice Cream",
+          "description": "Amante chef special desserts serve with choice of ice cream",
+          "price": 399,
+          "category": "desserts",
+          "dietary": [
+            "veg",
+            "contains-egg"
+          ],
+          "allergens": [
+            "dairy",
+            "eggs",
+            "nuts",
+            "gluten"
+          ],
+          "isRecommended": true,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "popular",
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-007",
+          "name": "Kesari Rasmalai",
+          "description": "Cold cottage cheese dumplings, saffron milk syrup",
+          "price": 399,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-008",
+          "name": "Classic Pistachio Shahi Kunafa",
+          "description": "Creamy crispy golden kunafa pistachio dust with ice cream",
+          "price": 399,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-011",
+          "name": "Mawa Bati",
+          "description": "Saffron & Pista, almond stuffed fried dip in syrup interactive desserts",
+          "price": 399,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-012",
+          "name": "Akhrot Halwa",
+          "description": "Saffron & Pista, almond stuffed chef interactive desserts",
+          "price": 499,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-013",
+          "name": "Baklava",
+          "description": "Layered phyllo pastry with honey, nuts and aromatic spices",
+          "price": 499,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-016",
+          "name": "Mix Fruits Cremieux",
+          "description": "Fresh fruits, cream custard, Vanilla ice cream",
+          "price": 299,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-017",
+          "name": "Baked Cheese Cake with Sour Cherry Compote",
+          "description": "Amante chef special desserts serve with choice of ice cream",
+          "price": 349,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-018",
+          "name": "Apple Cinnamon Tart with Vanilla Ice Cream",
+          "description": "Amante chef special desserts serve with choice of ice cream",
+          "price": 299,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-019",
+          "name": "Amante Kulfi Faluda Delite",
+          "description": "Saffron & Pista, almond stuffed Faluda chef interactive desserts",
+          "price": 299,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        },
+        {
+          "id": "food-dessert-020",
+          "name": "Belgium Chocolate Mousse",
+          "description": "Toasted marshmallow, caramelized nuts, served with choice of ice cream",
+          "price": 459,
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "dairy",
+            "nuts"
+          ],
+          "isChefSpecial": true,
+          "isAvailable": true,
+          "cuisine": "fusion",
+          "tags": [
+            "mild"
+          ],
+          "localDescription": "",
+          "isJainFriendly": true
+        }
+      ]
+    }
+  ],
+  "lastUpdated": "2025-10-17T00:00:00Z"
+}
