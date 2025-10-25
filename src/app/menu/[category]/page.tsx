@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Search, X, Leaf, Drumstick, Circle } from 'lucide-react';
+import { ArrowLeft, Search, X, Leaf, Circle } from 'lucide-react';
 
 // Import menu data
 import foodMenu from '@/data/menus/food.json';
