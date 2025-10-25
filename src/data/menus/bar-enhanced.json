@@ -1875,15 +1875,24 @@
           "id": "bar-beer-001",
           "name": "KINGFISHER ULTRA",
           "description": "330ml",
-          "price": 449,
+          "price": 399,
           "category": "beers",
           "isRecommended": true,
           "isAvailable": true,
-          "bottlePrice": 699,
           "drinkType": "beer",
           "tags": [
             "popular"
           ]
+        },
+        {
+          "id": "bar-beer-001b",
+          "name": "KINGFISHER ULTRA",
+          "description": "650ml",
+          "price": 599,
+          "category": "beers",
+          "isAvailable": true,
+          "drinkType": "beer",
+          "tags": []
         },
         {
           "id": "bar-beer-002",
@@ -1900,10 +1909,19 @@
           "id": "bar-beer-003",
           "name": "HEINEKEN",
           "description": "330ml",
-          "price": 499,
+          "price": 399,
           "category": "beers",
           "isAvailable": true,
-          "bottlePrice": 749,
+          "drinkType": "beer",
+          "tags": []
+        },
+        {
+          "id": "bar-beer-003b",
+          "name": "HEINEKEN",
+          "description": "650ml",
+          "price": 599,
+          "category": "beers",
+          "isAvailable": true,
           "drinkType": "beer",
           "tags": []
         },
@@ -1911,7 +1929,7 @@
           "id": "bar-beer-004",
           "name": "CORONA",
           "description": "330ml",
-          "price": 649,
+          "price": 599,
           "category": "beers",
           "isAvailable": true,
           "drinkType": "beer",
@@ -1919,9 +1937,9 @@
         },
         {
           "id": "bar-beer-005",
-          "name": "HOGARDEN",
+          "name": "HOEGAARDEN",
           "description": "330ml",
-          "price": 649,
+          "price": 599,
           "category": "beers",
           "isAvailable": true,
           "drinkType": "beer",
@@ -1931,10 +1949,19 @@
           "id": "bar-beer-006",
           "name": "BUDWEISER",
           "description": "330ml",
-          "price": 499,
+          "price": 399,
           "category": "beers",
           "isAvailable": true,
-          "bottlePrice": 749,
+          "drinkType": "beer",
+          "tags": []
+        },
+        {
+          "id": "bar-beer-006b",
+          "name": "BUDWEISER",
+          "description": "650ml",
+          "price": 599,
+          "category": "beers",
+          "isAvailable": true,
           "drinkType": "beer",
           "tags": []
         },
