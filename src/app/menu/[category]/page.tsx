@@ -319,7 +319,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
 
       {/* Footer */}
       <div className="text-center py-8 text-gray-500 text-sm border-t border-gray-200 mt-8">
-        <p className="mb-2">All prices are inclusive of taxes</p>
+        <p className="mb-2">All prices are exclusive of taxes. Government taxes as applicable</p>
         <p className="mb-4">♦ AMANTE ♦</p>
         <a
           href="https://restronaut.in"
