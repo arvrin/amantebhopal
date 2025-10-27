@@ -190,17 +190,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-024",
-          "name": "Corn and Truffle Mushroom Crispy Ravioli",
-          "description": "Crispy fried ravioli creamy spinach served with anticuchera sauce",
-          "price": 599,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-app-025",
           "name": "Sumac Spice Crispy Fried Fish",
           "description": "Avocado puree, sumac spice, ponzu mayo chimichuri",
@@ -355,17 +344,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-041",
-          "name": "Mushroom Cream Cheese Dimsum",
-          "description": "Delicate dumplings filled with mushroom and cream cheese",
-          "price": 699,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-app-042",
           "name": "Veg Galouti Kebab",
           "description": "Melt-in-mouth vegetarian kebab with aromatic spices, served with warqi paratha",
@@ -436,6 +414,17 @@
           "category": "dim-sums",
           "dietary": [
             "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dim-006",
+          "name": "Mushroom Cream Cheese Dimsum",
+          "description": "Delicate dumplings filled with mushroom and cream cheese",
+          "price": 699,
+          "category": "dim-sums",
+          "dietary": [
+            "veg"
           ],
           "isAvailable": true
         }
@@ -1214,17 +1203,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-indian-031",
-          "name": "Wild Mushroom Risotto",
-          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
-          "price": 799,
-          "category": "indian-mains",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-indian-032",
           "name": "Grilled Chicken with Baby Potato",
           "description": "Tender grilled chicken served with roasted baby potatoes",
@@ -1307,6 +1285,28 @@
           "description": "Choice of steamed, jeera or curd rice",
           "price": 499,
           "category": "rice",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-007",
+          "name": "Corn and Truffle Mushroom Crispy Ravioli",
+          "description": "Crispy fried ravioli creamy spinach served with anticuchera sauce",
+          "price": 599,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-008",
+          "name": "Wild Mushroom Risotto",
+          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
+          "price": 799,
+          "category": "pasta",
           "dietary": [
             "veg"
           ],
