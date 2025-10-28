@@ -2,6 +2,7 @@
 mocks/
 __tests__/
 e2e/
+scripts/
 *.test.ts
 *.test.tsx
 *.spec.ts
