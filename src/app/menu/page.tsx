@@ -36,10 +36,10 @@ export default function MenuLanding() {
       <div className="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-4xl mx-auto my-8">
         {/* Elegant Header */}
         <div className="relative bg-gradient-to-br from-[#8B1538] to-[#6B0F28] p-10 overflow-hidden">
-          <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 opacity-20">
             <div className="absolute inset-0" style={{
-              backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
-              backgroundSize: '20px 20px'
+              backgroundImage: `radial-gradient(circle, white 2px, transparent 2px)`,
+              backgroundSize: '30px 30px'
             }} />
           </div>
           <div className="relative">
