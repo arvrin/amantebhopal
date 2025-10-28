@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, MapPin, X, ChevronDown, Mail } from 'lucide-react';
 
-export default function TransparentHeader() {
+export default function HeaderGlobal() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSpacesOpen, setIsSpacesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);

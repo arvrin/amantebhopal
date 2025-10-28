@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Building2, Users, Sparkles, Presentation, UtensilsCrossed, PartyPopper, Heart, Calendar, ChevronRight } from 'lucide-react';
-import TransparentHeader from '@/components/layout/TransparentHeader';
 import HeroSection from '@/components/layout/HeroSection';
 import Footer from '@/components/layout/Footer';
 import Button from '@/components/ui/Button';
@@ -54,7 +53,6 @@ export default function BanquetsPage() {
 
   return (
     <div className="min-h-screen bg-amante-cream">
-      <TransparentHeader />
 
       <HeroSection
         title="Grand Banquets"

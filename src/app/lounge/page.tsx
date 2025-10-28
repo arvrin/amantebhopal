@@ -1,6 +1,5 @@
 'use client';
 
-import TransparentHeader from '@/components/layout/TransparentHeader';
 import HeroSection from '@/components/layout/HeroSection';
 import Footer from '@/components/layout/Footer';
 import { motion } from 'framer-motion';
@@ -55,7 +54,6 @@ export default function LoungePage() {
 
   return (
     <div className="min-h-screen bg-amante-cream">
-      <TransparentHeader />
 
       <HeroSection
         title="Intimate Lounge"

@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import TransparentHeader from '@/components/layout/TransparentHeader';
 import Footer from '@/components/layout/Footer';
 import {
   Heart,
@@ -68,7 +67,6 @@ export default function AboutPage() {
 
   return (
     <div className="bg-white">
-      <TransparentHeader />
 
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">

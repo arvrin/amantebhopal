@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Instagram, Facebook, Youtube } from 'lucide-react';
-import TransparentHeader from './layout/TransparentHeader';
+import HeaderGlobal from './layout/HeaderGlobal';
 
 const heroImages = ['/hero1.jpeg', '/hero2.jpg'];
 
@@ -23,7 +23,7 @@ export default function HomePage() {
   return (
     <div className="h-screen w-screen overflow-hidden bg-black">
       {/* Header */}
-      <TransparentHeader />
+      <HeaderGlobal />
 
       {/* Main Content - Full Screen */}
       <div className="relative h-full w-full">

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Phone, Mail, MapPin, Clock, MessageSquare, Send, Check } from 'lucide-react';
-import TransparentHeader from '@/components/layout/TransparentHeader';
 import Footer from '@/components/layout/Footer';
 import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
@@ -70,7 +69,6 @@ export default function ContactPage() {
   if (isSuccess) {
     return (
       <>
-        <TransparentHeader />
         <div className="min-h-screen bg-amante-cream flex items-center justify-center px-4 py-20">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -122,7 +120,6 @@ export default function ContactPage() {
 
   return (
     <>
-      <TransparentHeader />
       <div className="min-h-screen bg-amante-cream pt-32 pb-20 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Header */}

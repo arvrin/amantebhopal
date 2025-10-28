@@ -30,7 +30,7 @@ const categories = [
 export default function MenuLanding() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Spacer for TransparentHeader */}
+      {/* Spacer for HeaderGlobal */}
       <div className="h-20 md:h-24" />
 
       <div className="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-4xl mx-auto my-8">

@@ -1,7 +1,7 @@
 'use client';
 
 import { usePathname } from 'next/navigation';
-import TransparentHeader from '@/components/layout/TransparentHeader';
+import HeaderGlobal from '@/components/layout/HeaderGlobal';
 
 export default function ConditionalLayout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -9,7 +9,7 @@ export default function ConditionalLayout({ children }: { children: React.ReactN
 
   return (
     <>
-      {!isHomePage && <TransparentHeader />}
+      {!isHomePage && <HeaderGlobal />}
       {children}
     </>
   );
