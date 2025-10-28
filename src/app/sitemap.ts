@@ -119,14 +119,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.6,
     },
-
-    // Enhanced menu page
-    {
-      url: `${SITE_URL}/menunew`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
   ];
 
   // Add dynamic menu category pages if they exist

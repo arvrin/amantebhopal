@@ -4,7 +4,7 @@ import { useState, useMemo, use } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowLeft, Search, X, Leaf, Circle } from 'lucide-react';
+import { ArrowLeft, Search, X, Leaf, Circle, Volume2 } from 'lucide-react';
 
 // Import menu data
 import foodMenu from '@/data/menus/food.json';
@@ -59,6 +59,33 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showVegOnly, setShowVegOnly] = useState(false);
+  const [speakingItemId, setSpeakingItemId] = useState<string | null>(null);
+
+  // Text-to-speech function
+  const speakItem = (item: MenuItem) => {
+    // Cancel any ongoing speech
+    if (window.speechSynthesis.speaking) {
+      window.speechSynthesis.cancel();
+      if (speakingItemId === item.id) {
+        setSpeakingItemId(null);
+        return;
+      }
+    }
+
+    setSpeakingItemId(item.id);
+    const utterance = new SpeechSynthesisUtterance(
+      `${item.name}. ${item.description}. Priced at rupees ${item.price}.`
+    );
+
+    utterance.rate = 0.9;
+    utterance.pitch = 1;
+    utterance.volume = 1;
+
+    utterance.onend = () => setSpeakingItemId(null);
+    utterance.onerror = () => setSpeakingItemId(null);
+
+    window.speechSynthesis.speak(utterance);
+  };
 
   // Unwrap params Promise for Next.js 15
   const { category } = use(params);
@@ -252,62 +279,93 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ delay: index * 0.05 }}
-                  className="bg-white rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+                  className="relative bg-gradient-to-br from-white via-[#FFF9F5] to-white rounded-2xl p-6 shadow-xl border border-[#8B1538]/10 hover:shadow-2xl transition-all duration-500 overflow-hidden group"
                 >
-                  <div className="flex justify-between items-start gap-3">
-                    <div className="flex-1">
-                      <div className="flex items-start gap-2 mb-2">
-                        <DietaryIcon dietary={item.dietary} />
-                        <div className="flex-1">
-                          <h3 className="font-semibold text-gray-900 leading-tight">
+                  {/* Decorative corner accents */}
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#8B1538]/5 to-transparent rounded-bl-full" />
+                  <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-[#8B1538]/5 to-transparent rounded-tr-full" />
+
+                  <div className="relative">
+                    {/* Header Row */}
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2">
+                          <div className="relative">
+                            <DietaryIcon dietary={item.dietary} />
+                            {item.dietary?.includes('veg') && !item.dietary?.includes('non-veg') && (
+                              <div className="absolute -inset-1 bg-green-600/20 rounded-full blur-sm -z-10" />
+                            )}
+                            {item.dietary?.includes('non-veg') && (
+                              <div className="absolute -inset-1 bg-red-600/20 rounded-full blur-sm -z-10" />
+                            )}
+                          </div>
+                          <h3 className="font-serif text-2xl font-bold text-gray-900 tracking-tight">
                             {item.name}
-                            {item.isRecommended && (
-                              <span className="ml-2 text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">
+                          </h3>
+                        </div>
+                        <div className="flex items-center gap-3 flex-wrap">
+                          <span className="text-xs uppercase tracking-widest text-gray-500 font-medium">
+                            {item.categoryName}
+                          </span>
+                          {item.isRecommended && (
+                            <>
+                              <span className="w-1 h-1 rounded-full bg-gray-300" />
+                              <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">
                                 Recommended
                               </span>
-                            )}
-                            {item.isChefSpecial && (
+                            </>
+                          )}
+                          {item.isChefSpecial && (
+                            <>
+                              <span className="w-1 h-1 rounded-full bg-gray-300" />
                               <span
-                                className="ml-2 text-xs text-white px-2 py-0.5 rounded-full"
+                                className="text-xs text-white px-2 py-0.5 rounded-full"
                                 style={{ backgroundColor: themeColor }}
                               >
                                 Chef's Special
                               </span>
-                            )}
-                          </h3>
-                          <p className="text-sm text-gray-600 mt-1 leading-relaxed">
-                            {item.description}
-                          </p>
-                          {item.spiceLevel && item.spiceLevel > 0 && (
-                            <div className="flex items-center gap-1 mt-2">
-                              {Array.from({ length: item.spiceLevel }).map((_, i) => (
-                                <span key={i} className="text-red-500">
-                                  🌶️
-                                </span>
-                              ))}
-                            </div>
+                            </>
                           )}
+                          <span className="w-1 h-1 rounded-full bg-gray-300" />
+                          <button
+                            onClick={() => speakItem(item)}
+                            className="group/btn flex items-center gap-1.5 text-[#8B1538] hover:text-[#6B0F28] transition-colors"
+                          >
+                            <Volume2 className={`w-4 h-4 ${speakingItemId === item.id ? 'animate-pulse' : ''}`} />
+                            <span className="text-xs font-medium">
+                              {speakingItemId === item.id ? 'Stop' : 'Listen'}
+                            </span>
+                          </button>
                         </div>
                       </div>
+                      <div className="text-right ml-4 flex-shrink-0">
+                        <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-5 py-3 rounded-xl shadow-lg shadow-[#8B1538]/20">
+                          <span className="text-xs text-white/80 uppercase tracking-wider font-medium">Price</span>
+                          <span className="text-2xl font-bold text-white">₹{item.price}</span>
+                        </div>
+                        {item.bottlePrice && (
+                          <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-4 py-2 rounded-xl shadow-lg shadow-[#8B1538]/20 mt-2">
+                            <span className="text-xs text-white/80 uppercase tracking-wider font-medium">Bottle</span>
+                            <span className="text-lg font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
+                          </div>
+                        )}
+                      </div>
                     </div>
-                    <div className="text-right flex-shrink-0">
-                      <p
-                        className="text-lg font-bold"
-                        style={{ color: themeColor }}
-                      >
-                        ₹{item.price}
+
+                    {/* Description */}
+                    <div className="relative pl-8 border-l-2 border-[#8B1538]/20">
+                      <p className="text-sm text-gray-600 leading-relaxed italic">
+                        {item.description}
                       </p>
-                      {item.bottlePrice && (
-                        <p
-                          className="text-sm font-semibold mt-1"
-                          style={{ color: themeColor }}
-                        >
-                          ₹{item.bottlePrice.toLocaleString('en-IN')} (Bottle)
-                        </p>
+                      {item.spiceLevel && item.spiceLevel > 0 && (
+                        <div className="flex items-center gap-1 mt-2">
+                          {Array.from({ length: item.spiceLevel }).map((_, i) => (
+                            <span key={i} className="text-red-500">
+                              🌶️
+                            </span>
+                          ))}
+                        </div>
                       )}
-                      <p className="text-xs text-gray-500 mt-1">
-                        {item.categoryName}
-                      </p>
                     </div>
                   </div>
                 </motion.div>
