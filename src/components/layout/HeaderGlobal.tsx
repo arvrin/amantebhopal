@@ -276,6 +276,9 @@ export default function HeaderGlobal() {
                       );
                     }
 
+                    // Skip items without href (shouldn't happen after dropdown check, but TypeScript needs this)
+                    if (!item.href) return null;
+
                     const isActive = pathname === item.href;
                     return (
                       <motion.li
