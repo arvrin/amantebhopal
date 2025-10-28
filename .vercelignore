@@ -30,6 +30,7 @@ src/app/feedback/
 src/app/careers/
 src/app/events/
 src/app/gallery/
+src/app/api/
 src/components/SpacePageTemplate.tsx
 src/components/seo/
 src/components/ui/
