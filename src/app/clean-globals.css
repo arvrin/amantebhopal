@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 @import "tailwindcss";
 
-/* Clean Brand Colors */
+/* Tailwind v4 Theme Configuration */
+@theme {
+  --color-amante-red: #B91C1C;
+  --color-amante-red-dark: #991B1B;
+  --color-amante-red-light: #DC2626;
+  --color-amante-pink: #F8BBD9;
+  --color-amante-pink-light: #FCE7F3;
+  --color-amante-pink-subtle: #FDF2F8;
+  --color-amante-black: #1F1F1F;
+  --color-amante-white: #FFFFFF;
+}
+
+/* Legacy CSS Variables for backwards compatibility */
 :root {
   --amante-red: #B91C1C;
   --amante-red-dark: #991B1B;
@@ -39,14 +51,14 @@
   font-weight: 700;
 }
 
-/* Brand Colors */
-.text-amante-red { color: var(--amante-red); }
+/* Brand Colors - Commented out to allow Tailwind opacity modifiers to work */
+/* .text-amante-red { color: var(--amante-red); }
 .text-amante-pink { color: var(--amante-pink); }
 .text-amante-pink-light { color: var(--amante-pink-light); }
 .bg-amante-red { background-color: var(--amante-red); }
 .bg-amante-black { background-color: var(--amante-black); }
 .bg-amante-pink-subtle { background-color: var(--amante-pink-subtle); }
-.border-amante-red { border-color: var(--amante-red); }
+.border-amante-red { border-color: var(--amante-red); } */
 
 /* Performance-First Body */
 body {
@@ -84,5 +96,25 @@ body {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.1s !important;
+  }
+}
+
+/* Button Style - Removed solid background to allow transparent red */
+/* .btn-strobe-pulse {
+  background: var(--amante-red);
+} */
+
+/* Scrolling Text Animation */
+.scrolling-text {
+  display: inline-block;
+  animation: scroll-left 80s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

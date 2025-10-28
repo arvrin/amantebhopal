@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color Variables */
+  --amante-red: #B91C1C;
+  --amante-red-dark: #991B1B;
+  --amante-red-light: #DC2626;
+  --amante-pink: #F8BBD9;
+  --amante-pink-light: #FCE7F3;
+  --amante-gold: #D4AF37;
+  --amante-black: #1F1F1F;
+  --amante-charcoal: #2C2C2C;
+  --amante-grey: #757575;
+  --amante-white: #FFFFFF;
+  --amante-cream: #F8F6F0;
+
+  --success: #10B981;
+  --error: #EF4444;
+  --warning: #F59E0B;
+  --info: #3B82F6;
+
+  /* Spacing */
+  --space-4: 16px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-default: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-amante-charcoal bg-amante-white antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Smooth Scrolling */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Focus States */
+  *:focus-visible {
+    @apply outline-2 outline-amante-red outline-offset-2 rounded-sm;
+  }
+
+  /* Reduced Motion */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Typography Classes */
+  .heading-hero {
+    @apply font-heading text-h1-mobile md:text-h1 font-bold text-amante-black;
+  }
+
+  .heading-section {
+    @apply font-heading text-h2-mobile md:text-h2 font-bold text-amante-black;
+  }
+
+  .heading-subsection {
+    @apply font-heading text-h3-mobile md:text-h3 font-semibold text-amante-charcoal;
+  }
+
+  .body-large {
+    @apply font-body text-body-lg text-amante-charcoal leading-relaxed;
+  }
+
+  .body-standard {
+    @apply font-body text-body text-amante-charcoal leading-relaxed;
+  }
+
+  .body-small {
+    @apply font-body text-body-sm text-amante-grey-dark;
+  }
+
+  /* Container Classes */
+  .container-narrow {
+    @apply max-w-narrow mx-auto px-6;
+  }
+
+  .container-standard {
+    @apply max-w-standard mx-auto px-6 md:px-10;
+  }
+
+  .container-wide {
+    @apply max-w-wide mx-auto px-6 md:px-10;
+  }
+
+  /* Section Padding */
+  .section-padding {
+    @apply py-12 md:py-20;
+  }
+
+  /* Card Base */
+  .card {
+    @apply bg-amante-white rounded-md p-6 shadow-sm transition-all duration-normal hover:shadow-md hover:-translate-y-1;
+  }
+}
+
+@layer utilities {
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 500ms ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 500ms ease-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 300ms ease-out;
+  }
+
+  .animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Loading Skeleton */
+  .skeleton {
+    @apply bg-gradient-to-r from-amante-grey-light via-gray-200 to-amante-grey-light bg-[length:1000px_100%] animate-[shimmer_2s_infinite];
+  }
+
+  /* Text Utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Third-party Overrides */
+/* React Hot Toast */
+.toast-container {
+  @apply z-toast;
+}
+
+/* React Datepicker */
+.react-datepicker-wrapper {
+  @apply w-full;
+}
+
+.react-datepicker {
+  @apply font-body border-amante-grey-light shadow-md;
+}
+
+.react-datepicker__header {
+  @apply bg-amante-cream border-b border-amante-grey-light;
+}
+
+.react-datepicker__current-month {
+  @apply font-heading text-amante-charcoal;
+}
+
+.react-datepicker__day--selected {
+  @apply bg-amante-red text-amante-white hover:bg-amante-red-dark;
+}
+
+.react-datepicker__day:hover {
+  @apply bg-amante-pink-light;
+}

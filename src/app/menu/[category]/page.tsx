@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, use } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -55,13 +55,13 @@ interface Menu {
   categories: MenuCategory[];
 }
 
-export default function MenuPage({ params }: { params: Promise<{ category: string }> | { category: string } }) {
+export default function MenuPage({ params }: { params: Promise<{ category: string }> }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showVegOnly, setShowVegOnly] = useState(false);
 
-  // Handle both sync and async params for Next.js 15 compatibility
-  const category = 'category' in params ? params.category : 'food';
+  // Unwrap params Promise for Next.js 15
+  const { category } = use(params);
   const menu = menus[category as keyof typeof menus] as Menu;
   const themeColor = categoryColors[category as keyof typeof categoryColors];
 

@@ -1,8 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ChevronRight, UtensilsCrossed, Wine, Coffee } from 'lucide-react';
 
 const categories = [
@@ -12,8 +10,6 @@ const categories = [
     icon: UtensilsCrossed,
     description: 'Chowing down on the good stuff from the world',
     href: '/menu/food',
-    color: '#8B1538',
-    gradient: 'from-[#8B1538]/10 to-[#FFF0F5]'
   },
   {
     id: 'bar',
@@ -21,8 +17,6 @@ const categories = [
     icon: Wine,
     description: 'Craft cocktails & premium spirits',
     href: '/menu/bar',
-    color: '#8B1538',
-    gradient: 'from-[#8B1538]/10 to-[#FFF0F5]'
   },
   {
     id: 'cafe',
@@ -30,141 +24,127 @@ const categories = [
     icon: Coffee,
     description: 'Artisan coffee & fresh delights',
     href: '/menu/cafe',
-    color: '#8B1538',
-    gradient: 'from-[#8B1538]/10 to-[#FFF0F5]'
   }
 ];
 
 export default function MenuLanding() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#FFF5F0] via-white to-[#FFF0F5]">
-      {/* Logo Section - Full Width */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        className="text-center py-4 md:py-6"
-      >
-        <div className="flex justify-center">
-          <Link href="/">
-            <Image
-              src="/assets/logos/Primary Logo/SVG/Red Logo.svg"
-              alt="Amante"
-              width={1600}
-              height={480}
-              className="h-64 md:h-80 lg:h-96 w-auto cursor-pointer hover:opacity-80 transition-opacity"
-              priority
-            />
-          </Link>
-        </div>
-        <div className="flex items-center justify-center gap-4 mt-6">
-          <div className="w-24 h-px bg-gradient-to-r from-transparent to-[#8B1538]/40"></div>
-          <span className="text-[#8B1538] text-3xl">♦</span>
-          <div className="w-24 h-px bg-gradient-to-l from-transparent to-[#8B1538]/40"></div>
-        </div>
-      </motion.div>
+    <div className="min-h-screen bg-white">
+      {/* Spacer for TransparentHeader */}
+      <div className="h-20 md:h-24" />
 
-      {/* Content Section - With Container */}
-      <div className="container mx-auto px-4 max-w-3xl">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="text-center mb-6 md:mb-8"
-        >
-          <h2 className="font-serif text-2xl md:text-3xl text-[#8B1538] mb-2 tracking-wide">
-            Explore Our Menus
-          </h2>
-          <p className="text-gray-600 text-sm md:text-base max-w-md mx-auto italic">
-            A celebration of passion on a plate
-          </p>
-        </motion.div>
+      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-4xl mx-auto my-8">
+        {/* Elegant Header */}
+        <div className="relative bg-gradient-to-br from-[#8B1538] to-[#6B0F28] p-10 overflow-hidden">
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute inset-0" style={{
+              backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
+              backgroundSize: '20px 20px'
+            }} />
+          </div>
+          <div className="relative">
+            {/* Top Corner Labels */}
+            <div className="flex items-center justify-between mb-6">
+              <div className="text-xs text-white/70 uppercase tracking-[0.3em]">Menu 2025</div>
+              <div className="text-xs text-white/70 uppercase tracking-[0.3em]">Curated Selection</div>
+            </div>
 
-        {/* Menu Category Cards */}
-        <div className="grid gap-4 max-w-2xl mx-auto">
-          {categories.map((category, index) => {
-            const Icon = category.icon;
-            return (
-              <motion.div
-                key={category.id}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 + 0.2 }}
-              >
-                <Link href={category.href}>
-                  <div
-                    className={`bg-gradient-to-br ${category.gradient} rounded-2xl p-4 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 active:scale-[0.98]`}
-                    style={{ borderColor: `${category.color}20` }}
-                  >
-                    <div className="flex items-center justify-between">
-                      <div className="flex items-center gap-4 flex-1">
-                        <div
-                          className="w-16 h-16 rounded-xl flex items-center justify-center shadow-md"
-                          style={{ backgroundColor: `${category.color}20` }}
-                        >
-                          <Icon
-                            className="w-8 h-8"
-                            style={{ color: category.color }}
-                            strokeWidth={1.8}
-                          />
-                        </div>
-                        <div className="text-left flex-1">
-                          <h3
-                            className="text-2xl font-serif font-bold mb-1 tracking-wide"
-                            style={{ color: category.color }}
-                          >
-                            {category.name}
-                          </h3>
-                          <p className="text-gray-600 text-sm leading-relaxed">
-                            {category.description}
-                          </p>
-                        </div>
+            {/* Main Title */}
+            <div className="text-center">
+              <h1 className="text-5xl font-serif font-bold text-white mb-4 tracking-tight leading-tight">
+                Explore<br/>Our Menus
+              </h1>
+              <div className="flex items-center justify-center gap-3 mt-4">
+                <div className="h-px w-20 bg-white/30" />
+                <span className="text-xs text-white/70 italic">Curated culinary experiences</span>
+                <div className="h-px w-20 bg-white/30" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Content Area */}
+        <div className="p-8">
+          <div className="max-w-md mx-auto space-y-6">
+            {categories.map((category, index) => {
+              const Icon = category.icon;
+              return (
+                <Link key={category.id} href={category.href}>
+                  <div className="group cursor-pointer">
+                    <div className="relative">
+                      {/* Decorative number */}
+                      <div className="absolute -left-12 top-0 text-7xl font-serif font-bold text-gray-100 group-hover:text-[#8B1538]/10 transition-colors">
+                        {index + 1}
                       </div>
-                      <ChevronRight
-                        className="flex-shrink-0 ml-2"
-                        style={{ color: category.color }}
-                        size={28}
-                        strokeWidth={2}
-                      />
+
+                      <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-100 group-hover:border-[#8B1538]/30 group-hover:shadow-xl transition-all duration-300">
+                        <div className="flex items-start gap-4">
+                          {/* Icon */}
+                          <div className="relative">
+                            <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#8B1538]/10 to-[#6B0F28]/10 flex items-center justify-center group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 transition-all">
+                              <Icon className="w-7 h-7 text-[#8B1538]" strokeWidth={1.5} />
+                            </div>
+                            {/* Decorative corner */}
+                            <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-[#8B1538]/30" />
+                          </div>
+
+                          <div className="flex-1">
+                            <h3 className="text-xl font-serif font-bold text-gray-900 mb-2 group-hover:text-[#8B1538] transition-colors">
+                              {category.name}
+                            </h3>
+                            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                              {category.description}
+                            </p>
+                            <div className="flex items-center gap-2 text-xs text-[#8B1538] font-medium">
+                              <span className="uppercase tracking-wider">Discover</span>
+                              <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Decorative corner bottom */}
+                        <div className="absolute bottom-4 right-4 w-4 h-4 border-b-2 border-r-2 border-[#8B1538]/20 group-hover:border-[#8B1538]/40 transition-colors" />
+                      </div>
                     </div>
                   </div>
                 </Link>
-              </motion.div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
 
-        {/* Footer Info */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="text-center mt-10 pt-6 border-t border-gray-200"
+          {/* Footer Contact */}
+          <div className="mt-10 pt-8 border-t border-gray-200 text-center">
+            <div className="inline-block">
+              <p className="text-sm font-semibold text-[#8B1538] mb-1">
+                <a href="tel:+919893779100" className="hover:opacity-80 transition-opacity">
+                  +91 98937 79100
+                </a>
+              </p>
+              <p className="text-xs text-gray-500 mb-1">1, Mahendra Business Square, Bawadia Kalan, Bhopal</p>
+              <p className="text-xs text-gray-500">
+                <a href="mailto:contact.cafeamante@gmail.com" className="hover:text-[#8B1538] transition-colors">
+                  contact.cafeamante@gmail.com
+                </a>
+                {' • '}
+                <a href="https://www.cafeamante.com" className="hover:text-[#8B1538] transition-colors">
+                  www.cafeamante.com
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Powered by Restronaut */}
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-10">
+        <a
+          href="https://restronaut.in"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[10px] sm:text-xs text-gray-400 hover:text-[#8B1538] transition-colors duration-300"
         >
-          <p className="text-[#8B1538] text-base font-semibold mb-2">
-            <a href="tel:+919893779100" className="hover:opacity-80 transition-opacity">
-              +91 98937 79100
-            </a>
-          </p>
-          <p className="text-gray-600 text-xs mb-1">1, Mahendra Business Square, Bawadia Kalan, Bhopal</p>
-          <p className="text-gray-500 text-xs mb-4">
-            <a href="mailto:contact.cafeamante@gmail.com" className="hover:text-[#8B1538] transition-colors">
-              contact.cafeamante@gmail.com
-            </a>
-            {' • '}
-            <a href="https://www.cafeamante.com" className="hover:text-[#8B1538] transition-colors">
-              www.cafeamante.com
-            </a>
-          </p>
-          <a
-            href="https://restronaut.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 text-xs text-gray-400 hover:text-[#8B1538] transition-colors"
-          >
-            <span>Powered by</span>
-            <span className="font-semibold">Restronaut</span>
-          </a>
-        </motion.div>
+          Powered by <span className="font-bold">Restronaut</span>
+        </a>
       </div>
     </div>
   );
