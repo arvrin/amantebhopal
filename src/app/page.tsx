@@ -1,5 +1,5 @@
-import CleanComingSoon from '@/components/CleanComingSoon';
+import HomePage from '@/components/HomePage';
 
 export default function Home() {
-  return <CleanComingSoon />;
+  return <HomePage />;
 }

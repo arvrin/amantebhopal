@@ -34,7 +34,6 @@ src/app/gallery/
 src/app/api/
 src/components/HomePage.tsx
 src/components/SpacePageTemplate.tsx
-src/components/layout/
 src/components/seo/
 src/components/ui/
 src/lib/
