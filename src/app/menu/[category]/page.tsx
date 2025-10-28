@@ -162,22 +162,12 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
 
   return (
     <div className="min-h-screen bg-[#FFF5F0]">
-      {/* Header */}
-      <div className="sticky top-0 z-20 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
-        <div className="container mx-auto px-4 py-3">
-          {/* Logo */}
-          <div className="flex justify-center mb-2">
-            <Link href="/menu">
-              <Image
-                src="/assets/logos/Primary Logo/SVG/Red Logo.svg"
-                alt="Amante"
-                width={800}
-                height={240}
-                className="h-32 md:h-40 w-auto cursor-pointer hover:opacity-80 transition-opacity"
-              />
-            </Link>
-          </div>
+      {/* Spacer for HeaderGlobal */}
+      <div className="h-20 md:h-24" />
 
+      {/* Header */}
+      <div className="sticky top-20 md:top-24 z-20 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+        <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-4">
             <Link href="/menu">
               <button className="flex items-center gap-2 text-gray-700 hover:text-gray-900">
@@ -187,12 +177,12 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
             </Link>
             <div className="text-center flex-1">
               <h1
-                className="text-xl font-serif font-bold"
+                className="text-2xl font-serif font-bold"
                 style={{ color: themeColor }}
               >
                 {menu.name}
               </h1>
-              <p className="text-xs text-gray-600 mt-1">{menu.description}</p>
+              <p className="text-sm text-gray-600 mt-1">{menu.description}</p>
             </div>
             <div className="w-16"></div>
           </div>
