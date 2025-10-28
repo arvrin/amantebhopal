@@ -73,12 +73,25 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
     }
 
     setSpeakingItemId(item.id);
-    const utterance = new SpeechSynthesisUtterance(
-      `${item.name}. ${item.description}. Priced at rupees ${item.price}.`
+    const utterance = new SpeechSynthesisUtterance(item.name);
+
+    // Try to find Indian or British English female voice
+    const voices = window.speechSynthesis.getVoices();
+    const preferredVoice = voices.find(voice =>
+      (voice.name.includes('Veena') || // Indian English female
+       voice.name.includes('Indian') && voice.name.includes('Female') ||
+       voice.lang === 'en-IN' && voice.name.toLowerCase().includes('female')) ||
+      (voice.lang === 'en-GB' && voice.name.toLowerCase().includes('female')) // British English female fallback
+    ) || voices.find(voice =>
+      voice.lang.startsWith('en') && voice.name.toLowerCase().includes('female')
     );
 
-    utterance.rate = 0.9;
-    utterance.pitch = 1;
+    if (preferredVoice) {
+      utterance.voice = preferredVoice;
+    }
+
+    utterance.rate = 0.85; // Slightly slower for clarity
+    utterance.pitch = 1.1; // Slightly higher pitch for female voice
     utterance.volume = 1;
 
     utterance.onend = () => setSpeakingItemId(null);
