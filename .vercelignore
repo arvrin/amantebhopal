@@ -23,7 +23,6 @@ src/app/lounge/
 src/app/club/
 src/app/private-dining/
 src/app/banquets/
-src/app/reservations/
 src/app/private-events/
 src/app/banquet-booking/
 src/app/contact/
@@ -31,7 +30,6 @@ src/app/feedback/
 src/app/careers/
 src/app/events/
 src/app/gallery/
-src/app/api/
 src/components/SpacePageTemplate.tsx
 src/components/seo/
 src/components/ui/
