@@ -1470,6 +1470,14 @@
       "items": [
         {
           "id": "bar-mixer-001",
+          "name": "Svaa Water",
+          "description": "Premium mineral water",
+          "price": 99,
+          "category": "mixers-assortment",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mixer-002",
           "name": "Blending Soda Water",
           "description": "Soda water for blending",
           "price": 99,
@@ -1477,7 +1485,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-002",
+          "id": "bar-mixer-003",
           "name": "Johnnie Walker Water",
           "description": "Premium blending water",
           "price": 300,
@@ -1485,7 +1493,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-003",
+          "id": "bar-mixer-004",
           "name": "Single Malt Blending Water",
           "description": "Premium blending water for single malt",
           "price": 300,
@@ -1493,7 +1501,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-004",
+          "id": "bar-mixer-005",
           "name": "Whisky Blending Water",
           "description": "Premium blending water for whisky",
           "price": 300,
@@ -1501,7 +1509,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-005",
+          "id": "bar-mixer-006",
           "name": "Tanqueray Tonic Water",
           "description": "Premium tonic water for gin",
           "price": 150,
@@ -1509,7 +1517,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-006",
+          "id": "bar-mixer-007",
           "name": "Vodka Tonic Water",
           "description": "Tonic water for vodka",
           "price": 150,
@@ -1517,7 +1525,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-007",
+          "id": "bar-mixer-008",
           "name": "Gin Tonic Water",
           "description": "Tonic water for gin",
           "price": 150,
@@ -1525,7 +1533,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-008",
+          "id": "bar-mixer-009",
           "name": "Tequila Tonic Water",
           "description": "Tonic water for tequila",
           "price": 150,
@@ -1533,7 +1541,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-009",
+          "id": "bar-mixer-010",
           "name": "Tonic Water",
           "description": "Regular tonic water",
           "price": 149,
@@ -1541,7 +1549,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-010",
+          "id": "bar-mixer-011",
           "name": "Ginger Ale",
           "description": "Ginger ale mixer",
           "price": 149,
@@ -1549,7 +1557,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-011",
+          "id": "bar-mixer-012",
           "name": "Soda",
           "description": "Plain soda",
           "price": 59,
@@ -1557,7 +1565,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-012",
+          "id": "bar-mixer-013",
           "name": "Coke Can",
           "description": "Coca-Cola can",
           "price": 149,
@@ -1565,7 +1573,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-013",
+          "id": "bar-mixer-014",
           "name": "Sprite Can",
           "description": "Sprite can",
           "price": 149,
@@ -1573,7 +1581,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-014",
+          "id": "bar-mixer-015",
           "name": "Juice",
           "description": "Fruit juice",
           "price": 149,
@@ -1581,7 +1589,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-015",
+          "id": "bar-mixer-016",
           "name": "Diet Coke",
           "description": "Diet Coca-Cola",
           "price": 149,
@@ -1589,7 +1597,7 @@
           "isAvailable": true
         },
         {
-          "id": "bar-mixer-016",
+          "id": "bar-mixer-017",
           "name": "Red Bull",
           "description": "Energy drink",
           "price": 249,
