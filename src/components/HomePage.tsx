@@ -6,11 +6,13 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { Instagram, Facebook, Youtube } from 'lucide-react';
 import HeaderGlobal from './layout/HeaderGlobal';
+import ReservationModal from './ReservationModal';
 
 const heroImages = ['/hero1.jpeg', '/hero2.jpg'];
 
 export default function HomePage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isReservationModalOpen, setIsReservationModalOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -85,15 +87,14 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
             >
-              <Link href="/reservations" className="w-full sm:w-auto">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-gradient-to-br from-[#8B1538] to-[#6B0F28] hover:from-[#6B0F28] hover:to-[#8B1538] text-white font-bold text-lg sm:text-xl rounded-full transition-all duration-300 shadow-lg shadow-[#8B1538]/30"
-                >
-                  Reserve Your Table
-                </motion.button>
-              </Link>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setIsReservationModalOpen(true)}
+                className="w-full sm:w-auto px-8 sm:px-10 py-4 sm:py-5 bg-gradient-to-br from-[#8B1538] to-[#6B0F28] hover:from-[#6B0F28] hover:to-[#8B1538] text-white font-bold text-lg sm:text-xl rounded-full transition-all duration-300 shadow-lg shadow-[#8B1538]/30"
+              >
+                Reserve Your Table
+              </motion.button>
               <Link href="/menu" className="w-full sm:w-auto">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
@@ -241,6 +242,12 @@ export default function HomePage() {
         <div className="hidden sm:block absolute top-1/4 left-10 w-32 h-32 bg-amante-pink/10 rounded-full blur-3xl" />
         <div className="hidden sm:block absolute bottom-1/4 right-10 w-40 h-40 bg-amante-red/10 rounded-full blur-3xl" />
       </div>
+
+      {/* Reservation Modal */}
+      <ReservationModal
+        isOpen={isReservationModalOpen}
+        onClose={() => setIsReservationModalOpen(false)}
+      />
     </div>
   );
 }
