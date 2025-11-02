@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, use } from 'react';
+import { useState, useMemo, use, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -60,6 +60,27 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [showVegOnly, setShowVegOnly] = useState(false);
   const [speakingItemId, setSpeakingItemId] = useState<string | null>(null);
+  const [navbarVisible, setNavbarVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  // Track navbar visibility based on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Navbar is visible when scrolling up or near top
+      if (currentScrollY < lastScrollY || currentScrollY < 100) {
+        setNavbarVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setNavbarVisible(false);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
 
   // Text-to-speech function
   const speakItem = (item: MenuItem) => {
@@ -166,7 +187,11 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
       <div className="h-20 md:h-24" />
 
       {/* Header */}
-      <div className="sticky top-20 md:top-24 z-20 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm">
+      <div
+        className={`sticky z-20 bg-white/95 backdrop-blur-sm border-b border-gray-200 shadow-sm transition-all duration-300 ease-in-out ${
+          navbarVisible ? 'top-20 md:top-24' : 'top-0'
+        }`}
+      >
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between mb-4">
             <Link href="/menu">
