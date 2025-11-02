@@ -1341,7 +1341,7 @@
     },
     {
       "id": "breads",
-      "name": "Hot Clay Pot & Tandoor",
+      "name": "Breads",
       "description": "Fresh baked breads",
       "displayOrder": 10,
       "items": [
@@ -1374,21 +1374,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-bread-003",
-          "name": "Khamiri Garlic Naan",
-          "description": "Leavened garlic naan",
-          "price": 99,
-          "category": "breads",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "gluten",
-            "dairy"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-bread-004",
           "name": "Lachha Paratha",
           "description": "Multi-layered paratha",
@@ -1405,8 +1390,8 @@
         },
         {
           "id": "food-bread-005",
-          "name": "Cheese Chilli Garlic Naan",
-          "description": "Cheese stuffed naan with chili and garlic",
+          "name": "Cheese Chilli Naan",
+          "description": "Cheese stuffed naan with chili",
           "price": 119,
           "category": "breads",
           "dietary": [
