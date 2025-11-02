@@ -353,6 +353,30 @@
             "veg"
           ],
           "isAvailable": true
+        },
+        {
+          "id": "food-app-043",
+          "name": "Tandoori Kumb (Mushroom)",
+          "description": "Marinated stuffed fresh mushroom with Indian spices, grilled to perfection in tandoor",
+          "price": 499,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "spiceLevel": 2
+        },
+        {
+          "id": "food-app-044",
+          "name": "Tandoori Grilled Pineapple",
+          "description": "Sweet and tangy pineapple chunks marinated with aromatic spices and grilled in tandoor",
+          "price": 429,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "spiceLevel": 1
         }
       ]
     },
@@ -941,7 +965,7 @@
           "id": "food-indian-003",
           "name": "Paneer Makhani",
           "description": "Spicy cottage cheese, tomato, Indian spice",
-          "price": 699,
+          "price": 599,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -954,7 +978,7 @@
           "id": "food-indian-004",
           "name": "Dal Double Tadka",
           "description": "Lentil cooked in tomato, Indian spice",
-          "price": 599,
+          "price": 449,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -965,7 +989,7 @@
           "id": "food-indian-005",
           "name": "Amante Chef Special Dal Makhani",
           "description": "Black lentil cooked in creamy tomato, Indian spice",
-          "price": 699,
+          "price": 599,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -1029,7 +1053,7 @@
           "id": "food-indian-011",
           "name": "Chefs' Special Vegetable Korma",
           "description": "Seasonal local vegetable potato, green peas",
-          "price": 599,
+          "price": 499,
           "category": "indian",
           "dietary": [
             "veg"
@@ -1040,7 +1064,7 @@
           "id": "food-indian-012",
           "name": "Lehsuni Bhuna Palak",
           "description": "Minced spinach with garlic tomato and chili",
-          "price": 599,
+          "price": 499,
           "category": "indian",
           "dietary": [
             "veg"
@@ -1051,7 +1075,7 @@
           "id": "food-indian-013",
           "name": "Subz Nizami Handi",
           "description": "Mix seasonal local vegetable spinach Indian spice",
-          "price": 699,
+          "price": 599,
           "category": "indian",
           "dietary": [
             "veg"
@@ -1073,7 +1097,7 @@
           "id": "food-indian-017",
           "name": "Chef Special Chicken Tikka Keema Masala",
           "description": "Amante chef special Bhopali minced chicken, Indian spice",
-          "price": 899,
+          "price": 799,
           "category": "indian",
           "dietary": [
             "non-veg"
@@ -1117,7 +1141,7 @@
           "id": "food-indian-022",
           "name": "Aloo Gobhi Adrak",
           "description": "Mixed seasonal local vegetables with spinach and Indian spices",
-          "price": 699,
+          "price": 399,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -1128,7 +1152,7 @@
           "id": "food-indian-023",
           "name": "Paneer Lababdar",
           "description": "Rich cottage cheese curry in creamy tomato gravy",
-          "price": 699,
+          "price": 599,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -1150,7 +1174,7 @@
           "id": "food-indian-025",
           "name": "Paneer Butter Masala",
           "description": "Cottage cheese in smooth butter tomato sauce",
-          "price": 699,
+          "price": 599,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -1161,7 +1185,7 @@
           "id": "food-indian-026",
           "name": "Paneer Tikka Masala",
           "description": "Grilled cottage cheese in spiced tomato curry",
-          "price": 699,
+          "price": 649,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -1172,7 +1196,7 @@
           "id": "food-indian-027",
           "name": "Lehsuni Palak Paneer",
           "description": "Cottage cheese in garlic-flavored spinach gravy",
-          "price": 699,
+          "price": 599,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -1212,6 +1236,18 @@
             "non-veg"
           ],
           "isAvailable": true
+        },
+        {
+          "id": "food-indian-033",
+          "name": "Kumb Hara Pyaz",
+          "description": "Fresh mushrooms and spring onions cooked in rich Indian chopped gravy with aromatic spices",
+          "price": 499,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "spiceLevel": 2
         }
       ]
     },
@@ -1236,7 +1272,7 @@
           "id": "food-rice-003",
           "name": "Hyderabadi Chicken Dum Biryani",
           "description": "Authentic Hyderabadi style chicken biryani",
-          "price": 799,
+          "price": 699,
           "category": "rice-biryani",
           "dietary": [
             "non-veg"
@@ -1280,11 +1316,33 @@
           "isAvailable": true
         },
         {
-          "id": "food-rice-009",
-          "name": "Steamed Rice, Jeera Rice, Curd Rice",
-          "description": "Choice of steamed, jeera or curd rice",
-          "price": 499,
-          "category": "rice",
+          "id": "food-rice-007",
+          "name": "Steamed Rice",
+          "description": "Well cooked steamed basmati rice",
+          "price": 299,
+          "category": "rice-biryani",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-rice-008",
+          "name": "Jeera Rice",
+          "description": "Fragrant basmati rice tempered with cumin seeds",
+          "price": 399,
+          "category": "rice-biryani",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-rice-010",
+          "name": "Curd Rice",
+          "description": "Cooling rice mixed with yogurt and tempered spices",
+          "price": 349,
+          "category": "rice-biryani",
           "dietary": [
             "veg"
           ],
