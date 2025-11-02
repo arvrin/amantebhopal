@@ -1336,28 +1336,6 @@
             "veg"
           ],
           "isAvailable": true
-        },
-        {
-          "id": "food-pasta-007",
-          "name": "Corn and Truffle Mushroom Crispy Ravioli",
-          "description": "Crispy fried ravioli creamy spinach served with anticuchera sauce",
-          "price": 599,
-          "category": "pasta",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-pasta-008",
-          "name": "Wild Mushroom Risotto",
-          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
-          "price": 799,
-          "category": "pasta",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
         }
       ]
     },
@@ -1536,6 +1514,89 @@
           "dietary": [
             "veg"
           ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-007",
+          "name": "Corn and Truffle Mushroom Crispy Ravioli",
+          "description": "Crispy fried ravioli creamy spinach served with anticuchera sauce",
+          "price": 599,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-008",
+          "name": "Wild Mushroom Risotto",
+          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
+          "price": 799,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-009",
+          "name": "Penne Arrabbiata",
+          "description": "Penne pasta tossed in spicy tomato sauce with garlic, red chili flakes and fresh basil",
+          "price": 649,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "spiceLevel": 3,
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-010",
+          "name": "Penne Arrabbiata with Grilled Chicken",
+          "description": "Penne pasta in spicy tomato sauce with tender grilled chicken, garlic, red chili flakes and fresh basil",
+          "price": 749,
+          "category": "pasta",
+          "dietary": [
+            "non-veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "spiceLevel": 3,
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-011",
+          "name": "Fusilli Alfredo",
+          "description": "Spiral fusilli pasta in rich creamy Alfredo sauce with parmesan cheese and herbs",
+          "price": 699,
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-012",
+          "name": "Fusilli Alfredo with Grilled Chicken",
+          "description": "Spiral fusilli pasta in creamy Alfredo sauce with succulent grilled chicken, parmesan cheese and herbs",
+          "price": 799,
+          "category": "pasta",
+          "dietary": [
+            "non-veg"
+          ],
+          "allergens": [
+            "gluten",
+            "dairy"
+          ],
+          "isRecommended": true,
           "isAvailable": true
         }
       ]
