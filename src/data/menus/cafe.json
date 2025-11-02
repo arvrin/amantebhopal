@@ -11,6 +11,17 @@
       "displayOrder": 1,
       "items": [
         {
+          "id": "cafe-hot-007",
+          "name": "Piccolo (Cortado)",
+          "description": "Small latte, perfect balance of espresso and milk",
+          "price": 189,
+          "category": "hot-coffee",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
           "id": "cafe-hot-001",
           "name": "Espresso",
           "description": "40ml",
@@ -58,17 +69,6 @@
           "description": "Ristretto with microfoam",
           "price": 199,
           "category": "hot-coffee",
-          "isAvailable": true
-        },
-        {
-          "id": "cafe-hot-007",
-          "name": "Piccolo (Cortado)",
-          "description": "Small latte, perfect balance of espresso and milk",
-          "price": 189,
-          "category": "hot-coffee",
-          "dietary": [
-            "veg"
-          ],
           "isAvailable": true
         },
         {

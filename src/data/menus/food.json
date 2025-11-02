@@ -100,63 +100,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-011",
-          "name": "Shrimp Tempura",
-          "description": "Togarashi aioli, spring onion, lime, tiger milk spicy mayo",
-          "price": 799,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-012",
-          "name": "Chicken Teriyaki Skewers",
-          "description": "Teriyaki chicken skewers, seven spice mix and scallion",
-          "price": 599,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-013",
-          "name": "Chicken Lollipop",
-          "description": "Classic chicken lollipop",
-          "price": 699,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-014",
-          "name": "Bharwan Angara Murgh Tikka",
-          "description": "Marinated stuffed chicken breast in Indian spice",
-          "price": 699,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "spiceLevel": 3,
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-015",
-          "name": "Lehsuni Malai Murg Tikka",
-          "description": "Garlic flavor murg tikka served with garlic yogurt chutney",
-          "price": 599,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isRecommended": true,
-          "isAvailable": true
-        },
-        {
           "id": "food-app-019",
           "name": "Crispy Togarashi Fried Corn Kernels",
           "description": "Japanese shichimi spice crispy corn chili oil",
@@ -186,72 +129,6 @@
           "category": "appetizers",
           "dietary": [
             "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-025",
-          "name": "Sumac Spice Crispy Fried Fish",
-          "description": "Avocado puree, sumac spice, ponzu mayo chimichuri",
-          "price": 899,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-027",
-          "name": "Dry Nuts Gilafi Mutton Seekh Kebab",
-          "description": "Indian spiced minced lamb with mint chutney",
-          "price": 799,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-028",
-          "name": "Nawabi Tangdi Kebab",
-          "description": "Stuffed chicken drumsticks leg, served with Dhaniya pudina ki chutney",
-          "price": 799,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-029",
-          "name": "Bhopali Murgh Tikka Mirza",
-          "description": "Marinated boneless chicken in Indian spice",
-          "price": 699,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-030",
-          "name": "Schezwan King Prawns",
-          "description": "RCP crisp prawns' chef interactive on flavored",
-          "price": 999,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-032",
-          "name": "Amante Special Tandoori Bater (Quail)",
-          "description": "Garlic flavor tandoori quail's tikka served with garlic yogurt green chutney",
-          "price": 799,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
           ],
           "isAvailable": true
         },
@@ -322,17 +199,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-040",
-          "name": "Lukhnawi Mutton Galouti Kebab",
-          "description": "Mutton mince with Indian spices, smoky flavored, served with warqi paratha",
-          "price": 999,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-app-042",
           "name": "Veg Galouti Kebab",
           "description": "Melt-in-mouth vegetarian kebab with aromatic spices, served with warqi paratha",
@@ -366,6 +232,140 @@
           ],
           "isAvailable": true,
           "spiceLevel": 1
+        },
+        {
+          "id": "food-app-011",
+          "name": "Shrimp Tempura",
+          "description": "Togarashi aioli, spring onion, lime, tiger milk spicy mayo",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-012",
+          "name": "Chicken Teriyaki Skewers",
+          "description": "Teriyaki chicken skewers, seven spice mix and scallion",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-013",
+          "name": "Chicken Lollipop",
+          "description": "Classic chicken lollipop",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-014",
+          "name": "Bharwan Angara Murgh Tikka",
+          "description": "Marinated stuffed chicken breast in Indian spice",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-015",
+          "name": "Lehsuni Malai Murg Tikka",
+          "description": "Garlic flavor murg tikka served with garlic yogurt chutney",
+          "price": 599,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-025",
+          "name": "Sumac Spice Crispy Fried Fish",
+          "description": "Avocado puree, sumac spice, ponzu mayo chimichuri",
+          "price": 899,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-027",
+          "name": "Dry Nuts Gilafi Mutton Seekh Kebab",
+          "description": "Indian spiced minced lamb with mint chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-028",
+          "name": "Nawabi Tangdi Kebab",
+          "description": "Stuffed chicken drumsticks leg, served with Dhaniya pudina ki chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-029",
+          "name": "Bhopali Murgh Tikka Mirza",
+          "description": "Marinated boneless chicken in Indian spice",
+          "price": 699,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-030",
+          "name": "Schezwan King Prawns",
+          "description": "RCP crisp prawns' chef interactive on flavored",
+          "price": 999,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-032",
+          "name": "Amante Special Tandoori Bater (Quail)",
+          "description": "Garlic flavor tandoori quail's tikka served with garlic yogurt green chutney",
+          "price": 799,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-040",
+          "name": "Lukhnawi Mutton Galouti Kebab",
+          "description": "Mutton mince with Indian spices, smoky flavored, served with warqi paratha",
+          "price": 999,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
         }
       ]
     },
@@ -390,6 +390,17 @@
           "id": "food-dim-002",
           "name": "Wild Mushroom Asparagus Crystal Dumpling",
           "description": "Black fungus shitake, Asian vegetables, asparagus, tomato garlic sauce",
+          "price": 699,
+          "category": "dim-sums",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-dim-006",
+          "name": "Mushroom Cream Cheese Dimsum",
+          "description": "Delicate dumplings filled with mushroom and cream cheese",
           "price": 699,
           "category": "dim-sums",
           "dietary": [
@@ -429,17 +440,6 @@
             "non-veg"
           ],
           "isAvailable": true
-        },
-        {
-          "id": "food-dim-006",
-          "name": "Mushroom Cream Cheese Dimsum",
-          "description": "Delicate dumplings filled with mushroom and cream cheese",
-          "price": 699,
-          "category": "dim-sums",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
         }
       ]
     },
@@ -457,17 +457,6 @@
           "category": "salads",
           "dietary": [
             "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-salad-002",
-          "name": "Thai Grilled Chicken Salad",
-          "description": "Thinly sliced grilled chicken, olive oil, spring mix Asian vegetable, toasted basil sesame",
-          "price": 799,
-          "category": "salads",
-          "dietary": [
-            "non-veg"
           ],
           "isAvailable": true
         },
@@ -491,18 +480,6 @@
           "category": "salads",
           "dietary": [
             "veg",
-            "contains-egg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-salad-005",
-          "name": "Classic Caesar Salad with Chicken",
-          "description": "Crisp iceberg, parmesan, garlic croutons, creamy Caesar dressing with grilled chicken",
-          "price": 799,
-          "category": "salads",
-          "dietary": [
-            "non-veg",
             "contains-egg"
           ],
           "isAvailable": true
@@ -561,6 +538,29 @@
             "veg"
           ],
           "isAvailable": true
+        },
+        {
+          "id": "food-salad-002",
+          "name": "Thai Grilled Chicken Salad",
+          "description": "Thinly sliced grilled chicken, olive oil, spring mix Asian vegetable, toasted basil sesame",
+          "price": 799,
+          "category": "salads",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-salad-005",
+          "name": "Classic Caesar Salad with Chicken",
+          "description": "Crisp iceberg, parmesan, garlic croutons, creamy Caesar dressing with grilled chicken",
+          "price": 799,
+          "category": "salads",
+          "dietary": [
+            "non-veg",
+            "contains-egg"
+          ],
+          "isAvailable": true
         }
       ]
     },
@@ -617,31 +617,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-soup-005",
-          "name": "Thai Signature Tom Yum Soup (Chicken)",
-          "description": "Thai herb, basil, spice signature broth with chicken",
-          "price": 599,
-          "category": "soups",
-          "dietary": [
-            "non-veg"
-          ],
-          "spiceLevel": 3,
-          "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-soup-006",
-          "name": "Chicken Shio Ramen",
-          "description": "Spiced chicken broth, panko crumbed chicken, marinated eggs, bamboo shoots, bok choy",
-          "price": 599,
-          "category": "soups",
-          "dietary": [
-            "non-veg",
-            "contains-egg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-soup-008",
           "name": "Tomato Dhaniya Ka Shorba",
           "description": "Vegetable stock tomato coriander Indian spice broth",
@@ -671,6 +646,31 @@
           "category": "soups",
           "dietary": [
             "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-005",
+          "name": "Thai Signature Tom Yum Soup (Chicken)",
+          "description": "Thai herb, basil, spice signature broth with chicken",
+          "price": 599,
+          "category": "soups",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-soup-006",
+          "name": "Chicken Shio Ramen",
+          "description": "Spiced chicken broth, panko crumbed chicken, marinated eggs, bamboo shoots, bok choy",
+          "price": 599,
+          "category": "soups",
+          "dietary": [
+            "non-veg",
+            "contains-egg"
           ],
           "isAvailable": true
         },
@@ -782,28 +782,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-burger-002",
-          "name": "Amante Special Chicken Burger",
-          "description": "Minced grilled chicken patties, iceberg lettuce and tomato",
-          "price": 599,
-          "category": "burgers-sandwiches",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-sandwich-001",
-          "name": "Amante Chef Special Chicken Club Sandwich",
-          "description": "Toasted bread, cheese, chicken served with French fries and mustard sauce",
-          "price": 699,
-          "category": "burgers-sandwiches",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-sandwich-002",
           "name": "Amante Chef Special Vegetable Club Sandwich",
           "description": "Toasted bread, cheese, vegetable served with French fries and mustard sauce",
@@ -822,6 +800,28 @@
           "category": "burgers",
           "dietary": [
             "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-burger-002",
+          "name": "Amante Special Chicken Burger",
+          "description": "Minced grilled chicken patties, iceberg lettuce and tomato",
+          "price": 599,
+          "category": "burgers-sandwiches",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-sandwich-001",
+          "name": "Amante Chef Special Chicken Club Sandwich",
+          "description": "Toasted bread, cheese, chicken served with French fries and mustard sauce",
+          "price": 699,
+          "category": "burgers-sandwiches",
+          "dietary": [
+            "non-veg"
           ],
           "isAvailable": true
         },
@@ -879,17 +879,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-pizza-004",
-          "name": "Pizza Grilled Chicken Divola",
-          "description": "Grilled chicken, Kalamata olives, ricotta, tomato sauce, basil, mozzarella",
-          "price": 1099,
-          "category": "pizza",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-pizza-006",
           "name": "Pizza Latin Aioli & Quattro Fromage",
           "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella",
@@ -897,6 +886,17 @@
           "category": "pizza",
           "dietary": [
             "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pizza-004",
+          "name": "Pizza Grilled Chicken Divola",
+          "description": "Grilled chicken, Kalamata olives, ricotta, tomato sauce, basil, mozzarella",
+          "price": 1099,
+          "category": "pizza",
+          "dietary": [
+            "non-veg"
           ],
           "isAvailable": true
         },
@@ -988,46 +988,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-indian-006",
-          "name": "Chef Special Butter Chicken",
-          "description": "Amante chef special Bhopali chicken, red gravy, buttery, creamy base, Indian spice",
-          "price": 699,
-          "category": "indian-mains",
-          "dietary": [
-            "non-veg"
-          ],
-          "spiceLevel": 2,
-          "isChefSpecial": true,
-          "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-indian-007",
-          "name": "Bhopali Mutton Nihari",
-          "description": "Bhopal mutton nali, Amante chef special rich gravy",
-          "price": 999,
-          "category": "indian-mains",
-          "dietary": [
-            "non-veg"
-          ],
-          "spiceLevel": 3,
-          "isChefSpecial": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-indian-008",
-          "name": "Chef Special Bhopali KadakNath",
-          "description": "KadakNath chicken, chef special Indian spices, cooked with chop base gravy",
-          "price": 1499,
-          "category": "indian-mains",
-          "dietary": [
-            "non-veg"
-          ],
-          "spiceLevel": 4,
-          "isChefSpecial": true,
-          "isAvailable": true
-        },
-        {
           "id": "food-indian-010",
           "name": "Amante Gunchaw Subzi",
           "description": "Minced cauliflower with vilayeti subzi, green chili coriander",
@@ -1068,50 +1028,6 @@
           "category": "indian",
           "dietary": [
             "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-indian-015",
-          "name": "Mutton Rogan Josh",
-          "description": "Bhopali mutton Amante chef special rogan josh",
-          "price": 999,
-          "category": "indian",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-indian-017",
-          "name": "Chef Special Chicken Tikka Keema Masala",
-          "description": "Amante chef special Bhopali minced chicken, Indian spice",
-          "price": 799,
-          "category": "indian",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-indian-019",
-          "name": "Chef Special Bhopali Kadak Nath",
-          "description": "KadakNath chicken chef special Indian spices, cooked with chop base gravy",
-          "price": 1499,
-          "category": "indian",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-indian-020",
-          "name": "Chef Special Bhopali Bater",
-          "description": "Slow cook Quail in chef choice spices",
-          "price": 999,
-          "category": "indian",
-          "dietary": [
-            "non-veg"
           ],
           "isAvailable": true
         },
@@ -1193,6 +1109,102 @@
           "isAvailable": true
         },
         {
+          "id": "food-indian-033",
+          "name": "Khumbi Hara Pyaz",
+          "description": "Fresh mushrooms and spring onions cooked in rich Indian chopped gravy with aromatic spices",
+          "price": 499,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true,
+          "spiceLevel": 2
+        },
+        {
+          "id": "food-indian-006",
+          "name": "Chef Special Butter Chicken",
+          "description": "Amante chef special Bhopali chicken, red gravy, buttery, creamy base, Indian spice",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 2,
+          "isChefSpecial": true,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-007",
+          "name": "Bhopali Mutton Nihari",
+          "description": "Bhopal mutton nali, Amante chef special rich gravy",
+          "price": 999,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 3,
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-008",
+          "name": "Chef Special Bhopali KadakNath",
+          "description": "KadakNath chicken, chef special Indian spices, cooked with chop base gravy",
+          "price": 1499,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": 4,
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-015",
+          "name": "Mutton Rogan Josh",
+          "description": "Bhopali mutton Amante chef special rogan josh",
+          "price": 999,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-017",
+          "name": "Chef Special Chicken Tikka Keema Masala",
+          "description": "Amante chef special Bhopali minced chicken, Indian spice",
+          "price": 799,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-019",
+          "name": "Chef Special Bhopali Kadak Nath",
+          "description": "KadakNath chicken chef special Indian spices, cooked with chop base gravy",
+          "price": 1499,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-020",
+          "name": "Chef Special Bhopali Bater",
+          "description": "Slow cook Quail in chef choice spices",
+          "price": 999,
+          "category": "indian",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
           "id": "food-indian-028",
           "name": "Chef Special Laal Maas",
           "description": "Authentic Rajasthani mutton with Indian spices",
@@ -1225,18 +1237,6 @@
             "non-veg"
           ],
           "isAvailable": true
-        },
-        {
-          "id": "food-indian-033",
-          "name": "Khumbi Hara Pyaz",
-          "description": "Fresh mushrooms and spring onions cooked in rich Indian chopped gravy with aromatic spices",
-          "price": 499,
-          "category": "indian-mains",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true,
-          "spiceLevel": 2
         }
       ]
     },
@@ -1258,30 +1258,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-rice-003",
-          "name": "Hyderabadi Chicken Dum Biryani",
-          "description": "Authentic Hyderabadi style chicken biryani",
-          "price": 699,
-          "category": "rice-biryani",
-          "dietary": [
-            "non-veg"
-          ],
-          "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-rice-004",
-          "name": "Hyderabadi Mutton Dum Biryani",
-          "description": "Authentic Hyderabadi style mutton biryani",
-          "price": 999,
-          "category": "rice-biryani",
-          "dietary": [
-            "non-veg"
-          ],
-          "isRecommended": true,
-          "isAvailable": true
-        },
-        {
           "id": "food-rice-005",
           "name": "Amante Chef Signature Pulao",
           "description": "Dry fruits, long grain rice, saffron, khada masala",
@@ -1291,17 +1267,6 @@
             "veg"
           ],
           "isChefSpecial": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-rice-006",
-          "name": "Burnt Garlic Chicken Fried Rice",
-          "description": "Stir-fried rice with burnt garlic and chicken",
-          "price": 599,
-          "category": "rice-biryani",
-          "dietary": [
-            "non-veg"
-          ],
           "isAvailable": true
         },
         {
@@ -1334,6 +1299,41 @@
           "category": "rice-biryani",
           "dietary": [
             "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-rice-003",
+          "name": "Hyderabadi Chicken Dum Biryani",
+          "description": "Authentic Hyderabadi style chicken biryani",
+          "price": 699,
+          "category": "rice-biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-rice-004",
+          "name": "Hyderabadi Mutton Dum Biryani",
+          "description": "Authentic Hyderabadi style mutton biryani",
+          "price": 999,
+          "category": "rice-biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-rice-006",
+          "name": "Burnt Garlic Chicken Fried Rice",
+          "description": "Stir-fried rice with burnt garlic and chicken",
+          "price": 599,
+          "category": "rice-biryani",
+          "dietary": [
+            "non-veg"
           ],
           "isAvailable": true
         }
@@ -1539,21 +1539,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-pasta-010",
-          "name": "Penne Arrabbiata with Grilled Chicken",
-          "description": "Penne pasta in spicy tomato sauce with tender grilled chicken, garlic, red chili flakes and fresh basil",
-          "price": 749,
-          "category": "pasta",
-          "dietary": [
-            "non-veg"
-          ],
-          "allergens": [
-            "gluten"
-          ],
-          "spiceLevel": 3,
-          "isAvailable": true
-        },
-        {
           "id": "food-pasta-011",
           "name": "Fusilli Alfredo",
           "description": "Spiral fusilli pasta in rich creamy Alfredo sauce with parmesan cheese and herbs",
@@ -1566,6 +1551,21 @@
             "gluten",
             "dairy"
           ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-010",
+          "name": "Penne Arrabbiata with Grilled Chicken",
+          "description": "Penne pasta in spicy tomato sauce with tender grilled chicken, garlic, red chili flakes and fresh basil",
+          "price": 749,
+          "category": "pasta",
+          "dietary": [
+            "non-veg"
+          ],
+          "allergens": [
+            "gluten"
+          ],
+          "spiceLevel": 3,
           "isAvailable": true
         },
         {
@@ -1592,6 +1592,17 @@
       "description": "Premium proteins",
       "displayOrder": 12,
       "items": [
+        {
+          "id": "food-pasta-006",
+          "name": "Japanese Curry Bowl – Vegetarian Donburi",
+          "description": "Teppanyaki style vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
+          "price": 899,
+          "category": "grills",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
         {
           "id": "food-grill-001",
           "name": "Grilled Baby Chicken",
@@ -1649,17 +1660,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-pasta-006",
-          "name": "Japanese Curry Bowl – Vegetarian Donburi",
-          "description": "Teppanyaki style vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
-          "price": 899,
-          "category": "grills",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-grill-008",
           "name": "Japanese Curry Bowl – Chicken Donburi",
           "description": "Teppanyaki style chicken, vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
@@ -1690,17 +1690,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-noodle-002",
-          "name": "Hakka Noodle Bowl (Chicken)",
-          "description": "Asian vegetable, chicken",
-          "price": 699,
-          "category": "noodles",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-noodle-003",
           "name": "Pad Thai Noodle Bowl (Veg)",
           "description": "Rice stick noodle, vegetable, peanut, bean sprout",
@@ -1713,6 +1702,17 @@
             "nuts"
           ],
           "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "food-noodle-002",
+          "name": "Hakka Noodle Bowl (Chicken)",
+          "description": "Asian vegetable, chicken",
+          "price": 699,
+          "category": "noodles",
+          "dietary": [
+            "non-veg"
+          ],
           "isAvailable": true
         },
         {
