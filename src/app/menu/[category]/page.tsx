@@ -341,15 +341,15 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                           </button>
                         </div>
                       </div>
-                      <div className="text-right ml-4 flex-shrink-0">
-                        <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-5 py-3 rounded-xl shadow-lg shadow-[#8B1538]/20">
+                      <div className="text-right ml-4 flex-shrink-0 flex flex-col gap-3">
+                        <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-5 py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[120px]">
                           <span className="text-xs text-white/80 uppercase tracking-wider font-medium">Price</span>
                           <span className="text-2xl font-bold text-white">₹{item.price}</span>
                         </div>
                         {item.bottlePrice && (
-                          <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-4 py-2 rounded-xl shadow-lg shadow-[#8B1538]/20 mt-2">
+                          <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-5 py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[120px]">
                             <span className="text-xs text-white/80 uppercase tracking-wider font-medium">Bottle</span>
-                            <span className="text-lg font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
+                            <span className="text-2xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
                           </div>
                         )}
                       </div>
