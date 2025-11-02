@@ -278,17 +278,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-035",
-          "name": "Hunan Chilli Tofu",
-          "description": "Sliced silken tofu, celery and burnt chili",
-          "price": 699,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-app-036",
           "name": "Hunan Chilli Cottage Cheese",
           "description": "Sliced cottage cheese, celery and burnt chili",
@@ -1494,17 +1483,6 @@
           "id": "food-bread-009",
           "name": "Butter Naan",
           "description": "Soft naan brushed with butter",
-          "price": 79,
-          "category": "breads",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-bread-010",
-          "name": "Missi Roti",
-          "description": "Traditional Indian flatbread made with gram flour and spices",
           "price": 79,
           "category": "breads",
           "dietary": [
