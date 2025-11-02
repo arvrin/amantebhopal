@@ -7,7 +7,6 @@ import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
 import Select from '@/components/ui/Select';
 import Textarea from '@/components/ui/Textarea';
-import { toast } from 'react-hot-toast';
 
 export default function ReservationsPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -90,7 +89,6 @@ export default function ReservationsPage() {
       }
 
       setIsSuccess(true);
-      toast.success('Reservation request received! We\'ll confirm within 2 hours.');
 
       // Reset form
       setFormData({
@@ -107,7 +105,7 @@ export default function ReservationsPage() {
       });
     } catch (error) {
       console.error('Reservation error:', error);
-      toast.error(error instanceof Error ? error.message : 'Failed to submit reservation. Please try again.');
+      alert(error instanceof Error ? error.message : 'Failed to submit reservation. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
