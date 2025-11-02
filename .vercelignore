@@ -33,7 +33,6 @@ src/app/gallery/
 src/app/api/
 src/components/SpacePageTemplate.tsx
 src/components/seo/
-src/components/ui/
 src/lib/
 src/types/
 src/styles/
