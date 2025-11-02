@@ -345,7 +345,7 @@
         },
         {
           "id": "food-app-043",
-          "name": "Tandoori Kumb (Mushroom)",
+          "name": "Tandoori Khumbi (Mushroom)",
           "description": "Marinated stuffed fresh mushroom with Indian spices, grilled to perfection in tandoor",
           "price": 499,
           "category": "appetizers",
@@ -1228,7 +1228,7 @@
         },
         {
           "id": "food-indian-033",
-          "name": "Kumb Hara Pyaz",
+          "name": "Khumbi Hara Pyaz",
           "description": "Fresh mushrooms and spring onions cooked in rich Indian chopped gravy with aromatic spices",
           "price": 499,
           "category": "indian-mains",
