@@ -262,8 +262,8 @@
         },
         {
           "id": "cafe-frappe-003",
-          "name": "Matcha Frappé",
-          "description": "Japanese green tea blend",
+          "name": "Mocha Frappé",
+          "description": "Rich chocolate and coffee blend",
           "price": 309,
           "category": "frappes",
           "isAvailable": true
