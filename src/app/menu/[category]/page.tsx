@@ -6,6 +6,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowLeft, Search, X, Leaf, Circle, Volume2 } from 'lucide-react';
 
+// Scrollbar hide styles
+const scrollbarHideStyles = `
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+`;
+
 // Import menu data
 import foodMenu from '@/data/menus/food.json';
 import barMenu from '@/data/menus/bar.json';
@@ -183,6 +194,9 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
 
   return (
     <div className="min-h-screen bg-[#FFF5F0]">
+      {/* Inject scrollbar hide styles */}
+      <style jsx global>{scrollbarHideStyles}</style>
+
       {/* Spacer for HeaderGlobal */}
       <div className="h-20 md:h-24" />
 
@@ -192,22 +206,22 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
           navbarVisible ? 'top-20 md:top-24' : 'top-0'
         }`}
       >
-        <div className="container mx-auto px-4 py-4">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 py-4">
           <div className="flex items-center justify-between mb-4">
             <Link href="/menu">
               <button className="flex items-center gap-2 text-gray-700 hover:text-gray-900">
                 <ArrowLeft size={20} />
-                <span className="font-medium">Back</span>
+                <span className="text-sm sm:text-base font-medium">Back</span>
               </button>
             </Link>
             <div className="text-center flex-1">
               <h1
-                className="text-2xl font-serif font-bold"
+                className="text-xl sm:text-2xl md:text-3xl font-serif font-bold"
                 style={{ color: themeColor }}
               >
                 {menu.name}
               </h1>
-              <p className="text-sm text-gray-600 mt-1">{menu.description}</p>
+              <p className="text-xs sm:text-sm md:text-base text-gray-600 mt-1">{menu.description}</p>
             </div>
             <div className="w-16"></div>
           </div>
@@ -223,7 +237,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
               placeholder="Search menu items..."
               value={searchQuery}
               onChange={e => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-10 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-opacity-50 bg-white"
+              className="w-full pl-10 pr-10 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8B1538] focus:ring-opacity-50 bg-white"
             />
             {searchQuery && (
               <button
@@ -236,7 +250,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
           </div>
 
           {/* Filters */}
-          <div className="flex gap-2 mt-3 overflow-x-auto pb-2">
+          <div className="flex gap-2 mt-3 overflow-x-auto pb-2 scrollbar-hide snap-x snap-mandatory">
             {category === 'food' && (
               <button
                 onClick={() => setShowVegOnly(!showVegOnly)}
@@ -276,7 +290,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
       </div>
 
       {/* Menu Items */}
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8 py-6">
         <AnimatePresence mode="wait">
           {filteredItems.length === 0 ? (
             <motion.div
@@ -307,7 +321,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ delay: index * 0.05 }}
-                  className="relative bg-gradient-to-br from-white via-[#FFF9F5] to-white rounded-2xl p-6 shadow-xl border border-[#8B1538]/10 hover:shadow-2xl transition-all duration-500 overflow-hidden group"
+                  className="relative bg-gradient-to-br from-white via-[#FFF9F5] to-white rounded-2xl p-4 sm:p-5 md:p-6 shadow-xl border border-[#8B1538]/10 hover:shadow-2xl transition-all duration-500 overflow-hidden group"
                 >
                   {/* Decorative corner accents */}
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#8B1538]/5 to-transparent rounded-bl-full" />
@@ -327,18 +341,18 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                               <div className="absolute -inset-1 bg-red-600/20 rounded-full blur-sm -z-10" />
                             )}
                           </div>
-                          <h3 className="font-serif text-2xl font-bold text-gray-900 tracking-tight">
+                          <h3 className="font-serif text-lg sm:text-xl md:text-2xl font-bold text-gray-900 tracking-tight">
                             {item.name}
                           </h3>
                         </div>
                         <div className="flex items-center gap-3 flex-wrap">
-                          <span className="text-xs uppercase tracking-widest text-gray-500 font-medium">
+                          <span className="text-[11px] sm:text-xs uppercase tracking-wide sm:tracking-widest text-gray-500 font-medium">
                             {item.categoryName}
                           </span>
                           {item.isRecommended && (
                             <>
                               <span className="w-1 h-1 rounded-full bg-gray-300" />
-                              <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full">
+                              <span className="text-[11px] sm:text-xs bg-amber-100 text-amber-700 px-2.5 py-1 rounded-full">
                                 Recommended
                               </span>
                             </>
@@ -347,7 +361,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                             <>
                               <span className="w-1 h-1 rounded-full bg-gray-300" />
                               <span
-                                className="text-xs text-white px-2 py-0.5 rounded-full"
+                                className="text-[11px] sm:text-xs text-white px-2.5 py-1 rounded-full"
                                 style={{ backgroundColor: themeColor }}
                               >
                                 Chef's Special
@@ -357,32 +371,32 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                           <span className="w-1 h-1 rounded-full bg-gray-300" />
                           <button
                             onClick={() => speakItem(item)}
-                            className="group/btn flex items-center gap-1.5 text-[#8B1538] hover:text-[#6B0F28] transition-colors"
+                            className="group/btn flex items-center gap-1.5 text-[#8B1538] hover:text-[#6B0F28] transition-colors p-1.5 -m-1.5"
                           >
-                            <Volume2 className={`w-4 h-4 ${speakingItemId === item.id ? 'animate-pulse' : ''}`} />
-                            <span className="text-xs font-medium">
+                            <Volume2 className={`w-4 h-4 sm:w-5 sm:h-5 ${speakingItemId === item.id ? 'animate-pulse' : ''}`} />
+                            <span className="text-xs sm:text-sm font-medium">
                               {speakingItemId === item.id ? 'Stop' : 'Listen'}
                             </span>
                           </button>
                         </div>
                       </div>
                       <div className="text-right ml-4 flex-shrink-0 flex flex-col gap-3">
-                        <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-5 py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[120px]">
-                          <span className="text-xs text-white/80 uppercase tracking-wider font-medium">Price</span>
-                          <span className="text-2xl font-bold text-white">₹{item.price}</span>
+                        <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
+                          <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">Price</span>
+                          <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.price}</span>
                         </div>
                         {item.bottlePrice && (
-                          <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-5 py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[120px]">
-                            <span className="text-xs text-white/80 uppercase tracking-wider font-medium">Bottle</span>
-                            <span className="text-2xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
+                          <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
+                            <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">Bottle</span>
+                            <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
                           </div>
                         )}
                       </div>
                     </div>
 
                     {/* Description */}
-                    <div className="relative pl-8 border-l-2 border-[#8B1538]/20">
-                      <p className="text-sm text-gray-600 leading-relaxed italic">
+                    <div className="relative pl-4 sm:pl-6 md:pl-8 border-l-2 border-[#8B1538]/20">
+                      <p className="text-sm sm:text-base text-gray-600 leading-relaxed italic">
                         {item.description}
                       </p>
                       {item.spiceLevel && item.spiceLevel > 0 && (
@@ -404,7 +418,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
       </div>
 
       {/* Footer */}
-      <div className="text-center py-8 text-gray-500 text-sm border-t border-gray-200 mt-8">
+      <div className="text-center py-6 sm:py-8 text-xs sm:text-sm text-gray-500 border-t border-gray-200 mt-6 sm:mt-8">
         <p className="mb-2">All prices are exclusive of taxes. Government taxes as applicable</p>
         <p className="mb-4">♦ AMANTE ♦</p>
         <a

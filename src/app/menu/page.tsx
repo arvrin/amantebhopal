@@ -33,9 +33,9 @@ export default function MenuLanding() {
       {/* Spacer for HeaderGlobal */}
       <div className="h-20 md:h-24" />
 
-      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-4xl mx-auto my-8">
+      <div className="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-4xl mx-4 sm:mx-auto my-8">
         {/* Elegant Header */}
-        <div className="relative bg-gradient-to-br from-[#8B1538] to-[#6B0F28] p-10 overflow-hidden">
+        <div className="relative bg-gradient-to-br from-[#8B1538] to-[#6B0F28] p-6 sm:p-8 md:p-10 overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `radial-gradient(circle, white 1px, transparent 1px)`,
@@ -45,13 +45,13 @@ export default function MenuLanding() {
           <div className="relative">
             {/* Top Corner Labels */}
             <div className="flex items-center justify-between mb-6">
-              <div className="text-xs text-white/70 uppercase tracking-[0.3em]">Menu 2025</div>
-              <div className="text-xs text-white/70 uppercase tracking-[0.3em]">Curated Selection</div>
+              <div className="text-[10px] sm:text-xs text-white/80 uppercase tracking-[0.2em] sm:tracking-[0.3em]">Menu 2025</div>
+              <div className="text-[10px] sm:text-xs text-white/80 uppercase tracking-[0.2em] sm:tracking-[0.3em]">Curated Selection</div>
             </div>
 
             {/* Main Title */}
             <div className="text-center">
-              <h1 className="text-5xl font-serif font-bold text-white mb-4 tracking-tight leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-4 tracking-tight leading-tight">
                 Explore<br/>Our Menus
               </h1>
               <div className="flex items-center justify-center gap-3 mt-4">
@@ -64,8 +64,8 @@ export default function MenuLanding() {
         </div>
 
         {/* Content Area */}
-        <div className="p-8">
-          <div className="max-w-md mx-auto space-y-6">
+        <div className="p-4 sm:p-6 md:p-8">
+          <div className="max-w-sm sm:max-w-md lg:max-w-lg mx-auto space-y-4 sm:space-y-6">
             {categories.map((category, index) => {
               const Icon = category.icon;
               return (
@@ -73,26 +73,26 @@ export default function MenuLanding() {
                   <div className="group cursor-pointer">
                     <div className="relative">
                       {/* Decorative number */}
-                      <div className="absolute -left-12 top-0 text-7xl font-serif font-bold text-gray-100 group-hover:text-[#8B1538]/40 transition-colors">
+                      <div className="hidden lg:block absolute -left-12 top-0 text-7xl font-serif font-bold text-gray-100 group-hover:text-[#8B1538]/40 transition-colors">
                         {index + 1}
                       </div>
 
-                      <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 border border-gray-100 group-hover:border-[#8B1538]/30 group-hover:shadow-xl transition-all duration-300">
+                      <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-4 sm:p-5 md:p-6 border border-gray-100 group-hover:border-[#8B1538]/30 group-hover:shadow-xl transition-all duration-300">
                         <div className="flex items-start gap-4">
                           {/* Icon */}
                           <div className="relative">
-                            <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#8B1538]/10 to-[#6B0F28]/10 flex items-center justify-center group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 transition-all">
-                              <Icon className="w-7 h-7 text-[#8B1538]" strokeWidth={1.5} />
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-gradient-to-br from-[#8B1538]/10 to-[#6B0F28]/10 flex items-center justify-center group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 transition-all">
+                              <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-[#8B1538]" strokeWidth={1.5} />
                             </div>
                             {/* Decorative corner */}
                             <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-[#8B1538]/30" />
                           </div>
 
                           <div className="flex-1">
-                            <h3 className="text-xl font-serif font-bold text-gray-900 mb-2 group-hover:text-[#8B1538] transition-colors">
+                            <h3 className="text-lg sm:text-xl font-serif font-bold text-gray-900 mb-2 group-hover:text-[#8B1538] transition-colors">
                               {category.name}
                             </h3>
-                            <p className="text-sm text-gray-600 leading-relaxed mb-3">
+                            <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-3">
                               {category.description}
                             </p>
                             <div className="flex items-center gap-2 text-xs text-[#8B1538] font-medium">
@@ -113,7 +113,7 @@ export default function MenuLanding() {
           </div>
 
           {/* Footer Contact */}
-          <div className="mt-10 pt-8 border-t border-gray-200 text-center">
+          <div className="mt-6 sm:mt-8 md:mt-10 pt-6 sm:pt-8 border-t border-gray-200 text-center">
             <div className="inline-block">
               <p className="text-sm font-semibold text-[#8B1538] mb-1">
                 <a href="tel:+919893779100" className="hover:opacity-80 transition-opacity">
@@ -141,7 +141,7 @@ export default function MenuLanding() {
           href="https://restronaut.in"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[10px] sm:text-xs text-gray-400 hover:text-[#8B1538] transition-colors duration-300"
+          className="text-xs sm:text-sm text-gray-400 hover:text-[#8B1538] transition-colors duration-300"
         >
           Powered by <span className="font-bold">Restronaut</span>
         </a>
