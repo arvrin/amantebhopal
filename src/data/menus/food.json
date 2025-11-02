@@ -1500,7 +1500,7 @@
       "items": [
         {
           "id": "food-pasta-001",
-          "name": "Fettuccini Primavera with Basil Pesto",
+          "name": "Fettuccini Primavera with Basil Pesto Pasta",
           "description": "Homemade fettuccini pasta, asparagus, cherry tomato, zucchini",
           "price": 799,
           "category": "pasta",
@@ -1531,17 +1531,6 @@
           "id": "food-pasta-004",
           "name": "Amante Classic Vegetable Lasagna",
           "description": "Homemade lasagna pasta, asparagus, broccoli, zucchini cheese sauce",
-          "price": 899,
-          "category": "pasta",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-pasta-006",
-          "name": "Japanese Curry Bowl – Vegetarian Donburi",
-          "description": "Teppanyaki style vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
           "price": 899,
           "category": "pasta",
           "dietary": [
@@ -1610,6 +1599,17 @@
           "category": "grills",
           "dietary": [
             "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-pasta-006",
+          "name": "Japanese Curry Bowl – Vegetarian Donburi",
+          "description": "Teppanyaki style vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
+          "price": 899,
+          "category": "grills",
+          "dietary": [
+            "veg"
           ],
           "isAvailable": true
         },
