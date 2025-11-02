@@ -85,24 +85,14 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
     setIsSubmitting(true);
 
     try {
-      const submitData = {
+      // TEMPORARY MOCK: Simulating API call for preview testing
+      // TODO: Replace with Google Form integration
+      await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
+
+      console.log('Reservation data (mock):', {
         ...formData,
         partySize: parseInt(formData.partySize),
-      };
-
-      const response = await fetch('/api/reservations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(submitData),
       });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Failed to submit reservation');
-      }
 
       setIsSuccess(true);
 
