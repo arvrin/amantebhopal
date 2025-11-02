@@ -73,7 +73,7 @@ export default function MenuLanding() {
                   <div className="group cursor-pointer">
                     <div className="relative">
                       {/* Decorative number */}
-                      <div className="absolute -left-12 top-0 text-7xl font-serif font-bold text-gray-100 group-hover:text-[#8B1538]/10 transition-colors">
+                      <div className="absolute -left-12 top-0 text-7xl font-serif font-bold text-gray-100 group-hover:text-[#8B1538]/40 transition-colors">
                         {index + 1}
                       </div>
 
