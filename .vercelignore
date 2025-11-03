@@ -30,12 +30,7 @@ src/app/feedback/
 src/app/careers/
 src/app/events/
 src/app/gallery/
-src/app/api/careers/
-src/app/api/contact/
-src/app/api/feedback/
-src/app/api/events/
-src/app/api/private-events/
-src/app/api/banquet-booking/
+src/app/api/
 src/components/SpacePageTemplate.tsx
 src/components/seo/
 src/lib/
