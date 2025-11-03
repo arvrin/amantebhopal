@@ -17,11 +17,6 @@ playwright.config.ts
 
 # Ignore new pages (not ready for production)
 src/app/about/
-src/app/cafe/
-src/app/restaurant/
-src/app/lounge/
-src/app/club/
-src/app/private-dining/
 src/app/banquets/
 src/app/private-events/
 src/app/banquet-booking/
