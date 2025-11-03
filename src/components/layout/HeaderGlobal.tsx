@@ -192,14 +192,14 @@ export default function HeaderGlobal() {
             >
               {/* Elegant Background Pattern */}
               <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-amante-red via-transparent to-amante-pink" />
+                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-[#8B1538] via-transparent to-amante-pink" />
                 <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(255,255,255,0.15) 1px, transparent 0)', backgroundSize: '40px 40px' }} />
               </div>
 
               {/* Close Button */}
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="absolute top-8 right-8 w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-amante-red/20 border border-white/10 hover:border-amante-red/50 transition-all duration-300 group z-10"
+                className="absolute top-8 right-8 w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-gradient-to-br hover:from-[#8B1538]/20 hover:to-[#6B0F28]/20 border border-white/10 hover:border-[#8B1538]/50 transition-all duration-300 group z-10"
                 aria-label="Close Menu"
               >
                 <X className="w-5 h-5 text-white/60 group-hover:text-white transition-colors" />
@@ -223,7 +223,7 @@ export default function HeaderGlobal() {
                             onClick={() => setIsSpacesOpen(!isSpacesOpen)}
                             className={`w-full flex items-center justify-between py-4 px-5 rounded-xl text-lg font-heading tracking-wide transition-all duration-300 border ${
                               hasActiveSpace || isSpacesOpen
-                                ? 'bg-gradient-to-r from-amante-red/20 to-amante-pink/10 text-white border-amante-red/30 shadow-lg shadow-amante-red/10'
+                                ? 'bg-gradient-to-r from-[#8B1538]/20 to-amante-pink/10 text-white border-[#8B1538]/30 shadow-lg shadow-[#8B1538]/10'
                                 : 'text-white/70 hover:text-white hover:bg-white/5 border-transparent hover:border-white/10'
                             }`}
                           >
@@ -260,7 +260,7 @@ export default function HeaderGlobal() {
                                         onClick={() => setIsMenuOpen(false)}
                                         className={`block py-3 px-4 rounded-lg text-base font-body tracking-wide transition-all duration-300 border ${
                                           isActive
-                                            ? 'bg-gradient-to-r from-amante-red to-amante-red-dark text-white border-amante-red shadow-md shadow-amante-red/20'
+                                            ? 'bg-gradient-to-r from-[#8B1538] to-[#6B0F28] text-white border-[#8B1538] shadow-md shadow-[#8B1538]/20'
                                             : 'text-white/60 hover:text-white hover:bg-white/5 border-transparent hover:border-white/10 hover:pl-5'
                                         }`}
                                       >
@@ -292,7 +292,7 @@ export default function HeaderGlobal() {
                           onClick={() => setIsMenuOpen(false)}
                           className={`block py-4 px-5 rounded-xl text-lg font-heading tracking-wide transition-all duration-300 border ${
                             isActive
-                              ? 'bg-gradient-to-r from-amante-red to-amante-red-dark text-white border-amante-red shadow-lg shadow-amante-red/20'
+                              ? 'bg-gradient-to-r from-[#8B1538] to-[#6B0F28] text-white border-[#8B1538] shadow-lg shadow-[#8B1538]/20'
                               : 'text-white/70 hover:text-white hover:bg-white/5 border-transparent hover:border-white/10'
                           }`}
                         >
@@ -316,7 +316,7 @@ export default function HeaderGlobal() {
                   href="tel:+919893779100"
                   className="flex items-center gap-3 text-white/70 hover:text-amante-pink transition-all duration-300 group"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amante-red/20 group-hover:border-amante-red/30 transition-all duration-300">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 group-hover:border-[#8B1538]/30 transition-all duration-300">
                     <Phone className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-medium tracking-wide">+91 98937 79100</span>
@@ -327,7 +327,7 @@ export default function HeaderGlobal() {
                   href="mailto:contact.cafeamante@gmail.com"
                   className="flex items-center gap-3 text-white/70 hover:text-amante-pink transition-all duration-300 group"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amante-red/20 group-hover:border-amante-red/30 transition-all duration-300">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 group-hover:border-[#8B1538]/30 transition-all duration-300">
                     <Mail className="w-4 h-4" />
                   </div>
                   <span className="text-sm font-medium break-all tracking-wide">contact.cafeamante@gmail.com</span>
@@ -340,7 +340,7 @@ export default function HeaderGlobal() {
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 text-white/70 hover:text-amante-pink transition-all duration-300 group"
                 >
-                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amante-red/20 group-hover:border-amante-red/30 transition-all duration-300">
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 group-hover:border-[#8B1538]/30 transition-all duration-300">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                     </svg>
