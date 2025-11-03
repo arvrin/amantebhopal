@@ -166,7 +166,7 @@ export default function PrivateDiningPage() {
       </div>
 
       {/* Main Content */}
-      <div className="bg-amante-cream">
+      <div className="bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 py-12 sm:py-16 md:py-24">
           {/* Intro Section */}
           <motion.div
@@ -176,10 +176,10 @@ export default function PrivateDiningPage() {
             transition={{ duration: 0.6 }}
             className="mb-16 sm:mb-20 md:mb-24"
           >
-            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-amante-red mb-6 sm:mb-8">
+            <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl bg-gradient-to-r from-[#8B1538] to-amante-pink bg-clip-text text-transparent mb-6 sm:mb-8">
               Intimate Excellence, Exclusively Yours
             </h2>
-            <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl text-amante-charcoal max-w-4xl leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl text-white/90 max-w-4xl leading-relaxed">
               <p>
                 Some moments deserve intimacy and exclusivity. Our private dining spaces offer the perfect setting for occasions that matter—personalized menus, dedicated service, and complete privacy.
               </p>
@@ -226,7 +226,7 @@ export default function PrivateDiningPage() {
             transition={{ duration: 0.6 }}
             className="mb-16 sm:mb-20 md:mb-24"
           >
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl text-amante-red mb-8 sm:mb-12 text-center">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-[#8B1538] to-amante-pink bg-clip-text text-transparent mb-8 sm:mb-12 text-center">
               Experience the Difference
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
@@ -239,13 +239,13 @@ export default function PrivateDiningPage() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="bg-white p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                    className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 sm:p-8 rounded-2xl shadow-md hover:shadow-xl hover:bg-white/10 transition-all duration-300 hover:-translate-y-1"
                   >
-                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-amante-red mb-4" />
-                    <h3 className="font-heading text-lg sm:text-xl text-amante-charcoal mb-3">
+                    <Icon className="w-10 h-10 sm:w-12 sm:h-12 text-amante-pink mb-4" />
+                    <h3 className="font-heading text-lg sm:text-xl text-white/90 mb-3">
                       {feature.title}
                     </h3>
-                    <p className="text-sm sm:text-base text-amante-grey leading-relaxed">
+                    <p className="text-sm sm:text-base text-white/70 leading-relaxed">
                       {feature.description}
                     </p>
                   </motion.div>
@@ -260,16 +260,16 @@ export default function PrivateDiningPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-gradient-to-br from-white to-amante-pink/5 p-6 sm:p-8 md:p-12 rounded-2xl shadow-md mb-16 sm:mb-20 md:mb-24"
+            className="bg-gradient-to-br from-white/5 to-transparent border border-white/10 backdrop-blur-sm p-6 sm:p-8 md:p-12 rounded-2xl shadow-md mb-16 sm:mb-20 md:mb-24"
           >
-            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl text-amante-red mb-6 sm:mb-8">
+            <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl bg-gradient-to-r from-[#8B1538] to-amante-pink bg-clip-text text-transparent mb-6 sm:mb-8">
               Private Dining Highlights
             </h2>
             <ul className="grid sm:grid-cols-2 gap-4 sm:gap-6">
               {highlights.map((highlight, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <Lock className="w-5 h-5 sm:w-6 sm:h-6 text-amante-red flex-shrink-0 mt-1" />
-                  <span className="text-sm sm:text-base text-amante-charcoal leading-relaxed">{highlight}</span>
+                  <Lock className="w-5 h-5 sm:w-6 sm:h-6 text-amante-pink flex-shrink-0 mt-1" />
+                  <span className="text-sm sm:text-base text-white/90 leading-relaxed">{highlight}</span>
                 </li>
               ))}
             </ul>
@@ -283,20 +283,20 @@ export default function PrivateDiningPage() {
             transition={{ duration: 0.6 }}
             className="grid sm:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16"
           >
-            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-md text-center hover:shadow-xl transition-shadow">
-              <Clock className="w-10 h-10 sm:w-12 sm:h-12 text-amante-red mx-auto mb-4" />
-              <h3 className="font-heading text-lg sm:text-xl text-amante-charcoal mb-2">Timing</h3>
-              <p className="text-sm sm:text-base text-amante-grey">Available by Reservation</p>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 sm:p-8 rounded-2xl shadow-md text-center hover:shadow-xl hover:bg-white/10 transition-all">
+              <Clock className="w-10 h-10 sm:w-12 sm:h-12 text-amante-pink mx-auto mb-4" />
+              <h3 className="font-heading text-lg sm:text-xl text-white/90 mb-2">Timing</h3>
+              <p className="text-sm sm:text-base text-white/70">Available by Reservation</p>
             </div>
-            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-md text-center hover:shadow-xl transition-shadow">
-              <Users className="w-10 h-10 sm:w-12 sm:h-12 text-amante-red mx-auto mb-4" />
-              <h3 className="font-heading text-lg sm:text-xl text-amante-charcoal mb-2">Capacity</h3>
-              <p className="text-sm sm:text-base text-amante-grey">10-50 guests per room</p>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 sm:p-8 rounded-2xl shadow-md text-center hover:shadow-xl hover:bg-white/10 transition-all">
+              <Users className="w-10 h-10 sm:w-12 sm:h-12 text-amante-pink mx-auto mb-4" />
+              <h3 className="font-heading text-lg sm:text-xl text-white/90 mb-2">Capacity</h3>
+              <p className="text-sm sm:text-base text-white/70">10-50 guests per room</p>
             </div>
-            <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-md text-center hover:shadow-xl transition-shadow">
-              <Gift className="w-10 h-10 sm:w-12 sm:h-12 text-amante-red mx-auto mb-4" />
-              <h3 className="font-heading text-lg sm:text-xl text-amante-charcoal mb-2">Price Range</h3>
-              <p className="text-sm sm:text-base text-amante-grey">₹₹₹₹</p>
+            <div className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 sm:p-8 rounded-2xl shadow-md text-center hover:shadow-xl hover:bg-white/10 transition-all">
+              <Gift className="w-10 h-10 sm:w-12 sm:h-12 text-amante-pink mx-auto mb-4" />
+              <h3 className="font-heading text-lg sm:text-xl text-white/90 mb-2">Price Range</h3>
+              <p className="text-sm sm:text-base text-white/70">₹₹₹₹</p>
             </div>
           </motion.div>
 
