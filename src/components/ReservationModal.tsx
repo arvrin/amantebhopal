@@ -136,12 +136,12 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100]"
             onClick={handleClose}
           />
 
           {/* Modal */}
-          <div className="fixed inset-0 z-50 overflow-y-auto">
+          <div className="fixed inset-0 z-[100] overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
@@ -333,7 +333,7 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
 
                       {/* Contact Info */}
                       <div className="border-t border-amante-grey-light pt-6">
-                        <h3 className="font-heading text-lg text-amante-red mb-4">
+                        <h3 className="font-heading text-lg mb-4" style={{ color: '#8B1538' }}>
                           Contact Information
                         </h3>
 

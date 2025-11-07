@@ -380,12 +380,6 @@ export default function ContactPage() {
                   → Plan an Event
                 </a>
                 <a
-                  href="/banquet-booking"
-                  className="block font-body text-amante-red hover:text-amante-red-dark transition-colors"
-                >
-                  → Book Banquet Hall
-                </a>
-                <a
                   href="/feedback"
                   className="block font-body text-amante-red hover:text-amante-red-dark transition-colors"
                 >

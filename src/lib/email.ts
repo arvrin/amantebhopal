@@ -10,11 +10,10 @@ import { Resend } from 'resend';
 import type {
   Reservation,
   PrivateEvent,
-  Banquet,
   ContactSubmission,
   Feedback,
   CareerApplication,
-} from './supabase';
+} from '@/types';
 
 // ============================================================================
 // RESEND CLIENT CONFIGURATION
@@ -135,25 +134,6 @@ export async function sendPrivateEventEmails(event: PrivateEvent) {
 /**
  * Send banquet confirmation and notification emails
  */
-export async function sendBanquetEmails(banquet: Banquet) {
-  try {
-    const results = await Promise.allSettled([
-      sendCustomerBanquetEmail(banquet),
-      sendRestaurantBanquetEmail(banquet),
-    ]);
-
-    results.forEach((result, index) => {
-      if (result.status === 'rejected') {
-        console.error(`Failed to send banquet email ${index}:`, result.reason);
-      }
-    });
-
-    return { success: true, results };
-  } catch (error) {
-    console.error('Failed to send banquet emails:', error);
-    throw error;
-  }
-}
 
 /**
  * Send contact confirmation and notification emails
@@ -238,10 +218,10 @@ Thank you for choosing Amante! We've received your reservation request.
 RESERVATION DETAILS:
 Date: ${reservation.date}
 Time: ${reservation.time}
-Party Size: ${reservation.party_size} guests
-Space: ${reservation.space_preference || 'Any'}
+Party Size: ${reservation.partySize} guests
+Space: ${reservation.spacePreference || 'Any'}
 ${reservation.occasion ? `Occasion: ${reservation.occasion}\n` : ''}
-${reservation.special_requests ? `Special Requests: ${reservation.special_requests}\n` : ''}
+${reservation.specialRequests ? `Special Requests: ${reservation.specialRequests}\n` : ''}
 
 Our team will call you at ${reservation.phone} within 2 hours to confirm your booking.
 
@@ -264,14 +244,14 @@ async function sendCustomerPrivateEventEmail(event: PrivateEvent) {
   const subject = 'Private Event Enquiry Received - Amante Bhopal';
   const text = `Dear ${event.name},
 
-Thank you for considering Amante for your ${event.event_type}! We've received your enquiry.
+Thank you for considering Amante for your ${event.eventType}! We've received your enquiry.
 
 EVENT DETAILS:
-Event Type: ${event.event_type}
-Date: ${event.event_date}
-Guest Count: ${event.guest_count}
-Budget Range: ${event.budget_range || 'Not specified'}
-Space Preference: ${event.space_preference || 'Any'}
+Event Type: ${event.eventType}
+Date: ${event.eventDate}
+Guest Count: ${event.guestCount}
+Budget Range: ${event.budgetRange || 'Not specified'}
+Space Preference: ${event.spacePreference || 'Any'}
 
 Our events team will contact you within 24 hours to discuss your requirements in detail.
 
@@ -287,38 +267,12 @@ ${EMAIL_CONFIG.restaurant.phone}`;
   });
 }
 
-async function sendCustomerBanquetEmail(banquet: Banquet) {
-  const subject = 'Banquet Enquiry Received - Amante Bhopal';
-  const text = `Dear ${banquet.name},
-
-Thank you for considering Amante for your ${banquet.event_type}! We've received your enquiry.
-
-EVENT DETAILS:
-Event Type: ${banquet.event_type}
-Date: ${banquet.event_date}
-${banquet.alternate_date ? `Alternate Date: ${banquet.alternate_date}\n` : ''}Guest Count: ${banquet.guest_count}
-Timing: ${banquet.timing_from} to ${banquet.timing_to}
-Requirements: ${banquet.requirements?.join(', ') || 'None specified'}
-
-Our banquet manager will contact you within 12 hours to discuss your requirements and arrange a site visit if requested.
-
-Best regards,
-Amante Banquet Team
-${EMAIL_CONFIG.restaurant.phone}`;
-
-  return resend.emails.send({
-    from: getFromEmail(),
-    to: banquet.email,
-    subject,
-    text,
-  });
-}
 
 async function sendCustomerContactEmail(contact: ContactSubmission) {
   const subject = 'We Received Your Message - Amante Bhopal';
   const text = `Dear ${contact.name},
 
-Thank you for contacting Amante. We've received your message regarding: ${contact.inquiry_type}
+Thank you for contacting Amante. We've received your message regarding: ${contact.inquiryType}
 
 We'll respond to your inquiry within 24 hours.
 
@@ -338,11 +292,11 @@ async function sendCustomerFeedbackEmail(feedback: Feedback) {
   const subject = 'Thank You for Your Feedback - Amante Bhopal';
   const text = `${feedback.name ? `Dear ${feedback.name}` : 'Dear Guest'},
 
-Thank you for taking the time to share your feedback about your visit to ${feedback.space_visited || 'Amante'}.
+Thank you for taking the time to share your feedback about your visit to ${feedback.spaceVisited || 'Amante'}.
 
-Your insights help us continually improve our service and guest experience. We truly appreciate your ${feedback.overall_rating}-star rating!
+Your insights help us continually improve our service and guest experience. We truly appreciate your ${feedback.overallRating}-star rating!
 
-${feedback.overall_rating >= 4 ? "We're delighted you enjoyed your experience with us. We look forward to welcoming you back soon!" : "We're sorry if any aspect of your visit didn't meet expectations. Your feedback will help us do better."}
+${feedback.overallRating >= 4 ? "We're delighted you enjoyed your experience with us. We look forward to welcoming you back soon!" : "We're sorry if any aspect of your visit didn't meet expectations. Your feedback will help us do better."}
 
 Warm regards,
 Team Amante
@@ -358,7 +312,7 @@ ${EMAIL_CONFIG.restaurant.phone}`;
 
 async function sendCustomerCareerEmail(application: CareerApplication) {
   const subject = 'Application Received - Amante Careers';
-  const text = `Dear ${application.full_name},
+  const text = `Dear ${application.fullName},
 
 Thank you for your interest in joining the Amante team!
 
@@ -383,7 +337,7 @@ ${EMAIL_CONFIG.recipients.careers}`;
 // ============================================================================
 
 async function sendRestaurantReservationEmail(reservation: Reservation) {
-  const subject = `🔔 NEW RESERVATION - ${reservation.name} (${reservation.party_size} guests on ${reservation.date})`;
+  const subject = `🔔 NEW RESERVATION - ${reservation.name} (${reservation.partySize} guests on ${reservation.date})`;
   const text = `NEW RESERVATION REQUEST
 
 ⚠️ ACTION REQUIRED: Call customer within 2 hours to confirm booking
@@ -392,10 +346,10 @@ RESERVATION DETAILS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Date: ${reservation.date}
 Time: ${reservation.time}
-Party Size: ${reservation.party_size} guests
-Space: ${reservation.space_preference || 'Any'}
+Party Size: ${reservation.partySize} guests
+Space: ${reservation.spacePreference || 'Any'}
 ${reservation.occasion ? `Occasion: ${reservation.occasion} 🎉\n` : ''}
-${reservation.special_requests ? `\nSPECIAL REQUESTS:\n${reservation.special_requests}\n` : ''}
+${reservation.specialRequests ? `\nSPECIAL REQUESTS:\n${reservation.specialRequests}\n` : ''}
 CUSTOMER INFORMATION:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Name: ${reservation.name}
@@ -409,7 +363,7 @@ NEXT STEPS:
 ${reservation.occasion ? `4. Arrange special ${reservation.occasion.toLowerCase()} setup\n` : ''}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Reservation ID: #${reservation.id}
-Received: ${new Date(reservation.created_at).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
+Received: ${new Date(reservation.createdAt).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
 
   return resend.emails.send({
     from: getFromEmail(),
@@ -425,18 +379,18 @@ Received: ${new Date(reservation.created_at).toLocaleString('en-IN', { timeZone:
 }
 
 async function sendRestaurantPrivateEventEmail(event: PrivateEvent) {
-  const subject = `🎉 NEW PRIVATE EVENT ENQUIRY - ${event.event_type} (${event.guest_count} guests)`;
+  const subject = `🎉 NEW PRIVATE EVENT ENQUIRY - ${event.eventType} (${event.guestCount} guests)`;
   const text = `NEW PRIVATE EVENT ENQUIRY
 
 ⚠️ ACTION REQUIRED: Contact customer within 24 hours
 
 EVENT DETAILS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Event Type: ${event.event_type}
-Date: ${event.event_date}
-Guest Count: ${event.guest_count}
-Budget Range: ${event.budget_range || 'Not specified'}
-Space Preference: ${event.space_preference || 'Any'}
+Event Type: ${event.eventType}
+Date: ${event.eventDate}
+Guest Count: ${event.guestCount}
+Budget Range: ${event.budgetRange || 'Not specified'}
+Space Preference: ${event.spacePreference || 'Any'}
 ${event.company ? `Company: ${event.company}\n` : ''}
 REQUIREMENTS:
 ${event.requirements}
@@ -446,11 +400,11 @@ CUSTOMER INFORMATION:
 Name: ${event.name}
 Phone: ${event.phone}
 Email: ${event.email}
-Preferred Contact: ${event.preferred_contact || 'Phone'}
+Preferred Contact: ${event.preferredContact || 'Phone'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Enquiry ID: #${event.id}
-Received: ${new Date(event.created_at).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
+Received: ${new Date(event.createdAt).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
 
   return resend.emails.send({
     from: getFromEmail(),
@@ -461,51 +415,12 @@ Received: ${new Date(event.created_at).toLocaleString('en-IN', { timeZone: 'Asia
   });
 }
 
-async function sendRestaurantBanquetEmail(banquet: Banquet) {
-  const subject = `💒 NEW BANQUET ENQUIRY - ${banquet.event_type} (${banquet.guest_count} guests)`;
-  const text = `NEW BANQUET ENQUIRY
-
-⚠️ HIGH PRIORITY: Contact customer within 12 hours
-
-EVENT DETAILS:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Event Type: ${banquet.event_type}
-Date: ${banquet.event_date}
-${banquet.alternate_date ? `Alternate Date: ${banquet.alternate_date}\n` : ''}Guest Count: ${banquet.guest_count}
-Timing: ${banquet.timing_from} to ${banquet.timing_to}
-Requirements: ${banquet.requirements?.join(', ') || 'None'}
-${banquet.additional_notes ? `\nADDITIONAL NOTES:\n${banquet.additional_notes}\n` : ''}
-CUSTOMER INFORMATION:
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Name: ${banquet.name}
-Phone: ${banquet.phone}
-Email: ${banquet.email}
-City: ${banquet.city || 'Not specified'}
-How they found us: ${banquet.hear_about_us || 'Not specified'}
-Request Type: ${banquet.request_type || 'Quote'}
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Enquiry ID: #${banquet.id}
-Received: ${new Date(banquet.created_at).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
-
-  return resend.emails.send({
-    from: getFromEmail(),
-    to: EMAIL_CONFIG.recipients.events,
-    cc: EMAIL_CONFIG.recipients.general,
-    subject,
-    text,
-    headers: {
-      'X-Priority': '1',
-      Importance: 'high',
-    },
-  });
-}
 
 async function sendRestaurantContactEmail(contact: ContactSubmission) {
-  const subject = `📧 NEW CONTACT FORM - ${contact.inquiry_type}`;
+  const subject = `📧 NEW CONTACT FORM - ${contact.inquiryType}`;
   const text = `NEW CONTACT FORM SUBMISSION
 
-Inquiry Type: ${contact.inquiry_type}
+Inquiry Type: ${contact.inquiryType}
 
 MESSAGE:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -519,7 +434,7 @@ Email: ${contact.email}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Submission ID: #${contact.id}
-Received: ${new Date(contact.created_at).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
+Received: ${new Date(contact.createdAt).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
 
   return resend.emails.send({
     from: getFromEmail(),
@@ -530,23 +445,23 @@ Received: ${new Date(contact.created_at).toLocaleString('en-IN', { timeZone: 'As
 }
 
 async function sendRestaurantFeedbackEmail(feedback: Feedback) {
-  const subject = `⭐ NEW FEEDBACK - ${feedback.overall_rating} stars (${feedback.space_visited || 'General'})`;
+  const subject = `⭐ NEW FEEDBACK - ${feedback.overallRating} stars (${feedback.spaceVisited || 'General'})`;
   const text = `NEW CUSTOMER FEEDBACK
 
 RATINGS:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Overall: ${'⭐'.repeat(feedback.overall_rating)} (${feedback.overall_rating}/5)
-Food: ${'⭐'.repeat(feedback.food_rating)} (${feedback.food_rating}/5)
-Service: ${'⭐'.repeat(feedback.service_rating)} (${feedback.service_rating}/5)
-Ambiance: ${'⭐'.repeat(feedback.ambiance_rating)} (${feedback.ambiance_rating}/5)
-Value: ${'⭐'.repeat(feedback.value_rating)} (${feedback.value_rating}/5)
+Overall: ${'⭐'.repeat(feedback.overallRating)} (${feedback.overallRating}/5)
+Food: ${'⭐'.repeat(feedback.foodRating)} (${feedback.foodRating}/5)
+Service: ${'⭐'.repeat(feedback.serviceRating)} (${feedback.serviceRating}/5)
+Ambiance: ${'⭐'.repeat(feedback.ambianceRating)} (${feedback.ambianceRating}/5)
+Value: ${'⭐'.repeat(feedback.valueRating)} (${feedback.valueRating}/5)
 
-Space Visited: ${feedback.space_visited || 'Not specified'}
-Visit Date: ${feedback.visit_date}
-Would Recommend: ${feedback.would_recommend || 'Not specified'}
+Space Visited: ${feedback.spaceVisited || 'Not specified'}
+Visit Date: ${feedback.visitDate}
+Would Recommend: ${feedback.wouldRecommend || 'Not specified'}
 
 WHAT THEY LOVED:
-${feedback.what_you_loved || 'Not provided'}
+${feedback.whatYouLoved || 'Not provided'}
 
 IMPROVEMENTS SUGGESTED:
 ${feedback.improvements || 'None'}
@@ -555,11 +470,11 @@ CUSTOMER INFORMATION:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Name: ${feedback.name || 'Anonymous'}
 Email: ${feedback.email || 'Not provided'}
-Can Share Publicly: ${feedback.can_share_publicly ? 'Yes ✓' : 'No'}
+Can Share Publicly: ${feedback.canSharePublicly ? 'Yes ✓' : 'No'}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Feedback ID: #${feedback.id}
-Received: ${new Date(feedback.created_at).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
+Received: ${new Date(feedback.createdAt).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
 
   return resend.emails.send({
     from: getFromEmail(),
@@ -571,30 +486,30 @@ Received: ${new Date(feedback.created_at).toLocaleString('en-IN', { timeZone: 'A
 }
 
 async function sendRestaurantCareerEmail(application: CareerApplication) {
-  const subject = `👔 NEW JOB APPLICATION - ${application.position} (${application.experience_years}y exp)`;
+  const subject = `👔 NEW JOB APPLICATION - ${application.position} (${application.experienceYears}y exp)`;
   const text = `NEW CAREER APPLICATION
 
 POSITION: ${application.position}
 
 CANDIDATE INFORMATION:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-Name: ${application.full_name}
+Name: ${application.fullName}
 Email: ${application.email}
 Phone: ${application.phone}
-Current City: ${application.current_city}
-Experience: ${application.experience_years} years
-Current Position: ${application.current_position || 'Not specified'}
-Expected Salary: ${application.expected_salary ? `₹${application.expected_salary}/month` : 'Not specified'}
-Available to Join: ${application.available_to_join || 'Not specified'}
+Current City: ${application.currentCity}
+Experience: ${application.experienceYears} years
+Current Position: ${application.currentPosition || 'Not specified'}
+Expected Salary: ${application.expectedSalary ? `₹${application.expectedSalary}/month` : 'Not specified'}
+Available to Join: ${application.availableToJoin || 'Not specified'}
 
 WHY AMANTE:
-${application.why_amante}
+${application.whyAmante}
 
-RESUME: ${application.resume_url}
-${application.portfolio_url ? `PORTFOLIO: ${application.portfolio_url}\n` : ''}
+RESUME: ${application.resumeUrl}
+${application.portfolioUrl ? `PORTFOLIO: ${application.portfolioUrl}\n` : ''}
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Application ID: #${application.id}
-Received: ${new Date(application.created_at).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
+Received: ${new Date(application.createdAt).toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })}`;
 
   return resend.emails.send({
     from: getFromEmail(),

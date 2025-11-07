@@ -124,59 +124,7 @@ export const privateEventSchema = z.object({
 export type PrivateEventFormData = z.infer<typeof privateEventSchema>;
 
 // ============================================================================
-// 3. BANQUETS SCHEMA
-// ============================================================================
-
-export const banquetSchema = z.object({
-  eventType: z.enum(
-    ['Wedding', 'Reception', 'Sangeet', 'Corporate Event', 'Conference', 'Exhibition', 'Other'],
-    {
-      message: 'Please select a valid event type',
-    }
-  ),
-  eventDate: futureDateSchema,
-  alternateDate: z.string().optional(),
-  guestCount: z
-    .number()
-    .int('Guest count must be a whole number')
-    .min(50, 'Banquets require a minimum of 50 guests')
-    .max(5000, 'For events larger than 5000 guests, please contact us directly'),
-  timingFrom: z
-    .string()
-    .regex(/^([01]\d|2[0-3]):([0-5]\d)$/, 'Time must be in HH:MM format (24-hour)'),
-  timingTo: z
-    .string()
-    .regex(/^([01]\d|2[0-3]):([0-5]\d)$/, 'Time must be in HH:MM format (24-hour)'),
-  requirements: z
-    .array(z.string())
-    .min(1, 'Please select at least one requirement')
-    .refine(
-      (arr) =>
-        arr.every((item) =>
-          ['Catering', 'Decoration', 'Photography', 'DJ', 'Valet', 'Accommodation'].includes(item)
-        ),
-      { message: 'Invalid requirement selected' }
-    ),
-  name: nameSchema,
-  phone: indianPhoneSchema,
-  email: emailSchema,
-  city: z.string().min(2, 'City is required').max(100),
-  hearAboutUs: z.enum(
-    ['Google', 'Instagram', 'Facebook', 'Referral', 'Wedding Planner', 'Walk-in', 'Other'],
-    {
-      message: 'Please select how you heard about us',
-    }
-  ),
-  additionalNotes: z.string().max(1000, 'Additional notes cannot exceed 1000 characters').optional(),
-  requestType: z.enum(['Site Visit', 'Quote', 'Both'], {
-    message: 'Please select a request type',
-  }),
-});
-
-export type BanquetFormData = z.infer<typeof banquetSchema>;
-
-// ============================================================================
-// 4. CONTACT SCHEMA
+// 3. CONTACT SCHEMA
 // ============================================================================
 
 export const contactSchema = z.object({

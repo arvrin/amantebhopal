@@ -1,0 +1,339 @@
+import { google } from 'googleapis';
+import path from 'path';
+
+// Initialize Google Sheets API
+const getGoogleSheetsClient = async () => {
+  try {
+    // Path to service account key file
+    const keyFilePath = path.join(process.cwd(), 'google-service-account.json');
+
+    // Authenticate using service account
+    const auth = new google.auth.GoogleAuth({
+      keyFile: keyFilePath,
+      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+    });
+
+    const authClient = await auth.getClient();
+
+    // Create sheets client
+    const sheets = google.sheets({ version: 'v4', auth: authClient as any });
+
+    return sheets;
+  } catch (error) {
+    console.error('Error initializing Google Sheets client:', error);
+    throw new Error('Failed to initialize Google Sheets client');
+  }
+};
+
+// Sheet names mapping
+export const SHEET_NAMES = {
+  RESERVATIONS: 'Reservations',
+  CONTACT: 'Contact',
+  PRIVATE_EVENTS: 'Private Events',
+  FEEDBACK: 'Feedback',
+  CAREERS: 'Careers',
+  USERS: 'Users',
+} as const;
+
+// Type for sheet data
+type SheetRow = (string | number | boolean)[];
+
+/**
+ * Append a row to a specific sheet in the Google Spreadsheet
+ */
+export async function appendToSheet(sheetName: string, values: SheetRow): Promise<boolean> {
+  try {
+    const sheets = await getGoogleSheetsClient();
+    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+
+    if (!spreadsheetId) {
+      throw new Error('GOOGLE_SHEET_ID environment variable not set');
+    }
+
+    // Append timestamp as first column
+    const timestamp = new Date().toISOString();
+    const rowData = [timestamp, ...values];
+
+    const response = await sheets.spreadsheets.values.append({
+      spreadsheetId,
+      range: `${sheetName}!A:Z`, // Append to columns A through Z
+      valueInputOption: 'USER_ENTERED', // Parse values (dates, numbers, formulas)
+      requestBody: {
+        values: [rowData],
+      },
+    });
+
+    console.log(`✅ Successfully appended row to ${sheetName}:`, response.data);
+    return true;
+  } catch (error) {
+    console.error(`❌ Error appending to ${sheetName}:`, error);
+    throw error;
+  }
+}
+
+/**
+ * Append reservation data to Reservations sheet
+ */
+export async function addReservation(data: {
+  date: string;
+  time: string;
+  partySize: number;
+  spacePreference: string;
+  occasion: string;
+  name: string;
+  phone: string;
+  email: string;
+  specialRequests: string;
+  agreeToSMS: boolean;
+}) {
+  const row: SheetRow = [
+    data.date,
+    data.time,
+    data.partySize,
+    data.spacePreference,
+    data.occasion || '',
+    data.name,
+    data.phone,
+    data.email,
+    data.specialRequests || '',
+    data.agreeToSMS,
+    'Pending', // Status
+    '', // Notes (empty, will be filled by staff)
+  ];
+
+  return appendToSheet(SHEET_NAMES.RESERVATIONS, row);
+}
+
+/**
+ * Append contact inquiry to Contact sheet
+ */
+export async function addContact(data: {
+  inquiryType: string;
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+}) {
+  const row: SheetRow = [
+    data.inquiryType,
+    data.name,
+    data.email,
+    data.phone,
+    data.message,
+    'New', // Status
+    '', // Assigned To
+    false, // Response Sent
+    '', // Notes
+  ];
+
+  return appendToSheet(SHEET_NAMES.CONTACT, row);
+}
+
+/**
+ * Append private event inquiry to Private Events sheet
+ */
+export async function addPrivateEvent(data: {
+  eventType: string;
+  eventDate: string;
+  guestCount: number;
+  budgetRange: string;
+  spacePreference: string;
+  name: string;
+  phone: string;
+  email: string;
+  company: string;
+  requirements: string;
+  preferredContact: string;
+}) {
+  const row: SheetRow = [
+    data.eventType,
+    data.eventDate,
+    data.guestCount,
+    data.budgetRange,
+    data.spacePreference,
+    data.name,
+    data.phone,
+    data.email,
+    data.company || '',
+    data.requirements,
+    data.preferredContact,
+    'New', // Status
+    '', // Follow-up Date
+    false, // Proposal Sent
+    '', // Notes
+  ];
+
+  return appendToSheet(SHEET_NAMES.PRIVATE_EVENTS, row);
+}
+
+/**
+ * Append feedback to Feedback sheet
+ */
+export async function addFeedback(data: {
+  visitDate: string;
+  spaceVisited: string;
+  overallRating: number;
+  foodRating: number;
+  serviceRating: number;
+  ambianceRating: number;
+  valueRating: number;
+  whatYouLoved: string;
+  improvements: string;
+  wouldRecommend: string;
+  name: string;
+  email: string;
+  canSharePublicly: boolean;
+}) {
+  const row: SheetRow = [
+    data.visitDate,
+    data.spaceVisited,
+    data.overallRating,
+    data.foodRating,
+    data.serviceRating,
+    data.ambianceRating,
+    data.valueRating,
+    data.whatYouLoved,
+    data.improvements || '',
+    data.wouldRecommend,
+    data.name || 'Anonymous',
+    data.email || '',
+    data.canSharePublicly,
+    'New', // Status
+    false, // Response Sent
+    '', // Notes
+  ];
+
+  return appendToSheet(SHEET_NAMES.FEEDBACK, row);
+}
+
+/**
+ * Append career application to Careers sheet
+ */
+export async function addCareerApplication(data: {
+  position: string;
+  fullName: string;
+  email: string;
+  phone: string;
+  currentCity: string;
+  experienceYears: number;
+  currentPosition: string;
+  expectedSalary?: number;
+  portfolioUrl: string;
+  resumeUrl: string;
+  whyAmante: string;
+  availableToJoin: string;
+}) {
+  const row: SheetRow = [
+    data.position,
+    data.fullName,
+    data.email,
+    data.phone,
+    data.currentCity,
+    data.experienceYears,
+    data.currentPosition || '',
+    data.expectedSalary || '',
+    data.portfolioUrl || '',
+    data.resumeUrl,
+    data.whyAmante,
+    data.availableToJoin,
+    'New', // Status
+    '', // Interview Scheduled
+    false, // Hired
+    '', // Notes
+  ];
+
+  return appendToSheet(SHEET_NAMES.CAREERS, row);
+}
+
+/**
+ * Test connection to Google Sheets
+ */
+export async function testConnection(): Promise<{
+  success: boolean;
+  message: string;
+  sheetTitle?: string;
+}> {
+  try {
+    const sheets = await getGoogleSheetsClient();
+    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+
+    if (!spreadsheetId) {
+      return {
+        success: false,
+        message: 'GOOGLE_SHEET_ID environment variable not set',
+      };
+    }
+
+    // Get spreadsheet metadata
+    const response = await sheets.spreadsheets.get({
+      spreadsheetId,
+    });
+
+    return {
+      success: true,
+      message: 'Successfully connected to Google Sheets',
+      sheetTitle: response.data.properties?.title || undefined,
+    };
+  } catch (error: any) {
+    console.error('Connection test failed:', error);
+    return {
+      success: false,
+      message: error.message || 'Failed to connect to Google Sheets',
+    };
+  }
+}
+
+/**
+ * Read all rows from a specific sheet
+ */
+export async function readSheet(sheetName: string): Promise<any[]> {
+  try {
+    const sheets = await getGoogleSheetsClient();
+    const spreadsheetId = process.env.GOOGLE_SHEET_ID;
+
+    if (!spreadsheetId) {
+      throw new Error('GOOGLE_SHEET_ID environment variable not set');
+    }
+
+    const response = await sheets.spreadsheets.values.get({
+      spreadsheetId,
+      range: `${sheetName}!A:Z`, // Read all columns
+    });
+
+    const rows = response.data.values || [];
+
+    if (rows.length === 0) {
+      return [];
+    }
+
+    // First row is headers
+    const headers = rows[0];
+    const dataRows = rows.slice(1);
+
+    // Convert to array of objects
+    return dataRows.map(row => {
+      const obj: any = {};
+      headers.forEach((header, index) => {
+        obj[header] = row[index] || '';
+      });
+      return obj;
+    });
+  } catch (error) {
+    console.error(`Error reading sheet ${sheetName}:`, error);
+    throw new Error(`Failed to read sheet ${sheetName}`);
+  }
+}
+
+/**
+ * Find a user by phone number in Users sheet
+ */
+export async function findUserByPhone(phone: string): Promise<any | null> {
+  try {
+    const users = await readSheet(SHEET_NAMES.USERS);
+    const user = users.find(u => u['Phone Number'] === phone && u['Status'] === 'Active');
+    return user || null;
+  } catch (error) {
+    console.error('Error finding user:', error);
+    return null;
+  }
+}

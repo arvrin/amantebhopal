@@ -87,10 +87,16 @@ export const metadata: Metadata = {
 
 export function generateViewport() {
   return {
-    themeColor: '#B91C1C',
+    themeColor: [
+      { media: '(prefers-color-scheme: light)', color: '#8B1538' },
+      { media: '(prefers-color-scheme: dark)', color: '#8B1538' }
+    ],
     colorScheme: 'light',
     width: 'device-width',
     initialScale: 1,
+    maximumScale: 5, // Allow users to zoom up to 5x for accessibility
+    userScalable: true, // Enable pinch-to-zoom on iOS
+    viewportFit: 'cover', // Support iPhone notch/Dynamic Island
   };
 }
 

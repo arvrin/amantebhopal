@@ -7,8 +7,7 @@
 
 import { NextRequest } from 'next/server';
 import { reservationSchema, sanitizeObject } from '@/lib/validations';
-import { createReservation } from '@/lib/db-utils';
-import { sendReservationEmails } from '@/lib/email';
+import { addReservation } from '@/lib/googleSheets';
 import {
   handleApiError,
   successResponse,
@@ -16,7 +15,6 @@ import {
   getClientIdentifier,
   logApiRequest,
   parseJsonBody,
-  shouldSkipEmails,
 } from '@/lib/api-utils';
 
 export async function POST(request: NextRequest) {
@@ -39,44 +37,27 @@ export async function POST(request: NextRequest) {
     // 4. Sanitize input to prevent XSS
     const sanitized = sanitizeObject(validated);
 
-    // 5. Store in database
-    const { data: reservation, error: dbError } = await createReservation({
+    // 5. Store in Google Sheets
+    await addReservation({
       date: sanitized.date,
       time: sanitized.time,
-      party_size: sanitized.partySize,
-      space_preference: sanitized.spacePreference === 'Any' ? null : sanitized.spacePreference,
-      occasion: sanitized.occasion || null,
+      partySize: sanitized.partySize,
+      spacePreference: sanitized.spacePreference,
+      occasion: sanitized.occasion || '',
       name: sanitized.name,
       phone: sanitized.phone,
       email: sanitized.email,
-      special_requests: sanitized.specialRequests || null,
-      agree_to_sms: sanitized.agreeToSMS,
-      status: 'pending', // Default status
+      specialRequests: sanitized.specialRequests || '',
+      agreeToSMS: sanitized.agreeToSMS,
     });
-
-    if (dbError || !reservation) {
-      throw new Error(dbError?.message || 'Failed to create reservation');
-    }
-
-    // 6. Send emails (non-blocking - don't fail request if emails fail)
-    if (!shouldSkipEmails()) {
-      sendReservationEmails(reservation).catch((error) => {
-        console.error('Failed to send reservation emails:', error);
-        // Log to error tracking service in production
-      });
-    } else {
-      console.log('Email sending skipped (development mode)');
-      console.log('Reservation data:', reservation);
-    }
 
     // 7. Log request
     const duration = Date.now() - startTime;
     logApiRequest('POST', '/api/reservations', clientId, duration);
 
-    // 8. Return success response
+    // 6. Return success response
     return successResponse(
       {
-        id: reservation.id,
         message:
           "Reservation request received successfully. We'll contact you within 2 hours to confirm.",
       },

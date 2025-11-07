@@ -22,7 +22,6 @@ export default function Footer() {
     { label: 'Lounge & Bar', href: '/lounge' },
     { label: 'Nightclub', href: '/club' },
     { label: 'Private Dining', href: '/private-dining' },
-    { label: 'Banquets', href: '/banquets' },
   ];
 
   return (
@@ -151,6 +150,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/50">
             <p>
               © {currentYear} Amante. All rights reserved.
+              <a href="/admin" className="ml-2 text-white/20 hover:text-white/40 transition-colors">•</a>
             </p>
             <div className="flex items-center gap-2">
               <span>Powered by</span>

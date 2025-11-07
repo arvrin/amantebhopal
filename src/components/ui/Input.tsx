@@ -45,13 +45,14 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             ref={ref}
             className={`
               w-full px-4 py-3
-              font-body text-body text-amante-charcoal
-              bg-amante-white border rounded-sm
+              font-body text-body text-gray-900
+              bg-white border border-gray-300 rounded-xl
               transition-all duration-fast
-              placeholder:text-amante-grey
-              focus:outline-none focus:ring-2 focus:ring-amante-red focus:ring-offset-0
-              disabled:bg-gray-50 disabled:text-amante-grey disabled:cursor-not-allowed
-              ${error ? 'border-error' : 'border-amante-grey-light'}
+              placeholder:text-gray-400
+              focus:outline-none focus:ring-2 focus:ring-[#8B1538] focus:border-[#8B1538]
+              disabled:bg-gray-100 disabled:text-gray-400 disabled:cursor-not-allowed
+              hover:border-gray-400
+              ${error ? 'border-error' : ''}
               ${leftIcon ? 'pl-10' : ''}
               ${rightIcon ? 'pr-10' : ''}
               ${className}

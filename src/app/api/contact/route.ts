@@ -7,8 +7,7 @@
 
 import { NextRequest } from 'next/server';
 import { contactSchema, sanitizeObject } from '@/lib/validations';
-import { createContactSubmission } from '@/lib/db-utils';
-import { sendContactEmails } from '@/lib/email';
+import { addContact } from '@/lib/googleSheets';
 import {
   handleApiError,
   successResponse,
@@ -16,7 +15,6 @@ import {
   getClientIdentifier,
   logApiRequest,
   parseJsonBody,
-  shouldSkipEmails,
 } from '@/lib/api-utils';
 
 export async function POST(request: NextRequest) {
@@ -39,38 +37,22 @@ export async function POST(request: NextRequest) {
     // 4. Sanitize input to prevent XSS
     const sanitized = sanitizeObject(validated);
 
-    // 5. Store in database
-    const { data: contact, error: dbError } = await createContactSubmission({
-      inquiry_type: sanitized.inquiryType,
+    // 5. Store in Google Sheets
+    await addContact({
+      inquiryType: sanitized.inquiryType,
       name: sanitized.name,
       phone: sanitized.phone,
       email: sanitized.email,
       message: sanitized.message,
-      status: 'pending',
     });
-
-    if (dbError || !contact) {
-      throw new Error(dbError?.message || 'Failed to create contact submission');
-    }
-
-    // 6. Send emails (non-blocking)
-    if (!shouldSkipEmails()) {
-      sendContactEmails(contact).catch((error) => {
-        console.error('Failed to send contact emails:', error);
-      });
-    } else {
-      console.log('Email sending skipped (development mode)');
-      console.log('Contact data:', contact);
-    }
 
     // 7. Log request
     const duration = Date.now() - startTime;
     logApiRequest('POST', '/api/contact', clientId, duration);
 
-    // 8. Return success response
+    // 6. Return success response
     return successResponse(
       {
-        id: contact.id,
         message: "Thank you for contacting us. We'll respond within 24 hours.",
       },
       "Thank you for contacting us. We'll respond within 24 hours.",

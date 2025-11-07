@@ -1,6 +1,6 @@
 {
   "venue": "cafe",
-  "name": "Café Menu",
+  "name": "Café & Bakery Menu",
   "description": "Artisan coffee & fresh delights",
   "tagline": "Your daily dose of happiness",
   "categories": [
@@ -412,10 +412,310 @@
       ]
     },
     {
+      "id": "cakes",
+      "name": "Cakes",
+      "description": "Freshly baked celebration cakes",
+      "displayOrder": 7,
+      "items": [
+        {
+          "id": "cafe-cake-001",
+          "name": "Pineapple Cake",
+          "description": "Classic pineapple cake with vanilla cream and fruit chunks",
+          "price": 650,
+          "bottlePrice": 1300,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-002",
+          "name": "Black Forest Cake",
+          "description": "Chocolate sponge layered with cherry compote and whipped cream",
+          "price": 650,
+          "bottlePrice": 1300,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-003",
+          "name": "Chocolate Truffle Soft",
+          "description": "Soft chocolate sponge with silky truffle ganache",
+          "price": 700,
+          "bottlePrice": 1400,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-004",
+          "name": "Belgian Chocolate Cake",
+          "description": "Rich Belgian chocolate with dark chocolate frosting",
+          "price": 750,
+          "bottlePrice": 1500,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-005",
+          "name": "Vanilla Praline Cake",
+          "description": "Delicate vanilla sponge with caramelized praline crunch",
+          "price": 600,
+          "bottlePrice": 1200,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-006",
+          "name": "Chocolate Strawberry Cake",
+          "description": "Chocolate layers with fresh strawberries and cream",
+          "price": 750,
+          "bottlePrice": 1500,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-007",
+          "name": "Mango Vanilla Cake",
+          "description": "Vanilla sponge with fresh mango pulp and cream",
+          "price": 800,
+          "bottlePrice": 1600,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-008",
+          "name": "Mixed Fruit Cake",
+          "description": "Sponge cake layered with seasonal fresh fruits and cream",
+          "price": 750,
+          "bottlePrice": 1500,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-009",
+          "name": "Hazelnut Cake",
+          "description": "Roasted hazelnut sponge with hazelnut praline cream",
+          "price": 850,
+          "bottlePrice": 1700,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-010",
+          "name": "Nutella Cake",
+          "description": "Chocolate hazelnut layers with Nutella cream frosting",
+          "price": 750,
+          "bottlePrice": 1500,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-011",
+          "name": "Tiramisu Cake",
+          "description": "Coffee-soaked sponge with mascarpone cream and cocoa",
+          "price": 700,
+          "bottlePrice": 1400,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-012",
+          "name": "Rasmalai Cake",
+          "description": "Indian fusion cake with rasmalai flavored cream",
+          "price": 800,
+          "bottlePrice": 1600,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-013",
+          "name": "Chocolate Roasted Almond Cake",
+          "description": "Chocolate cake with crunchy roasted almond bits",
+          "price": 800,
+          "bottlePrice": 1600,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-014",
+          "name": "Baked Cheesecake",
+          "description": "Classic New York style baked cheesecake",
+          "price": 800,
+          "bottlePrice": 1600,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-015",
+          "name": "Cold Cheesecake",
+          "description": "No-bake creamy cheesecake with graham cracker base",
+          "price": 700,
+          "bottlePrice": 1400,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-016",
+          "name": "Red Velvet Cake",
+          "description": "Velvety red sponge with cream cheese frosting",
+          "price": 800,
+          "bottlePrice": 1600,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-017",
+          "name": "Dark Truffle Cake",
+          "description": "Intense dark chocolate truffle with premium cocoa",
+          "price": 900,
+          "bottlePrice": 1800,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-018",
+          "name": "Pistachio Cake",
+          "description": "Rich pistachio sponge with pistachio buttercream",
+          "price": 900,
+          "bottlePrice": 1800,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "cake-tubs",
+      "name": "Cake Tubs",
+      "description": "Individual indulgence in a tub",
+      "displayOrder": 8,
+      "items": [
+        {
+          "id": "cafe-tub-001",
+          "name": "Tiramisu Tub",
+          "description": "Layers of coffee-soaked sponge and mascarpone cream in a personal tub",
+          "price": 300,
+          "category": "cake-tubs",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-tub-002",
+          "name": "Tres Leches Tub",
+          "description": "Latin American classic soaked in three milks with whipped cream",
+          "price": 320,
+          "category": "cake-tubs",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-tub-003",
+          "name": "Red Velvet Tub",
+          "description": "Velvety red cake with cream cheese frosting in a convenient tub",
+          "price": 300,
+          "category": "cake-tubs",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-tub-004",
+          "name": "Fudge Tub",
+          "description": "Rich chocolate fudge layers with dense chocolate ganache",
+          "price": 350,
+          "category": "cake-tubs",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "pastries",
+      "name": "Pastries",
+      "description": "Freshly baked individual treats",
+      "displayOrder": 9,
+      "items": [
+        {
+          "id": "cafe-pastry-001",
+          "name": "Choco Almond Pastry",
+          "description": "Rich chocolate pastry topped with crunchy roasted almonds",
+          "price": 280,
+          "category": "pastries",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-pastry-002",
+          "name": "Choco Truffle Pastry",
+          "description": "Decadent chocolate sponge with smooth truffle ganache",
+          "price": 250,
+          "category": "pastries",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-pastry-003",
+          "name": "Pineapple Pastry",
+          "description": "Classic vanilla pastry with fresh pineapple chunks and cream",
+          "price": 200,
+          "category": "pastries",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-pastry-004",
+          "name": "White Forest Pastry",
+          "description": "White chocolate sponge with cherry compote and whipped cream",
+          "price": 200,
+          "category": "pastries",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-pastry-005",
+          "name": "Roast Roasted Almond Pastry",
+          "description": "Butter pastry generously topped with crunchy roasted almonds",
+          "price": 300,
+          "category": "pastries",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
       "id": "add-ons",
       "name": "Add-ons & Options",
       "description": "Customize your drink",
-      "displayOrder": 7,
+      "displayOrder": 10,
       "items": [
         {
           "id": "cafe-addon-001",
@@ -436,5 +736,5 @@
       ]
     }
   ],
-  "lastUpdated": "2025-10-17T00:00:00Z"
+  "lastUpdated": "2025-11-07T00:00:00Z"
 }

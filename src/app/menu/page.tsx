@@ -20,7 +20,7 @@ const categories = [
   },
   {
     id: 'cafe',
-    name: 'Café Menu',
+    name: 'Café & Bakery Menu',
     icon: Coffee,
     description: 'Artisan coffee & fresh delights',
     href: '/menu/cafe',

@@ -90,9 +90,10 @@ const FileUpload = forwardRef<HTMLInputElement, FileUploadProps>(
 
         <div
           className={`
-            relative border-2 border-dashed rounded-md p-6
+            relative border-2 border-dashed rounded-xl p-6
             transition-all duration-fast
-            ${displayError ? 'border-error bg-error-bg' : 'border-amante-grey-light hover:border-amante-red'}
+            bg-white/5 backdrop-blur-sm
+            ${displayError ? 'border-error' : 'border-white/20 hover:border-amante-pink'}
             ${!selectedFile ? 'cursor-pointer' : ''}
             ${className}
           `}
@@ -109,25 +110,25 @@ const FileUpload = forwardRef<HTMLInputElement, FileUploadProps>(
 
           {!selectedFile ? (
             <div className="text-center">
-              <Upload className="mx-auto h-12 w-12 text-amante-grey" />
-              <p className="mt-2 text-body text-amante-charcoal">
-                <span className="font-semibold text-amante-red">Click to upload</span> or drag and drop
+              <Upload className="mx-auto h-12 w-12 text-white/40" />
+              <p className="mt-2 text-body text-white">
+                <span className="font-semibold text-amante-pink">Click to upload</span> or drag and drop
               </p>
-              <p className="mt-1 text-body-xs text-amante-grey">
+              <p className="mt-1 text-body-xs text-white/60">
                 {acceptedFormats.join(', ')} (max {maxSize}MB)
               </p>
             </div>
           ) : (
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-amante-cream rounded-md">
-                  <File className="h-6 w-6 text-amante-red" />
+                <div className="p-2 bg-amante-pink/20 rounded-md">
+                  <File className="h-6 w-6 text-amante-pink" />
                 </div>
                 <div>
-                  <p className="text-body-sm font-medium text-amante-charcoal">
+                  <p className="text-body-sm font-medium text-white">
                     {selectedFile.name}
                   </p>
-                  <p className="text-body-xs text-amante-grey">
+                  <p className="text-body-xs text-white/60">
                     {formatFileSize(selectedFile.size)}
                   </p>
                 </div>
@@ -140,7 +141,7 @@ const FileUpload = forwardRef<HTMLInputElement, FileUploadProps>(
                   e.stopPropagation();
                   handleRemove();
                 }}
-                className="!p-2"
+                className="!p-2 text-white hover:text-amante-pink"
               >
                 <X className="h-5 w-5" />
               </Button>

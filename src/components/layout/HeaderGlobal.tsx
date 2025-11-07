@@ -6,24 +6,26 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, MapPin, X, ChevronDown, Mail } from 'lucide-react';
+import ReservationModal from '@/components/ReservationModal';
 
-export default function HeaderGlobal() {
+interface HeaderGlobalProps {
+  onReservationClick?: () => void;
+}
+
+export default function HeaderGlobal({ onReservationClick }: HeaderGlobalProps = {}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSpacesOpen, setIsSpacesOpen] = useState(false);
+  const [isReservationModalOpen, setIsReservationModalOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [visible, setVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const pathname = usePathname();
 
-  // Check if we're on a light background page
+  // Check if we're on homepage
+  const isHomePage = pathname === '/';
+
+  // Check if we're on a light background page (pages with white/cream backgrounds need white navbar)
   const isLightBgPage = pathname?.startsWith('/menu') ||
-                        pathname?.startsWith('/restaurant') ||
-                        pathname?.startsWith('/cafe') ||
-                        pathname?.startsWith('/lounge') ||
-                        pathname?.startsWith('/club') ||
-                        pathname?.startsWith('/banquets') ||
-                        pathname?.startsWith('/private-dining') ||
-                        pathname?.startsWith('/gallery') ||
                         pathname?.startsWith('/events') ||
                         pathname?.startsWith('/about') ||
                         pathname?.startsWith('/contact') ||
@@ -86,6 +88,8 @@ export default function HeaderGlobal() {
     { label: 'Events', href: '/events' },
     { label: 'Gallery', href: '/gallery' },
     { label: 'About', href: '/about' },
+    { label: 'Feedback', href: '/feedback' },
+    { label: 'Careers', href: '/careers' },
     { label: 'Contact', href: '/contact' },
   ];
 
@@ -152,19 +156,24 @@ export default function HeaderGlobal() {
           </Link>
 
           {/* Right: Reserve Button */}
-          <Link href="/reservations">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-semibold rounded-full text-white transition-all duration-300 ${
-                isLightBgPage
-                  ? 'bg-gradient-to-br from-[#8B1538] to-[#6B0F28]'
-                  : 'bg-gradient-to-br from-[#8B1538]/30 to-[#6B0F28]/30 backdrop-blur-sm hover:from-[#8B1538]/50 hover:to-[#6B0F28]/50 border-2 border-[#8B1538]/60'
-              }`}
-            >
-              Reserve
-            </motion.button>
-          </Link>
+          <motion.button
+            onClick={() => {
+              if (onReservationClick) {
+                onReservationClick();
+              } else {
+                setIsReservationModalOpen(true);
+              }
+            }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`px-4 py-2 md:px-6 md:py-3 text-sm md:text-base font-semibold rounded-full text-white transition-all duration-300 ${
+              isLightBgPage
+                ? 'bg-gradient-to-br from-[#8B1538] to-[#6B0F28]'
+                : 'bg-gradient-to-br from-[#8B1538]/30 to-[#6B0F28]/30 backdrop-blur-sm hover:from-[#8B1538]/50 hover:to-[#6B0F28]/50 border-2 border-[#8B1538]/60'
+            }`}
+          >
+            Reserve
+          </motion.button>
         </div>
       </motion.header>
 
@@ -178,7 +187,7 @@ export default function HeaderGlobal() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
-              className="fixed inset-0 z-[60] bg-black/95 backdrop-blur-sm"
+              className="fixed inset-0 z-[60] bg-black/30 backdrop-blur-md"
               onClick={() => setIsMenuOpen(false)}
             />
 
@@ -188,7 +197,7 @@ export default function HeaderGlobal() {
               animate={{ x: 0 }}
               exit={{ x: '-100%' }}
               transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-              className="fixed left-0 top-0 bottom-0 z-[70] w-full md:w-[420px] bg-black/95 backdrop-blur-xl overflow-hidden flex flex-col border-r border-white/10"
+              className="fixed left-0 top-0 bottom-0 z-[70] w-full md:w-[420px] bg-black/90 backdrop-blur-xl overflow-hidden flex flex-col border-r border-white/10"
             >
               {/* Elegant Background Pattern */}
               <div className="absolute inset-0 opacity-5">
@@ -360,29 +369,18 @@ export default function HeaderGlobal() {
                   </div>
                 </div>
               </motion.div>
-
-              {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                className="px-10 py-8 space-y-4 relative bg-gradient-to-t from-black/40 to-transparent"
-              >
-                <Link href="/reservations" onClick={() => setIsMenuOpen(false)} className="block">
-                  <button className="w-full px-6 py-4 text-white font-semibold rounded-xl bg-gradient-to-br from-[#8B1538] to-[#6B0F28] hover:from-[#6B0F28] hover:to-[#8B1538] transition-all duration-300 tracking-wide shadow-lg shadow-[#8B1538]/30">
-                    Reserve a Table
-                  </button>
-                </Link>
-                <Link href="/menu" onClick={() => setIsMenuOpen(false)} className="block">
-                  <button className="w-full px-6 py-4 bg-white/5 hover:bg-white/10 text-white font-semibold rounded-xl transition-all duration-300 border border-white/20 hover:border-white/30 tracking-wide backdrop-blur-sm">
-                    View Menu
-                  </button>
-                </Link>
-              </motion.div>
             </motion.div>
           </>
         )}
       </AnimatePresence>
+
+      {/* Reservation Modal - Only render on non-homepage pages */}
+      {!isHomePage && (
+        <ReservationModal
+          isOpen={isReservationModalOpen}
+          onClose={() => setIsReservationModalOpen(false)}
+        />
+      )}
     </>
   );
 }

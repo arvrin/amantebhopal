@@ -28,7 +28,7 @@ export default function PrivateEventsPage() {
 
   const eventTypes = ['Birthday', 'Anniversary', 'Corporate', 'Proposal', 'Celebration', 'Other'];
   const budgetRanges = ['₹50k-1L', '₹1L-2L', '₹2L-5L', '₹5L+'];
-  const spacePreferences = ['Private Dining', 'Rooftop Restaurant', 'Banquet Hall', 'Lounge', 'Any'];
+  const spacePreferences = ['Private Dining', 'Rooftop Restaurant', 'Lounge', 'Any'];
   const contactMethods = ['Phone', 'WhatsApp', 'Email'];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
