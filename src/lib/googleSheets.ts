@@ -4,14 +4,29 @@ import path from 'path';
 // Initialize Google Sheets API
 const getGoogleSheetsClient = async () => {
   try {
-    // Path to service account key file
-    const keyFilePath = path.join(process.cwd(), 'google-service-account.json');
+    // Check for environment variables first (for production/Vercel)
+    const serviceAccountEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
+    const privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
-    // Authenticate using service account
-    const auth = new google.auth.GoogleAuth({
-      keyFile: keyFilePath,
-      scopes: ['https://www.googleapis.com/auth/spreadsheets'],
-    });
+    let auth;
+
+    if (serviceAccountEmail && privateKey) {
+      // Use environment variables (production/Vercel)
+      auth = new google.auth.GoogleAuth({
+        credentials: {
+          client_email: serviceAccountEmail,
+          private_key: privateKey.replace(/\\n/g, '\n'), // Replace literal \n with actual newlines
+        },
+        scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+      });
+    } else {
+      // Fall back to file-based auth (local development)
+      const keyFilePath = path.join(process.cwd(), 'google-service-account.json');
+      auth = new google.auth.GoogleAuth({
+        keyFile: keyFilePath,
+        scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+      });
+    }
 
     const authClient = await auth.getClient();
 
