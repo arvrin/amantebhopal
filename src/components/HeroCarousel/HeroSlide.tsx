@@ -49,12 +49,12 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
 
   const kenBurnsVariants = useMemo(() => ({
     initial: { scale: 1, x: 0, y: 0 },
-    animate: isActive ? {
+    animate: {
       scale: [1, 1.08],
       x: [0, -15],
       y: [0, -8]
-    } : { scale: 1, x: 0, y: 0 }
-  }), [isActive]);
+    }
+  }), []);
 
   const contentVariants = {
     heading: {
@@ -78,12 +78,12 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
   return (
     <motion.div
       initial="hidden"
-      animate={isActive ? "visible" : "hidden"}
+      animate="visible"
       exit="exit"
       variants={containerVariants}
-      transition={{ duration: 1.2, ease: [0.43, 0.13, 0.23, 0.96] }}
+      transition={{ duration: 0.8, ease: [0.43, 0.13, 0.23, 0.96] }}
       className="absolute inset-0"
-      style={{ zIndex: isActive ? 5 : 1, pointerEvents: isActive ? 'auto' : 'none' }}
+      style={{ zIndex: 1 }}
     >
       {/* Background Image with Ken Burns Effect */}
       <motion.div
@@ -91,7 +91,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
         initial="initial"
         animate="animate"
         transition={{
-          duration: isActive ? 12 : 0,
+          duration: 12,
           ease: 'linear'
         }}
         className="absolute inset-0 w-full h-full will-change-transform"
@@ -112,12 +112,12 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
       <div className={`absolute inset-0 bg-gradient-to-br ${slide.theme.overlayGradient}`} />
 
       {/* Content Container */}
-      <div className="relative h-full flex items-center justify-center px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 z-10">
+      <div className="relative h-full flex items-center justify-center px-4 xs:px-5 sm:px-6 md:px-8 lg:px-10 z-20">
         <div className="text-center w-full max-w-[90%] xs:max-w-xl sm:max-w-2xl md:max-w-3xl lg:max-w-4xl xl:max-w-5xl 2xl:max-w-6xl">
           {/* Main Heading */}
           <motion.h1
             variants={contentVariants.heading}
-            transition={{ duration: 0.8, delay: isActive ? 0.2 : 0, ease: 'easeOut' }}
+            transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
             className="font-heading text-[clamp(1.75rem,5vw,5rem)] sm:text-[clamp(2.5rem,6vw,6rem)] md:text-[clamp(3rem,7vw,7rem)] lg:text-[clamp(3.5rem,8vw,8rem)] text-white mb-3 xs:mb-4 sm:mb-5 md:mb-6 tracking-tight leading-[1.1] px-2 drop-shadow-2xl"
             style={{ color: slide.theme.textColor }}
           >
@@ -127,7 +127,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
           {/* Subheadline */}
           <motion.p
             variants={contentVariants.subheading}
-            transition={{ duration: 0.8, delay: isActive ? 0.35 : 0, ease: 'easeOut' }}
+            transition={{ duration: 0.8, delay: 0.35, ease: 'easeOut' }}
             className="font-body text-[clamp(0.875rem,2.5vw,1.5rem)] sm:text-[clamp(1rem,3vw,1.75rem)] md:text-[clamp(1.125rem,3.5vw,2rem)] text-amante-pink-light mb-2 xs:mb-3 sm:mb-4 max-w-[85%] sm:max-w-3xl mx-auto px-4 sm:px-2 drop-shadow-lg"
           >
             {slide.subheadline}
@@ -136,7 +136,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
           {/* Body Text */}
           <motion.p
             variants={contentVariants.body}
-            transition={{ duration: 0.8, delay: isActive ? 0.5 : 0, ease: 'easeOut' }}
+            transition={{ duration: 0.8, delay: 0.5, ease: 'easeOut' }}
             className="font-body text-[clamp(0.75rem,2vw,1.125rem)] sm:text-[clamp(0.875rem,2.25vw,1.25rem)] md:text-[clamp(1rem,2.5vw,1.5rem)] text-white/85 mb-6 xs:mb-7 sm:mb-8 md:mb-10 max-w-[90%] sm:max-w-2xl mx-auto px-4 sm:px-2 drop-shadow-md leading-relaxed"
           >
             {slide.body}
@@ -145,7 +145,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
           {/* CTA Buttons */}
           <motion.div
             variants={contentVariants.cta}
-            transition={{ duration: 0.8, delay: isActive ? 0.65 : 0, ease: 'easeOut' }}
+            transition={{ duration: 0.8, delay: 0.65, ease: 'easeOut' }}
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-5 justify-center items-stretch sm:items-center px-4 xs:px-6 sm:px-4"
           >
             {/* Primary CTA */}

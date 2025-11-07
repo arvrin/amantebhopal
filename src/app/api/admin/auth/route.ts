@@ -16,15 +16,35 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Check if Google Sheets credentials are configured
+    if (!process.env.GOOGLE_SHEET_ID) {
+      console.error('GOOGLE_SHEET_ID environment variable not set');
+      return NextResponse.json(
+        { error: 'Server configuration error. Please contact administrator.' },
+        { status: 500 }
+      );
+    }
+
+    if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
+      console.error('Google Sheets credentials not configured');
+      return NextResponse.json(
+        { error: 'Server configuration error. Please contact administrator.' },
+        { status: 500 }
+      );
+    }
+
     // Find user in Users sheet
     const user = await findUserByPhone(phone);
 
     if (!user) {
+      console.log(`Authentication failed for phone: ${phone}`);
       return NextResponse.json(
         { error: 'Access denied. Phone number not authorized.' },
         { status: 401 }
       );
     }
+
+    console.log(`Authentication successful for: ${user['Name']} (${phone})`);
 
     // Create JWT token
     const token = sign(

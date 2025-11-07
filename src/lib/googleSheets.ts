@@ -4,14 +4,30 @@ import path from 'path';
 // Initialize Google Sheets API
 const getGoogleSheetsClient = async () => {
   try {
-    // Check for environment variables first (for production/Vercel)
+    // Check for Base64-encoded credentials first (for production/Vercel - most reliable)
+    const base64Credentials = process.env.GOOGLE_CREDENTIALS_BASE64;
+
+    // Check for individual environment variables (backup method)
     const serviceAccountEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL;
     const privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
     let auth;
 
-    if (serviceAccountEmail && privateKey) {
-      // Use environment variables (production/Vercel)
+    if (base64Credentials) {
+      // Use Base64-encoded credentials (most reliable for Vercel)
+      console.log('Using Base64-encoded credentials from environment variable');
+      const decodedCredentials = Buffer.from(base64Credentials, 'base64').toString('utf-8');
+      const credentials = JSON.parse(decodedCredentials);
+
+      console.log('Service account email:', credentials.client_email);
+      console.log('Project ID:', credentials.project_id);
+
+      auth = new google.auth.GoogleAuth({
+        credentials: credentials,
+        scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+      });
+    } else if (serviceAccountEmail && privateKey) {
+      // Use environment variables (production/Vercel - backup method)
       // Handle both formats: literal \n and actual newlines
       let formattedPrivateKey = privateKey;
 
@@ -20,15 +36,22 @@ const getGoogleSheetsClient = async () => {
         formattedPrivateKey = privateKey.replace(/\\n/g, '\n');
       }
 
+      console.log('Using service account credentials from environment variables');
+      console.log('Service account email:', serviceAccountEmail);
+      console.log('Private key length:', formattedPrivateKey.length);
+      console.log('Private key starts with:', formattedPrivateKey.substring(0, 50));
+
       auth = new google.auth.GoogleAuth({
         credentials: {
           client_email: serviceAccountEmail,
           private_key: formattedPrivateKey,
+          type: 'service_account',
         },
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
       });
     } else {
       // Fall back to file-based auth (local development)
+      console.log('Using file-based authentication');
       const keyFilePath = path.join(process.cwd(), 'google-service-account.json');
       auth = new google.auth.GoogleAuth({
         keyFile: keyFilePath,
@@ -42,8 +65,13 @@ const getGoogleSheetsClient = async () => {
     const sheets = google.sheets({ version: 'v4', auth: authClient as any });
 
     return sheets;
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error initializing Google Sheets client:', error);
+    console.error('Error details:', {
+      message: error.message,
+      code: error.code,
+      stack: error.stack?.substring(0, 500)
+    });
     throw new Error('Failed to initialize Google Sheets client');
   }
 };
@@ -353,10 +381,45 @@ export async function readSheet(sheetName: string): Promise<any[]> {
 export async function findUserByPhone(phone: string): Promise<any | null> {
   try {
     const users = await readSheet(SHEET_NAMES.USERS);
-    const user = users.find(u => u['Phone Number'] === phone && u['Status'] === 'Active');
+
+    if (users.length === 0) {
+      console.error('Users sheet is empty or does not exist. Please create the "Users" sheet with proper headers.');
+      return null;
+    }
+
+    // Log all users for debugging (without sensitive info)
+    console.log(`Found ${users.length} users in Users sheet`);
+
+    // Normalize phone number by removing '+' sign for comparison
+    const normalizedPhone = phone.replace(/^\+/, '');
+    console.log(`Searching for normalized phone: ${normalizedPhone}`);
+
+    // Find user by comparing normalized phone numbers
+    const user = users.find(u => {
+      const userPhone = u['Phone Number']?.replace(/^\+/, '');
+      const isMatch = userPhone === normalizedPhone;
+      const isActive = u['Status'] === 'Active';
+
+      if (isMatch) {
+        console.log(`Found matching phone: ${userPhone}, Active: ${isActive}`);
+      }
+
+      return isMatch && isActive;
+    });
+
+    if (!user) {
+      console.log(`User not found or inactive for phone: ${phone}`);
+      // Log available phone numbers (first 4 digits only for security)
+      const availablePhones = users.map(u => u['Phone Number']?.substring(0, 7) + 'XXX');
+      console.log('Available phone prefixes:', availablePhones);
+    }
+
     return user || null;
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error finding user:', error);
+    if (error.message?.includes('Unable to parse range')) {
+      console.error('The "Users" sheet may not exist. Please create it in your Google Spreadsheet.');
+    }
     return null;
   }
 }

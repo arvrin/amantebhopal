@@ -127,16 +127,16 @@ export default function HeroCarousel({
 
   return (
     <div className="relative h-full w-full group">
-      {/* Background Slides */}
+      {/* Background Slides - AnimatePresence for smooth transitions */}
       <div className="absolute inset-0">
-        {heroSlides.map((slide, index) => (
+        <AnimatePresence mode="wait" initial={false}>
           <HeroSlide
-            key={slide.id}
-            slide={slide}
-            isActive={currentSlideIndex === index}
+            key={heroSlides[currentSlideIndex].id}
+            slide={heroSlides[currentSlideIndex]}
+            isActive={true}
             onPrimaryCTAClick={onReservationModalOpen}
           />
-        ))}
+        </AnimatePresence>
       </div>
 
       {/* Navigation Arrows - Hidden on mobile, visible on hover on desktop */}
@@ -161,7 +161,7 @@ export default function HeroCarousel({
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={togglePlayPause}
-        className="absolute top-20 xs:top-24 sm:top-28 md:top-32 right-4 sm:right-6 md:right-8 z-20 w-10 h-10 xs:w-11 xs:h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/25 hover:border-white/50 transition-all shadow-lg"
+        className="absolute top-20 xs:top-24 sm:top-28 md:top-32 right-4 sm:right-6 md:right-8 z-30 w-10 h-10 xs:w-11 xs:h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/25 hover:border-white/50 transition-all shadow-lg"
         aria-label={isPlaying ? 'Pause slideshow' : 'Play slideshow'}
       >
         {isPlaying ? (
@@ -173,7 +173,7 @@ export default function HeroCarousel({
 
       {/* Progress Bar */}
       {isPlaying && (
-        <div className="absolute top-0 left-0 right-0 h-0.5 bg-white/5 z-20">
+        <div className="absolute top-0 left-0 right-0 h-0.5 bg-white/5 z-30">
           <motion.div
             key={currentSlideIndex}
             className="h-full bg-gradient-to-r from-[#8B1538]/60 via-amante-pink/50 to-[#F8BBD9]/40"
@@ -201,7 +201,7 @@ export default function HeroCarousel({
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="md:hidden absolute top-20 xs:top-24 sm:top-28 left-4 z-20"
+        className="md:hidden absolute top-20 xs:top-24 sm:top-28 left-4 z-30"
       >
         <div className="bg-black/40 backdrop-blur-md px-3 xs:px-4 py-1.5 xs:py-2 rounded-full border border-white/20 shadow-lg">
           <span className="text-white text-xs xs:text-sm font-semibold tracking-wide">
@@ -210,12 +210,13 @@ export default function HeroCarousel({
         </div>
       </motion.div>
 
-      {/* Touch Swipe Support - Optimized - Only in upper area to not block CTAs */}
+      {/* Touch Swipe Support - Mobile Only - Low z-index to not block CTAs */}
       <div
-        className="absolute top-0 left-0 right-0 bottom-1/3 z-10 md:hidden touch-pan-y"
+        className="absolute inset-0 z-0 md:hidden"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
+        style={{ touchAction: 'pan-y' }}
       />
     </div>
   );

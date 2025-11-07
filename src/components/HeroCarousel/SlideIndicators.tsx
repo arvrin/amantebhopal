@@ -50,12 +50,27 @@ const SlideIndicators = memo(function SlideIndicators({
 }: SlideIndicatorsProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [hideTimer, setHideTimer] = useState<NodeJS.Timeout | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   // Memoize the slides array to prevent re-creating on every render
   const slideIndices = useMemo(() => Array.from({ length: totalSlides }, (_, i) => i), [totalSlides]);
 
-  // Handle mouse movement to show indicators
+  // Detect mobile viewport
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Handle mouse movement to show indicators (desktop only)
   const handleMouseMove = useCallback(() => {
+    if (isMobile) return; // Don't use mouse events on mobile
+
     setIsVisible(true);
 
     // Clear existing timer
@@ -69,11 +84,13 @@ const SlideIndicators = memo(function SlideIndicators({
     }, 3000);
 
     setHideTimer(timer);
-  }, [hideTimer]);
+  }, [hideTimer, isMobile]);
 
-  // Attach global mouse move listener
+  // Attach global mouse move listener (desktop only)
   useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
+    if (!isMobile) {
+      window.addEventListener('mousemove', handleMouseMove);
+    }
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
@@ -81,17 +98,17 @@ const SlideIndicators = memo(function SlideIndicators({
         clearTimeout(hideTimer);
       }
     };
-  }, [handleMouseMove, hideTimer]);
+  }, [handleMouseMove, hideTimer, isMobile]);
 
   return (
     <motion.div
       initial={{ opacity: 0, x: 20 }}
       animate={{
-        opacity: isVisible ? 1 : 0,
-        x: isVisible ? 0 : 20
+        opacity: isMobile ? 1 : (isVisible ? 1 : 0),
+        x: isMobile ? 0 : (isVisible ? 0 : 20)
       }}
       transition={{ duration: 0.3, ease: 'easeOut' }}
-      className="fixed right-4 sm:right-6 md:right-8 top-1/2 -translate-y-1/2 z-30 pointer-events-auto"
+      className="fixed right-4 sm:right-6 md:right-8 top-1/2 -translate-y-1/2 z-40 pointer-events-auto"
     >
       <div className="flex flex-col items-center gap-2.5 px-2 py-3 rounded-full bg-black/30 backdrop-blur-md border border-white/10 shadow-lg">
         {slideIndices.map((index) => (
