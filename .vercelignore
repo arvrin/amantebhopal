@@ -15,19 +15,5 @@ playwright.config.ts
 *.md
 !README.md
 
-# Ignore new pages (not ready for production)
-src/app/about/
-src/app/banquets/
-src/app/private-events/
-src/app/banquet-booking/
-src/app/contact/
-src/app/feedback/
-src/app/careers/
-src/app/events/
-src/app/gallery/
-src/app/api/
-src/components/SpacePageTemplate.tsx
-src/components/seo/
-src/lib/
-src/types/
-src/styles/
+# Note: These directories are now in production, so .vercelignore is minimal
+# Only ignoring test-related files defined above
