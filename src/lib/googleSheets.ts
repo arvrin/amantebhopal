@@ -12,10 +12,18 @@ const getGoogleSheetsClient = async () => {
 
     if (serviceAccountEmail && privateKey) {
       // Use environment variables (production/Vercel)
+      // Handle both formats: literal \n and actual newlines
+      let formattedPrivateKey = privateKey;
+
+      // If the key contains literal \n (as text), replace with actual newlines
+      if (privateKey.includes('\\n')) {
+        formattedPrivateKey = privateKey.replace(/\\n/g, '\n');
+      }
+
       auth = new google.auth.GoogleAuth({
         credentials: {
           client_email: serviceAccountEmail,
-          private_key: privateKey.replace(/\\n/g, '\n'), // Replace literal \n with actual newlines
+          private_key: formattedPrivateKey,
         },
         scopes: ['https://www.googleapis.com/auth/spreadsheets'],
       });
