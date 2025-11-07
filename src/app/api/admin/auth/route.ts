@@ -25,13 +25,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL || !process.env.GOOGLE_PRIVATE_KEY) {
-      console.error('Google Sheets credentials not configured');
+    // Check if any valid credential format is available
+    const hasBase64Creds = !!process.env.GOOGLE_CREDENTIALS_BASE64;
+    const hasEnvVarCreds = !!(process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL && process.env.GOOGLE_PRIVATE_KEY);
+
+    if (!hasBase64Creds && !hasEnvVarCreds) {
+      console.error('Google Sheets credentials not configured (checked both Base64 and individual env vars)');
       return NextResponse.json(
         { error: 'Server configuration error. Please contact administrator.' },
         { status: 500 }
       );
     }
+
+    console.log('Credentials check:', { hasBase64Creds, hasEnvVarCreds });
 
     // Find user in Users sheet
     const user = await findUserByPhone(phone);
