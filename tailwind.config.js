@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '475px',  // Custom breakpoint for small phones in landscape / larger phones
+      },
       colors: {
         'amante-red': '#B91C1C',
         'amante-red-dark': '#991B1B',
