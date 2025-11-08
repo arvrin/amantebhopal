@@ -44,20 +44,15 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log('Credentials check:', { hasBase64Creds, hasEnvVarCreds });
-
     // Find user in Users sheet
     const user = await findUserByPhone(phone);
 
     if (!user) {
-      console.log(`Authentication failed for phone: ${phone}`);
       return NextResponse.json(
         { error: 'Access denied. Phone number not authorized.' },
         { status: 401 }
       );
     }
-
-    console.log(`Authentication successful for: ${user['Name']} (${phone})`);
 
     // Create JWT token
     const token = sign(

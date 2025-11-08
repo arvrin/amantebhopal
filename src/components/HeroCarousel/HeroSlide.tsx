@@ -33,9 +33,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
   }, [slide.headline, slide.headlineHighlight]);
 
   const handlePrimaryCTA = () => {
-    console.log('Primary CTA clicked:', slide.id, slide.primaryCTA);
     if (slide.primaryCTA.action === 'modal' && onPrimaryCTAClick) {
-      console.log('Opening modal for:', slide.id);
       onPrimaryCTAClick();
     }
   };

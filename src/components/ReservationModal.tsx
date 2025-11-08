@@ -89,11 +89,6 @@ export default function ReservationModal({ isOpen, onClose }: ReservationModalPr
       // TODO: Replace with Google Form integration
       await new Promise(resolve => setTimeout(resolve, 1500)); // Simulate network delay
 
-      console.log('Reservation data (mock):', {
-        ...formData,
-        partySize: parseInt(formData.partySize),
-      });
-
       setIsSuccess(true);
 
       // Reset form after showing success
