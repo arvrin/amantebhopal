@@ -154,7 +154,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={handlePrimaryCTA}
-                className="group relative w-full sm:w-auto px-6 xs:px-8 sm:px-10 md:px-12 py-3.5 xs:py-4 sm:py-4.5 md:py-5 bg-gradient-to-br from-[#8B1538] via-[#7A1230] to-[#6B0F28] hover:from-[#6B0F28] hover:via-[#7A1230] hover:to-[#8B1538] text-white font-bold text-base xs:text-lg sm:text-xl md:text-xl rounded-full transition-all duration-300 shadow-lg shadow-[#8B1538]/30 hover:shadow-xl hover:shadow-[#8B1538]/50 overflow-hidden"
+                className="group relative w-full sm:w-auto px-6 xs:px-8 sm:px-10 md:px-12 py-4 xs:py-4 sm:py-4.5 md:py-5 bg-gradient-to-br from-[#8B1538] via-[#7A1230] to-[#6B0F28] hover:from-[#6B0F28] hover:via-[#7A1230] hover:to-[#8B1538] text-white font-bold text-base xs:text-lg sm:text-xl md:text-xl rounded-full transition-all duration-300 shadow-lg shadow-[#8B1538]/30 hover:shadow-xl hover:shadow-[#8B1538]/50 overflow-hidden"
               >
                 <span className="relative z-10">{slide.primaryCTA.text}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 group-hover:translate-x-full transition-transform duration-700" />
@@ -164,7 +164,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="group relative w-full sm:w-auto px-6 xs:px-8 sm:px-10 md:px-12 py-3.5 xs:py-4 sm:py-4.5 md:py-5 bg-gradient-to-br from-[#8B1538] via-[#7A1230] to-[#6B0F28] hover:from-[#6B0F28] hover:via-[#7A1230] hover:to-[#8B1538] text-white font-bold text-base xs:text-lg sm:text-xl md:text-xl rounded-full transition-all duration-300 shadow-lg shadow-[#8B1538]/30 hover:shadow-xl hover:shadow-[#8B1538]/50 overflow-hidden"
+                  className="group relative w-full sm:w-auto px-6 xs:px-8 sm:px-10 md:px-12 py-4 xs:py-4 sm:py-4.5 md:py-5 bg-gradient-to-br from-[#8B1538] via-[#7A1230] to-[#6B0F28] hover:from-[#6B0F28] hover:via-[#7A1230] hover:to-[#8B1538] text-white font-bold text-base xs:text-lg sm:text-xl md:text-xl rounded-full transition-all duration-300 shadow-lg shadow-[#8B1538]/30 hover:shadow-xl hover:shadow-[#8B1538]/50 overflow-hidden"
                 >
                   <span className="relative z-10">{slide.primaryCTA.text}</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 group-hover:translate-x-full transition-transform duration-700" />
@@ -177,7 +177,7 @@ const HeroSlide = memo(function HeroSlide({ slide, isActive, onPrimaryCTAClick }
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group relative w-full sm:w-auto px-6 xs:px-8 sm:px-10 md:px-12 py-3.5 xs:py-4 sm:py-4.5 md:py-5 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-bold text-base xs:text-lg sm:text-xl md:text-xl rounded-full transition-all duration-300 border-2 border-white/30 hover:border-white/50 shadow-md hover:shadow-lg overflow-hidden"
+                className="group relative w-full sm:w-auto px-6 xs:px-8 sm:px-10 md:px-12 py-4 xs:py-4 sm:py-4.5 md:py-5 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-bold text-base xs:text-lg sm:text-xl md:text-xl rounded-full transition-all duration-300 border-2 border-white/30 hover:border-white/50 shadow-md hover:shadow-lg overflow-hidden"
               >
                 <span className="relative z-10">{slide.secondaryCTA.text}</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent transform -skew-x-12 group-hover:translate-x-full transition-transform duration-700" />
