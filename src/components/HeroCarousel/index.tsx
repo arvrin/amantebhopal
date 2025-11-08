@@ -161,7 +161,7 @@ export default function HeroCarousel({
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={togglePlayPause}
-        className="absolute top-20 xs:top-24 sm:top-28 md:top-32 right-4 sm:right-6 md:right-8 z-30 w-10 h-10 xs:w-11 xs:h-11 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/25 hover:border-white/50 transition-all shadow-lg"
+        className="absolute top-20 xs:top-24 sm:top-28 md:top-32 right-4 sm:right-6 md:right-8 z-30 w-11 h-11 xs:w-12 xs:h-12 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full bg-white/10 backdrop-blur-md border border-white/30 flex items-center justify-center hover:bg-white/25 hover:border-white/50 transition-all shadow-lg"
         aria-label={isPlaying ? 'Pause slideshow' : 'Play slideshow'}
       >
         {isPlaying ? (
