@@ -25,7 +25,7 @@ export async function POST(request: NextRequest) {
 
   try {
     // 1. Rate limiting (stricter for file uploads)
-    const rateLimitResponse = checkRateLimit(clientId, strictRateLimiter);
+    const rateLimitResponse = await checkRateLimit(clientId, strictRateLimiter);
     if (rateLimitResponse) {
       return rateLimitResponse;
     }
@@ -105,13 +105,4 @@ export async function POST(request: NextRequest) {
   }
 }
 
-export async function OPTIONS(_request: NextRequest) {
-  return new Response(null, {
-    status: 204,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  });
-}
+// CORS is now handled by middleware.ts - no need for OPTIONS handler

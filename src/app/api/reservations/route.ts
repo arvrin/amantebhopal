@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
 
   try {
     // 1. Rate limiting
-    const rateLimitResponse = checkRateLimit(clientId);
+    const rateLimitResponse = await checkRateLimit(clientId);
     if (rateLimitResponse) {
       return rateLimitResponse;
     }
@@ -73,14 +73,4 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// OPTIONS handler for CORS preflight
-export async function OPTIONS(_request: NextRequest) {
-  return new Response(null, {
-    status: 204,
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST, OPTIONS',
-      'Access-Control-Allow-Headers': 'Content-Type',
-    },
-  });
-}
+// CORS is now handled by middleware.ts - no need for OPTIONS handler

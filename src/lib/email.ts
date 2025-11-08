@@ -19,11 +19,17 @@ import type {
 // RESEND CLIENT CONFIGURATION
 // ============================================================================
 
-if (!process.env.RESEND_API_KEY) {
-  console.warn('RESEND_API_KEY is not defined. Email sending will fail.');
+const RESEND_API_KEY = process.env.RESEND_API_KEY;
+
+if (!RESEND_API_KEY) {
+  throw new Error(
+    'CRITICAL: RESEND_API_KEY environment variable is required. ' +
+    'Email functionality will not work without this. ' +
+    'Get your API key from https://resend.com/api-keys'
+  );
 }
 
-export const resend = new Resend(process.env.RESEND_API_KEY || '');
+export const resend = new Resend(RESEND_API_KEY);
 
 // ============================================================================
 // EMAIL CONFIGURATION

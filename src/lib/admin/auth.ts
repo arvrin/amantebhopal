@@ -1,7 +1,14 @@
 import { verify } from 'jsonwebtoken';
 import { cookies } from 'next/headers';
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
+if (!process.env.JWT_SECRET) {
+  throw new Error(
+    'CRITICAL: JWT_SECRET environment variable is required but not set. ' +
+    'Admin authentication will not work without this.'
+  );
+}
+
+const JWT_SECRET: string = process.env.JWT_SECRET;
 
 export interface AdminUser {
   phone: string;

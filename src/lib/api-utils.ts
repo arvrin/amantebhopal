@@ -7,6 +7,8 @@
 
 import { NextResponse } from 'next/server';
 import { ZodError } from 'zod';
+import { Redis } from '@upstash/redis';
+import { Ratelimit } from '@upstash/ratelimit';
 
 // ============================================================================
 // TYPES
@@ -160,114 +162,74 @@ export function errorResponse(
 // ============================================================================
 
 /**
- * Simple in-memory rate limiter
- * For production, consider using Redis or Upstash
+ * Redis-based rate limiting using Upstash
+ * Persistent rate limiting for serverless environments
  */
-class RateLimiter {
-  private requests: Map<string, { count: number; resetTime: number }> = new Map();
-  private readonly limit: number;
-  private readonly windowMs: number;
 
-  constructor(limit: number = 10, windowMs: number = 60000) {
-    this.limit = limit;
-    this.windowMs = windowMs;
-
-    // Clean up old entries every minute
-    setInterval(() => this.cleanup(), 60000);
-  }
-
-  /**
-   * Check if request should be rate limited
-   */
-  isRateLimited(identifier: string): boolean {
-    const now = Date.now();
-    const record = this.requests.get(identifier);
-
-    if (!record || now >= record.resetTime) {
-      // No record or window expired, create new one
-      this.requests.set(identifier, {
-        count: 1,
-        resetTime: now + this.windowMs,
-      });
-      return false;
-    }
-
-    if (record.count >= this.limit) {
-      return true;
-    }
-
-    record.count++;
-    return false;
-  }
-
-  /**
-   * Get rate limit info for headers
-   */
-  getRateLimitInfo(identifier: string): {
-    limit: number;
-    remaining: number;
-    reset: number;
-  } {
-    const record = this.requests.get(identifier);
-    if (!record) {
-      return {
-        limit: this.limit,
-        remaining: this.limit,
-        reset: Date.now() + this.windowMs,
-      };
-    }
-
-    return {
-      limit: this.limit,
-      remaining: Math.max(0, this.limit - record.count),
-      reset: record.resetTime,
-    };
-  }
-
-  /**
-   * Clean up expired entries
-   */
-  private cleanup(): void {
-    const now = Date.now();
-    for (const [key, record] of this.requests.entries()) {
-      if (now >= record.resetTime) {
-        this.requests.delete(key);
-      }
-    }
-  }
-}
+// Initialize Redis client (only if credentials are provided)
+const redis = process.env.UPSTASH_REDIS_REST_URL && process.env.UPSTASH_REDIS_REST_TOKEN
+  ? new Redis({
+      url: process.env.UPSTASH_REDIS_REST_URL,
+      token: process.env.UPSTASH_REDIS_REST_TOKEN,
+    })
+  : null;
 
 // Create rate limiter instances
-export const apiRateLimiter = new RateLimiter(10, 60000); // 10 requests per minute
-export const strictRateLimiter = new RateLimiter(3, 60000); // 3 requests per minute for sensitive endpoints
+export const apiRateLimiter = redis
+  ? new Ratelimit({
+      redis: redis,
+      limiter: Ratelimit.slidingWindow(10, '60 s'), // 10 requests per minute
+      analytics: true,
+      prefix: 'ratelimit:api',
+    })
+  : null;
+
+export const strictRateLimiter = redis
+  ? new Ratelimit({
+      redis: redis,
+      limiter: Ratelimit.slidingWindow(3, '60 s'), // 3 requests per minute for sensitive endpoints
+      analytics: true,
+      prefix: 'ratelimit:strict',
+    })
+  : null;
 
 /**
  * Check rate limit and return appropriate response if limited
  */
-export function checkRateLimit(
+export async function checkRateLimit(
   identifier: string,
-  limiter: RateLimiter = apiRateLimiter
-): NextResponse<ApiErrorResponse> | null {
-  if (limiter.isRateLimited(identifier)) {
-    const info = limiter.getRateLimitInfo(identifier);
+  limiter: Ratelimit | null = apiRateLimiter
+): Promise<NextResponse<ApiErrorResponse> | null> {
+  // If no rate limiter configured (Redis not available), skip rate limiting
+  if (!limiter) {
+    console.warn('Rate limiting disabled - Upstash Redis not configured');
+    return null;
+  }
+
+  const { success, limit, reset, remaining } = await limiter.limit(identifier);
+
+  if (!success) {
+    const resetDate = new Date(reset);
+    const retryAfter = Math.ceil((reset - Date.now()) / 1000);
+
     return NextResponse.json(
       {
         success: false,
         error: {
           code: 'RATE_LIMIT_EXCEEDED',
-          message: 'Too many requests. Please try again later.',
+          message: `Too many requests. Please try again after ${resetDate.toLocaleTimeString()}.`,
           details: {
-            retryAfter: Math.ceil((info.reset - Date.now()) / 1000),
+            retryAfter,
           },
         },
       },
       {
         status: 429,
         headers: {
-          'X-RateLimit-Limit': info.limit.toString(),
-          'X-RateLimit-Remaining': info.remaining.toString(),
-          'X-RateLimit-Reset': info.reset.toString(),
-          'Retry-After': Math.ceil((info.reset - Date.now()) / 1000).toString(),
+          'X-RateLimit-Limit': limit.toString(),
+          'X-RateLimit-Remaining': remaining.toString(),
+          'X-RateLimit-Reset': reset.toString(),
+          'Retry-After': retryAfter.toString(),
         },
       }
     );
