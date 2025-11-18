@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Image from 'next/image';
+import HeaderGlobal from '@/components/layout/HeaderGlobal';
 import Footer from '@/components/layout/Footer';
 import {
   Heart,
@@ -16,7 +17,6 @@ import {
   TrendingUp,
   Handshake
 } from 'lucide-react';
-import Button from '@/components/ui/Button';
 
 export default function AboutPage() {
   const values = [
@@ -66,48 +66,79 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="bg-white">
+    <div className="min-h-screen bg-black">
+      {/* Header */}
+      <HeaderGlobal />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
+      <div className="relative min-h-screen flex items-center">
+        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/images/about/about-story.jpg"
             alt="About Amante"
             fill
-            className="object-cover object-center"
+            className="object-cover opacity-40"
             priority
           />
-          {/* Sophisticated Brand Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-br from-amante-red/15 via-transparent to-amante-pink/10" />
-          {/* Vignette effect */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,black_100%)] opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70" />
         </div>
 
-        <div className="relative h-full flex items-center justify-center px-6">
-          <div className="text-center max-w-5xl">
+        {/* Hero Content */}
+        <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 py-20 sm:py-24 md:py-32">
+          <div className="max-w-7xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
+              transition={{ duration: 0.8 }}
+              className="text-center max-w-4xl mx-auto"
             >
-              <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="w-10 h-10 text-white" />
-              </div>
-              <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl text-white mb-6 tracking-tight">
-                Our Story
-              </h1>
-            </motion.div>
+              {/* Icon */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="mb-6"
+              >
+                <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto backdrop-blur-sm border border-white/20">
+                  <Heart className="w-10 h-10 text-amante-pink" />
+                </div>
+              </motion.div>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="font-body text-xl md:text-2xl text-amante-pink-light max-w-3xl mx-auto"
-            >
-              Building Bhopal's Premier Dining Destination
-            </motion.p>
+              {/* Subtitle */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="mb-4 sm:mb-6"
+              >
+                <span className="inline-block px-4 sm:px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full text-amante-pink text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] border border-white/20">
+                  Our Story
+                </span>
+              </motion.div>
+
+              {/* Main Heading */}
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="font-heading text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 tracking-tight leading-tight"
+              >
+                Building Bhopal's
+                <br />
+                <span className="text-amante-pink">Premier Destination</span>
+              </motion.h1>
+
+              {/* Description */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4"
+              >
+                A celebration of passion, innovation, and genuine hospitality
+              </motion.p>
+            </motion.div>
           </div>
         </div>
 
@@ -122,15 +153,11 @@ export default function AboutPage() {
             <ChevronDown className="w-6 h-6 animate-bounce" />
           </a>
         </motion.div>
-
-        {/* Decorative Elements */}
-        <div className="absolute top-1/4 left-10 w-32 h-32 bg-amante-pink/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-amante-red/10 rounded-full blur-3xl" />
-      </section>
+      </div>
 
       {/* The Beginning */}
-      <section id="story" className="py-20 lg:py-32 px-4 bg-amante-cream">
-        <div className="max-w-standard mx-auto">
+      <section id="story" className="py-20 lg:py-32 px-4 bg-black">
+        <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -139,13 +166,13 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="font-heading text-3xl md:text-4xl text-amante-red mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-6">
                 The Beginning
               </h2>
-              <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+              <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
                 Amante was born from a simple observation: Bhopal deserved a dining destination as dynamic and diverse as its people. Our founders spent years in hospitality across India and internationally, experiencing world-class dining destinations that seamlessly blended multiple concepts under one roof.
               </p>
-              <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+              <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
                 They saw how people's needs shift throughout the day, throughout the week, throughout life's celebrations. Yet Bhopal lacked a venue offering this versatility. In 2023, they decided to change that. The vision was ambitious—create six distinct spaces, each excellent on its own, yet harmoniously united.
               </p>
             </motion.div>
@@ -155,10 +182,10 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="relative h-96 bg-gradient-to-br from-amante-pink-light to-amante-pink rounded-2xl overflow-hidden shadow-lg"
+              className="relative h-96 bg-gradient-to-br from-amante-pink/20 to-amante-red/20 rounded-2xl overflow-hidden border border-white/10"
             >
               <div className="absolute inset-0 flex items-center justify-center">
-                <Target className="w-24 h-24 text-amante-red/20" />
+                <Target className="w-24 h-24 text-amante-pink/30" />
               </div>
             </motion.div>
           </div>
@@ -166,18 +193,18 @@ export default function AboutPage() {
       </section>
 
       {/* The Journey */}
-      <section className="py-20 lg:py-32 px-4 bg-white">
-        <div className="max-w-standard mx-auto">
+      <section className="py-20 lg:py-32 px-4 bg-black border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="relative h-96 bg-gradient-to-br from-amante-red/10 to-amante-red/5 rounded-2xl overflow-hidden shadow-lg md:order-1"
+              className="relative h-96 bg-gradient-to-br from-amante-red/20 to-amante-pink/10 rounded-2xl overflow-hidden border border-white/10 md:order-1"
             >
               <div className="absolute inset-0 flex items-center justify-center">
-                <Globe className="w-24 h-24 text-amante-red/20" />
+                <Globe className="w-24 h-24 text-amante-pink/30" />
               </div>
             </motion.div>
 
@@ -188,13 +215,13 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="space-y-6 md:order-2"
             >
-              <h2 className="font-heading text-3xl md:text-4xl text-amante-red mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-6">
                 The Journey
               </h2>
-              <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+              <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
                 Building Amante meant assembling the right team—chefs trained in India's finest kitchens and international destinations, hospitality professionals who understand service excellence, mixologists who approach cocktails as craft, and designers who could create six distinct atmospheres within one cohesive destination.
               </p>
-              <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+              <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
                 We spent months sourcing the perfect location, central yet offering the space our vision demanded. After eighteen months of meticulous planning and construction, Amante opened its doors, immediately becoming Bhopal's most talked-about dining destination.
               </p>
             </motion.div>
@@ -203,8 +230,8 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 lg:py-32 px-4 bg-amante-cream">
-        <div className="max-w-standard mx-auto">
+      <section className="py-20 lg:py-32 px-4 bg-black border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -212,7 +239,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-heading text-3xl md:text-5xl text-amante-red mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-6">
               Our Philosophy
             </h2>
           </motion.div>
@@ -222,15 +249,15 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-lg"
+            className="max-w-3xl mx-auto bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/10"
           >
-            <p className="font-body text-lg text-amante-charcoal leading-relaxed mb-6">
-              Our philosophy centers on three unwavering principles: <span className="font-semibold text-amante-red">quality ingredients</span>, <span className="font-semibold text-amante-red">expert preparation</span>, and <span className="font-semibold text-amante-red">genuine hospitality</span>.
+            <p className="font-body text-base md:text-lg text-white/80 leading-relaxed mb-6">
+              Our philosophy centers on three unwavering principles: <span className="font-semibold text-amante-pink">quality ingredients</span>, <span className="font-semibold text-amante-pink">expert preparation</span>, and <span className="font-semibold text-amante-pink">genuine hospitality</span>.
             </p>
-            <p className="font-body text-lg text-amante-charcoal leading-relaxed mb-6">
+            <p className="font-body text-base md:text-lg text-white/80 leading-relaxed mb-6">
               We source ingredients from trusted suppliers who share our commitment to excellence—whether imported specialty items or local seasonal produce. Our culinary team brings ingredients to life through techniques that respect their origin while adding creative flair.
             </p>
-            <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+            <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
               But great food without great service is just a meal. We've cultivated a culture where every team member understands they're creating experiences, not just serving customers. From the barista remembering your usual order to the events coordinator anticipating your unstated needs, we believe hospitality is about making people feel valued, welcomed, and genuinely cared for.
             </p>
           </motion.div>
@@ -238,8 +265,8 @@ export default function AboutPage() {
       </section>
 
       {/* Our Values */}
-      <section className="py-20 lg:py-32 px-4 bg-white">
-        <div className="max-w-standard mx-auto">
+      <section className="py-20 lg:py-32 px-4 bg-black border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -247,10 +274,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-heading text-3xl md:text-5xl text-amante-red mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-6">
               Our Values
             </h2>
-            <p className="font-body text-lg text-amante-charcoal max-w-3xl mx-auto">
+            <p className="font-body text-base md:text-lg text-white/60 max-w-3xl mx-auto">
               These core principles guide every decision we make and every experience we create.
             </p>
           </motion.div>
@@ -265,15 +292,15 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-amante-cream rounded-xl p-8 hover:shadow-md transition-shadow"
+                  className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:border-amante-pink/30 transition-all"
                 >
-                  <div className="w-16 h-16 bg-amante-red/10 rounded-full flex items-center justify-center mb-6">
-                    <ValueIcon className="w-8 h-8 text-amante-red" />
+                  <div className="w-16 h-16 bg-amante-pink/10 rounded-full flex items-center justify-center mb-6">
+                    <ValueIcon className="w-8 h-8 text-amante-pink" />
                   </div>
-                  <h3 className="font-heading text-2xl text-amante-red mb-4">
+                  <h3 className="font-heading text-xl md:text-2xl text-amante-pink mb-4">
                     {value.title}
                   </h3>
-                  <p className="font-body text-amante-charcoal leading-relaxed">
+                  <p className="font-body text-sm md:text-base text-white/70 leading-relaxed">
                     {value.description}
                   </p>
                 </motion.div>
@@ -284,7 +311,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="relative py-20 lg:py-32 px-4 bg-amante-cream overflow-hidden">
+      <section className="relative py-20 lg:py-32 px-4 bg-black border-t border-white/5 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/images/about/about-team.jpg"
@@ -293,7 +320,7 @@ export default function AboutPage() {
             className="object-cover"
           />
         </div>
-        <div className="max-w-standard mx-auto relative z-10">
+        <div className="max-w-7xl mx-auto relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -301,10 +328,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="font-heading text-3xl md:text-5xl text-amante-red mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-6">
               The Team Behind Amante
             </h2>
-            <p className="font-body text-lg text-amante-charcoal max-w-3xl mx-auto">
+            <p className="font-body text-base md:text-lg text-white/60 max-w-3xl mx-auto">
               Behind every memorable Amante experience are passionate professionals who take pride in their craft.
             </p>
           </motion.div>
@@ -314,12 +341,12 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="max-w-3xl mx-auto bg-white rounded-2xl p-8 md:p-12 shadow-lg mb-12"
+            className="max-w-3xl mx-auto bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/10 mb-12"
           >
-            <p className="font-body text-lg text-amante-charcoal leading-relaxed mb-6">
+            <p className="font-body text-base md:text-lg text-white/80 leading-relaxed mb-6">
               Our executive chef brings fifteen years of experience from five-star properties and international culinary adventures. The pastry team includes award-winning bakers who create morning magic. Our beverage director has curated wine lists for luxury hotels and crafts cocktail menus that surprise and delight.
             </p>
-            <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+            <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
               The events team has collectively orchestrated hundreds of flawless celebrations. Our front-of-house staff undergo continuous training in hospitality excellence and food knowledge. Together, they form a family united by shared commitment: ensuring every guest leaves happier than they arrived.
             </p>
           </motion.div>
@@ -335,13 +362,13 @@ export default function AboutPage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-white rounded-xl p-6 text-center shadow-sm hover:shadow-md transition-shadow"
+                  className="bg-white/5 backdrop-blur-sm rounded-xl p-6 text-center border border-white/10 hover:border-amante-pink/30 transition-all"
                 >
-                  <HighlightIcon className="w-10 h-10 text-amante-red mx-auto mb-3" />
-                  <div className="font-heading text-3xl text-amante-red mb-2">
+                  <HighlightIcon className="w-10 h-10 text-amante-pink mx-auto mb-3" />
+                  <div className="font-heading text-2xl md:text-3xl text-amante-pink mb-2">
                     {highlight.stat}
                   </div>
-                  <div className="font-body text-sm text-amante-grey">
+                  <div className="font-body text-xs md:text-sm text-white/60">
                     {highlight.label}
                   </div>
                 </motion.div>
@@ -352,8 +379,8 @@ export default function AboutPage() {
       </section>
 
       {/* Awards & Recognition */}
-      <section className="py-20 lg:py-32 px-4 bg-white">
-        <div className="max-w-narrow mx-auto">
+      <section className="py-20 lg:py-32 px-4 bg-black border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -361,10 +388,10 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="font-heading text-3xl md:text-5xl text-amante-red mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-6">
               Awards & Recognition
             </h2>
-            <p className="font-body text-lg text-amante-charcoal">
+            <p className="font-body text-base md:text-lg text-white/60">
               We're honored to be recognized by our guests and the community.
             </p>
           </motion.div>
@@ -374,33 +401,33 @@ export default function AboutPage() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="bg-amante-cream rounded-2xl p-8 md:p-12"
+            className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 border border-white/10"
           >
             <div className="flex items-center justify-center mb-8">
-              <Award className="w-16 h-16 text-amante-red" />
+              <Award className="w-16 h-16 text-amante-pink" />
             </div>
             <div className="text-center space-y-6">
               <div>
-                <div className="font-heading text-4xl text-amante-red mb-2">5.0</div>
+                <div className="font-heading text-4xl md:text-5xl text-amante-pink mb-2">5.0</div>
                 <div className="flex items-center justify-center gap-1 mb-2">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <Star key={star} className="w-6 h-6 fill-amante-red text-amante-red" />
+                    <Star key={star} className="w-6 h-6 fill-amante-pink text-amante-pink" />
                   ))}
                 </div>
-                <p className="font-body text-amante-grey">Average Guest Rating</p>
+                <p className="font-body text-sm md:text-base text-white/60">Average Guest Rating</p>
               </div>
 
-              <div className="border-t border-amante-grey-light pt-6">
-                <p className="font-body text-lg text-amante-charcoal mb-4">
-                  <span className="font-semibold text-amante-red">1,000+</span> Five-Star Reviews
+              <div className="border-t border-white/10 pt-6">
+                <p className="font-body text-base md:text-lg text-white/80 mb-4">
+                  <span className="font-semibold text-amante-pink">1,000+</span> Five-Star Reviews
                 </p>
-                <p className="font-body text-lg text-amante-charcoal">
-                  <span className="font-semibold text-amante-red">500+</span> Happy Events Hosted
+                <p className="font-body text-base md:text-lg text-white/80">
+                  <span className="font-semibold text-amante-pink">500+</span> Happy Events Hosted
                 </p>
               </div>
 
-              <div className="border-t border-amante-grey-light pt-6">
-                <p className="font-body text-amante-charcoal italic">
+              <div className="border-t border-white/10 pt-6">
+                <p className="font-body text-white/70 italic">
                   "Bhopal's Premier Multi-Venue Dining Destination"
                 </p>
               </div>
@@ -410,8 +437,8 @@ export default function AboutPage() {
       </section>
 
       {/* The Future */}
-      <section className="py-20 lg:py-32 px-4 bg-amante-cream">
-        <div className="max-w-standard mx-auto">
+      <section className="py-20 lg:py-32 px-4 bg-black border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -420,13 +447,13 @@ export default function AboutPage() {
               viewport={{ once: true }}
               className="space-y-6"
             >
-              <h2 className="font-heading text-3xl md:text-4xl text-amante-red mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-6">
                 Looking Forward
               </h2>
-              <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+              <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
                 As we look ahead, our commitment remains unchanged: continue evolving while staying true to what makes Amante special. We're constantly refining our menus based on seasonal availability and guest preferences, bringing in guest chefs for special collaborations, and creating unique events that keep our regular guests excited.
               </p>
-              <p className="font-body text-lg text-amante-charcoal leading-relaxed">
+              <p className="font-body text-base md:text-lg text-white/80 leading-relaxed">
                 Our goal isn't just maintaining Bhopal's premier dining destination—it's continually raising the bar for what hospitality can be. Whether you're visiting for the first time or the hundredth, we want you to discover something new, something delightful, something worth sharing.
               </p>
             </motion.div>
@@ -436,10 +463,10 @@ export default function AboutPage() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
-              className="relative h-96 bg-gradient-to-br from-amante-red to-amante-red-dark rounded-2xl overflow-hidden shadow-lg"
+              className="relative h-96 bg-gradient-to-br from-amante-red/20 to-amante-pink/20 rounded-2xl overflow-hidden border border-white/10"
             >
               <div className="absolute inset-0 flex items-center justify-center">
-                <TrendingUp className="w-24 h-24 text-white/20" />
+                <TrendingUp className="w-24 h-24 text-amante-pink/30" />
               </div>
             </motion.div>
           </div>
@@ -447,30 +474,38 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 px-4 bg-gradient-to-br from-amante-red via-amante-red-dark to-amante-charcoal text-white">
-        <div className="max-w-narrow mx-auto text-center">
+      <section className="py-20 lg:py-32 px-4 bg-gradient-to-br from-amante-red via-amante-red-dark to-black border-t border-white/5">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-heading text-3xl md:text-4xl mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white mb-6">
               Experience Our Story Yourself
             </h2>
-            <p className="font-body text-lg md:text-xl text-amante-pink-light mb-10">
+            <p className="font-body text-base md:text-lg lg:text-xl text-white/80 mb-10">
               Visit us and become part of the Amante story. Your perfect moment awaits.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
               <Link href="/reservations">
-                <Button variant="primary" size="lg">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white text-amante-red font-bold text-base md:text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
                   Reserve Your Table
-                </Button>
+                </motion.button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" size="lg">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-bold text-base md:text-lg rounded-full transition-all duration-300 border-2 border-white/30"
+                >
                   Contact Us
-                </Button>
+                </motion.button>
               </Link>
             </div>
           </motion.div>

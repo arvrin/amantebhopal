@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
+import HeaderGlobal from '@/components/layout/HeaderGlobal';
 import Footer from '@/components/layout/Footer';
 import {
   Coffee,
@@ -19,7 +20,6 @@ import {
   ChevronDown,
   Filter
 } from 'lucide-react';
-import Button from '@/components/ui/Button';
 
 // Gallery categories
 const categories = [
@@ -36,7 +36,6 @@ const categories = [
 
 // Gallery items with real images
 const galleryItems = [
-  // Using the 10 downloaded gallery images
   { id: 1, category: 'cafe', title: 'Morning Coffee Setup', image: '/images/gallery/gallery-1.jpg' },
   { id: 2, category: 'restaurant', title: 'Rooftop Dining Setup', image: '/images/gallery/gallery-2.jpg' },
   { id: 3, category: 'lounge', title: 'Cocktail Bar', image: '/images/gallery/gallery-3.jpg' },
@@ -65,66 +64,103 @@ export default function GalleryPage() {
         url: window.location.href
       });
     } else {
-      // Fallback for browsers that don't support Web Share API
       alert('Share functionality would be implemented here');
     }
   };
 
   return (
-    <div className="bg-white">
+    <div className="min-h-screen bg-black">
+      {/* Header */}
+      <HeaderGlobal />
 
       {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full overflow-hidden">
+      <div className="relative min-h-screen flex items-center">
+        {/* Background Image */}
         <div className="absolute inset-0">
           <Image
             src="/images/gallery/gallery-1.jpg"
             alt="Amante Gallery"
             fill
-            className="object-cover object-center"
+            className="object-cover opacity-40"
             priority
           />
-          {/* Sophisticated Brand Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-br from-amante-red/15 via-transparent to-amante-pink/10" />
-          {/* Vignette effect */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,black_100%)] opacity-40" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/50 to-black/70" />
         </div>
 
-        <div className="relative z-10 max-w-standard mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-center max-w-4xl mx-auto"
-          >
-            <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-6">
-              <ImageIcon className="w-10 h-10 text-white" />
-            </div>
+        {/* Hero Content */}
+        <div className="relative z-10 w-full px-4 sm:px-6 md:px-8 py-20 sm:py-24 md:py-32">
+          <div className="max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              className="text-center max-w-4xl mx-auto"
+            >
+              {/* Icon */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="mb-6"
+              >
+                <div className="w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mx-auto backdrop-blur-sm border border-white/20">
+                  <ImageIcon className="w-10 h-10 text-amante-pink" />
+                </div>
+              </motion.div>
 
-            <h1 className="font-heading text-4xl md:text-6xl mb-6">Experience Amante</h1>
+              {/* Subtitle */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+                className="mb-4 sm:mb-6"
+              >
+                <span className="inline-block px-4 sm:px-6 py-2 bg-white/10 backdrop-blur-sm rounded-full text-amante-pink text-xs sm:text-sm uppercase tracking-[0.2em] sm:tracking-[0.3em] border border-white/20">
+                  Visual Journey
+                </span>
+              </motion.div>
 
-            <p className="font-body text-lg md:text-xl text-amante-pink-light mb-10 max-w-3xl mx-auto">
-              Explore our spaces, dishes, and moments through our visual gallery. From intimate cafÃ© corners to grand celebration halls, discover what makes Amante special.
-            </p>
-          </motion.div>
+              {/* Main Heading */}
+              <motion.h1
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+                className="font-heading text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-white mb-4 sm:mb-6 tracking-tight leading-tight"
+              >
+                Experience
+                <br />
+                <span className="text-amante-pink">Amante</span>
+              </motion.h1>
 
-          {/* Scroll indicator */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.8 }}
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          >
-            <a href="#gallery" className="flex flex-col items-center text-white/80 hover:text-white transition-colors">
-              <ChevronDown className="w-6 h-6 animate-bounce" />
-            </a>
-          </motion.div>
+              {/* Description */}
+              <motion.p
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.5 }}
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 sm:mb-12 max-w-3xl mx-auto leading-relaxed px-4"
+              >
+                Explore our spaces, dishes, and moments through our visual gallery
+              </motion.p>
+            </motion.div>
+          </div>
         </div>
-      </section>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        >
+          <a href="#gallery" className="flex flex-col items-center text-white/80 hover:text-white transition-colors">
+            <ChevronDown className="w-6 h-6 animate-bounce" />
+          </a>
+        </motion.div>
+      </div>
 
       {/* Filter Section */}
-      <section id="gallery" className="py-12 px-4 bg-amante-cream border-b border-amante-grey-light sticky top-0 z-30 backdrop-blur-sm bg-amante-cream/95">
-        <div className="max-w-standard mx-auto">
+      <section id="gallery" className="py-12 px-4 bg-black/95 border-b border-white/10 sticky top-0 z-30 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -133,8 +169,8 @@ export default function GalleryPage() {
             className="flex flex-col items-center"
           >
             <div className="flex items-center gap-2 mb-6">
-              <Filter className="w-5 h-5 text-amante-red" />
-              <h3 className="font-heading text-xl text-amante-red">Filter by Category</h3>
+              <Filter className="w-5 h-5 text-amante-pink" />
+              <h3 className="font-heading text-lg md:text-xl text-amante-pink">Filter by Category</h3>
             </div>
 
             <div className="flex flex-wrap justify-center gap-3">
@@ -144,10 +180,10 @@ export default function GalleryPage() {
                   <button
                     key={category.id}
                     onClick={() => setSelectedCategory(category.id)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-lg font-body font-semibold text-sm transition-all ${
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full font-body font-semibold text-sm transition-all duration-300 ${
                       selectedCategory === category.id
-                        ? 'bg-amante-red text-white shadow-lg'
-                        : 'bg-white text-amante-charcoal hover:bg-amante-pink-light'
+                        ? 'bg-amante-pink text-black shadow-lg shadow-amante-pink/30'
+                        : 'bg-white/5 text-white border border-white/10 hover:bg-white/10 hover:border-amante-pink/30'
                     }`}
                   >
                     <CategoryIcon className="w-4 h-4" />
@@ -161,8 +197,8 @@ export default function GalleryPage() {
       </section>
 
       {/* Gallery Grid - Masonry Style */}
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-standard mx-auto">
+      <section className="py-20 px-4 bg-black">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -170,13 +206,13 @@ export default function GalleryPage() {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <h2 className="font-heading text-3xl md:text-4xl text-amante-red mb-4">
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-amante-pink mb-4">
               {selectedCategory === 'all'
                 ? 'All Photos'
                 : `${categories.find(c => c.id === selectedCategory)?.label} Gallery`
               }
             </h2>
-            <p className="font-body text-amante-charcoal">
+            <p className="font-body text-base md:text-lg text-white/60">
               {filteredItems.length} {filteredItems.length === 1 ? 'photo' : 'photos'}
             </p>
           </motion.div>
@@ -199,7 +235,7 @@ export default function GalleryPage() {
                 >
                   <div
                     onClick={() => setSelectedImage(item)}
-                    className={`relative ${heightClass} rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group`}
+                    className={`relative ${heightClass} rounded-2xl overflow-hidden border border-white/10 hover:border-amante-pink/30 transition-all duration-300 cursor-pointer group`}
                   >
                     {/* Image */}
                     <Image
@@ -210,12 +246,12 @@ export default function GalleryPage() {
                     />
 
                     {/* Title overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                       <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="font-heading text-xl text-white mb-2">
+                        <h3 className="font-heading text-lg md:text-xl text-white mb-2">
                           {item.title}
                         </h3>
-                        <p className="font-body text-sm text-white/80">
+                        <p className="font-body text-sm text-amante-pink">
                           Click to view
                         </p>
                       </div>
@@ -228,7 +264,7 @@ export default function GalleryPage() {
                           e.stopPropagation();
                           handleShare(item);
                         }}
-                        className="p-2 bg-white/90 rounded-lg hover:bg-white transition-colors"
+                        className="p-2 bg-white/90 rounded-lg hover:bg-white transition-colors backdrop-blur-sm"
                         aria-label="Share"
                       >
                         <Share2 className="w-4 h-4 text-amante-red" />
@@ -246,8 +282,8 @@ export default function GalleryPage() {
               animate={{ opacity: 1 }}
               className="text-center py-16"
             >
-              <ImageIcon className="w-16 h-16 text-amante-grey mx-auto mb-4" />
-              <p className="font-body text-lg text-amante-grey">
+              <ImageIcon className="w-16 h-16 text-white/30 mx-auto mb-4" />
+              <p className="font-body text-base md:text-lg text-white/50">
                 No photos found for this category. Check back soon!
               </p>
             </motion.div>
@@ -276,14 +312,14 @@ export default function GalleryPage() {
               {/* Close button */}
               <button
                 onClick={() => setSelectedImage(null)}
-                className="absolute -top-12 right-0 p-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white"
+                className="absolute -top-12 right-0 p-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white backdrop-blur-sm border border-white/20"
                 aria-label="Close"
               >
                 <X className="w-6 h-6" />
               </button>
 
               {/* Image container */}
-              <div className="relative h-[70vh] rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative h-[70vh] rounded-2xl overflow-hidden shadow-2xl border border-white/20">
                 <Image
                   src={selectedImage.image}
                   alt={selectedImage.title}
@@ -295,10 +331,10 @@ export default function GalleryPage() {
               {/* Image info and actions */}
               <div className="mt-6 flex items-center justify-between">
                 <div>
-                  <h3 className="font-heading text-2xl text-white mb-2">
+                  <h3 className="font-heading text-xl md:text-2xl text-white mb-2">
                     {selectedImage.title}
                   </h3>
-                  <p className="font-body text-amante-pink-light">
+                  <p className="font-body text-sm md:text-base text-amante-pink">
                     {categories.find(c => c.id === selectedImage.category)?.label}
                   </p>
                 </div>
@@ -306,17 +342,17 @@ export default function GalleryPage() {
                 <div className="flex gap-3">
                   <button
                     onClick={() => alert('Download functionality would be implemented here')}
-                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white"
+                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white backdrop-blur-sm border border-white/20"
                   >
                     <Download className="w-5 h-5" />
-                    <span className="font-body">Download</span>
+                    <span className="font-body hidden sm:inline">Download</span>
                   </button>
                   <button
                     onClick={() => handleShare(selectedImage)}
-                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white"
+                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white backdrop-blur-sm border border-white/20"
                   >
                     <Share2 className="w-5 h-5" />
-                    <span className="font-body">Share</span>
+                    <span className="font-body hidden sm:inline">Share</span>
                   </button>
                 </div>
               </div>
@@ -326,28 +362,36 @@ export default function GalleryPage() {
       </AnimatePresence>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 px-4 bg-gradient-to-br from-amante-red via-amante-red-dark to-amante-charcoal text-white">
-        <div className="max-w-narrow mx-auto text-center">
+      <section className="py-20 lg:py-32 px-4 bg-gradient-to-br from-amante-red via-amante-red-dark to-black border-t border-white/5">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <ImageIcon className="w-16 h-16 mx-auto mb-6 text-amante-pink-light" />
-            <h2 className="font-heading text-3xl md:text-4xl mb-6">
+            <ImageIcon className="w-16 h-16 mx-auto mb-6 text-amante-pink" />
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl text-white mb-6">
               Create Your Own Memories
             </h2>
-            <p className="font-body text-lg md:text-xl text-amante-pink-light mb-10">
+            <p className="font-body text-base md:text-lg lg:text-xl text-white/80 mb-10">
               Come experience these spaces in person. Reserve your table today and become part of the Amante story.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="primary" size="lg">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white text-amante-red font-bold text-base md:text-lg rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
                 <a href="/reservations">Reserve Your Table</a>
-              </Button>
-              <Button variant="outline" size="lg">
+              </motion.button>
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-bold text-base md:text-lg rounded-full transition-all duration-300 border-2 border-white/30"
+              >
                 <a href="/contact">Contact Us</a>
-              </Button>
+              </motion.button>
             </div>
           </motion.div>
         </div>
