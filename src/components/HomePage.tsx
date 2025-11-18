@@ -45,8 +45,6 @@ export default function HomePage() {
                 <span className="inline-block mx-2">♦</span>
                 <span className="inline-block mx-8">Bar</span>
                 <span className="inline-block mx-2">♦</span>
-                <span className="inline-block mx-8">Banquets</span>
-                <span className="inline-block mx-2">♦</span>
                 <span className="inline-block mx-8">Private Dining</span>
                 <span className="inline-block mx-2">♦</span>
                 <span className="inline-block mx-8">Cocktails</span>
@@ -80,8 +78,6 @@ export default function HomePage() {
                 <span className="inline-block mx-8">Rooftop</span>
                 <span className="inline-block mx-2">♦</span>
                 <span className="inline-block mx-8">Bar</span>
-                <span className="inline-block mx-2">♦</span>
-                <span className="inline-block mx-8">Banquets</span>
                 <span className="inline-block mx-2">♦</span>
                 <span className="inline-block mx-8">Private Dining</span>
                 <span className="inline-block mx-2">♦</span>

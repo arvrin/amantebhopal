@@ -149,18 +149,18 @@ export const heroSlides: HeroSlide[] = [
     }
   },
 
-  // Slide 6: Corporate & Banquets
+  // Slide 6: Corporate & Private Events
   {
-    id: 'corporate-banquets',
+    id: 'corporate-events',
     category: 'corporate',
     backgroundImage: '/hero2.jpg',
     headline: 'Where Business Meets Pleasure',
     headlineHighlight: 'Meets',
-    subheadline: 'Premium Corporate Events & Banquet Facilities',
+    subheadline: 'Premium Corporate Events & Private Dining Facilities',
     body: 'Conferences, Team Dinners & Corporate Celebrations',
     primaryCTA: {
       text: 'Book Corporate Event',
-      link: '/banquets',
+      link: '/private-events',
       action: 'link'
     },
     secondaryCTA: {

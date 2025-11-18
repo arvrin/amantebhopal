@@ -576,9 +576,9 @@ export default function EventsPage() {
                   Explore Private Events
                 </Button>
               </Link>
-              <Link href="/banquets">
+              <Link href="/contact">
                 <Button variant="outline" size="lg">
-                  View Banquet Options
+                  Contact Us
                 </Button>
               </Link>
             </div>

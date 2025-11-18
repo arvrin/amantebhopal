@@ -8,9 +8,9 @@ import { Metadata } from 'next';
 // Business Information Constants
 export const BUSINESS_INFO = {
   name: 'Amante',
-  legalName: 'Amante Restaurant & Banquets',
-  description: "Bhopal's premier multi-venue dining destination featuring 6 unique spaces under one roof",
-  tagline: 'Six Unique Spaces. One Unforgettable Destination.',
+  legalName: 'Amante Restaurant & Lounge',
+  description: "Bhopal's premier multi-venue dining destination featuring 5 unique spaces under one roof",
+  tagline: 'Five Unique Spaces. One Unforgettable Destination.',
   phone: '+919893779100',
   email: 'hello@amante.in',
   address: {
@@ -40,7 +40,6 @@ export const BUSINESS_INFO = {
     'Rooftop Dining',
     'Bar & Lounge',
     'Private Dining',
-    'Banquet Halls',
     'Live Music',
     'Craft Cocktails',
     'Free Wi-Fi',
@@ -64,12 +63,12 @@ export const PRIMARY_KEYWORDS = [
   'fine dining bhopal',
   'rooftop restaurant bhopal',
   'best restaurant bhopal',
-  'banquet hall bhopal',
   'bar bhopal',
   'cafe bhopal',
   'lounge bhopal',
   'private dining bhopal',
   'wedding venue bhopal',
+  'nightclub bhopal',
 ];
 
 /**

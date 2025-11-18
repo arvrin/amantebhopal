@@ -29,7 +29,6 @@ const categories = [
   { id: 'lounge', label: 'Lounge', icon: Wine },
   { id: 'club', label: 'Club', icon: Music },
   { id: 'private-dining', label: 'Private Dining', icon: Heart },
-  { id: 'banquets', label: 'Banquets', icon: Sparkles },
   { id: 'events', label: 'Events', icon: Music },
   { id: 'food', label: 'Food', icon: UtensilsCrossed }
 ];
@@ -41,7 +40,7 @@ const galleryItems = [
   { id: 3, category: 'lounge', title: 'Cocktail Bar', image: '/images/gallery/gallery-3.jpg' },
   { id: 4, category: 'club', title: 'Night Energy', image: '/images/gallery/gallery-4.jpg' },
   { id: 5, category: 'private-dining', title: 'Intimate Dining Room', image: '/images/gallery/gallery-5.jpg' },
-  { id: 6, category: 'banquets', title: 'Grand Ballroom', image: '/images/gallery/gallery-6.jpg' },
+  { id: 6, category: 'events', title: 'Grand Ballroom', image: '/images/gallery/gallery-6.jpg' },
   { id: 7, category: 'events', title: 'Live Music Night', image: '/images/gallery/gallery-7.jpg' },
   { id: 8, category: 'food', title: 'Gourmet Plating', image: '/images/gallery/gallery-8.jpg' },
   { id: 9, category: 'cafe', title: 'Fresh Pastries Display', image: '/images/gallery/gallery-9.jpg' },
