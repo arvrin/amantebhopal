@@ -39,6 +39,7 @@ interface MenuItem {
   name: string;
   description: string;
   price: number;
+  price60ml?: number;
   bottlePrice?: number;
   category: string;
   dietary?: string[];
@@ -380,20 +381,45 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                           </button>
                         </div>
                       </div>
-                      <div className="text-right ml-4 flex-shrink-0 flex flex-col gap-3">
-                        <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
-                          <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">
-                            {item.categoryName === 'Cakes' ? '½ Kg' : 'Price'}
-                          </span>
-                          <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.price.toLocaleString('en-IN')}</span>
-                        </div>
-                        {item.bottlePrice && (
-                          <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
-                            <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">
-                              {item.categoryName === 'Cakes' ? '1 Kg' : 'Bottle'}
-                            </span>
-                            <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
-                          </div>
+                      <div className="text-right ml-4 flex-shrink-0 flex flex-col gap-2">
+                        {/* Grid layout for 3 prices (30ml, 60ml, Bottle) */}
+                        {item.price60ml && item.bottlePrice ? (
+                          <>
+                            {/* Peg sizes row */}
+                            <div className="flex gap-1.5">
+                              <div className="inline-flex flex-col items-center bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[70px] sm:min-w-[80px] md:min-w-[90px]">
+                                <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">30ml</span>
+                                <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.price.toLocaleString('en-IN')}</span>
+                              </div>
+                              <div className="inline-flex flex-col items-center bg-gradient-to-br from-[#A91D4D] to-[#8B1538] px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[70px] sm:min-w-[80px] md:min-w-[90px]">
+                                <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">60ml</span>
+                                <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.price60ml.toLocaleString('en-IN')}</span>
+                              </div>
+                            </div>
+                            {/* Bottle row */}
+                            <div className="inline-flex flex-col items-center bg-gradient-to-br from-[#6B0F28] to-[#4A0A1C] px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20">
+                              <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">Bottle</span>
+                              <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            {/* Original layout for items without 60ml */}
+                            <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
+                              <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">
+                                {item.categoryName === 'Cakes' ? '½ Kg' : 'Price'}
+                              </span>
+                              <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.price.toLocaleString('en-IN')}</span>
+                            </div>
+                            {item.bottlePrice && (
+                              <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
+                                <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">
+                                  {item.categoryName === 'Cakes' ? '1 Kg' : 'Bottle'}
+                                </span>
+                                <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
+                              </div>
+                            )}
+                          </>
                         )}
                       </div>
                     </div>
