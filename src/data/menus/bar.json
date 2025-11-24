@@ -464,93 +464,93 @@
         {
           "id": "bar-whisky-003",
           "name": "JW GOLD LABEL",
-          "price": 699,
+          "price": 499,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 12999,
-          "price60ml": 1199
+          "bottlePrice": 11000,
+          "price60ml": 899
         },
         {
           "id": "bar-whisky-004",
           "name": "JW BLACK LABEL",
-          "price": 499,
+          "price": 329,
           "category": "whisky",
           "isRecommended": true,
           "isAvailable": true,
-          "bottlePrice": 8999,
-          "price60ml": 899
+          "bottlePrice": 6599,
+          "price60ml": 599
         },
         {
           "id": "bar-whisky-005",
           "name": "JW DOUBLE BLACK",
-          "price": 649,
+          "price": 399,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 11999,
-          "price60ml": 1099
+          "bottlePrice": 7999,
+          "price60ml": 699
         },
         {
           "id": "bar-whisky-006",
           "name": "JW BLONDE",
-          "price": 399,
+          "price": 249,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 6999,
-          "price60ml": 699
+          "bottlePrice": 4999,
+          "price60ml": 449
         },
         {
           "id": "bar-whisky-007",
           "name": "BLACKDOG 8 YEARS",
-          "price": 349,
+          "price": 229,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 4999,
-          "price60ml": 599
+          "bottlePrice": 4499,
+          "price60ml": 399
         },
         {
           "id": "bar-whisky-008",
           "name": "BLACK & WHITE",
-          "price": 349,
+          "price": 249,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 5199,
-          "price60ml": 599
+          "bottlePrice": 4999,
+          "price60ml": 449
         },
         {
           "id": "bar-whisky-009",
           "name": "DEWARS WHITE LABEL",
-          "price": 349,
+          "price": 249,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 5199,
-          "price60ml": 599
+          "bottlePrice": 4999,
+          "price60ml": 449
         },
         {
           "id": "bar-whisky-010",
           "name": "JW RED LABEL",
-          "price": 349,
+          "price": 229,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 5199,
-          "price60ml": 599
+          "bottlePrice": 4499,
+          "price60ml": 399
         },
         {
           "id": "bar-whisky-011",
           "name": "MONKEY SHOULDER",
-          "price": 549,
+          "price": 399,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 9999,
-          "price60ml": 899
+          "bottlePrice": 7999,
+          "price60ml": 699
         },
         {
           "id": "bar-whisky-012",
           "name": "BALLANTINE'S 7YRS",
-          "price": 399,
+          "price": 269,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 6999,
-          "price60ml": 699
+          "bottlePrice": 5600,
+          "price60ml": 499
         },
         {
           "id": "bar-whisky-013",
@@ -564,65 +564,74 @@
         {
           "id": "bar-whisky-014",
           "name": "CHIVAS REGAL 12YRS",
-          "price": 499,
+          "price": 349,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 8999,
-          "price60ml": 899
+          "bottlePrice": 6999,
+          "price60ml": 599
         },
         {
           "id": "bar-whisky-015",
           "name": "BALLANTINE'S 12YRS",
-          "price": 399,
+          "price": 299,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 7499,
-          "price60ml": 699
+          "bottlePrice": 6000,
+          "price60ml": 549
         },
         {
           "id": "bar-whisky-016",
           "name": "BALLANTINE'S FINEST",
-          "price": 349,
+          "price": 269,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 599
+          "bottlePrice": 5600,
+          "price60ml": 499
         },
         {
           "id": "bar-whisky-017",
           "name": "100 PIPERS 8YRS",
-          "price": 349,
+          "price": 249,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 599
+          "bottlePrice": 4999,
+          "price60ml": 449
         },
         {
           "id": "bar-whisky-018",
           "name": "100 PIPERS 12YRS",
-          "price": 399,
+          "price": 299,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 7499,
-          "price60ml": 699
+          "bottlePrice": 6000,
+          "price60ml": 549
         },
         {
           "id": "bar-whisky-019",
           "name": "TEACHER'S 50",
-          "price": 399,
+          "price": 249,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 7499,
-          "price60ml": 699
+          "bottlePrice": 4999,
+          "price60ml": 449
         },
         {
           "id": "bar-whisky-020",
           "name": "TEACHER'S HIGHLAND",
-          "price": 349,
+          "price": 229,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 4999,
-          "price60ml": 599
+          "bottlePrice": 4499,
+          "price60ml": 399
+        },
+        {
+          "id": "bar-whisky-021",
+          "name": "BLENDER'S PRIDE",
+          "price": 129,
+          "price60ml": 249,
+          "bottlePrice": 2999,
+          "category": "whisky",
+          "isAvailable": true
         }
       ]
     },
@@ -635,21 +644,21 @@
         {
           "id": "bar-malt-001",
           "name": "GLENFIDDICH 15YRS",
-          "price": 799,
+          "price": 599,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 14999,
-          "price60ml": 1299
+          "bottlePrice": 12000,
+          "price60ml": 1049
         },
         {
           "id": "bar-malt-002",
           "name": "GLENFIDDICH 12YRS",
-          "price": 649,
+          "price": 449,
           "category": "single-malt",
           "isRecommended": true,
           "isAvailable": true,
-          "bottlePrice": 10999,
-          "price60ml": 999
+          "bottlePrice": 9999,
+          "price60ml": 799
         },
         {
           "id": "bar-malt-003",
@@ -663,11 +672,11 @@
         {
           "id": "bar-malt-004",
           "name": "BALVENIE",
-          "price": 849,
+          "price": 649,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 15999,
-          "price60ml": 1299
+          "bottlePrice": 12999,
+          "price60ml": 1149
         },
         {
           "id": "bar-malt-005",
@@ -690,11 +699,11 @@
         {
           "id": "bar-malt-007",
           "name": "THE GLENLIVET 12YRS",
-          "price": 649,
+          "price": 449,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 10999,
-          "price60ml": 999
+          "bottlePrice": 9999,
+          "price60ml": 799
         },
         {
           "id": "bar-malt-008",
@@ -708,11 +717,11 @@
         {
           "id": "bar-malt-009",
           "name": "TALISKER 10 YRS",
-          "price": 549,
+          "price": 449,
           "category": "single-malt",
           "isAvailable": true,
           "bottlePrice": 9999,
-          "price60ml": 849
+          "price60ml": 799
         },
         {
           "id": "bar-malt-010",
@@ -735,20 +744,20 @@
         {
           "id": "bar-malt-012",
           "name": "PAUL JOHN NIRVANA",
-          "price": 349,
+          "price": 249,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 549
+          "bottlePrice": 4999,
+          "price60ml": 449
         },
         {
           "id": "bar-malt-013",
           "name": "GRANT'S",
-          "price": 329,
+          "price": 229,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 5499,
-          "price60ml": 549
+          "bottlePrice": 4499,
+          "price60ml": 399
         },
         {
           "id": "bar-malt-014",
@@ -756,7 +765,7 @@
           "price": 649,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 15999,
+          "bottlePrice": 12999,
           "price60ml": 999
         },
         {
@@ -774,26 +783,26 @@
           "price": 449,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 9999,
+          "bottlePrice": 8999,
           "price60ml": 699
         },
         {
           "id": "bar-malt-017",
           "name": "GODAWAN",
-          "price": 649,
+          "price": 449,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 10999,
-          "price60ml": 999
+          "bottlePrice": 8999,
+          "price60ml": 799
         },
         {
           "id": "bar-malt-018",
           "name": "SINGLETON 12 YRS",
-          "price": 649,
+          "price": 449,
           "category": "single-malt",
           "isAvailable": true,
-          "bottlePrice": 10999,
-          "price60ml": 999
+          "bottlePrice": 9999,
+          "price60ml": 799
         }
       ]
     },
@@ -815,20 +824,20 @@
         {
           "id": "bar-bourbon-002",
           "name": "JIM BEAM",
-          "price": 399,
+          "price": 249,
           "category": "bourbon",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 649
+          "bottlePrice": 4499,
+          "price60ml": 449
         },
         {
           "id": "bar-bourbon-003",
           "name": "JAMESON",
-          "price": 399,
+          "price": 269,
           "category": "bourbon",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 649
+          "bottlePrice": 5600,
+          "price60ml": 499
         }
       ]
     },
@@ -850,30 +859,30 @@
         {
           "id": "bar-vodka-002",
           "name": "GREY GOOSE",
-          "price": 549,
+          "price": 349,
           "category": "vodka",
           "isRecommended": true,
           "isAvailable": true,
-          "bottlePrice": 9999,
-          "price60ml": 849
+          "bottlePrice": 6999,
+          "price60ml": 599
         },
         {
           "id": "bar-vodka-003",
           "name": "CIROC",
-          "price": 549,
+          "price": 349,
           "category": "vodka",
           "isAvailable": true,
-          "bottlePrice": 9999,
-          "price60ml": 849
+          "bottlePrice": 6999,
+          "price60ml": 599
         },
         {
           "id": "bar-vodka-004",
           "name": "ABSOLUT",
-          "price": 449,
+          "price": 229,
           "category": "vodka",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 699
+          "bottlePrice": 4499,
+          "price60ml": 399
         },
         {
           "id": "bar-vodka-005",
@@ -896,20 +905,29 @@
         {
           "id": "bar-vodka-007",
           "name": "MAGIC MOMENT",
-          "price": 299,
+          "price": 129,
           "category": "vodka",
           "isAvailable": true,
-          "bottlePrice": 3999,
-          "price60ml": 499
+          "bottlePrice": 2699,
+          "price60ml": 239
         },
         {
           "id": "bar-vodka-008",
           "name": "SMIRNOFF",
-          "price": 329,
+          "price": 149,
           "category": "vodka",
           "isAvailable": true,
+          "bottlePrice": 2999,
+          "price60ml": 269
+        },
+        {
+          "id": "bar-vodka-009",
+          "name": "KETEL ONE",
+          "price": 229,
+          "price60ml": 399,
           "bottlePrice": 4499,
-          "price60ml": 549
+          "category": "vodka",
+          "isAvailable": true
         }
       ]
     },
@@ -931,11 +949,11 @@
         {
           "id": "bar-tequila-002",
           "name": "CAMINO",
-          "price": 499,
+          "price": 249,
           "category": "tequila",
           "isAvailable": true,
-          "bottlePrice": 6999,
-          "price60ml": 749
+          "bottlePrice": 4999,
+          "price60ml": 449
         },
         {
           "id": "bar-tequila-003",
@@ -943,7 +961,7 @@
           "price": 649,
           "category": "tequila",
           "isAvailable": true,
-          "bottlePrice": 15999,
+          "bottlePrice": 12999,
           "price60ml": 999
         }
       ]
@@ -957,39 +975,39 @@
         {
           "id": "bar-gin-001",
           "name": "BOMBAY SAPPHIRE",
-          "price": 399,
+          "price": 269,
           "category": "gin",
           "isRecommended": true,
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 649
+          "bottlePrice": 5600,
+          "price60ml": 499
         },
         {
           "id": "bar-gin-002",
           "name": "NICOBAR",
-          "price": 399,
+          "price": 269,
           "category": "gin",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 649
+          "bottlePrice": 5600,
+          "price60ml": 499
         },
         {
           "id": "bar-gin-003",
           "name": "BEEFEATER",
-          "price": 399,
+          "price": 199,
           "category": "gin",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 649
+          "bottlePrice": 3999,
+          "price60ml": 359
         },
         {
           "id": "bar-gin-004",
           "name": "TANQUERAY",
-          "price": 399,
+          "price": 269,
           "category": "gin",
           "isAvailable": true,
-          "bottlePrice": 5999,
-          "price60ml": 649
+          "bottlePrice": 5600,
+          "price60ml": 499
         },
         {
           "id": "bar-gin-005",
@@ -1012,20 +1030,20 @@
         {
           "id": "bar-gin-007",
           "name": "JAISALMER",
-          "price": 549,
+          "price": 399,
           "category": "gin",
           "isAvailable": true,
-          "bottlePrice": 9999,
-          "price60ml": 799
+          "bottlePrice": 7999,
+          "price60ml": 699
         },
         {
           "id": "bar-gin-008",
           "name": "HENDRICKS",
-          "price": 549,
+          "price": 399,
           "category": "gin",
           "isAvailable": true,
-          "bottlePrice": 9999,
-          "price60ml": 799
+          "bottlePrice": 7999,
+          "price60ml": 699
         }
       ]
     },
@@ -1038,29 +1056,29 @@
         {
           "id": "bar-rum-001",
           "name": "BACARDI WHITE",
-          "price": 299,
+          "price": 149,
           "category": "rum",
           "isAvailable": true,
-          "bottlePrice": 3999,
-          "price60ml": 499
+          "bottlePrice": 3199,
+          "price60ml": 279
         },
         {
           "id": "bar-rum-002",
           "name": "BACARDI LEMON",
-          "price": 299,
+          "price": 149,
           "category": "rum",
           "isAvailable": true,
-          "bottlePrice": 3999,
-          "price60ml": 499
+          "bottlePrice": 3199,
+          "price60ml": 279
         },
         {
           "id": "bar-rum-003",
           "name": "BACARDI BLACK",
-          "price": 299,
+          "price": 129,
           "category": "rum",
           "isAvailable": true,
-          "bottlePrice": 3999,
-          "price60ml": 499
+          "bottlePrice": 2699,
+          "price60ml": 239
         },
         {
           "id": "bar-rum-004",
@@ -1074,11 +1092,11 @@
         {
           "id": "bar-rum-005",
           "name": "OLD MONK",
-          "price": 249,
+          "price": 99,
           "category": "rum",
           "isAvailable": true,
-          "bottlePrice": 3999,
-          "price60ml": 399
+          "bottlePrice": 1999,
+          "price60ml": 169
         }
       ]
     },
@@ -1100,11 +1118,11 @@
         {
           "id": "bar-brandy-002",
           "name": "MORPHEUS",
-          "price": 249,
+          "price": 149,
           "category": "brandy",
           "isAvailable": true,
-          "bottlePrice": 3999,
-          "price60ml": 399
+          "bottlePrice": 2999,
+          "price60ml": 279
         }
       ]
     },
@@ -1126,20 +1144,20 @@
         {
           "id": "bar-liqueur-002",
           "name": "BAILEYS",
-          "price": 399,
+          "price": 269,
           "category": "liqueurs",
           "isAvailable": true,
           "bottlePrice": 5499,
-          "price60ml": 699
+          "price60ml": 499
         },
         {
           "id": "bar-liqueur-003",
           "name": "JAGERMEISTER",
-          "price": 499,
+          "price": 349,
           "category": "liqueurs",
           "isAvailable": true,
-          "bottlePrice": 7999,
-          "price60ml": 799
+          "bottlePrice": 6999,
+          "price60ml": 599
         },
         {
           "id": "bar-liqueur-004",
@@ -1180,20 +1198,20 @@
         {
           "id": "bar-liqueur-008",
           "name": "FIREBALL",
-          "price": 299,
+          "price": 199,
           "category": "liqueurs",
           "isAvailable": true,
           "bottlePrice": 3999,
-          "price60ml": 449
+          "price60ml": 379
         },
         {
           "id": "bar-liqueur-009",
           "name": "SAMBUCA",
-          "price": 349,
+          "price": 249,
           "category": "liqueurs",
           "isAvailable": true,
           "bottlePrice": 4999,
-          "price60ml": 549
+          "price60ml": 449
         }
       ]
     },
@@ -1205,40 +1223,40 @@
       "items": [
         {
           "id": "bar-wine-001",
-          "name": "JACOB'S SHIRAZ",
+          "name": "JACOB'S RED",
           "description": "Red Wine - 150ml glass",
-          "price": 699,
+          "price": 499,
           "category": "wines",
           "isRecommended": true,
           "isAvailable": true,
-          "bottlePrice": 3999
+          "bottlePrice": 2300
         },
         {
           "id": "bar-wine-002",
-          "name": "SULA CABERNET SHIRAZ",
+          "name": "SULA RED",
           "description": "Red Wine - 150ml glass",
-          "price": 649,
+          "price": 449,
           "category": "wines",
           "isAvailable": true,
-          "bottlePrice": 3499
+          "bottlePrice": 2100
         },
         {
           "id": "bar-wine-003",
-          "name": "JACOB'S CREEK",
+          "name": "JACOB'S WHITE",
           "description": "White Wine - 150ml glass",
-          "price": 699,
+          "price": 499,
           "category": "wines",
           "isAvailable": true,
-          "bottlePrice": 3999
+          "bottlePrice": 2300
         },
         {
           "id": "bar-wine-004",
-          "name": "SULA CHENIN BLANC",
+          "name": "SULA WHITE",
           "description": "White Wine - 150ml glass",
-          "price": 649,
+          "price": 399,
           "category": "wines",
           "isAvailable": true,
-          "bottlePrice": 3499
+          "bottlePrice": 1800
         }
       ]
     },
@@ -1277,9 +1295,10 @@
           "id": "bar-champ-004",
           "name": "SULA BRUT",
           "description": "Bottle",
-          "price": 4999,
+          "price": 2999,
           "category": "champagne",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 2999
         },
         {
           "id": "bar-champ-005",
@@ -1301,10 +1320,11 @@
           "id": "bar-beer-001",
           "name": "KINGFISHER ULTRA",
           "description": "330ml",
-          "price": 399,
+          "price": 349,
           "category": "beers",
           "isRecommended": true,
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 349
         },
         {
           "id": "bar-beer-001b",
@@ -1312,24 +1332,26 @@
           "description": "650ml",
           "price": 599,
           "category": "beers",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 349
         },
         {
           "id": "bar-beer-002",
           "name": "KINGFISHER PREMIUM",
           "description": "650ml",
-          "price": 599,
+          "price": 399,
           "category": "beers",
           "isAvailable": true,
-          "bottlePrice": 599
+          "bottlePrice": 399
         },
         {
           "id": "bar-beer-003",
           "name": "HEINEKEN",
           "description": "330ml",
-          "price": 399,
+          "price": 349,
           "category": "beers",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 349
         },
         {
           "id": "bar-beer-003b",
@@ -1337,31 +1359,35 @@
           "description": "650ml",
           "price": 599,
           "category": "beers",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 349
         },
         {
           "id": "bar-beer-004",
           "name": "CORONA",
           "description": "330ml",
-          "price": 599,
+          "price": 499,
           "category": "beers",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 499
         },
         {
           "id": "bar-beer-005",
           "name": "HOEGAARDEN",
           "description": "330ml",
-          "price": 599,
+          "price": 499,
           "category": "beers",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 499
         },
         {
           "id": "bar-beer-006",
           "name": "BUDWEISER",
           "description": "330ml",
-          "price": 399,
+          "price": 349,
           "category": "beers",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 349
         },
         {
           "id": "bar-beer-006b",
@@ -1369,16 +1395,25 @@
           "description": "650ml",
           "price": 599,
           "category": "beers",
-          "isAvailable": true
+          "isAvailable": true,
+          "bottlePrice": 349
         },
         {
           "id": "bar-beer-007",
           "name": "BREEZER",
           "description": "Cranberry / Jamaican / Blackberry",
-          "price": 349,
+          "price": 249,
           "category": "beers",
           "isAvailable": true,
-          "bottlePrice": 349
+          "bottlePrice": 249
+        },
+        {
+          "id": "bar-beer-008",
+          "name": "KINGFISHER STRONG",
+          "description": "650ml",
+          "price": 449,
+          "category": "beers",
+          "isAvailable": true
         }
       ]
     },
@@ -1607,5 +1642,5 @@
       ]
     }
   ],
-  "lastUpdated": "2025-10-17T12:00:00Z"
+  "lastUpdated": "2025-11-24T20:51:35.157Z"
 }
