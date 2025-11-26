@@ -1319,21 +1319,12 @@
         {
           "id": "bar-beer-001",
           "name": "KINGFISHER ULTRA",
-          "description": "330ml",
+          "description": "330ml / 650ml",
           "price": 349,
           "category": "beers",
           "isRecommended": true,
           "isAvailable": true,
-          "bottlePrice": 349
-        },
-        {
-          "id": "bar-beer-001b",
-          "name": "KINGFISHER ULTRA",
-          "description": "650ml",
-          "price": 599,
-          "category": "beers",
-          "isAvailable": true,
-          "bottlePrice": 349
+          "bottlePrice": 599
         },
         {
           "id": "bar-beer-002",
@@ -1341,26 +1332,16 @@
           "description": "650ml",
           "price": 399,
           "category": "beers",
-          "isAvailable": true,
-          "bottlePrice": 399
+          "isAvailable": true
         },
         {
           "id": "bar-beer-003",
           "name": "HEINEKEN",
-          "description": "330ml",
+          "description": "330ml / 650ml",
           "price": 349,
           "category": "beers",
           "isAvailable": true,
-          "bottlePrice": 349
-        },
-        {
-          "id": "bar-beer-003b",
-          "name": "HEINEKEN",
-          "description": "650ml",
-          "price": 599,
-          "category": "beers",
-          "isAvailable": true,
-          "bottlePrice": 349
+          "bottlePrice": 599
         },
         {
           "id": "bar-beer-004",
@@ -1368,8 +1349,7 @@
           "description": "330ml",
           "price": 499,
           "category": "beers",
-          "isAvailable": true,
-          "bottlePrice": 499
+          "isAvailable": true
         },
         {
           "id": "bar-beer-005",
@@ -1377,26 +1357,16 @@
           "description": "330ml",
           "price": 499,
           "category": "beers",
-          "isAvailable": true,
-          "bottlePrice": 499
+          "isAvailable": true
         },
         {
           "id": "bar-beer-006",
           "name": "BUDWEISER",
-          "description": "330ml",
+          "description": "330ml / 650ml",
           "price": 349,
           "category": "beers",
           "isAvailable": true,
-          "bottlePrice": 349
-        },
-        {
-          "id": "bar-beer-006b",
-          "name": "BUDWEISER",
-          "description": "650ml",
-          "price": 599,
-          "category": "beers",
-          "isAvailable": true,
-          "bottlePrice": 349
+          "bottlePrice": 599
         },
         {
           "id": "bar-beer-007",
@@ -1404,8 +1374,7 @@
           "description": "Cranberry / Jamaican / Blackberry",
           "price": 249,
           "category": "beers",
-          "isAvailable": true,
-          "bottlePrice": 249
+          "isAvailable": true
         },
         {
           "id": "bar-beer-008",

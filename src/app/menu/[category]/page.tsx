@@ -407,14 +407,14 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                             {/* Original layout for items without 60ml */}
                             <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
                               <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">
-                                {item.categoryName === 'Cakes' ? '½ Kg' : 'Price'}
+                                {item.categoryName === 'Cakes' ? '½ Kg' : item.categoryName === 'Beers' && item.bottlePrice ? '330ml' : 'Price'}
                               </span>
                               <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.price.toLocaleString('en-IN')}</span>
                             </div>
                             {item.bottlePrice && (
                               <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#6B0F28] to-[#8B1538] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
                                 <span className="text-[10px] sm:text-xs text-white/80 uppercase tracking-wider font-medium">
-                                  {item.categoryName === 'Cakes' ? '1 Kg' : 'Bottle'}
+                                  {item.categoryName === 'Cakes' ? '1 Kg' : item.categoryName === 'Beers' ? '650ml' : 'Bottle'}
                                 </span>
                                 <span className="text-lg sm:text-xl md:text-2xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
                               </div>
