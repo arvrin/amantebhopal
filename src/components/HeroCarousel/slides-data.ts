@@ -1,8 +1,6 @@
 export interface HeroSlide {
   id: string;
   category: 'brand' | 'party' | 'cafe' | 'restaurant' | 'events' | 'corporate' | 'lounge';
-  backgroundImage: string;
-  backgroundVideo?: string;
   headline: string;
   headlineHighlight?: string; // Word(s) to highlight in pink
   subheadline: string;
@@ -16,11 +14,6 @@ export interface HeroSlide {
     text: string;
     link: string;
   };
-  theme: {
-    textColor: string;
-    accentColor: string;
-    overlayGradient: string;
-  };
 }
 
 export const heroSlides: HeroSlide[] = [
@@ -28,7 +21,6 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'brand-intro',
     category: 'brand',
-    backgroundImage: '/hero1.jpeg',
     headline: 'Where Love Meets Flavor',
     headlineHighlight: 'Meets',
     subheadline: "Bhopal's First Multi-Concept Destination",
@@ -41,11 +33,6 @@ export const heroSlides: HeroSlide[] = [
     secondaryCTA: {
       text: 'Explore Menu',
       link: '/menu'
-    },
-    theme: {
-      textColor: '#FFFFFF',
-      accentColor: '#F8BBD9',
-      overlayGradient: 'from-black/60 via-black/40 to-black/60'
     }
   },
 
@@ -53,7 +40,6 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'party-nightlife',
     category: 'party',
-    backgroundImage: '/hero2.jpg',
     headline: 'Party Like Never Before',
     headlineHighlight: 'Never',
     subheadline: "Bhopal's Hottest Nightclub & Premium Bar",
@@ -66,11 +52,6 @@ export const heroSlides: HeroSlide[] = [
     secondaryCTA: {
       text: 'View Bar Menu',
       link: '/menu'
-    },
-    theme: {
-      textColor: '#FFFFFF',
-      accentColor: '#F8BBD9',
-      overlayGradient: 'from-purple-900/60 via-black/40 to-black/60'
     }
   },
 
@@ -78,7 +59,6 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'cafe-bakery',
     category: 'cafe',
-    backgroundImage: '/hero1.jpeg',
     headline: 'Sip. Savor. Smile.',
     headlineHighlight: 'Savor',
     subheadline: 'Artisan Coffee & Freshly Baked Delights',
@@ -91,11 +71,6 @@ export const heroSlides: HeroSlide[] = [
     secondaryCTA: {
       text: 'Order Online',
       link: '/menu'
-    },
-    theme: {
-      textColor: '#FFFFFF',
-      accentColor: '#F8BBD9',
-      overlayGradient: 'from-amber-900/50 via-black/40 to-black/60'
     }
   },
 
@@ -103,7 +78,6 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'fine-dining',
     category: 'restaurant',
-    backgroundImage: '/hero2.jpg',
     headline: 'Culinary Artistry Elevated',
     headlineHighlight: 'Elevated',
     subheadline: 'Rooftop Fine Dining Under the Stars',
@@ -116,11 +90,6 @@ export const heroSlides: HeroSlide[] = [
     secondaryCTA: {
       text: 'View Restaurant Menu',
       link: '/menu'
-    },
-    theme: {
-      textColor: '#FFFFFF',
-      accentColor: '#F8BBD9',
-      overlayGradient: 'from-black/70 via-black/50 to-black/60'
     }
   },
 
@@ -128,7 +97,6 @@ export const heroSlides: HeroSlide[] = [
   {
     id: 'private-events',
     category: 'events',
-    backgroundImage: '/hero1.jpeg',
     headline: "Celebrate Life's Special Moments",
     headlineHighlight: 'Special',
     subheadline: 'Private Dining & Personalized Experiences',
@@ -141,19 +109,13 @@ export const heroSlides: HeroSlide[] = [
     secondaryCTA: {
       text: 'View Private Spaces',
       link: '/private-dining'
-    },
-    theme: {
-      textColor: '#FFFFFF',
-      accentColor: '#F8BBD9',
-      overlayGradient: 'from-rose-900/50 via-black/40 to-black/60'
     }
   },
 
-  // Slide 6: Corporate & Private Events
+  // Slide 6: Corporate Events
   {
     id: 'corporate-events',
     category: 'corporate',
-    backgroundImage: '/hero2.jpg',
     headline: 'Where Business Meets Pleasure',
     headlineHighlight: 'Meets',
     subheadline: 'Premium Corporate Events & Private Dining Facilities',
@@ -166,19 +128,13 @@ export const heroSlides: HeroSlide[] = [
     secondaryCTA: {
       text: 'Download Brochure',
       link: '/contact'
-    },
-    theme: {
-      textColor: '#FFFFFF',
-      accentColor: '#F8BBD9',
-      overlayGradient: 'from-slate-900/60 via-black/40 to-black/60'
     }
   },
 
-  // Slide 7: Lounge Experience (Optional)
+  // Slide 7: Lounge Experience
   {
     id: 'lounge-experience',
     category: 'lounge',
-    backgroundImage: '/hero1.jpeg',
     headline: 'Unwind in Style',
     headlineHighlight: 'Style',
     subheadline: 'Premium Lounge & Signature Cocktails',
@@ -191,11 +147,6 @@ export const heroSlides: HeroSlide[] = [
     secondaryCTA: {
       text: 'View Cocktail Menu',
       link: '/menu'
-    },
-    theme: {
-      textColor: '#FFFFFF',
-      accentColor: '#F8BBD9',
-      overlayGradient: 'from-indigo-900/50 via-black/40 to-black/60'
     }
   }
 ];

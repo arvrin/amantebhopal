@@ -15,7 +15,6 @@ import {
   UtensilsCrossed,
   Image as ImageIcon,
   X,
-  Download,
   Share2,
   ChevronDown,
   Filter
@@ -35,16 +34,37 @@ const categories = [
 
 // Gallery items with real images
 const galleryItems = [
-  { id: 1, category: 'cafe', title: 'Morning Coffee Setup', image: '/images/gallery/gallery-1.jpg' },
-  { id: 2, category: 'restaurant', title: 'Rooftop Dining Setup', image: '/images/gallery/gallery-2.jpg' },
-  { id: 3, category: 'lounge', title: 'Cocktail Bar', image: '/images/gallery/gallery-3.jpg' },
-  { id: 4, category: 'club', title: 'Night Energy', image: '/images/gallery/gallery-4.jpg' },
-  { id: 5, category: 'private-dining', title: 'Intimate Dining Room', image: '/images/gallery/gallery-5.jpg' },
-  { id: 6, category: 'events', title: 'Grand Ballroom', image: '/images/gallery/gallery-6.jpg' },
-  { id: 7, category: 'events', title: 'Live Music Night', image: '/images/gallery/gallery-7.jpg' },
-  { id: 8, category: 'food', title: 'Gourmet Plating', image: '/images/gallery/gallery-8.jpg' },
-  { id: 9, category: 'cafe', title: 'Fresh Pastries Display', image: '/images/gallery/gallery-9.jpg' },
-  { id: 10, category: 'restaurant', title: 'Evening Ambiance', image: '/images/gallery/gallery-10.jpg' }
+  { id: 1, category: 'lounge', title: 'Signature Cocktail', image: '/gallery/gallery-11.jpg' },
+  { id: 2, category: 'food', title: 'Sushi Boat Platter', image: '/gallery/gallery-12.jpg' },
+  { id: 3, category: 'lounge', title: 'Strawberry Cocktail', image: '/gallery/gallery-13.jpg' },
+  { id: 4, category: 'lounge', title: 'Berry Bliss Cocktail', image: '/gallery/gallery-14.jpg' },
+  { id: 5, category: 'food', title: 'Truffle Cream Pasta', image: '/gallery/gallery-15.jpg' },
+  { id: 6, category: 'lounge', title: 'Blue Lagoon Martini', image: '/gallery/gallery-17.jpg' },
+  { id: 7, category: 'food', title: 'Cream Pasta Served', image: '/gallery/gallery-18.jpg' },
+  { id: 8, category: 'food', title: 'Crispy Kebab Platter', image: '/gallery/gallery-19.jpg' },
+  { id: 9, category: 'restaurant', title: 'Elegant Dining Space', image: '/gallery/gallery-20.jpg' },
+  { id: 10, category: 'restaurant', title: 'Bar Seating Area', image: '/gallery/gallery-21.jpg' },
+  { id: 11, category: 'lounge', title: 'Lounge Interiors', image: '/gallery/gallery-22.jpg' },
+  { id: 12, category: 'restaurant', title: 'Cellist Wall Art', image: '/gallery/gallery-23.jpg' },
+  { id: 13, category: 'private-dining', title: 'Cozy Booth Seating', image: '/gallery/gallery-24.jpg' },
+  { id: 14, category: 'club', title: 'DJ Console', image: '/gallery/gallery-26.jpg' },
+  { id: 15, category: 'restaurant', title: 'Gallery Wall Seating', image: '/gallery/gallery-27.jpg' },
+  { id: 16, category: 'lounge', title: 'Premium Bar Counter', image: '/gallery/gallery-28.jpg' },
+  { id: 17, category: 'restaurant', title: 'Ambient Lighting', image: '/gallery/gallery-29.jpg' },
+  { id: 18, category: 'food', title: 'Steamed Dimsum', image: '/gallery/gallery-30.jpg' },
+  { id: 19, category: 'food', title: 'Dimsum with Chopsticks', image: '/gallery/gallery-31.jpg' },
+  { id: 20, category: 'food', title: 'Indian Feast Spread', image: '/gallery/gallery-32.jpg' },
+  { id: 21, category: 'cafe', title: 'Rooftop Terrace', image: '/gallery/gallery-34.jpg' },
+  { id: 22, category: 'cafe', title: 'Club Amante Outdoor', image: '/gallery/gallery-35.jpg' },
+  { id: 23, category: 'restaurant', title: 'Fountain Sculpture', image: '/gallery/gallery-36.jpg' },
+  { id: 24, category: 'food', title: 'Seekh Kebab with Dips', image: '/gallery/gallery-37.jpg' },
+  { id: 25, category: 'restaurant', title: 'Chevron Chair Dining', image: '/gallery/gallery-38.jpg' },
+  { id: 26, category: 'lounge', title: 'Stone Wall Seating', image: '/gallery/gallery-39.jpg' },
+  { id: 27, category: 'restaurant', title: 'Full Bar View', image: '/gallery/gallery-40.jpg' },
+  { id: 28, category: 'food', title: 'Paneer Tikka Spread', image: '/gallery/gallery-41.jpg' },
+  { id: 29, category: 'cafe', title: 'Outdoor High Seating', image: '/gallery/gallery-42.jpg' },
+  { id: 30, category: 'cafe', title: 'Club Amante Neon', image: '/gallery/gallery-43.jpg' },
+  { id: 31, category: 'cafe', title: 'Fountain Terrace View', image: '/gallery/gallery-44.jpg' }
 ];
 
 export default function GalleryPage() {
@@ -77,7 +97,7 @@ export default function GalleryPage() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/gallery/gallery-1.jpg"
+            src="/gallery/gallery-11.jpg"
             alt="Amante Gallery"
             fill
             className="object-cover opacity-40"
@@ -338,22 +358,13 @@ export default function GalleryPage() {
                   </p>
                 </div>
 
-                <div className="flex gap-3">
-                  <button
-                    onClick={() => alert('Download functionality would be implemented here')}
-                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white backdrop-blur-sm border border-white/20"
-                  >
-                    <Download className="w-5 h-5" />
-                    <span className="font-body hidden sm:inline">Download</span>
-                  </button>
-                  <button
-                    onClick={() => handleShare(selectedImage)}
-                    className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white backdrop-blur-sm border border-white/20"
-                  >
-                    <Share2 className="w-5 h-5" />
-                    <span className="font-body hidden sm:inline">Share</span>
-                  </button>
-                </div>
+                <button
+                  onClick={() => handleShare(selectedImage)}
+                  className="flex items-center gap-2 px-4 py-2 bg-white/10 hover:bg-white/20 rounded-lg transition-colors text-white backdrop-blur-sm border border-white/20"
+                >
+                  <Share2 className="w-5 h-5" />
+                  <span className="font-body hidden sm:inline">Share</span>
+                </button>
               </div>
             </motion.div>
           </motion.div>
