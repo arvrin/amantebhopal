@@ -83,9 +83,9 @@ export default function HomePage() {
                     <span
                       className="inline-block text-white/90 font-serif uppercase"
                       style={{
-                        fontSize: 'clamp(0.625rem, 1.5vw, 1rem)',
-                        letterSpacing: 'clamp(0.15em, 0.5vw, 0.3em)',
-                        margin: '0 clamp(1rem, 2vw, 2rem)',
+                        fontSize: 'clamp(0.7rem, 0.5vw + 0.5rem, 1rem)',
+                        letterSpacing: 'clamp(0.15em, 0.2vw + 0.1em, 0.3em)',
+                        margin: '0 clamp(1rem, 1vw + 0.5rem, 2rem)',
                       }}
                     >
                       {item}
@@ -111,7 +111,7 @@ export default function HomePage() {
             {/* Social Icons Row - Fluid sizing */}
             <div
               className="flex items-center justify-center"
-              style={{ gap: 'clamp(0.75rem, 2vw, 1.25rem)' }}
+              style={{ gap: 'clamp(0.75rem, 1vw + 0.5rem, 1.25rem)' }}
             >
               {[
                 { icon: Instagram, href: 'https://www.instagram.com/cafe_amante_india/' },
@@ -125,15 +125,15 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="flex-shrink-0 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 group aspect-square"
                   style={{
-                    width: 'clamp(2.25rem, 5vw, 3rem)',
-                    height: 'clamp(2.25rem, 5vw, 3rem)',
+                    width: 'clamp(2.5rem, 2vw + 2rem, 3rem)',
+                    height: 'clamp(2.5rem, 2vw + 2rem, 3rem)',
                   }}
                 >
                   <Icon
                     className="text-white group-hover:text-white transition-colors"
                     style={{
-                      width: 'clamp(0.875rem, 2vw, 1.25rem)',
-                      height: 'clamp(0.875rem, 2vw, 1.25rem)',
+                      width: 'clamp(1rem, 0.5vw + 0.75rem, 1.25rem)',
+                      height: 'clamp(1rem, 0.5vw + 0.75rem, 1.25rem)',
                     }}
                   />
                 </a>
@@ -145,7 +145,7 @@ export default function HomePage() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/50 hover:text-white/80 transition-colors"
-              style={{ fontSize: 'clamp(0.5rem, 1.2vw, 0.75rem)' }}
+              style={{ fontSize: 'clamp(0.625rem, 0.3vw + 0.5rem, 0.75rem)' }}
             >
               Powered by <span className="font-semibold">Restronaut</span>
             </a>

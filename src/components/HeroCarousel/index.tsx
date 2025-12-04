@@ -87,7 +87,7 @@ const ContentSlide = memo(function ContentSlide({
       transition={{ duration: 0.8, ease: 'easeInOut' }}
       className="text-center w-[90%] max-w-5xl mx-auto"
     >
-      {/* Main Heading - Fluid typography using clamp() */}
+      {/* Main Heading - Fluid typography using clamp() with vh for height-based scaling */}
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
@@ -98,9 +98,9 @@ const ContentSlide = memo(function ContentSlide({
           fontWeight: 600,
           letterSpacing: '-0.01em',
           textShadow: '0 4px 60px rgba(0,0,0,0.5)',
-          // Fluid: min 2.5rem (40px), preferred 8vw, max 5.5rem (88px)
-          fontSize: 'clamp(2.5rem, 8vw, 5.5rem)',
-          marginBottom: 'clamp(1rem, 3vw, 1.5rem)',
+          // Fluid: min 3.25rem (52px) on mobile, scales with vh, max 5.5rem (88px)
+          fontSize: 'clamp(3.25rem, 4vh + 2rem, 5.5rem)',
+          marginBottom: 'clamp(1rem, 2vh + 0.25rem, 1.5rem)',
         }}
       >
         {renderHeadline()}
@@ -117,9 +117,9 @@ const ContentSlide = memo(function ContentSlide({
           fontWeight: 400,
           fontStyle: 'italic',
           letterSpacing: '0.01em',
-          // Fluid: min 1.125rem (18px), preferred 3.5vw, max 1.75rem (28px)
-          fontSize: 'clamp(1.125rem, 3.5vw, 1.75rem)',
-          marginBottom: 'clamp(0.75rem, 2vw, 1.25rem)',
+          // Fluid: min 1.35rem (22px), scales with vh, max 1.75rem (28px)
+          fontSize: 'clamp(1.35rem, 2vh + 0.5rem, 1.75rem)',
+          marginBottom: 'clamp(0.75rem, 1.5vh + 0.25rem, 1.25rem)',
         }}
       >
         {slide.subheadline}
@@ -135,9 +135,9 @@ const ContentSlide = memo(function ContentSlide({
           fontFamily: "'Avenir Next', -apple-system, sans-serif",
           fontWeight: 600,
           letterSpacing: '0.15em',
-          // Fluid: min 0.65rem (10px), preferred 1.5vw, max 1rem (16px)
-          fontSize: 'clamp(0.65rem, 1.5vw, 1rem)',
-          marginBottom: 'clamp(1.5rem, 4vw, 2.5rem)',
+          // Fluid: min 0.75rem (12px), scales up to 1rem (16px)
+          fontSize: 'clamp(0.75rem, 1vw + 0.5rem, 1rem)',
+          marginBottom: 'clamp(1.5rem, 2vw + 1rem, 2.5rem)',
         }}
       >
         {slide.body}
@@ -149,7 +149,7 @@ const ContentSlide = memo(function ContentSlide({
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.6, ease: 'easeOut' }}
         className="flex flex-row justify-center items-center px-4"
-        style={{ gap: 'clamp(0.75rem, 2vw, 1.25rem)' }}
+        style={{ gap: 'clamp(0.75rem, 1vw + 0.5rem, 1.25rem)' }}
       >
         {/* Primary CTA */}
         {slide.primaryCTA.action === 'modal' ? (
@@ -159,7 +159,7 @@ const ContentSlide = memo(function ContentSlide({
             onClick={handlePrimaryCTA}
             className="group relative overflow-hidden rounded-full"
             style={{
-              padding: 'clamp(0.625rem, 1.5vw, 1rem) clamp(1.25rem, 3vw, 2.5rem)',
+              padding: 'clamp(0.75rem, 0.5vw + 0.5rem, 1rem) clamp(1.5rem, 1.5vw + 1rem, 2.5rem)',
             }}
           >
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#F8BBD9] via-[#8B1538] to-[#F8BBD9] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
@@ -167,7 +167,7 @@ const ContentSlide = memo(function ContentSlide({
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/15 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
             <span
               className="relative z-10 text-white font-medium tracking-wider uppercase whitespace-nowrap"
-              style={{ fontSize: 'clamp(0.625rem, 1.5vw, 0.875rem)' }}
+              style={{ fontSize: 'clamp(0.75rem, 0.5vw + 0.5rem, 0.875rem)' }}
             >
               {slide.primaryCTA.text}
             </span>
@@ -179,7 +179,7 @@ const ContentSlide = memo(function ContentSlide({
               whileTap={{ scale: 0.97 }}
               className="group relative overflow-hidden rounded-full"
               style={{
-                padding: 'clamp(0.625rem, 1.5vw, 1rem) clamp(1.25rem, 3vw, 2.5rem)',
+                padding: 'clamp(0.75rem, 0.5vw + 0.5rem, 1rem) clamp(1.5rem, 1.5vw + 1rem, 2.5rem)',
               }}
             >
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#F8BBD9] via-[#8B1538] to-[#F8BBD9] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
@@ -187,7 +187,7 @@ const ContentSlide = memo(function ContentSlide({
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/15 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
               <span
                 className="relative z-10 text-white font-medium tracking-wider uppercase whitespace-nowrap"
-                style={{ fontSize: 'clamp(0.625rem, 1.5vw, 0.875rem)' }}
+                style={{ fontSize: 'clamp(0.75rem, 0.5vw + 0.5rem, 0.875rem)' }}
               >
                 {slide.primaryCTA.text}
               </span>
@@ -202,14 +202,14 @@ const ContentSlide = memo(function ContentSlide({
             whileTap={{ scale: 0.97 }}
             className="group relative overflow-hidden rounded-full border border-white/30 hover:border-white/50 transition-colors duration-300"
             style={{
-              padding: 'clamp(0.625rem, 1.5vw, 1rem) clamp(1.25rem, 3vw, 2.5rem)',
+              padding: 'clamp(0.75rem, 0.5vw + 0.5rem, 1rem) clamp(1.5rem, 1.5vw + 1rem, 2.5rem)',
             }}
           >
             <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-md" />
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-[#C4707E] to-transparent group-hover:w-3/4 transition-all duration-500" />
             <span
               className="relative z-10 text-white font-medium tracking-wider uppercase whitespace-nowrap group-hover:text-white transition-colors duration-300"
-              style={{ fontSize: 'clamp(0.625rem, 1.5vw, 0.875rem)' }}
+              style={{ fontSize: 'clamp(0.75rem, 0.5vw + 0.5rem, 0.875rem)' }}
             >
               {slide.secondaryCTA.text}
             </span>
