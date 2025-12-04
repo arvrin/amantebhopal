@@ -85,61 +85,71 @@ const ContentSlide = memo(function ContentSlide({
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.8, ease: 'easeInOut' }}
-      className="text-center w-full max-w-[90%] sm:max-w-3xl lg:max-w-5xl"
+      className="text-center w-[90%] max-w-5xl mx-auto"
     >
-      {/* Main Heading - Cormorant Garamond */}
+      {/* Main Heading - Fluid typography using clamp() */}
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 0.15, ease: [0.4, 0, 0.2, 1] }}
-        className="text-[2.75rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[5.5rem] text-white mb-4 sm:mb-5 md:mb-6 leading-[1.05] px-2"
+        className="text-white leading-[1.05] px-2"
         style={{
           fontFamily: "'Cormorant Garamond', 'Playfair Display', Georgia, serif",
           fontWeight: 600,
           letterSpacing: '-0.01em',
           textShadow: '0 4px 60px rgba(0,0,0,0.5)',
+          // Fluid: min 2.5rem (40px), preferred 8vw, max 5.5rem (88px)
+          fontSize: 'clamp(2.5rem, 8vw, 5.5rem)',
+          marginBottom: 'clamp(1rem, 3vw, 1.5rem)',
         }}
       >
         {renderHeadline()}
       </motion.h1>
 
-      {/* Subheadline - Cormorant Garamond Italic */}
+      {/* Subheadline - Fluid typography */}
       <motion.p
         initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.3, ease: 'easeOut' }}
-        className="text-xl sm:text-2xl md:text-2xl lg:text-[1.65rem] text-[#D4A5AE] mb-3 sm:mb-4 md:mb-5 max-w-2xl mx-auto px-4"
+        className="text-[#D4A5AE] max-w-2xl mx-auto px-4"
         style={{
           fontFamily: "'Cormorant Garamond', Georgia, serif",
           fontWeight: 400,
           fontStyle: 'italic',
           letterSpacing: '0.01em',
+          // Fluid: min 1.125rem (18px), preferred 3.5vw, max 1.75rem (28px)
+          fontSize: 'clamp(1.125rem, 3.5vw, 1.75rem)',
+          marginBottom: 'clamp(0.75rem, 2vw, 1.25rem)',
         }}
       >
         {slide.subheadline}
       </motion.p>
 
-      {/* Body Text - Clean Sans-Serif for contrast */}
+      {/* Body Text - Fluid typography */}
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.45, ease: 'easeOut' }}
-        className="text-[0.7rem] sm:text-xs md:text-sm lg:text-base text-white/90 mb-6 sm:mb-8 md:mb-10 max-w-md mx-auto px-4 uppercase"
+        className="text-white/90 max-w-md mx-auto px-4 uppercase"
         style={{
           fontFamily: "'Avenir Next', -apple-system, sans-serif",
           fontWeight: 600,
           letterSpacing: '0.15em',
+          // Fluid: min 0.65rem (10px), preferred 1.5vw, max 1rem (16px)
+          fontSize: 'clamp(0.65rem, 1.5vw, 1rem)',
+          marginBottom: 'clamp(1.5rem, 4vw, 2.5rem)',
         }}
       >
         {slide.body}
       </motion.p>
 
-      {/* CTA Buttons - Mobile optimized */}
+      {/* CTA Buttons - Fluid sizing */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9, delay: 0.6, ease: 'easeOut' }}
-        className="flex flex-row gap-3 sm:gap-4 md:gap-5 justify-center items-center px-4"
+        className="flex flex-row justify-center items-center px-4"
+        style={{ gap: 'clamp(0.75rem, 2vw, 1.25rem)' }}
       >
         {/* Primary CTA */}
         {slide.primaryCTA.action === 'modal' ? (
@@ -147,29 +157,38 @@ const ContentSlide = memo(function ContentSlide({
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             onClick={handlePrimaryCTA}
-            className="group relative w-auto px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 overflow-hidden rounded-full"
+            className="group relative overflow-hidden rounded-full"
+            style={{
+              padding: 'clamp(0.625rem, 1.5vw, 1rem) clamp(1.25rem, 3vw, 2.5rem)',
+            }}
           >
-            {/* Animated border glow */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#F8BBD9] via-[#8B1538] to-[#F8BBD9] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
-            {/* Main button background */}
             <div className="absolute inset-[2px] rounded-full bg-gradient-to-br from-[#8B1538] via-[#7A1230] to-[#5A0D20]" />
-            {/* Shimmer effect */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/15 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-            <span className="relative z-10 text-white font-medium text-xs sm:text-sm md:text-base tracking-wider uppercase whitespace-nowrap">
+            <span
+              className="relative z-10 text-white font-medium tracking-wider uppercase whitespace-nowrap"
+              style={{ fontSize: 'clamp(0.625rem, 1.5vw, 0.875rem)' }}
+            >
               {slide.primaryCTA.text}
             </span>
           </motion.button>
         ) : (
-          <Link href={slide.primaryCTA.link} className="w-auto">
+          <Link href={slide.primaryCTA.link}>
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="group relative w-auto px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 overflow-hidden rounded-full"
+              className="group relative overflow-hidden rounded-full"
+              style={{
+                padding: 'clamp(0.625rem, 1.5vw, 1rem) clamp(1.25rem, 3vw, 2.5rem)',
+              }}
             >
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-[#F8BBD9] via-[#8B1538] to-[#F8BBD9] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-sm" />
               <div className="absolute inset-[2px] rounded-full bg-gradient-to-br from-[#8B1538] via-[#7A1230] to-[#5A0D20]" />
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/15 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-              <span className="relative z-10 text-white font-medium text-xs sm:text-sm md:text-base tracking-wider uppercase whitespace-nowrap">
+              <span
+                className="relative z-10 text-white font-medium tracking-wider uppercase whitespace-nowrap"
+                style={{ fontSize: 'clamp(0.625rem, 1.5vw, 0.875rem)' }}
+              >
                 {slide.primaryCTA.text}
               </span>
             </motion.button>
@@ -177,17 +196,21 @@ const ContentSlide = memo(function ContentSlide({
         )}
 
         {/* Secondary CTA */}
-        <Link href={slide.secondaryCTA.link} className="w-auto">
+        <Link href={slide.secondaryCTA.link}>
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            className="group relative w-auto px-6 sm:px-8 md:px-10 py-3 sm:py-3.5 md:py-4 overflow-hidden rounded-full border border-white/30 hover:border-white/50 transition-colors duration-300"
+            className="group relative overflow-hidden rounded-full border border-white/30 hover:border-white/50 transition-colors duration-300"
+            style={{
+              padding: 'clamp(0.625rem, 1.5vw, 1rem) clamp(1.25rem, 3vw, 2.5rem)',
+            }}
           >
-            {/* Glass background */}
             <div className="absolute inset-0 rounded-full bg-white/5 backdrop-blur-md" />
-            {/* Accent line on hover */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-transparent via-[#C4707E] to-transparent group-hover:w-3/4 transition-all duration-500" />
-            <span className="relative z-10 text-white font-medium text-xs sm:text-sm md:text-base tracking-wider uppercase whitespace-nowrap group-hover:text-white transition-colors duration-300">
+            <span
+              className="relative z-10 text-white font-medium tracking-wider uppercase whitespace-nowrap group-hover:text-white transition-colors duration-300"
+              style={{ fontSize: 'clamp(0.625rem, 1.5vw, 0.875rem)' }}
+            >
               {slide.secondaryCTA.text}
             </span>
           </motion.button>
