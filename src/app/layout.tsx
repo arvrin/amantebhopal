@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://amante-coming-soon.vercel.app'),
-  title: "Amante Bhopal | Multi-Concept Restaurant, Café, Lounge & Private Dining",
-  description: "Experience Bhopal's premier destination for dining, celebrations, and nightlife. Five unique spaces: Café, Rooftop Restaurant, Lounge, Club & Private Dining. Reserve your table now.",
-  keywords: "Amante Bhopal, Bhopal restaurant, multi-concept destination, café Bhopal, rooftop restaurant, lounge Bhopal, nightclub Bhopal, private dining, best restaurant Bhopal, fine dining Bhopal",
+  title: "Best Café & Club in Bhopal | Multi-Concept Restaurant, Lounge & Private Dining | Amante",
+  description: "Bhopal's #1 destination for café, club, rooftop dining & nightlife. Premium multi-concept venue with 5 unique spaces: Best Café, Rooftop Restaurant, Lounge Bar, Nightclub & Private Dining. Book now!",
+  keywords: "best café in Bhopal, best club in Bhopal, best restaurant Bhopal, rooftop restaurant Bhopal, nightclub Bhopal, lounge bar Bhopal, private dining Bhopal, Amante Bhopal, fine dining Bhopal, best nightlife Bhopal, café near me Bhopal",
   authors: [{ name: "Amante" }],
   creator: "Amante",
   publisher: "Amante",
@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://amante-coming-soon.vercel.app',
-    title: "Amante Bhopal | Multi-Concept Restaurant, Café, Lounge & Private Dining",
-    description: "Experience Bhopal's premier destination for dining, celebrations, and nightlife. Five unique spaces: Café, Rooftop Restaurant, Lounge, Club & Private Dining. Reserve your table now.",
+    title: "Best Café & Club in Bhopal | Multi-Concept Restaurant, Lounge & Private Dining | Amante",
+    description: "Bhopal's #1 destination for café, club, rooftop dining & nightlife. Premium multi-concept venue with 5 unique spaces: Best Café, Rooftop Restaurant, Lounge Bar, Nightclub & Private Dining. Book now!",
     images: [
       {
         url: '/og-image.png',
@@ -58,8 +58,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@cafe_amante_india',
     creator: '@cafe_amante_india',
-    title: "Amante Bhopal | Multi-Concept Restaurant, Café, Lounge & Private Dining",
-    description: "Experience Bhopal's premier destination for dining, celebrations, and nightlife. Five unique spaces. Reserve your table now.",
+    title: "Best Café & Club in Bhopal | Multi-Concept Restaurant, Lounge & Private Dining | Amante",
+    description: "Bhopal's #1 destination for café, club, rooftop dining & nightlife. 5 unique spaces: Café, Restaurant, Lounge, Club & Private Dining. Book now!",
     images: {
       url: '/twitter-image.png',
       alt: 'Amante - Where love, happiness, and celebrations belong together',
