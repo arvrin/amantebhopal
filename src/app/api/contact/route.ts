@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
       inquiryType: sanitized.inquiryType,
       name: sanitized.name,
       phone: sanitized.phone,
-      email: sanitized.email,
+      email: sanitized.email || '',
       message: sanitized.message,
     });
 

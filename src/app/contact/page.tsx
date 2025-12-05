@@ -391,10 +391,56 @@ export default function ContactPage() {
           </motion.div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Contact Details - Primary */}
+            <div>
+              <label className="block font-body font-semibold text-white mb-2">
+                Your Name <span className="text-amante-pink">*</span>
+              </label>
+              <Input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                placeholder="John Doe"
+              />
+            </div>
+
+            {/* Phone & Email */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block font-body font-semibold text-white mb-2">
+                  Phone Number <span className="text-amante-pink">*</span>
+                </label>
+                <Input
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  required
+                  placeholder="+91 98937 79100"
+                  pattern="[+]?[0-9]{10,15}"
+                />
+              </div>
+
+              <div>
+                <label className="block font-body font-semibold text-white mb-2">
+                  Email Address <span className="text-white/40 text-sm font-normal">(Optional)</span>
+                </label>
+                <Input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="john@example.com"
+                />
+              </div>
+            </div>
+
             {/* Inquiry Type */}
             <div>
               <label className="block font-body font-semibold text-white mb-2">
-                Subject
+                Subject <span className="text-amante-pink">*</span>
               </label>
               <Select
                 name="inquiryType"
@@ -410,57 +456,10 @@ export default function ContactPage() {
               </Select>
             </div>
 
-            {/* Name */}
-            <div>
-              <label className="block font-body font-semibold text-white mb-2">
-                Your Name
-              </label>
-              <Input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
-                placeholder="John Doe"
-              />
-            </div>
-
-            {/* Email & Phone */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div>
-                <label className="block font-body font-semibold text-white mb-2">
-                  Email Address
-                </label>
-                <Input
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="john@example.com"
-                />
-              </div>
-
-              <div>
-                <label className="block font-body font-semibold text-white mb-2">
-                  Phone Number
-                </label>
-                <Input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  placeholder="+91 98937 79100"
-                  pattern="[+]?[0-9]{10,15}"
-                />
-              </div>
-            </div>
-
             {/* Message */}
             <div>
               <label className="block font-body font-semibold text-white mb-2">
-                Your Message
+                Your Message <span className="text-amante-pink">*</span>
               </label>
               <Textarea
                 name="message"

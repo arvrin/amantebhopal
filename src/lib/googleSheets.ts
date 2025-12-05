@@ -221,6 +221,9 @@ export async function addPrivateEvent(data: {
  * Append feedback to Feedback sheet
  */
 export async function addFeedback(data: {
+  name: string;
+  phone: string;
+  email: string;
   visitDate: string;
   spaceVisited: string;
   overallRating: number;
@@ -228,14 +231,14 @@ export async function addFeedback(data: {
   serviceRating: number;
   ambianceRating: number;
   valueRating: number;
-  whatYouLoved: string;
-  improvements: string;
+  yourThoughts: string;
   wouldRecommend: string;
-  name: string;
-  email: string;
   canSharePublicly: boolean;
 }) {
   const row: SheetRow = [
+    data.name,
+    data.phone,
+    data.email || '',
     data.visitDate,
     data.spaceVisited,
     data.overallRating,
@@ -243,11 +246,8 @@ export async function addFeedback(data: {
     data.serviceRating,
     data.ambianceRating,
     data.valueRating,
-    data.whatYouLoved,
-    data.improvements || '',
+    data.yourThoughts,
     data.wouldRecommend,
-    data.name || 'Anonymous',
-    data.email || '',
     data.canSharePublicly,
     'New', // Status
     false, // Response Sent

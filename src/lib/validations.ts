@@ -128,15 +128,15 @@ export type PrivateEventFormData = z.infer<typeof privateEventSchema>;
 // ============================================================================
 
 export const contactSchema = z.object({
+  name: nameSchema,
+  phone: indianPhoneSchema,
+  email: z.string().email('Invalid email format').max(100).optional().or(z.literal('')),
   inquiryType: z.enum(
     ['Reservation', 'Event', 'General', 'Corporate', 'Jobs', 'Press', 'Issue', 'Feedback'],
     {
       message: 'Please select an inquiry type',
     }
   ),
-  name: nameSchema,
-  phone: indianPhoneSchema,
-  email: emailSchema,
   message: z
     .string()
     .min(10, 'Message must be at least 10 characters')
@@ -156,6 +156,9 @@ const ratingSchema = z
   .max(5, 'Rating cannot exceed 5');
 
 export const feedbackSchema = z.object({
+  name: nameSchema,
+  phone: indianPhoneSchema,
+  email: z.string().email('Invalid email format').max(100).optional().or(z.literal('')),
   visitDate: pastOrPresentDateSchema,
   spaceVisited: z.enum(
     ['Café & Bakery', 'Rooftop Restaurant', 'Lounge', 'Club', 'Private Dining', 'Banquet'],
@@ -168,16 +171,13 @@ export const feedbackSchema = z.object({
   serviceRating: ratingSchema,
   ambianceRating: ratingSchema,
   valueRating: ratingSchema,
-  whatYouLoved: z
+  yourThoughts: z
     .string()
-    .min(10, 'Please share at least 10 characters about what you loved')
-    .max(500, 'This field cannot exceed 500 characters'),
-  improvements: z.string().max(500, 'This field cannot exceed 500 characters').optional(),
+    .min(10, 'Please share at least 10 characters about your experience')
+    .max(1000, 'This field cannot exceed 1000 characters'),
   wouldRecommend: z.enum(['Definitely', 'Probably', 'Maybe', 'No'], {
     message: 'Please select a recommendation option',
   }),
-  name: z.string().max(100).optional(),
-  email: z.string().email('Invalid email format').max(100).optional().or(z.literal('')),
   canSharePublicly: z.boolean(),
 });
 

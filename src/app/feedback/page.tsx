@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Calendar, MapPin, Star, MessageSquare, ThumbsUp, Mail, User, Check, Award, TrendingUp, Users, Zap } from 'lucide-react';
+import { Calendar, MapPin, Star, MessageSquare, ThumbsUp, Mail, User, Phone, Check, Award, TrendingUp, Users, Zap } from 'lucide-react';
 import Image from 'next/image';
 import HeaderGlobal from '@/components/layout/HeaderGlobal';
 import Footer from '@/components/layout/Footer';
@@ -17,6 +17,9 @@ export default function FeedbackPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
     visitDate: '',
     spaceVisited: 'Café & Bakery',
     overallRating: 0,
@@ -24,11 +27,8 @@ export default function FeedbackPage() {
     serviceRating: 0,
     ambianceRating: 0,
     valueRating: 0,
-    whatYouLoved: '',
-    improvements: '',
+    yourThoughts: '',
     wouldRecommend: 'Definitely',
-    name: '',
-    email: '',
     canSharePublicly: false,
   });
 
@@ -85,6 +85,9 @@ export default function FeedbackPage() {
 
       // Reset form
       setFormData({
+        name: '',
+        phone: '',
+        email: '',
         visitDate: '',
         spaceVisited: 'Café & Bakery',
         overallRating: 0,
@@ -92,11 +95,8 @@ export default function FeedbackPage() {
         serviceRating: 0,
         ambianceRating: 0,
         valueRating: 0,
-        whatYouLoved: '',
-        improvements: '',
+        yourThoughts: '',
         wouldRecommend: 'Definitely',
-        name: '',
-        email: '',
         canSharePublicly: false,
       });
 
@@ -341,40 +341,93 @@ export default function FeedbackPage() {
             </h2>
 
             <form onSubmit={handleSubmit} className="space-y-6">
-              {/* Visit Details */}
+              {/* Contact Details - Primary */}
+              <div>
+                <label className="block font-body font-semibold text-white mb-3">
+                  <User className="inline w-5 h-5 mr-2" />
+                  Your Name <span className="text-amante-pink">*</span>
+                </label>
+                <Input
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder="Your full name"
+                  maxLength={100}
+                />
+              </div>
+
+              {/* Phone & Email */}
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block font-body font-semibold text-white mb-3">
-                    <Calendar className="inline w-5 h-5 mr-2" />
-                    When did you visit?
+                    <Phone className="inline w-5 h-5 mr-2" />
+                    Phone Number <span className="text-amante-pink">*</span>
                   </label>
                   <Input
-                    type="date"
-                    name="visitDate"
-                    value={formData.visitDate}
+                    type="tel"
+                    name="phone"
+                    value={formData.phone}
                     onChange={handleChange}
                     required
-                    max={new Date().toISOString().split('T')[0]}
+                    placeholder="+91 98765 43210"
+                    pattern="[+]?[0-9]{10,15}"
                   />
                 </div>
 
                 <div>
                   <label className="block font-body font-semibold text-white mb-3">
-                    <MapPin className="inline w-5 h-5 mr-2" />
-                    Which space did you visit?
+                    <Mail className="inline w-5 h-5 mr-2" />
+                    Email <span className="text-white/40 text-sm font-normal">(Optional)</span>
                   </label>
-                  <Select
-                    name="spaceVisited"
-                    value={formData.spaceVisited}
+                  <Input
+                    type="email"
+                    name="email"
+                    value={formData.email}
                     onChange={handleChange}
-                    required
-                  >
-                    {spaces.map((space) => (
-                      <option key={space} value={space}>
-                        {space}
-                      </option>
-                    ))}
-                  </Select>
+                    placeholder="For follow-up responses"
+                    maxLength={100}
+                  />
+                </div>
+              </div>
+
+              {/* Visit Details */}
+              <div className="border-t border-white/10 pt-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label className="block font-body font-semibold text-white mb-3">
+                      <Calendar className="inline w-5 h-5 mr-2" />
+                      When did you visit? <span className="text-amante-pink">*</span>
+                    </label>
+                    <Input
+                      type="date"
+                      name="visitDate"
+                      value={formData.visitDate}
+                      onChange={handleChange}
+                      required
+                      max={new Date().toISOString().split('T')[0]}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block font-body font-semibold text-white mb-3">
+                      <MapPin className="inline w-5 h-5 mr-2" />
+                      Which space did you visit? <span className="text-amante-pink">*</span>
+                    </label>
+                    <Select
+                      name="spaceVisited"
+                      value={formData.spaceVisited}
+                      onChange={handleChange}
+                      required
+                    >
+                      {spaces.map((space) => (
+                        <option key={space} value={space}>
+                          {space}
+                        </option>
+                      ))}
+                    </Select>
+                  </div>
                 </div>
               </div>
 
@@ -425,48 +478,32 @@ export default function FeedbackPage() {
                 </div>
               </div>
 
-              {/* Written Feedback */}
+              {/* Written Feedback - Combined */}
               <div className="border-t border-white/10 pt-6">
-                <h3 className="font-heading text-xl text-amante-pink mb-6">
-                  Tell Us More
+                <h3 className="font-heading text-xl text-amante-pink mb-2">
+                  Your Thoughts
                 </h3>
+                <p className="text-sm text-white/60 mb-4">
+                  Share what you loved about your visit, any suggestions for improvement, or anything else you'd like us to know.
+                </p>
 
-                <div className="space-y-6">
-                  <div>
-                    <label className="block font-body font-semibold text-white mb-3">
-                      <MessageSquare className="inline w-5 h-5 mr-2" />
-                      What did you love?
-                    </label>
-                    <Textarea
-                      name="whatYouLoved"
-                      value={formData.whatYouLoved}
-                      onChange={handleChange}
-                      required
-                      rows={4}
-                      placeholder="What made your experience enjoyable?"
-                      maxLength={500}
-                    />
-                    <p className="text-sm text-white/60 mt-2">
-                      {formData.whatYouLoved.length}/500 characters
-                    </p>
-                  </div>
-
-                  <div>
-                    <label className="block font-body font-semibold text-white mb-3">
-                      How can we improve? (Optional)
-                    </label>
-                    <Textarea
-                      name="improvements"
-                      value={formData.improvements}
-                      onChange={handleChange}
-                      rows={4}
-                      placeholder="Your honest feedback helps us grow"
-                      maxLength={500}
-                    />
-                    <p className="text-sm text-white/60 mt-2">
-                      {formData.improvements.length}/500 characters
-                    </p>
-                  </div>
+                <div>
+                  <label className="block font-body font-semibold text-white mb-3">
+                    <MessageSquare className="inline w-5 h-5 mr-2" />
+                    Tell us about your experience <span className="text-amante-pink">*</span>
+                  </label>
+                  <Textarea
+                    name="yourThoughts"
+                    value={formData.yourThoughts}
+                    onChange={handleChange}
+                    required
+                    rows={6}
+                    placeholder="Tell us about your experience - the highlights, what could be better, or any other thoughts..."
+                    maxLength={1000}
+                  />
+                  <p className="text-sm text-white/60 mt-2">
+                    {formData.yourThoughts.length}/1000 characters
+                  </p>
                 </div>
               </div>
 
@@ -488,48 +525,6 @@ export default function FeedbackPage() {
                     </option>
                   ))}
                 </Select>
-              </div>
-
-              {/* Contact Information */}
-              <div className="border-t border-white/10 pt-6">
-                <h3 className="font-heading text-xl text-amante-pink mb-4">
-                  Contact Information (Optional)
-                </h3>
-                <p className="font-body text-sm text-white/60 mb-6">
-                  Leave your details if you'd like us to respond
-                </p>
-
-                <div className="space-y-6">
-                  <div>
-                    <label className="block font-body font-semibold text-white mb-3">
-                      <User className="inline w-5 h-5 mr-2" />
-                      Your Name
-                    </label>
-                    <Input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Anonymous feedback is welcome"
-                      maxLength={100}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block font-body font-semibold text-white mb-3">
-                      <Mail className="inline w-5 h-5 mr-2" />
-                      Email Address
-                    </label>
-                    <Input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="For follow-up responses"
-                      maxLength={100}
-                    />
-                  </div>
-                </div>
               </div>
 
               {/* Public Sharing Consent */}

@@ -39,6 +39,9 @@ export async function POST(request: NextRequest) {
 
     // 5. Store in Google Sheets
     await addFeedback({
+      name: sanitized.name,
+      phone: sanitized.phone,
+      email: sanitized.email || '',
       visitDate: sanitized.visitDate,
       spaceVisited: sanitized.spaceVisited,
       overallRating: sanitized.overallRating,
@@ -46,11 +49,8 @@ export async function POST(request: NextRequest) {
       serviceRating: sanitized.serviceRating,
       ambianceRating: sanitized.ambianceRating,
       valueRating: sanitized.valueRating,
-      whatYouLoved: sanitized.whatYouLoved,
-      improvements: sanitized.improvements || '',
+      yourThoughts: sanitized.yourThoughts,
       wouldRecommend: sanitized.wouldRecommend,
-      name: sanitized.name || '',
-      email: sanitized.email || '',
       canSharePublicly: sanitized.canSharePublicly,
     });
 
