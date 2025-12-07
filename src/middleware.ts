@@ -51,11 +51,11 @@ export function middleware(request: NextRequest) {
   // Add Content Security Policy to allow Observatory analytics
   const cspHeader = [
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://observatory.goodmantech.co",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://observatory.goodmantech.co https://fonts.googleapis.com",
     "connect-src 'self' https://observatory.goodmantech.co",
     "img-src 'self' data: https: blob:",
-    "font-src 'self' data:",
-    "style-src 'self' 'unsafe-inline'",
+    "font-src 'self' data: https://fonts.gstatic.com",
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
     "frame-ancestors 'self'",
   ].join('; ');
 

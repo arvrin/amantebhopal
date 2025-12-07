@@ -102,7 +102,7 @@ export default function HomePage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.8 }}
-            className="absolute left-0 right-0 z-10 flex flex-col items-center"
+            className="absolute left-0 right-0 z-50 flex flex-col items-center pointer-events-auto"
             style={{
               bottom: 'clamp(0.5rem, 2vh, 1.25rem)',
               gap: 'clamp(0.375rem, 1vh, 0.75rem)',
