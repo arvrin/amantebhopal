@@ -123,10 +123,12 @@ export default function HomePage() {
                   href={href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-shrink-0 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 group aspect-square"
+                  className="flex-shrink-0 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 transition-all duration-300 border border-white/20 hover:border-white/40 group aspect-square pointer-events-auto"
                   style={{
                     width: 'clamp(2.5rem, 2vw + 2rem, 3rem)',
                     height: 'clamp(2.5rem, 2vw + 2rem, 3rem)',
+                    pointerEvents: 'auto',
+                    cursor: 'pointer',
                   }}
                 >
                   <Icon
@@ -144,8 +146,12 @@ export default function HomePage() {
               href="https://restronaut.in"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/50 hover:text-white/80 transition-colors"
-              style={{ fontSize: 'clamp(0.625rem, 0.3vw + 0.5rem, 0.75rem)' }}
+              className="text-white/50 hover:text-white/80 transition-colors pointer-events-auto"
+              style={{
+                fontSize: 'clamp(0.625rem, 0.3vw + 0.5rem, 0.75rem)',
+                pointerEvents: 'auto',
+                cursor: 'pointer',
+              }}
             >
               Powered by <span className="font-semibold">Restronaut</span>
             </a>

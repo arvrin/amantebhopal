@@ -399,11 +399,15 @@ export default function HeroCarousel({
 
       {/* Touch Swipe Support - Mobile Only */}
       <div
-        className="absolute inset-0 z-0 md:hidden"
+        className="absolute inset-x-0 top-0 z-0 md:hidden"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
-        style={{ touchAction: 'pan-y' }}
+        style={{
+          touchAction: 'pan-y',
+          bottom: 'clamp(5rem, 10vh, 8rem)', // Leave space for social icons at bottom
+          pointerEvents: 'auto',
+        }}
       />
     </div>
   );
