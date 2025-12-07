@@ -632,6 +632,15 @@
           "bottlePrice": 2999,
           "category": "whisky",
           "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-022",
+          "name": "ROYAL RANTHAMBORE",
+          "price": 299,
+          "price60ml": 549,
+          "bottlePrice": 4999,
+          "category": "whisky",
+          "isAvailable": true
         }
       ]
     },
