@@ -48,10 +48,25 @@ export function middleware(request: NextRequest) {
     response.headers.set('Access-Control-Allow-Credentials', 'true');
   }
 
+  // Add Content Security Policy to allow Observatory analytics
+  const cspHeader = [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://observatory.goodmantech.co",
+    "connect-src 'self' https://observatory.goodmantech.co",
+    "img-src 'self' data: https: blob:",
+    "font-src 'self' data:",
+    "style-src 'self' 'unsafe-inline'",
+    "frame-ancestors 'self'",
+  ].join('; ');
+
+  response.headers.set('Content-Security-Policy', cspHeader);
+
   return response;
 }
 
-// Apply middleware to API routes only
+// Apply middleware to all routes
 export const config = {
-  matcher: '/api/:path*',
+  matcher: [
+    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)',
+  ],
 };

@@ -109,6 +109,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <HeadIcons />
+        <script src="https://observatory.goodmantech.co/api/pixel/proj_amante_misv9x67" async></script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
