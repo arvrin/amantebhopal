@@ -430,8 +430,8 @@
         {
           "id": "cafe-cake-002",
           "name": "Black Forest Cake",
-          "description": "Chocolate sponge layered with cherry compote and whipped cream",
-          "price": 650,
+          "description": "Dark cherry compote, rice cream and chocolate (1/2Kg)",
+          "price": 499,
           "bottlePrice": 1300,
           "category": "cakes",
           "dietary": ["veg"],
@@ -605,6 +605,88 @@
           "dietary": ["veg"],
           "isChefSpecial": true,
           "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-019",
+          "name": "Tropical Pineapple Cake",
+          "description": "Made with fresh pineapple compote and dairy cream (1/2Kg)",
+          "price": 499,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-020",
+          "name": "Dubai Chocolate Cake",
+          "description": "Chocolate with kunafa (1/2Kg)",
+          "price": 799,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-021",
+          "name": "Rose Milk Cake",
+          "description": "Rice rose flavoured cream and vanilla sponge (1/2Kg)",
+          "price": 499,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-022",
+          "name": "Decadent Chocolate Cake",
+          "description": "Truffel chocolate (1/2Kg)",
+          "price": 649,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-023",
+          "name": "Crimson Velvet Cake",
+          "description": "Vibrant red colour with cream cheese frosting (1/2Kg)",
+          "price": 599,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-024",
+          "name": "Cappuccino Cake",
+          "description": "Vanilla sponge and coffee flavoured mascapone cream (1/2Kg)",
+          "price": 549,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-025",
+          "name": "Triple Layer Chocolate Cake",
+          "description": "Made with milk, white and dark chocolate truffel (1/2Kg)",
+          "price": 699,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-026",
+          "name": "Mix Fruite Cake",
+          "description": "Made with vanilla sponge and seasonal fruite (1/2Kg)",
+          "price": 649,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-cake-027",
+          "name": "Dry Fruite Cake",
+          "description": "Dry cake made with soaked dry fruite (1/2Kg)",
+          "price": 399,
+          "category": "cakes",
+          "dietary": ["veg"],
+          "isAvailable": true
         }
       ]
     },
@@ -664,8 +746,8 @@
         {
           "id": "cafe-pastry-001",
           "name": "Choco Almond Pastry",
-          "description": "Rich chocolate pastry topped with crunchy roasted almonds",
-          "price": 280,
+          "description": "Made with milk chocolate",
+          "price": 249,
           "category": "pastries",
           "dietary": ["veg"],
           "isRecommended": true,
@@ -684,8 +766,8 @@
         {
           "id": "cafe-pastry-003",
           "name": "Pineapple Pastry",
-          "description": "Classic vanilla pastry with fresh pineapple chunks and cream",
-          "price": 200,
+          "description": "Made with fresh pineapple compote and dairy cream",
+          "price": 149,
           "category": "pastries",
           "dietary": ["veg"],
           "isAvailable": true
@@ -708,6 +790,104 @@
           "dietary": ["veg"],
           "isChefSpecial": true,
           "isAvailable": true
+        },
+        {
+          "id": "cafe-pastry-006",
+          "name": "New York Cheese Cake Pastry",
+          "description": "Cookie base and cheese and mascapone cream",
+          "price": 299,
+          "category": "pastries",
+          "dietary": ["veg", "contains-egg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "chocolates",
+      "name": "Chocolates",
+      "description": "Handmade artisan chocolates",
+      "displayOrder": 10,
+      "items": [
+        {
+          "id": "cafe-chocolate-001",
+          "name": "Bonbon Chocolate Box",
+          "description": "Handmade filled chocolate (6 Pcs)",
+          "price": 349,
+          "category": "chocolates",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jar-desserts",
+      "name": "Jar Desserts",
+      "description": "Delightful desserts served in a jar",
+      "displayOrder": 11,
+      "items": [
+        {
+          "id": "cafe-jar-001",
+          "name": "Red Velvet Jar",
+          "description": "Vibrant red colour with cream cheese frosting",
+          "price": 199,
+          "category": "jar-desserts",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-jar-002",
+          "name": "Fudge Chocolate Jar",
+          "description": "Made with sugar, butter, milk and chocolate",
+          "price": 199,
+          "category": "jar-desserts",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-jar-003",
+          "name": "Soft Truffel Jar",
+          "description": "Made with chocolate sponge and chocolate cream",
+          "price": 199,
+          "category": "jar-desserts",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-jar-004",
+          "name": "Veg Tiramisu",
+          "description": "Vanilla sponge and coffee flavoured mascapone cream",
+          "price": 299,
+          "category": "jar-desserts",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "cafe-jar-005",
+          "name": "Dry Fruit Chocolate Jar",
+          "description": "Handmade dry fruit chocolate",
+          "price": 349,
+          "category": "jar-desserts",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Sweet indulgences",
+      "displayOrder": 12,
+      "items": [
+        {
+          "id": "cafe-dessert-001",
+          "name": "Walnut Chocolate Brownie",
+          "description": "Cakey chocolate, butter and walnut",
+          "price": 349,
+          "category": "desserts",
+          "dietary": ["veg", "contains-egg"],
+          "isRecommended": true,
+          "isAvailable": true
         }
       ]
     },
@@ -715,7 +895,7 @@
       "id": "add-ons",
       "name": "Add-ons & Options",
       "description": "Customize your drink",
-      "displayOrder": 10,
+      "displayOrder": 13,
       "items": [
         {
           "id": "cafe-addon-001",
