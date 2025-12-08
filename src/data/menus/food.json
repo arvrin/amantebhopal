@@ -1751,20 +1751,6 @@
       "displayOrder": 14,
       "items": [
         {
-          "id": "food-dessert-001",
-          "name": "Single Origin Chocolate Marquis",
-          "description": "64% chocolate mousse with fresh cream",
-          "price": 499,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "dairy"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-dessert-002",
           "name": "Classic Tiramisu",
           "description": "Ladyfinger biscuit dipped in coffee, mascarpone cream",
@@ -1780,50 +1766,6 @@
             "gluten"
           ],
           "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-003",
-          "name": "Joconde Fresh Fruits Dome Entremets",
-          "description": "Almond flour, fresh fruits, white chocolate dome",
-          "price": 499,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "dairy",
-            "nuts"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-004",
-          "name": "Earl Grey Panna Cotta",
-          "description": "Seasonal toppings",
-          "price": 399,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "dairy"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-005",
-          "name": "Gelato and Chef Choice Ice Cream",
-          "description": "Chocolate, saffron & pista",
-          "price": 299,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "dairy",
-            "nuts"
-          ],
           "isAvailable": true
         },
         {
@@ -1843,20 +1785,6 @@
             "gluten"
           ],
           "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-007",
-          "name": "Kesari Rasmalai",
-          "description": "Cold cottage cheese dumplings, saffron milk syrup",
-          "price": 399,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "dairy"
-          ],
           "isAvailable": true
         },
         {
@@ -1887,28 +1815,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-dessert-012",
-          "name": "Akhrot Halwa",
-          "description": "Saffron & Pista, almond stuffed chef interactive desserts",
-          "price": 499,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-013",
-          "name": "Baklava",
-          "description": "Layered phyllo pastry with honey, nuts and aromatic spices",
-          "price": 499,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-dessert-016",
           "name": "Mix Fruits Cremieux",
           "description": "Fresh fruits, cream custard, Vanilla ice cream",
@@ -1927,32 +1833,6 @@
           "category": "desserts",
           "dietary": [
             "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-018",
-          "name": "Apple Cinnamon Tart with Vanilla Ice Cream",
-          "description": "Amante chef special desserts serve with choice of ice cream",
-          "price": 299,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-019",
-          "name": "Amante Kulfi Faluda Delite",
-          "description": "Saffron & Pista, almond stuffed Faluda chef interactive desserts",
-          "price": 299,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "dairy",
-            "nuts"
           ],
           "isAvailable": true
         },
