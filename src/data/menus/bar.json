@@ -1266,6 +1266,15 @@
           "category": "wines",
           "isAvailable": true,
           "bottlePrice": 1800
+        },
+        {
+          "id": "bar-wine-005",
+          "name": "SULA ROSE",
+          "description": "Rose Wine - 150ml glass",
+          "price": 399,
+          "category": "wines",
+          "isAvailable": true,
+          "bottlePrice": 1800
         }
       ]
     },
@@ -1390,6 +1399,14 @@
           "name": "KINGFISHER STRONG",
           "description": "650ml",
           "price": 449,
+          "category": "beers",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-beer-009",
+          "name": "BUDWEISER MAGNUM",
+          "description": "650ml",
+          "price": 649,
           "category": "beers",
           "isAvailable": true
         }
