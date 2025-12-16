@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ChevronRight, UtensilsCrossed, Wine, Coffee } from 'lucide-react';
+import { ChevronRight, UtensilsCrossed, Wine, Coffee, Sunrise } from 'lucide-react';
 
 const categories = [
   {
@@ -24,6 +24,13 @@ const categories = [
     icon: Coffee,
     description: 'Artisan coffee & fresh delights',
     href: '/menu/cafe',
+  },
+  {
+    id: 'breakfast',
+    name: 'Breakfast Menu',
+    icon: Sunrise,
+    description: 'Start your day with delicious morning delights',
+    href: '/menu/breakfast',
   }
 ];
 

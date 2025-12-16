@@ -1,0 +1,657 @@
+{
+  "venue": "breakfast",
+  "name": "Breakfast Menu",
+  "description": "Start your day with our delicious breakfast offerings",
+  "tagline": "Morning delights to fuel your day",
+  "categories": [
+    {
+      "id": "south-indian",
+      "name": "South Indian",
+      "description": "Traditional South Indian breakfast favorites",
+      "displayOrder": 1,
+      "items": [
+        {
+          "id": "bfast-si-001",
+          "name": "Plain Dosa",
+          "description": "Crispy golden dosa served with sambar and chutneys",
+          "price": 199,
+          "category": "south-indian",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-si-002",
+          "name": "Veg Masala Dosa",
+          "description": "Crispy dosa filled with spiced potato masala",
+          "price": 229,
+          "category": "south-indian",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-si-003",
+          "name": "Cut Dosa",
+          "description": "Crispy cut dosa pieces served with accompaniments",
+          "price": 299,
+          "category": "south-indian",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-si-004",
+          "name": "Ragi Dosa",
+          "description": "Healthy ragi flour dosa, rich in nutrients",
+          "price": 299,
+          "category": "south-indian",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "light-healthy",
+      "name": "Light & Healthy",
+      "description": "Nutritious and light breakfast options",
+      "displayOrder": 2,
+      "items": [
+        {
+          "id": "bfast-lh-001",
+          "name": "Veg Upma",
+          "description": "South Indian semolina dish with vegetables and spices",
+          "price": 189,
+          "category": "light-healthy",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-lh-002",
+          "name": "Ragi Idli",
+          "description": "Steamed ragi idlis, healthy and nutritious",
+          "price": 199,
+          "category": "light-healthy",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-lh-003",
+          "name": "Idli (Plain / Button)",
+          "description": "Soft steamed rice cakes with sambar and chutneys",
+          "price": 189,
+          "category": "light-healthy",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-lh-004",
+          "name": "Veg Uttapam",
+          "description": "Thick rice pancake topped with vegetables",
+          "price": 249,
+          "category": "light-healthy",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "continental-breakfast",
+      "name": "Continental Breakfast",
+      "description": "Western-style breakfast classics",
+      "displayOrder": 3,
+      "items": [
+        {
+          "id": "bfast-cb-001",
+          "name": "Pav Bhaji (Breakfast Style)",
+          "description": "Mumbai-style spiced vegetable mash with buttery pav",
+          "price": 229,
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-002",
+          "name": "Grilled Veg Sandwich",
+          "description": "Toasted sandwich with fresh vegetables and herbs",
+          "price": 249,
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-003",
+          "name": "Grilled Cheese Sandwich",
+          "description": "Classic grilled cheese with melted cheese",
+          "price": 279,
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-004",
+          "name": "Veg Burger",
+          "description": "Vegetable patty burger with fresh toppings",
+          "price": 249,
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-005",
+          "name": "Cheese Burger",
+          "description": "Burger with cheese slice and fresh vegetables",
+          "price": 289,
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-006",
+          "name": "Omelette (Plain)",
+          "description": "Classic fluffy plain omelette",
+          "price": 189,
+          "category": "continental-breakfast",
+          "dietary": ["contains-egg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-007",
+          "name": "Omelette (Masala)",
+          "description": "Indian-spiced omelette with onions and green chilies",
+          "price": 219,
+          "category": "continental-breakfast",
+          "dietary": ["contains-egg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-008",
+          "name": "Omelette (Cheese)",
+          "description": "Fluffy omelette filled with melted cheese",
+          "price": 249,
+          "category": "continental-breakfast",
+          "dietary": ["contains-egg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-009",
+          "name": "Mini Breakfast Pizza",
+          "description": "Personal-sized pizza with breakfast toppings",
+          "price": 299,
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-010",
+          "name": "French Toast",
+          "description": "Classic French toast with butter and maple syrup",
+          "price": 249,
+          "category": "continental-breakfast",
+          "dietary": ["contains-egg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cb-011",
+          "name": "Bread Butter Jam",
+          "description": "Toast with butter and choice of jam",
+          "price": 149,
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "teas",
+      "name": "Teas (Premium Selection)",
+      "description": "Premium tea selection to warm your mornings",
+      "displayOrder": 4,
+      "items": [
+        {
+          "id": "bfast-tea-001",
+          "name": "Green Tea (Classic)",
+          "description": "Classic green tea, light and refreshing",
+          "price": 149,
+          "category": "teas",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-tea-002",
+          "name": "Lemon Honey Green Tea",
+          "description": "Green tea infused with lemon and honey",
+          "price": 169,
+          "category": "teas",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-tea-003",
+          "name": "Masala Chai",
+          "description": "Traditional Indian spiced tea",
+          "price": 129,
+          "category": "teas",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-tea-004",
+          "name": "Elaichi Chai",
+          "description": "Tea infused with aromatic cardamom",
+          "price": 139,
+          "category": "teas",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-tea-005",
+          "name": "Ginger Chai",
+          "description": "Warming tea with fresh ginger",
+          "price": 139,
+          "category": "teas",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-tea-006",
+          "name": "Hot Lemon Tea",
+          "description": "Refreshing hot tea with lemon",
+          "price": 149,
+          "category": "teas",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "coffees",
+      "name": "Coffees",
+      "description": "Freshly brewed coffee to kickstart your day",
+      "displayOrder": 5,
+      "items": [
+        {
+          "id": "bfast-cof-001",
+          "name": "Fresh Brew Coffee (Hot)",
+          "description": "Freshly brewed hot coffee",
+          "price": 179,
+          "category": "coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cof-002",
+          "name": "Americano",
+          "description": "Classic espresso with hot water",
+          "price": 199,
+          "category": "coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cof-003",
+          "name": "Cappuccino",
+          "description": "Espresso with steamed milk and foam",
+          "price": 229,
+          "category": "coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cof-004",
+          "name": "Latte",
+          "description": "Smooth espresso with steamed milk",
+          "price": 249,
+          "category": "coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cof-005",
+          "name": "Mocha",
+          "description": "Espresso with chocolate and steamed milk",
+          "price": 279,
+          "category": "coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cof-006",
+          "name": "Espresso Single",
+          "description": "Single shot of rich espresso",
+          "price": 149,
+          "category": "coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "cold-coffees",
+      "name": "Cold Coffees & Specials",
+      "description": "Chilled coffee drinks and specialties",
+      "displayOrder": 6,
+      "items": [
+        {
+          "id": "bfast-cc-001",
+          "name": "Classic Cold Coffee",
+          "description": "Refreshing cold coffee blend",
+          "price": 249,
+          "category": "cold-coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cc-002",
+          "name": "Cold Coffee with Ice Cream",
+          "description": "Cold coffee topped with ice cream",
+          "price": 299,
+          "category": "cold-coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cc-003",
+          "name": "Iced Americano",
+          "description": "Chilled espresso with cold water",
+          "price": 219,
+          "category": "cold-coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cc-004",
+          "name": "Iced Latte",
+          "description": "Chilled espresso with cold milk",
+          "price": 269,
+          "category": "cold-coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cc-005",
+          "name": "Chocolate Frappe",
+          "description": "Blended chocolate frappe with ice",
+          "price": 299,
+          "category": "cold-coffees",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "amante-special",
+      "name": "Amante Special",
+      "description": "Our signature coffee creations",
+      "displayOrder": 7,
+      "items": [
+        {
+          "id": "bfast-as-001",
+          "name": "Triple Chocolate Hot Coffee",
+          "description": "Rich coffee with triple chocolate indulgence",
+          "price": 299,
+          "category": "amante-special",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-as-002",
+          "name": "Hazelnut Cappuccino",
+          "description": "Cappuccino with hazelnut flavor",
+          "price": 279,
+          "category": "amante-special",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-as-003",
+          "name": "Vanilla Latte",
+          "description": "Smooth latte with vanilla essence",
+          "price": 279,
+          "category": "amante-special",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "bakery-items",
+      "name": "Bakery Items",
+      "description": "Freshly baked morning treats",
+      "displayOrder": 8,
+      "items": [
+        {
+          "id": "bfast-bk-001",
+          "name": "Muffins (2 Types)",
+          "description": "Freshly baked muffins - assorted flavors",
+          "price": 149,
+          "category": "bakery-items",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-bk-002",
+          "name": "Donuts",
+          "description": "Classic glazed donuts",
+          "price": 129,
+          "category": "bakery-items",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-bk-003",
+          "name": "Pancake",
+          "description": "Fluffy pancakes with maple syrup",
+          "price": 199,
+          "category": "bakery-items",
+          "dietary": ["contains-egg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-bk-004",
+          "name": "Waffle",
+          "description": "Crispy Belgian waffles",
+          "price": 229,
+          "category": "bakery-items",
+          "dietary": ["contains-egg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-bk-005",
+          "name": "Cookies",
+          "description": "Assorted freshly baked cookies",
+          "price": 99,
+          "category": "bakery-items",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-bk-006",
+          "name": "Sweet Balls",
+          "description": "Assorted sweet balls",
+          "price": 149,
+          "category": "bakery-items",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-bk-007",
+          "name": "Buns (3 Types)",
+          "description": "Assorted fresh buns",
+          "price": 99,
+          "category": "bakery-items",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-bk-008",
+          "name": "Hotdog (2 Types)",
+          "description": "Classic hotdog in fresh bun",
+          "price": 199,
+          "category": "bakery-items",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "others",
+      "name": "Others",
+      "description": "Additional breakfast beverages",
+      "displayOrder": 9,
+      "items": [
+        {
+          "id": "bfast-oth-001",
+          "name": "Hot Milk",
+          "description": "Fresh hot milk",
+          "price": 129,
+          "category": "others",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-oth-002",
+          "name": "Bournvita / Horlicks",
+          "description": "Hot milk with Bournvita or Horlicks",
+          "price": 229,
+          "category": "others",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "combo-offer",
+      "name": "Combo Offer",
+      "description": "Value breakfast combos",
+      "displayOrder": 10,
+      "items": [
+        {
+          "id": "bfast-combo-001",
+          "name": "Breakfast Combo",
+          "description": "Coffee/Tea/Juice + South Indian (Any 1) + Continental Breakfast (Any 1) + Dessert (Any 1)",
+          "price": 499,
+          "category": "combo-offer",
+          "dietary": ["veg"],
+          "isRecommended": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "cold-press-juices",
+      "name": "Cold Press Juices",
+      "description": "Fresh cold-pressed juices",
+      "displayOrder": 11,
+      "items": [
+        {
+          "id": "bfast-cpj-001",
+          "name": "Cold Press Orange Juice",
+          "description": "Fresh cold-pressed orange juice",
+          "price": 199,
+          "category": "cold-press-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cpj-002",
+          "name": "Cold Press Apple Juice",
+          "description": "Fresh cold-pressed apple juice",
+          "price": 219,
+          "category": "cold-press-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cpj-003",
+          "name": "Cold Press Carrot + Apple",
+          "description": "Cold-pressed carrot and apple blend",
+          "price": 229,
+          "category": "cold-press-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cpj-004",
+          "name": "Cold Press Beetroot + Carrot",
+          "description": "Cold-pressed beetroot and carrot blend",
+          "price": 229,
+          "category": "cold-press-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cpj-005",
+          "name": "Cold Press Green Juice",
+          "description": "Healthy green vegetable juice blend",
+          "price": 249,
+          "category": "cold-press-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-cpj-006",
+          "name": "Cold Press Pomegranate",
+          "description": "Fresh cold-pressed pomegranate juice",
+          "price": 269,
+          "category": "cold-press-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "fresh-juices",
+      "name": "Fresh Juices",
+      "description": "Freshly squeezed fruit juices",
+      "displayOrder": 12,
+      "items": [
+        {
+          "id": "bfast-fj-001",
+          "name": "Fresh Pineapple Juice",
+          "description": "Freshly squeezed pineapple juice",
+          "price": 149,
+          "category": "fresh-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-fj-002",
+          "name": "Fresh Watermelon Juice",
+          "description": "Refreshing watermelon juice",
+          "price": 139,
+          "category": "fresh-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-fj-003",
+          "name": "Fresh Sweet Lime Juice",
+          "description": "Tangy fresh sweet lime juice",
+          "price": 159,
+          "category": "fresh-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-fj-004",
+          "name": "Fresh Mixed Fruit Juice",
+          "description": "Blend of seasonal fresh fruits",
+          "price": 169,
+          "category": "fresh-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        },
+        {
+          "id": "bfast-fj-005",
+          "name": "Lemon Mint Juice",
+          "description": "Refreshing lemon with fresh mint",
+          "price": 129,
+          "category": "fresh-juices",
+          "dietary": ["veg"],
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}

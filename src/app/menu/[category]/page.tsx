@@ -21,17 +21,20 @@ const scrollbarHideStyles = `
 import foodMenu from '@/data/menus/food.json';
 import barMenu from '@/data/menus/bar.json';
 import cafeMenu from '@/data/menus/cafe.json';
+import breakfastMenu from '@/data/menus/breakfast.json';
 
 const menus = {
   food: foodMenu,
   bar: barMenu,
-  cafe: cafeMenu
+  cafe: cafeMenu,
+  breakfast: breakfastMenu
 };
 
 const categoryColors = {
   food: '#8B1538',
   bar: '#8B1538',
-  cafe: '#8B1538'
+  cafe: '#8B1538',
+  breakfast: '#8B1538'
 };
 
 interface MenuItem {
