@@ -6,6 +6,110 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.4.0] - 2025-12-17
+
+### Time-Based Menu Experience
+
+#### 16:45 IST - Added Dynamic Greeting & Breakfast Prioritization
+
+**New Features**:
+- **Dynamic Greeting System**: Displays time-appropriate greetings in the menu header
+  - Good Morning (5:00 AM - 11:59 AM)
+  - Good Afternoon (12:00 PM - 4:59 PM)
+  - Good Evening (5:00 PM - 8:59 PM)
+  - Good Night (9:00 PM - 4:59 AM)
+
+- **Breakfast Menu Prioritization**: Automatic reordering during breakfast hours (7:30 AM - 12:00 PM)
+  - Breakfast menu card moves to top position
+  - "Now Serving Breakfast" banner appears with quick-access button
+  - "Live" badge with pulse animation on breakfast card
+  - Highlighted card styling (burgundy border, filled icon)
+
+- **Auto-Refresh**: Menu updates every 60 seconds to reflect time changes
+
+**Files Modified**:
+- `src/app/menu/page.tsx` - Added state management, time-based logic, and UI enhancements
+
+**Technical Implementation**:
+| Feature | Logic |
+|---------|-------|
+| Greeting | Based on `new Date().getHours()` |
+| Breakfast Time | 7:30 AM (450 min) to 12:00 PM (720 min) |
+| Reordering | Dynamic array manipulation with `useState` |
+| Refresh | `setInterval` every 60,000ms |
+
+**UI Components Added**:
+- Greeting text above "Explore Our Menus" title
+- "Now Serving Breakfast" banner with Sunrise icon
+- "Live" pulse badge on breakfast card
+- Highlighted card styling with ring effect
+
+**Commits**:
+- `a03174e` - feat(menu): Add time-based greeting and breakfast prioritization
+
+**Build Status**: ✅ Successful
+**Deployment**: Pushed to origin/main
+
+---
+
+## [1.3.0] - 2025-12-04
+
+### Homepage Fluid Typography & Responsive Design Overhaul
+
+#### 13:30 IST - Fixed Small Text on Mobile Devices
+- **Issue**: Pure `vw` values in `clamp()` resulted in tiny text on narrow mobile screens
+- **Solution**: Implemented hybrid `vw + rem` formula for fluid sizing
+- **Files Modified**:
+  - `src/components/HeroCarousel/index.tsx`
+  - `src/components/HomePage.tsx`
+
+**Typography Updates**:
+| Element | Before | After |
+|---------|--------|-------|
+| Headline | `clamp(2.5rem, 8vw, 5.5rem)` | `clamp(3.25rem, 4vh + 2rem, 5.5rem)` |
+| Subheadline | `clamp(1.125rem, 3.5vw, 1.75rem)` | `clamp(1.35rem, 2vh + 0.5rem, 1.75rem)` |
+| Body Text | `clamp(0.65rem, 1.5vw, 1rem)` | `clamp(0.75rem, 1vw + 0.5rem, 1rem)` |
+| Button Text | `clamp(0.625rem, 1.5vw, 0.875rem)` | `clamp(0.75rem, 0.5vw + 0.5rem, 0.875rem)` |
+| Strip Text | `clamp(0.625rem, 1.5vw, 1rem)` | `clamp(0.7rem, 0.5vw + 0.5rem, 1rem)` |
+
+**Key Improvements**:
+- Headlines now use `vh` (viewport height) scaling instead of `vw` for better mobile proportions
+- Increased minimum sizes across all text elements
+- Button padding uses hybrid formula for consistent sizing
+
+#### 13:20 IST - Implemented Fluid Typography System
+- **Technique**: CSS `clamp()` function for intrinsic/fluid design
+- **Approach**: All sizing scales smoothly from mobile to desktop without breakpoints
+- Replaced fixed pixel values with viewport-relative units
+
+#### 13:15 IST - Fixed Scroll Issue on Mobile Devices
+- Added `overflow: hidden` and `overscroll-behavior: none` to html/body
+- Changed viewport height from `100vh` to `100dvh` (dynamic viewport height)
+- Prevents scroll on devices with dynamic browser chrome
+
+#### Earlier Updates
+- **Responsive Collage Grid**: 3×5 on mobile, 5×4 on desktop
+- **Social Icons**: Fixed centering and circle distortion on mobile
+- **Scrolling Strip**: Adjusted positioning for proper spacing
+- **Decorative Elements**: Removed dividers from hero section
+- **Showcase Pages**: Deleted all showcase directories
+
+### Commits
+- `58ddf2b` - Fix fluid typography with hybrid vw+rem and vh-based heading scaling
+- `07c715c` - Implement fluid typography and adaptive sizing for homepage
+- `3d81078` - Apply showcase enhancements to main homepage
+
+### Menu Export
+- **Generated**: `Amante_Complete_Menu_2025-12-04.xlsx`
+- **Contents**: 3 sheets (Food: 150 items, Bar: 153 items, Café: 45 items)
+- **Total**: 348 menu items
+
+### Technical Details
+- Build Status: ✅ Successful (43 pages)
+- Deployment: ✅ Vercel Production
+
+---
+
 ## [1.2.0] - 2025-10-19
 
 ### Changed
@@ -191,6 +295,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 | Version | Food Items | Bar Items | Café Items | Total Items |
 |---------|-----------|-----------|------------|-------------|
+| 1.3.0   | 150       | 153       | 45         | 348         |
 | 1.2.0   | 129       | 149       | 45         | 323         |
 | 1.1.0   | 129       | 149       | 45         | 323         |
 | 1.0.0   | 146       | 149       | 45         | 340         |
@@ -228,6 +333,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## Deployment History
 
 All versions deployed to Vercel production:
+- **v1.4.0**: December 17, 2025 (Time-Based Greeting & Breakfast Prioritization)
+- **v1.3.0**: December 04, 2025 (Fluid Typography & Responsive Design)
 - **v1.2.0**: October 19, 2025
 - **v1.1.0**: October 18, 2025
 - **v1.0.0**: October 17, 2025
@@ -235,6 +342,12 @@ All versions deployed to Vercel production:
 ---
 
 ## Breaking Changes
+
+### v1.4.0
+- None (frontend feature addition only, no API changes)
+
+### v1.3.0
+- None (frontend styling updates only, no API changes)
 
 ### v1.2.0
 - None (serving size update only, no API changes)
