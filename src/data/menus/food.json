@@ -959,7 +959,7 @@
           "dietary": [
             "veg"
           ],
-          "spiceLevel": 2,
+          "spiceLevel": 0,
           "isRecommended": true,
           "isAvailable": true
         },
