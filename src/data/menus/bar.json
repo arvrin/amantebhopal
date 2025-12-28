@@ -434,6 +434,62 @@
           "price": 399,
           "category": "mocktails",
           "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-017",
+          "name": "TROPICAL LEMONADE",
+          "description": "Cold pressed pineapple juice, clove, topped with lemonade",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-018",
+          "name": "SWEET SONNET",
+          "description": "Fresh orange & mint leaves, Indian spices, topped with orange juice & aerated water",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-019",
+          "name": "EL JEFE",
+          "description": "Passion fruit, grape & orange juice, chili and bitters",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-020",
+          "name": "THA TRAVELER",
+          "description": "Elderflower with coriander, lime salt, topped with ginger ale",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-021",
+          "name": "ASIAN CRAFT",
+          "description": "Cold pressed pineapple juice, homemade lemongrass, topped with tonic water",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-022",
+          "name": "UMAMI",
+          "description": "Fresh pineapple slices & coriander, blueberry crush & salt",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
+        },
+        {
+          "id": "bar-mocktail-023",
+          "name": "MELON & LEMONS",
+          "description": "Cold pressed watermelon juice, kaffir lime, topped with lemonade",
+          "price": 399,
+          "category": "mocktails",
+          "isAvailable": true
         }
       ]
     },
