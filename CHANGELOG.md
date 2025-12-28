@@ -6,6 +6,39 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.4.1] - 2025-12-28
+
+### Bar Menu Update
+
+#### 14:41 IST - Added 7 New Craft Mocktails
+
+**New Items Added** (all priced at ₹399):
+
+| ID | Name | Description |
+|----|------|-------------|
+| bar-mocktail-017 | TROPICAL LEMONADE | Cold pressed pineapple juice, clove, topped with lemonade |
+| bar-mocktail-018 | SWEET SONNET | Fresh orange & mint leaves, Indian spices, topped with orange juice & aerated water |
+| bar-mocktail-019 | EL JEFE | Passion fruit, grape & orange juice, chili and bitters |
+| bar-mocktail-020 | THA TRAVELER | Elderflower with coriander, lime salt, topped with ginger ale |
+| bar-mocktail-021 | ASIAN CRAFT | Cold pressed pineapple juice, homemade lemongrass, topped with tonic water |
+| bar-mocktail-022 | UMAMI | Fresh pineapple slices & coriander, blueberry crush & salt |
+| bar-mocktail-023 | MELON & LEMONS | Cold pressed watermelon juice, kaffir lime, topped with lemonade |
+
+**Impact**:
+- Mocktails section: 16 → 23 items (+7)
+- Bar menu total: 153 → 160 items
+- Total menu items: 348 → 355 items
+
+**File Modified**: `src/data/menus/bar.json` (lines 438-493)
+
+**Commits**:
+- `cded502` - feat(menu): Add 7 new craft mocktails to bar menu
+
+**Build Status**: ✅ Successful
+**Deployment**: Pushed to origin/main
+
+---
+
 ## [1.4.0] - 2025-12-17
 
 ### Time-Based Menu Experience
@@ -295,6 +328,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 | Version | Food Items | Bar Items | Café Items | Total Items |
 |---------|-----------|-----------|------------|-------------|
+| 1.4.1   | 150       | 160       | 45         | 355         |
 | 1.3.0   | 150       | 153       | 45         | 348         |
 | 1.2.0   | 129       | 149       | 45         | 323         |
 | 1.1.0   | 129       | 149       | 45         | 323         |
@@ -333,6 +367,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 ## Deployment History
 
 All versions deployed to Vercel production:
+- **v1.4.1**: December 28, 2025 (7 New Craft Mocktails)
 - **v1.4.0**: December 17, 2025 (Time-Based Greeting & Breakfast Prioritization)
 - **v1.3.0**: December 04, 2025 (Fluid Typography & Responsive Design)
 - **v1.2.0**: October 19, 2025
@@ -342,6 +377,9 @@ All versions deployed to Vercel production:
 ---
 
 ## Breaking Changes
+
+### v1.4.1
+- None (menu data addition only, no API changes)
 
 ### v1.4.0
 - None (frontend feature addition only, no API changes)
