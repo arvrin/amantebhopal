@@ -1,0 +1,1104 @@
+{
+  "venue": "nye",
+  "name": "New Year Special Menu",
+  "description": "A la carte dining for New Year 2026",
+  "tagline": "Ring in the New Year with exquisite flavors",
+  "validFrom": "2025-12-31",
+  "validTo": "2026-01-01",
+  "categories": [
+    {
+      "id": "appetizers-starters",
+      "name": "Appetizers & Starters",
+      "description": "",
+      "displayOrder": 1,
+      "items": [
+        {
+          "id": "nye-001",
+          "name": "Peri Peri Truffle Fries",
+          "description": "Peri peri spiced truffle fries",
+          "price": 299,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-002",
+          "name": "Hunan Chilli Crispy Corn Kernels",
+          "description": "Stir fry crispy corn, celery and burnt chili, togarashi",
+          "price": 499,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-003",
+          "name": "Crispy Togarashi Fried Corn Kernels",
+          "description": "Japanese shichimi spice crispy corn chili oil",
+          "price": 499,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-004",
+          "name": "Bhutte De Kebab",
+          "description": "Crispy fried corn patties served with dip",
+          "price": 499,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-005",
+          "name": "Thai Glass Noodle Vegetable Spring Roll",
+          "description": "Crunchy sheets, Asian greens, glass noodle, sweet chili sauce",
+          "price": 599,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-008",
+          "name": "Paneer Peshawari Tikka",
+          "description": "Marinated stuffed cottage cheese with Indian spices",
+          "price": 599,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-009",
+          "name": "Hunan Chilli Cottage Cheese",
+          "description": "Sliced cottage cheese, celery and burnt chili",
+          "price": 599,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-010",
+          "name": "Soya Chaap Achari",
+          "description": "Yogurt, creamy, garlic, Indian spice with tangy pickle flavor",
+          "price": 599,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-012",
+          "name": "Chicken Lollipop",
+          "description": "Classic chicken lollipop",
+          "price": 699,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-014",
+          "name": "Bhopali Murgh Tikka Mirza",
+          "description": "Marinated boneless chicken in Indian spice",
+          "price": 699,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-015",
+          "name": "Mushroom Cream Cheese Dimsum",
+          "description": "Delicate dumplings filled with mushroom and cream cheese",
+          "price": 699,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-016",
+          "name": "Dry Nuts Gilafi Mutton Seekh Kebab",
+          "description": "Indian spiced minced lamb with mint chutney",
+          "price": 799,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-017",
+          "name": "FISH FINGER",
+          "description": "SAMAL FRESH FISH  MAIRENETED SPICY INDIAN SPICES  SERVED WITH MINT SAUCE ",
+          "price": 899,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-018",
+          "name": "Schezwan King Prawns",
+          "description": "RCP crisp prawns' chef interactive on flavored",
+          "price": 999,
+          "category": "Appetizers & Starters",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "soups-broth-ramen",
+      "name": "Soups, Broth & Ramen",
+      "description": "",
+      "displayOrder": 2,
+      "items": [
+        {
+          "id": "nye-072",
+          "name": "Cream of Tomato Soup",
+          "description": "Oven roasted tomato basil creamy soup",
+          "price": 399,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-073",
+          "name": "Hong Kong Hot and Sour Soup",
+          "description": "Vegetable stock bamboo shoot coriander scallion and Asian bread",
+          "price": 399,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-074",
+          "name": "Wild Mushroom Quinoa Soup",
+          "description": "Mushroom, quinoa and broth",
+          "price": 499,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-075",
+          "name": "Thai Signature Tom Yum Soup (Veg)",
+          "description": "Thai herb, basil, spice signature broth",
+          "price": 499,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-076",
+          "name": "Badami Murgh Yakini Shorba",
+          "description": "Bhopal murgh Indian spice shorba, Almond Flake",
+          "price": 499,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-077",
+          "name": "Vegetable Ramen",
+          "description": "Ponzu broth, tofu, bamboo shoots, bok choy, mushroom",
+          "price": 599,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-078",
+          "name": "Thai Signature Tom Yum Soup (Chicken)",
+          "description": "Thai herb, basil, spice signature broth with chicken",
+          "price": 599,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-079",
+          "name": "Chicken Shio Ramen",
+          "description": "Spiced chicken broth, panko crumbed chicken, marinated eggs, bamboo shoots, bok choy",
+          "price": 599,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-080",
+          "name": "Hungarian Mushroom Soup",
+          "description": "Hungarian style cream of Mushroom soup",
+          "price": 599,
+          "category": "Soups, Broth & Ramen",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "Salads",
+      "description": "",
+      "displayOrder": 3,
+      "items": [
+        {
+          "id": "nye-068",
+          "name": "Indian Garden Green Salad",
+          "description": "Seasonal local vegetable salad",
+          "price": 299,
+          "category": "Salads",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-069",
+          "name": "Bamboo Shoots Avocado Salad",
+          "description": "Baby spinach, chimichurri, smoked avocado, miso yuzu, lemon zest dressing, cherry tomato, fresh blueberry",
+          "price": 599,
+          "category": "Salads",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-070",
+          "name": "Classic Caesar Salad",
+          "description": "Crisp iceberg, parmesan, garlic croutons, and creamy Caesar dressing",
+          "price": 699,
+          "category": "Salads",
+          "dietary": [],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-071",
+          "name": "Classic Caesar Salad with Chicken",
+          "description": "Crisp iceberg, parmesan, garlic croutons, creamy Caesar dressing with grilled chicken",
+          "price": 799,
+          "category": "Salads",
+          "dietary": [],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "dim-sums-bao-gyoza",
+      "name": "Dim Sums, Bao & Gyoza",
+      "description": "",
+      "displayOrder": 4,
+      "items": [
+        {
+          "id": "nye-021",
+          "name": "Vegetable Edamame Asparagus Gyoza",
+          "description": "Pok choy, Asian vegetables, edamame, asparagus, fried dumpling, coral tuile",
+          "price": 699,
+          "category": "Dim Sums, Bao & Gyoza",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-022",
+          "name": "Wild Mushroom Asparagus Crystal Dumpling",
+          "description": "Black fungus shitake, Asian vegetables, asparagus, tomato garlic sauce",
+          "price": 699,
+          "category": "Dim Sums, Bao & Gyoza",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "description": "",
+      "displayOrder": 5,
+      "items": [
+        {
+          "id": "nye-081",
+          "name": "Amante Midori Roll",
+          "description": "Avocado, asparagus, tender spinach, dry miso and Japanese mayo",
+          "price": 899,
+          "category": "Sushi",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-082",
+          "name": "Grilled Chicken Avocado Spicy Roll",
+          "description": "Chicken, avocado, togarashi mayo, wasabi vegetable tobiko",
+          "price": 1099,
+          "category": "Sushi",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-083",
+          "name": "Crisp Amante Uramaki",
+          "description": "Avocado & asparagus tempura, teriyaki sauce, cream cheese",
+          "price": 1199,
+          "category": "Sushi",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "description": "",
+      "displayOrder": 6,
+      "items": [
+        {
+          "id": "nye-058",
+          "name": "Classic Burrata Pizza",
+          "description": "Burrata, Napolitana sauce, rocket leaves, olive dust, drizzle with basil oil",
+          "price": 699,
+          "category": "Pizza",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-059",
+          "name": "Classic Margarita Pizza",
+          "description": "Thin base, basil leaves, pesto oil, and drizzle",
+          "price": 899,
+          "category": "Pizza",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-060",
+          "name": "Pizza Pollo Indiana",
+          "description": "Indian Spiced Chicken, cheese, tomato, bell peppers, onion",
+          "price": 899,
+          "category": "Pizza",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-061",
+          "name": "Pizza Paneer Tikka",
+          "description": "Grilled vegetable, paneer tikka, tomato sauce, mozzarella",
+          "price": 999,
+          "category": "Pizza",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-062",
+          "name": "Pizza Latin Aioli & Quattro Fromage",
+          "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella",
+          "price": 999,
+          "category": "Pizza",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "pasta-ravioli-risotto",
+      "name": "Pasta, Ravioli & Risotto",
+      "description": "",
+      "displayOrder": 7,
+      "items": [
+        {
+          "id": "nye-057",
+          "name": "FUSHLI ALFREDO",
+          "description": "panne ,vegetables, mushroom, with alfrado sauce",
+          "price": 599,
+          "category": "Pasta, Ravioli & Risotto",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "burgers-sandwiches",
+      "name": "Burgers & Sandwiches",
+      "description": "",
+      "displayOrder": 8,
+      "items": [
+        {
+          "id": "nye-019",
+          "name": "Amante Chef Special Vegetable Grilled Sandwich",
+          "description": "Grilled vegetable lettuce tomato cucumber with French fries and mustard sauce",
+          "price": 499,
+          "category": "Burgers & Sandwiches",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-020",
+          "name": "Amante Chef Special Chicken Grilled Sandwich",
+          "description": "Grilled vegetable lettuce chicken with French fries and mustard sauce",
+          "price": 599,
+          "category": "Burgers & Sandwiches",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "noodle-bowls",
+      "name": "Noodle Bowls",
+      "description": "",
+      "displayOrder": 9,
+      "items": [
+        {
+          "id": "nye-052",
+          "name": "Hakka Noodle Bowl (Veg)",
+          "description": "Asian vegetable, wild mushroom",
+          "price": 599,
+          "category": "Noodle Bowls",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-053",
+          "name": "Hakka Noodle Bowl (Chicken)",
+          "description": "Asian vegetable, chicken",
+          "price": 699,
+          "category": "Noodle Bowls",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-054",
+          "name": "Pad Thai Noodle Bowl (Veg)",
+          "description": "Rice stick noodle, vegetable, peanut, bean sprout",
+          "price": 699,
+          "category": "Noodle Bowls",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-055",
+          "name": "Pad Thai Noodle Bowl (Chicken)",
+          "description": "Rice stick noodle, prawns, peanut, bean sprout",
+          "price": 799,
+          "category": "Noodle Bowls",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-056",
+          "name": "PANNE ARRABBITA",
+          "description": "panne, green vegetable, with arrabbita sauce ",
+          "price": 599,
+          "category": "Noodle Bowls",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "grills-mains",
+      "name": "Grills & Mains",
+      "description": "",
+      "displayOrder": 10,
+      "items": [
+        {
+          "id": "nye-023",
+          "name": "Chimichurri Red Mural Fish",
+          "description": "Chimichurri, lemon butter sauce, mash potato, roast vegetables",
+          "price": 999,
+          "category": "Grills & Mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-024",
+          "name": "Grilled King Prawns",
+          "description": "Mustard and parsley marinated prawns, potato millefeuille, habanero, and lemon zest",
+          "price": 1199,
+          "category": "Grills & Mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "indian-main-course",
+      "name": "Indian Main Course",
+      "description": "",
+      "displayOrder": 11,
+      "items": [
+        {
+          "id": "nye-035",
+          "name": "Vilayti Subzi",
+          "description": "Minced cauliflower with exotic vegetables, green chili and coriander",
+          "price": 499,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-036",
+          "name": "Faldaari Kofta Curry",
+          "description": "Cottage cheese, dry fruits, fresh fruits with creamy cashew gravy",
+          "price": 599,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-037",
+          "name": "Dal Double Tadka",
+          "description": "Lentil cooked in tomato, Indian spice",
+          "price": 599,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-038",
+          "name": "Lehsuni Bhuna Palak",
+          "description": "Minced spinach with garlic tomato and chili",
+          "price": 599,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-039",
+          "name": "Amante Chef Interactive Kaju Makhana Curry",
+          "description": "Roasted cashew, makhana, Amante rich gravy",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-040",
+          "name": "Paneer Makhani",
+          "description": "Spicy cottage cheese, tomato, Indian spice",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-041",
+          "name": "Amante Chef Special Dal Makhani",
+          "description": "Black lentil cooked in creamy tomato, Indian spice",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-042",
+          "name": "Chef Special Butter Chicken",
+          "description": "Amante chef special Bhopali chicken, red gravy, buttery, creamy base, Indian spice",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-043",
+          "name": "Aloo Gobhi Adrak",
+          "description": "Mixed seasonal local vegetables with spinach and Indian spices",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-044",
+          "name": "Paneer Lababdar",
+          "description": "Rich cottage cheese curry in creamy tomato gravy",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-045",
+          "name": "Paneer Butter Masala",
+          "description": "Cottage cheese in smooth butter tomato sauce",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-046",
+          "name": "Paneer Tikka Masala",
+          "description": "Grilled cottage cheese in spiced tomato curry",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-047",
+          "name": "Home Style Curry  Chicken",
+          "description": "Boneless chicken tempered with chilies, coriander seeds and cooked with fresh tomato",
+          "price": 699,
+          "category": "Indian Main Course",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-048",
+          "name": "Chef Special Chicken Tikka Keema Masala",
+          "description": "Amante chef special Bhopali minced chicken, Indian spice",
+          "price": 899,
+          "category": "Indian Main Course",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-049",
+          "name": "Mutton Rogan Josh",
+          "description": "Bhopali mutton Amante chef special rogan josh",
+          "price": 999,
+          "category": "Indian Main Course",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-050",
+          "name": "Chef Special Laal Maas",
+          "description": "Authentic Rajasthani mutton with Indian spices",
+          "price": 1099,
+          "category": "Indian Main Course",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-051",
+          "name": "Chef Special Bhopali Kadak Nath",
+          "description": "KadakNath chicken chef special Indian spices, cooked with chop base gravy",
+          "price": 1499,
+          "category": "Indian Main Course",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "hot-clay-pot-tandoor",
+      "name": "Hot Clay Pot & Tandoor",
+      "description": "",
+      "displayOrder": 12,
+      "items": [
+        {
+          "id": "nye-025",
+          "name": "Tandoori Roti",
+          "description": "Classic tandoori roti",
+          "price": 59,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-026",
+          "name": "Missi Roti",
+          "description": "Gram flour roti",
+          "price": 79,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-027",
+          "name": "Naan",
+          "description": "Classic Indian flatbread baked in tandoor",
+          "price": 79,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-028",
+          "name": "Garlic Naan",
+          "description": "Naan topped with fresh garlic and butter",
+          "price": 79,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-029",
+          "name": "Butter Naan",
+          "description": "Soft naan brushed with butter",
+          "price": 79,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-030",
+          "name": "Missi Roti",
+          "description": "Traditional Indian flatbread made with gram flour and spices",
+          "price": 79,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-031",
+          "name": "Khamiri Garlic Naan",
+          "description": "Leavened garlic naan",
+          "price": 99,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-032",
+          "name": "Lachha Paratha",
+          "description": "Multi-layered paratha",
+          "price": 110,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-033",
+          "name": "Cheese Chilli Garlic Naan",
+          "description": "Cheese stuffed naan with chili and garlic",
+          "price": 119,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-034",
+          "name": "Chef Signature Lachha Garlic Naan",
+          "description": "Special lachha naan with garlic",
+          "price": 149,
+          "category": "Hot Clay Pot & Tandoor",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "rice-pulao-biryani",
+      "name": "Rice, Pulao & Biryani",
+      "description": "",
+      "displayOrder": 13,
+      "items": [
+        {
+          "id": "nye-063",
+          "name": "Steamed Rice, Jeera Rice, Curd Rice",
+          "description": "Choice of steamed, jeera or curd rice",
+          "price": 499,
+          "category": "Rice, Pulao & Biryani",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-064",
+          "name": "Burnt Garlic Chicken Fried Rice",
+          "description": "Stir-fried rice with burnt garlic and chicken",
+          "price": 599,
+          "category": "Rice, Pulao & Biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-065",
+          "name": "Amante Chef Signature Pulao",
+          "description": "Dry fruits, long grain rice, saffron, khada masala",
+          "price": 699,
+          "category": "Rice, Pulao & Biryani",
+          "dietary": [
+            "veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-066",
+          "name": "Hyderabadi Chicken Dum Biryani",
+          "description": "Authentic Hyderabadi style chicken biryani",
+          "price": 799,
+          "category": "Rice, Pulao & Biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-067",
+          "name": "Hyderabadi Mutton Dum Biryani",
+          "description": "Authentic Hyderabadi style mutton biryani",
+          "price": 999,
+          "category": "Rice, Pulao & Biryani",
+          "dietary": [
+            "non-veg"
+          ],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "specials",
+      "name": "Specials",
+      "description": "",
+      "displayOrder": 14,
+      "items": [
+        {
+          "id": "nye-006",
+          "name": "CHEESE BOLL",
+          "description": "",
+          "price": 699,
+          "category": "Specials",
+          "dietary": [],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-007",
+          "name": "DRAGONE CHICKEN",
+          "description": "",
+          "price": 599,
+          "category": "Specials",
+          "dietary": [],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-011",
+          "name": "VEG CROQUTES",
+          "description": "",
+          "price": 599,
+          "category": "Specials",
+          "dietary": [],
+          "spiceLevel": null,
+          "isAvailable": true
+        },
+        {
+          "id": "nye-013",
+          "name": "AFGHANI CHICKEN TIKKA",
+          "description": "",
+          "price": 599,
+          "category": "Specials",
+          "dietary": [],
+          "spiceLevel": null,
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}
