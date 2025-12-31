@@ -158,8 +158,8 @@
         },
         {
           "id": "nye-017",
-          "name": "FISH FINGER",
-          "description": "SAMAL FRESH FISH  MAIRENETED SPICY INDIAN SPICES  SERVED WITH MINT SAUCE ",
+          "name": "Fish Fingers",
+          "description": "Fresh fish marinated in spicy Indian spices, served with mint sauce",
           "price": 899,
           "category": "Appetizers & Starters",
           "dietary": [
@@ -171,7 +171,7 @@
         {
           "id": "nye-018",
           "name": "Schezwan King Prawns",
-          "description": "RCP crisp prawns' chef interactive on flavored",
+          "description": "Crispy king prawns tossed in spicy Schezwan sauce with Asian flavors",
           "price": 999,
           "category": "Appetizers & Starters",
           "dietary": [
@@ -203,7 +203,7 @@
         {
           "id": "nye-073",
           "name": "Hong Kong Hot and Sour Soup",
-          "description": "Vegetable stock bamboo shoot coriander scallion and Asian bread",
+          "description": "Vegetable stock, bamboo shoot, coriander, scallion and Asian herbs",
           "price": 399,
           "category": "Soups, Broth & Ramen",
           "dietary": [
@@ -278,7 +278,9 @@
           "description": "Spiced chicken broth, panko crumbed chicken, marinated eggs, bamboo shoots, bok choy",
           "price": 599,
           "category": "Soups, Broth & Ramen",
-          "dietary": [],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": null,
           "isAvailable": true
         },
@@ -332,7 +334,9 @@
           "description": "Crisp iceberg, parmesan, garlic croutons, and creamy Caesar dressing",
           "price": 699,
           "category": "Salads",
-          "dietary": [],
+          "dietary": [
+            "veg"
+          ],
           "spiceLevel": null,
           "isAvailable": true
         },
@@ -342,7 +346,9 @@
           "description": "Crisp iceberg, parmesan, garlic croutons, creamy Caesar dressing with grilled chicken",
           "price": 799,
           "category": "Salads",
-          "dietary": [],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": null,
           "isAvailable": true
         }
@@ -500,8 +506,8 @@
       "items": [
         {
           "id": "nye-057",
-          "name": "FUSHLI ALFREDO",
-          "description": "panne ,vegetables, mushroom, with alfrado sauce",
+          "name": "Fusilli Alfredo",
+          "description": "Fusilli pasta with vegetables, mushroom in creamy Alfredo sauce",
           "price": 599,
           "category": "Pasta, Ravioli & Risotto",
           "dietary": [
@@ -589,7 +595,7 @@
         {
           "id": "nye-055",
           "name": "Pad Thai Noodle Bowl (Chicken)",
-          "description": "Rice stick noodle, prawns, peanut, bean sprout",
+          "description": "Rice stick noodle, chicken, peanut, bean sprout",
           "price": 799,
           "category": "Noodle Bowls",
           "dietary": [
@@ -600,12 +606,12 @@
         },
         {
           "id": "nye-056",
-          "name": "PANNE ARRABBITA",
-          "description": "panne, green vegetable, with arrabbita sauce ",
+          "name": "Penne Arrabbiata",
+          "description": "Penne pasta with green vegetables in spicy arrabbiata sauce",
           "price": 599,
           "category": "Noodle Bowls",
           "dietary": [
-            "non-veg"
+            "veg"
           ],
           "spiceLevel": null,
           "isAvailable": true
@@ -923,18 +929,6 @@
           "isAvailable": true
         },
         {
-          "id": "nye-030",
-          "name": "Missi Roti",
-          "description": "Traditional Indian flatbread made with gram flour and spices",
-          "price": 79,
-          "category": "Hot Clay Pot & Tandoor",
-          "dietary": [
-            "veg"
-          ],
-          "spiceLevel": null,
-          "isAvailable": true
-        },
-        {
           "id": "nye-031",
           "name": "Khamiri Garlic Naan",
           "description": "Leavened garlic naan",
@@ -1060,41 +1054,49 @@
       "items": [
         {
           "id": "nye-006",
-          "name": "CHEESE BOLL",
-          "description": "",
+          "name": "Cheese Balls",
+          "description": "Crispy fried cheese balls served with tangy dipping sauce",
           "price": 699,
           "category": "Specials",
-          "dietary": [],
+          "dietary": [
+            "veg"
+          ],
           "spiceLevel": null,
           "isAvailable": true
         },
         {
           "id": "nye-007",
-          "name": "DRAGONE CHICKEN",
-          "description": "",
+          "name": "Dragon Chicken",
+          "description": "Indo-Chinese style crispy chicken tossed in spicy dragon sauce",
           "price": 599,
           "category": "Specials",
-          "dietary": [],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": null,
           "isAvailable": true
         },
         {
           "id": "nye-011",
-          "name": "VEG CROQUTES",
-          "description": "",
+          "name": "Veg Croquettes",
+          "description": "Crispy golden vegetable croquettes served with chef's special sauce",
           "price": 599,
           "category": "Specials",
-          "dietary": [],
+          "dietary": [
+            "veg"
+          ],
           "spiceLevel": null,
           "isAvailable": true
         },
         {
           "id": "nye-013",
-          "name": "AFGHANI CHICKEN TIKKA",
-          "description": "",
+          "name": "Afghani Chicken Tikka",
+          "description": "Creamy yogurt marinated chicken tikka with mild aromatic spices",
           "price": 599,
           "category": "Specials",
-          "dietary": [],
+          "dietary": [
+            "non-veg"
+          ],
           "spiceLevel": null,
           "isAvailable": true
         }
