@@ -26,6 +26,7 @@ export default function HeaderGlobal({ onReservationClick }: HeaderGlobalProps =
 
   // Check if we're on a light background page (pages with white/cream backgrounds need white navbar)
   const isLightBgPage = pathname?.startsWith('/menu') ||
+                        pathname?.startsWith('/nyemenu') ||
                         pathname?.startsWith('/events') ||
                         pathname?.startsWith('/about') ||
                         pathname?.startsWith('/contact') ||
