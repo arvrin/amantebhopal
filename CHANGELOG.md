@@ -6,6 +6,60 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.5.0] - 2026-01-16
+
+### Pizza Menu Overhaul - Size Variants & Pricing Update
+
+#### 17:30 IST - Added Pizza Size Options
+
+**New Features**:
+- **Size Variants**: All pizzas now available in 2 sizes (6 inch and 12 inch)
+- **Cheese Burst Addon**: "Make your pizza cheese burst for just Rs.149/-" displayed in each pizza description
+- **Styled Addon Text**: Cheese burst text highlighted in brand red (#8B1538) with underline
+
+**Pricing Structure**:
+
+| Size | Vegetarian | Non-Vegetarian |
+|------|------------|----------------|
+| 6 inch | ₹399 | ₹499 |
+| 12 inch | ₹599 | ₹699 |
+
+**Pizzas Updated** (6 items):
+
+| Pizza | Diet | Old Price | New Sizes |
+|-------|------|-----------|-----------|
+| Classic Burrata Pizza | Veg | ₹699 | ₹399 / ₹599 |
+| Classic Margarita Pizza | Veg | ₹899 | ₹399 / ₹599 |
+| Pizza Paneer Tikka | Veg | ₹999 | ₹399 / ₹599 |
+| Pizza Latin Aioli & Quattro Fromage | Veg | ₹999 | ₹399 / ₹599 |
+| Pizza Grilled Chicken Divola | Non-Veg | ₹1099 | ₹499 / ₹699 |
+| Pizza Pollo Indiana | Non-Veg | ₹899 | ₹499 / ₹699 |
+
+**Other Price Updates**:
+- Dal Double Tadka: ₹449 → ₹399
+
+**Technical Implementation**:
+
+| Change | Details |
+|--------|---------|
+| Data Structure | Added `sizes` array to pizza items with `name` and `price` fields |
+| MenuItem Interface | Made `price` optional, added `sizes?: { name: string; price: number }[]` |
+| MenuCategory Interface | Added optional `note` field for category-level messages |
+| Price Rendering | New conditional rendering for items with size variants |
+| Description Styling | Dynamic text splitting and styling for cheese burst message |
+
+**Files Modified**:
+- `src/data/menus/food.json` - Pizza items with sizes, updated descriptions
+- `src/app/menu/[category]/page.tsx` - Frontend support for size variants and styled text
+
+**Commits**:
+- `f9b3384` - feat(menu): Add pizza size variants and update pricing
+
+**Build Status**: ✅ Successful
+**Deployment**: Pushed to origin/main
+
+---
+
 ## [1.4.1] - 2025-12-28
 
 ### Bar Menu Update
