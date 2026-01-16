@@ -448,7 +448,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                     {/* Description */}
                     <div className="relative pl-4 sm:pl-6 md:pl-8 border-l-2 border-[#8B1538]/20">
                       <p className="text-sm sm:text-base text-gray-600 leading-relaxed italic">
-                        {item.description.includes('Make your pizza cheese burst') ? (
+                        {item.description?.includes('Make your pizza cheese burst') ? (
                           <>
                             {item.description.split('. Make your pizza cheese burst')[0]}.{' '}
                             <span className="text-[#8B1538] underline decoration-[#8B1538] not-italic font-medium">
@@ -456,7 +456,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                             </span>
                           </>
                         ) : (
-                          item.description
+                          item.description || ''
                         )}
                       </p>
                       {item.spiceLevel && item.spiceLevel > 0 && (
