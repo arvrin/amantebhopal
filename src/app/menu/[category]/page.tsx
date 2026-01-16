@@ -41,9 +41,10 @@ interface MenuItem {
   id: string;
   name: string;
   description: string;
-  price: number;
+  price?: number;
   price60ml?: number;
   bottlePrice?: number;
+  sizes?: { name: string; price: number }[];
   category: string;
   dietary?: string[];
   spiceLevel?: number;
@@ -58,6 +59,7 @@ interface MenuCategory {
   id: string;
   name: string;
   description: string;
+  note?: string;
   displayOrder?: number;
   items: MenuItem[];
 }
@@ -144,7 +146,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
   // Flatten all items and filter
   const allItems = useMemo(() => {
     return menu.categories.flatMap(cat =>
-      cat.items.map(item => ({ ...item, categoryName: cat.name }))
+      cat.items.map(item => ({ ...item, categoryName: cat.name, categoryNote: cat.note }))
     );
   }, [menu]);
 
@@ -385,14 +387,30 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                         </div>
                       </div>
                       <div className="text-right ml-4 flex-shrink-0 flex flex-col gap-2">
-                        {/* Grid layout for 3 prices (30ml, 60ml, Bottle) */}
-                        {item.price60ml && item.bottlePrice ? (
+                        {/* Size variants (e.g., Pizza sizes) */}
+                        {item.sizes && item.sizes.length > 0 ? (
+                          <div className="flex gap-1.5">
+                            {item.sizes.map((size, idx) => (
+                              <div
+                                key={size.name}
+                                className={`inline-flex flex-col items-center px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[70px] sm:min-w-[80px] md:min-w-[90px] ${
+                                  idx === 0
+                                    ? 'bg-gradient-to-br from-[#8B1538] to-[#6B0F28]'
+                                    : 'bg-gradient-to-br from-[#A91D4D] to-[#8B1538]'
+                                }`}
+                              >
+                                <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">{size.name}</span>
+                                <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{size.price.toLocaleString('en-IN')}</span>
+                              </div>
+                            ))}
+                          </div>
+                        ) : item.price60ml && item.bottlePrice ? (
                           <>
                             {/* Peg sizes row */}
                             <div className="flex gap-1.5">
                               <div className="inline-flex flex-col items-center bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[70px] sm:min-w-[80px] md:min-w-[90px]">
                                 <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">30ml</span>
-                                <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.price.toLocaleString('en-IN')}</span>
+                                <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.price!.toLocaleString('en-IN')}</span>
                               </div>
                               <div className="inline-flex flex-col items-center bg-gradient-to-br from-[#A91D4D] to-[#8B1538] px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[70px] sm:min-w-[80px] md:min-w-[90px]">
                                 <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">60ml</span>
@@ -405,7 +423,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                               <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
                             </div>
                           </>
-                        ) : (
+                        ) : item.price !== undefined ? (
                           <>
                             {/* Original layout for items without 60ml */}
                             <div className="inline-flex flex-col items-end bg-gradient-to-br from-[#8B1538] to-[#6B0F28] px-3 sm:px-4 md:px-5 py-2 sm:py-2.5 md:py-3 rounded-xl shadow-lg shadow-[#8B1538]/20 min-w-[90px] sm:min-w-[110px] md:min-w-[120px]">
@@ -423,14 +441,23 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                               </div>
                             )}
                           </>
-                        )}
+                        ) : null}
                       </div>
                     </div>
 
                     {/* Description */}
                     <div className="relative pl-4 sm:pl-6 md:pl-8 border-l-2 border-[#8B1538]/20">
                       <p className="text-sm sm:text-base text-gray-600 leading-relaxed italic">
-                        {item.description}
+                        {item.description.includes('Make your pizza cheese burst') ? (
+                          <>
+                            {item.description.split('. Make your pizza cheese burst')[0]}.{' '}
+                            <span className="text-[#8B1538] underline decoration-[#8B1538] not-italic font-medium">
+                              Make your pizza cheese burst for just Rs.149/-
+                            </span>
+                          </>
+                        ) : (
+                          item.description
+                        )}
                       </p>
                       {item.spiceLevel && item.spiceLevel > 0 && (
                         <div className="flex items-center gap-1 mt-2">

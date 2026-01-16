@@ -847,33 +847,42 @@
         {
           "id": "food-pizza-001",
           "name": "Classic Burrata Pizza",
-          "description": "Burrata, Napolitana sauce, rocket leaves, olive dust, drizzle with basil oil",
-          "price": 699,
+          "description": "Burrata, Napolitana sauce, rocket leaves, olive dust, drizzle with basil oil. Make your pizza cheese burst for just Rs.149/-",
           "category": "pizza",
           "dietary": [
             "veg"
+          ],
+          "sizes": [
+            { "name": "6 inch", "price": 399 },
+            { "name": "12 inch", "price": 599 }
           ],
           "isAvailable": true
         },
         {
           "id": "food-pizza-002",
           "name": "Classic Margarita Pizza",
-          "description": "Thin base, basil leaves, pesto oil, and drizzle",
-          "price": 899,
+          "description": "Thin base, basil leaves, pesto oil, and drizzle. Make your pizza cheese burst for just Rs.149/-",
           "category": "pizza",
           "dietary": [
             "veg"
+          ],
+          "sizes": [
+            { "name": "6 inch", "price": 399 },
+            { "name": "12 inch", "price": 599 }
           ],
           "isAvailable": true
         },
         {
           "id": "food-pizza-003",
           "name": "Pizza Paneer Tikka",
-          "description": "Grilled vegetable, paneer tikka, tomato sauce, mozzarella",
-          "price": 999,
+          "description": "Grilled vegetable, paneer tikka, tomato sauce, mozzarella. Make your pizza cheese burst for just Rs.149/-",
           "category": "pizza",
           "dietary": [
             "veg"
+          ],
+          "sizes": [
+            { "name": "6 inch", "price": 399 },
+            { "name": "12 inch", "price": 599 }
           ],
           "isRecommended": true,
           "isAvailable": true
@@ -881,33 +890,42 @@
         {
           "id": "food-pizza-006",
           "name": "Pizza Latin Aioli & Quattro Fromage",
-          "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella",
-          "price": 999,
+          "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella. Make your pizza cheese burst for just Rs.149/-",
           "category": "pizza",
           "dietary": [
             "veg"
+          ],
+          "sizes": [
+            { "name": "6 inch", "price": 399 },
+            { "name": "12 inch", "price": 599 }
           ],
           "isAvailable": true
         },
         {
           "id": "food-pizza-004",
           "name": "Pizza Grilled Chicken Divola",
-          "description": "Grilled chicken, Kalamata olives, ricotta, tomato sauce, basil, mozzarella",
-          "price": 1099,
+          "description": "Grilled chicken, Kalamata olives, ricotta, tomato sauce, basil, mozzarella. Make your pizza cheese burst for just Rs.149/-",
           "category": "pizza",
           "dietary": [
             "non-veg"
+          ],
+          "sizes": [
+            { "name": "6 inch", "price": 499 },
+            { "name": "12 inch", "price": 699 }
           ],
           "isAvailable": true
         },
         {
           "id": "food-pizza-008",
           "name": "Pizza Pollo Indiana",
-          "description": "Indian Spiced Chicken, cheese, tomato, bell peppers, onion",
-          "price": 899,
+          "description": "Indian Spiced Chicken, cheese, tomato, bell peppers, onion. Make your pizza cheese burst for just Rs.149/-",
           "category": "pizza",
           "dietary": [
             "non-veg"
+          ],
+          "sizes": [
+            { "name": "6 inch", "price": 499 },
+            { "name": "12 inch", "price": 699 }
           ],
           "isAvailable": true
         }
@@ -966,7 +984,7 @@
           "id": "food-indian-004",
           "name": "Dal Double Tadka",
           "description": "Lentil cooked in tomato, Indian spice",
-          "price": 449,
+          "price": 399,
           "category": "indian-mains",
           "dietary": [
             "veg"
