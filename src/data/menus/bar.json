@@ -1691,7 +1691,24 @@
           "isAvailable": true
         }
       ]
+    },
+    {
+      "id": "heritage-mahua-liquor",
+      "name": "Heritage Mahua Liquor",
+      "description": "Traditional Indian spirit distilled from Mahua flowers",
+      "displayOrder": 20,
+      "items": [
+        {
+          "id": "bar-mahua-001",
+          "name": "MOND",
+          "description": "Premium Mahua liquor - a traditional Indian spirit",
+          "price": 59,
+          "price60ml": 119,
+          "category": "heritage-mahua-liquor",
+          "isAvailable": true
+        }
+      ]
     }
   ],
-  "lastUpdated": "2025-11-24T20:51:35.157Z"
+  "lastUpdated": "2026-01-16T12:00:00.000Z"
 }
