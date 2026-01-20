@@ -404,7 +404,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                               </div>
                             ))}
                           </div>
-                        ) : item.price60ml && item.bottlePrice ? (
+                        ) : item.price60ml ? (
                           <>
                             {/* Peg sizes row */}
                             <div className="flex gap-1.5">
@@ -417,11 +417,13 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                                 <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.price60ml.toLocaleString('en-IN')}</span>
                               </div>
                             </div>
-                            {/* Bottle row */}
-                            <div className="inline-flex flex-col items-center bg-gradient-to-br from-[#6B0F28] to-[#4A0A1C] px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20">
-                              <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">Bottle</span>
-                              <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
-                            </div>
+                            {/* Bottle row - only show if bottlePrice exists */}
+                            {item.bottlePrice && (
+                              <div className="inline-flex flex-col items-center bg-gradient-to-br from-[#6B0F28] to-[#4A0A1C] px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 rounded-xl shadow-lg shadow-[#8B1538]/20">
+                                <span className="text-[9px] sm:text-[10px] text-white/80 uppercase tracking-wider font-medium">Bottle</span>
+                                <span className="text-base sm:text-lg md:text-xl font-bold text-white">₹{item.bottlePrice.toLocaleString('en-IN')}</span>
+                              </div>
+                            )}
                           </>
                         ) : item.price !== undefined ? (
                           <>
