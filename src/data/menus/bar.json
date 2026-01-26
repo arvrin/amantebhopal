@@ -629,11 +629,11 @@
         {
           "id": "bar-whisky-015",
           "name": "BALLANTINE'S 12YRS",
-          "price": 299,
+          "price": 399,
           "category": "whisky",
           "isAvailable": true,
-          "bottlePrice": 6000,
-          "price60ml": 549
+          "bottlePrice": 7499,
+          "price60ml": 699
         },
         {
           "id": "bar-whisky-016",
@@ -868,6 +868,15 @@
           "isAvailable": true,
           "bottlePrice": 9999,
           "price60ml": 799
+        },
+        {
+          "id": "bar-malt-019",
+          "name": "GLENFIDDICH 16YRS",
+          "price": 699,
+          "category": "single-malt",
+          "isAvailable": true,
+          "bottlePrice": 14999,
+          "price60ml": 1299
         }
       ]
     },

@@ -49,7 +49,8 @@ const featuredEvent = {
     { name: 'Group of 4', price: '₹15,000' }
   ],
   image: '/images/events/nye-2026.jpg',
-  whatsappNumber: '919770650078'
+  whatsappNumber: '919770650078',
+  whatsappNumber2: '919981123101'
 };
 
 // Regular recurring events
@@ -98,6 +99,7 @@ const regularEvents = [
 
 export default function EventsPage() {
   const whatsappLink = `https://wa.me/${featuredEvent.whatsappNumber}?text=${encodeURIComponent("Hi! I'd like to book for the New Year's Eve 2026 celebration at Amante.")}`;
+  const whatsappLink2 = `https://wa.me/${featuredEvent.whatsappNumber2}?text=${encodeURIComponent("Hi! I'd like to book for the New Year's Eve 2026 celebration at Amante.")}`;
 
   return (
     <div className="bg-white">
@@ -222,21 +224,32 @@ export default function EventsPage() {
                 ))}
               </div>
 
-              {/* CTA Button */}
+              {/* CTA Buttons */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.2 }}
               >
-                <a
-                  href={whatsappLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-105"
-                >
-                  <MessageCircle className="w-6 h-6" />
-                  <span className="text-lg">Book on WhatsApp</span>
-                </a>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <a
+                    href={whatsappLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-105"
+                  >
+                    <MessageCircle className="w-6 h-6" />
+                    <span className="text-lg">WhatsApp 1</span>
+                  </a>
+                  <a
+                    href={whatsappLink2}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-green-500/30 transition-all duration-300 hover:scale-105"
+                  >
+                    <MessageCircle className="w-6 h-6" />
+                    <span className="text-lg">WhatsApp 2</span>
+                  </a>
+                </div>
                 <p className="text-gray-400 text-sm mt-3">
                   Limited seats available. Book your celebration now!
                 </p>
