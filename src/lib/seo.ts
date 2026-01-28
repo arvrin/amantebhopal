@@ -12,6 +12,7 @@ export const BUSINESS_INFO = {
   description: "Bhopal's premier multi-venue dining destination featuring 5 unique spaces under one roof",
   tagline: 'Five Unique Spaces. One Unforgettable Destination.',
   phone: '+919893779100',
+  phone2: '+919981123101',
   email: 'hello@amante.in',
   address: {
     street: '[Address Line]', // TODO: Add actual address

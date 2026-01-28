@@ -331,6 +331,15 @@ export default function HeaderGlobal({ onReservationClick }: HeaderGlobalProps =
                   </div>
                   <span className="text-sm font-medium tracking-wide">+91 98937 79100</span>
                 </a>
+                <a
+                  href="tel:+919981123101"
+                  className="flex items-center gap-3 text-white/70 hover:text-amante-pink transition-all duration-300 group"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-gradient-to-br group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 group-hover:border-[#8B1538]/30 transition-all duration-300">
+                    <Phone className="w-4 h-4" />
+                  </div>
+                  <span className="text-sm font-medium tracking-wide">+91 99811 23101</span>
+                </a>
 
                 {/* Email */}
                 <a

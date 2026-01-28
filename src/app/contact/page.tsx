@@ -103,7 +103,7 @@ export default function ContactPage() {
       icon: Phone,
       title: 'Call Us',
       content: '+91 98937 79100',
-      subtext: 'Available daily',
+      subtext: '+91 99811 23101',
       link: 'tel:+919893779100',
     },
     {

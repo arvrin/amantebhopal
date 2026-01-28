@@ -127,6 +127,15 @@ export default function Footer() {
               </li>
               <li>
                 <a
+                  href="tel:+919981123101"
+                  className="flex items-start gap-3 text-white/70 hover:text-amante-pink transition-colors duration-300 text-sm group"
+                >
+                  <Phone className="w-4 h-4 mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <span>+91 99811 23101</span>
+                </a>
+              </li>
+              <li>
+                <a
                   href="mailto:contact.cafeamante@gmail.com"
                   className="flex items-start gap-3 text-white/70 hover:text-amante-pink transition-colors duration-300 text-sm group"
                 >
