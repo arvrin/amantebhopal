@@ -159,7 +159,8 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
       items = items.filter(
         item =>
           item.name?.toLowerCase().includes(query) ||
-          item.description?.toLowerCase().includes(query)
+          item.description?.toLowerCase().includes(query) ||
+          item.categoryName?.toLowerCase().includes(query)
       );
     }
 
