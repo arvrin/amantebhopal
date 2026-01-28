@@ -122,17 +122,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-023",
-          "name": "Spinach Ricotta Vol-au-vent",
-          "description": "Crispy puff creamy spinach served with ricotta herb cheese",
-          "price": 499,
-          "category": "appetizers",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-app-033",
           "name": "Crispy Chilli Baby Corn",
           "description": "Crispy baby corn tossed in spicy chili sauce",
@@ -302,17 +291,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-app-027",
-          "name": "Dry Nuts Gilafi Mutton Seekh Kebab",
-          "description": "Indian spiced minced lamb with mint chutney",
-          "price": 799,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-app-028",
           "name": "Nawabi Tangdi Kebab",
           "description": "Stuffed chicken drumsticks leg, served with Dhaniya pudina ki chutney",
@@ -350,17 +328,6 @@
           "name": "Amante Special Tandoori Bater (Quail)",
           "description": "Garlic flavor tandoori quail's tikka served with garlic yogurt green chutney",
           "price": 799,
-          "category": "appetizers",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-app-040",
-          "name": "Lukhnawi Mutton Galouti Kebab",
-          "description": "Mutton mince with Indian spices, smoky flavored, served with warqi paratha",
-          "price": 999,
           "category": "appetizers",
           "dietary": [
             "non-veg"
@@ -461,18 +428,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-salad-003",
-          "name": "Lebanese Mezze Platter",
-          "description": "Garlic hummus, beetroot hummus, pickled vegetables, baba ghanous, tzatziki, lavash, pita bread, and falafel",
-          "price": 899,
-          "category": "salads",
-          "dietary": [
-            "veg"
-          ],
-          "isRecommended": true,
-          "isAvailable": true
-        },
-        {
           "id": "food-salad-004",
           "name": "Classic Caesar Salad",
           "description": "Crisp iceberg, parmesan, garlic croutons, and creamy Caesar dressing",
@@ -481,17 +436,6 @@
           "dietary": [
             "veg",
             "contains-egg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-salad-006",
-          "name": "Mélange of Nuts Mix Fruits Chat",
-          "description": "Orange segments, Caramelized cashew nut & nuts, fresh mint, iceberg lettuce",
-          "price": 799,
-          "category": "salads",
-          "dietary": [
-            "veg"
           ],
           "isAvailable": true
         },
@@ -749,17 +693,6 @@
             "non-veg"
           ],
           "spiceLevel": 3,
-          "isAvailable": true
-        },
-        {
-          "id": "food-sushi-008",
-          "name": "Sushi Fish Tempura Rolls",
-          "description": "Tempura fish, avocado, pickled cucumber, wasabi tobiko",
-          "price": 1299,
-          "category": "sushi",
-          "dietary": [
-            "non-veg"
-          ],
           "isAvailable": true
         }
       ]
@@ -1519,17 +1452,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-pasta-007",
-          "name": "Corn and Truffle Mushroom Crispy Ravioli",
-          "description": "Crispy fried ravioli creamy spinach served with anticuchera sauce",
-          "price": 599,
-          "category": "pasta",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-pasta-008",
           "name": "Wild Mushroom Risotto",
           "description": "Creamy arborio rice with mushrooms, parmesan and cream",
@@ -1632,17 +1554,6 @@
           "isAvailable": true
         },
         {
-          "id": "food-grill-003",
-          "name": "Grilled Moroccan Lamb Chop",
-          "description": "Grilled lamb chop, red wine jus, truffle mash, Huancaina, roast vegetables",
-          "price": 1499,
-          "category": "grills",
-          "dietary": [
-            "non-veg"
-          ],
-          "isAvailable": true
-        },
-        {
           "id": "food-grill-004",
           "name": "Chimichurri Red Mural Fish",
           "description": "Chimichurri, lemon butter sauce, mash potato, roast vegetables",
@@ -1663,17 +1574,6 @@
             "non-veg"
           ],
           "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "food-grill-007",
-          "name": "Lemon & Thyme Chicken Milanese",
-          "description": "Crispy breaded chicken cutlet, lemon butter sauce, lemon wedge, light mesclun and cherry tomato salad",
-          "price": 799,
-          "category": "grills",
-          "dietary": [
-            "non-veg"
-          ],
           "isAvailable": true
         },
         {
@@ -1730,21 +1630,6 @@
           "dietary": [
             "non-veg"
           ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-noodle-004",
-          "name": "Pad Thai Noodle Bowl (Prawns)",
-          "description": "Rice stick noodle, prawns, peanut, bean sprout",
-          "price": 799,
-          "category": "noodles",
-          "dietary": [
-            "non-veg"
-          ],
-          "allergens": [
-            "nuts"
-          ],
-          "isRecommended": true,
           "isAvailable": true
         },
         {
@@ -1805,37 +1690,10 @@
           "isAvailable": true
         },
         {
-          "id": "food-dessert-008",
-          "name": "Classic Pistachio Shahi Kunafa",
-          "description": "Creamy crispy golden kunafa pistachio dust with ice cream",
-          "price": 399,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "allergens": [
-            "dairy",
-            "nuts"
-          ],
-          "isChefSpecial": true,
-          "isAvailable": true
-        },
-        {
           "id": "food-dessert-011",
           "name": "Mawa Bati",
           "description": "Saffron & Pista, almond stuffed fried dip in syrup interactive desserts",
           "price": 399,
-          "category": "desserts",
-          "dietary": [
-            "veg"
-          ],
-          "isAvailable": true
-        },
-        {
-          "id": "food-dessert-016",
-          "name": "Mix Fruits Cremieux",
-          "description": "Fresh fruits, cream custard, Vanilla ice cream",
-          "price": 299,
           "category": "desserts",
           "dietary": [
             "veg"
