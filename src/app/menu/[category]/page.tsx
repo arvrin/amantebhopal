@@ -158,8 +158,8 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
       const query = searchQuery.toLowerCase();
       items = items.filter(
         item =>
-          item.name.toLowerCase().includes(query) ||
-          item.description.toLowerCase().includes(query)
+          item.name?.toLowerCase().includes(query) ||
+          item.description?.toLowerCase().includes(query)
       );
     }
 
