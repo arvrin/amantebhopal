@@ -873,7 +873,7 @@
         {
           "id": "food-indian-001",
           "name": "Faldaari Kofta Curry",
-          "description": "Cottage cheese, dry fruits, fresh fruits with creamy cashew gravy",
+          "description": "Cottage cheese, dry fruits, fresh fruits with creamy cashew gravy (Serves 3)",
           "price": 599,
           "category": "indian-mains",
           "dietary": [
@@ -888,7 +888,7 @@
         {
           "id": "food-indian-002",
           "name": "Amante Chef Interactive Kaju Makhana Curry",
-          "description": "Roasted cashew, makhana, Amante rich gravy",
+          "description": "Roasted cashew, makhana, Amante rich gravy (Serves 3)",
           "price": 699,
           "category": "indian-mains",
           "dietary": [
@@ -904,7 +904,7 @@
         {
           "id": "food-indian-003",
           "name": "Paneer Makhani",
-          "description": "Spicy cottage cheese, tomato, Indian spice",
+          "description": "Spicy cottage cheese, tomato, Indian spice (Serves 3)",
           "price": 599,
           "category": "indian-mains",
           "dietary": [
@@ -916,7 +916,7 @@
         {
           "id": "food-indian-004",
           "name": "Dal Double Tadka",
-          "description": "Lentil cooked in tomato, Indian spice",
+          "description": "Lentil cooked in tomato, Indian spice (Serves 3)",
           "price": 399,
           "category": "indian-mains",
           "dietary": [
@@ -927,7 +927,7 @@
         {
           "id": "food-indian-005",
           "name": "Amante Chef Special Dal Makhani",
-          "description": "Black lentil cooked in creamy tomato, Indian spice",
+          "description": "Black lentil cooked in creamy tomato, Indian spice (Serves 3)",
           "price": 599,
           "category": "indian-mains",
           "dietary": [
@@ -940,7 +940,7 @@
         {
           "id": "food-indian-010",
           "name": "Amante Gunchaw Subzi",
-          "description": "Minced cauliflower with vilayeti subzi, green chili coriander",
+          "description": "Minced cauliflower with vilayeti subzi, green chili coriander (Serves 3)",
           "price": 499,
           "category": "indian",
           "dietary": [
@@ -951,7 +951,7 @@
         {
           "id": "food-indian-011",
           "name": "Chefs' Special Vegetable Korma",
-          "description": "Seasonal local vegetable potato, green peas",
+          "description": "Seasonal local vegetable potato, green peas (Serves 3)",
           "price": 499,
           "category": "indian",
           "dietary": [
@@ -962,7 +962,7 @@
         {
           "id": "food-indian-012",
           "name": "Lehsuni Bhuna Palak",
-          "description": "Minced spinach with garlic tomato and chili",
+          "description": "Minced spinach with garlic tomato and chili (Serves 3)",
           "price": 499,
           "category": "indian",
           "dietary": [
@@ -973,7 +973,7 @@
         {
           "id": "food-indian-013",
           "name": "Subz Nizami Handi",
-          "description": "Mix seasonal local vegetable spinach Indian spice",
+          "description": "Mix seasonal local vegetable spinach Indian spice (Serves 3)",
           "price": 599,
           "category": "indian",
           "dietary": [
@@ -984,7 +984,7 @@
         {
           "id": "food-indian-021",
           "name": "Vilayti Subzi",
-          "description": "Minced cauliflower with exotic vegetables, green chili and coriander",
+          "description": "Minced cauliflower with exotic vegetables, green chili and coriander (Serves 3)",
           "price": 499,
           "category": "indian-mains",
           "dietary": [
@@ -995,7 +995,7 @@
         {
           "id": "food-indian-022",
           "name": "Aloo Gobhi Adrak",
-          "description": "Mixed seasonal local vegetables with spinach and Indian spices",
+          "description": "Mixed seasonal local vegetables with spinach and Indian spices (Serves 3)",
           "price": 399,
           "category": "indian-mains",
           "dietary": [
@@ -1006,7 +1006,7 @@
         {
           "id": "food-indian-023",
           "name": "Paneer Lababdar",
-          "description": "Rich cottage cheese curry in creamy tomato gravy",
+          "description": "Rich cottage cheese curry in creamy tomato gravy (Serves 3)",
           "price": 599,
           "category": "indian-mains",
           "dietary": [
@@ -1017,7 +1017,7 @@
         {
           "id": "food-indian-024",
           "name": "Shahi Paneer",
-          "description": "Cottage cheese in rich, creamy cashew and tomato gravy",
+          "description": "Cottage cheese in rich, creamy cashew and tomato gravy (Serves 3)",
           "price": 699,
           "category": "indian-mains",
           "dietary": [
@@ -1028,7 +1028,7 @@
         {
           "id": "food-indian-025",
           "name": "Paneer Butter Masala",
-          "description": "Cottage cheese in smooth butter tomato sauce",
+          "description": "Cottage cheese in smooth butter tomato sauce (Serves 3)",
           "price": 599,
           "category": "indian-mains",
           "dietary": [
@@ -1039,7 +1039,7 @@
         {
           "id": "food-indian-026",
           "name": "Paneer Tikka Masala",
-          "description": "Grilled cottage cheese in spiced tomato curry",
+          "description": "Grilled cottage cheese in spiced tomato curry (Serves 3)",
           "price": 649,
           "category": "indian-mains",
           "dietary": [
@@ -1050,7 +1050,7 @@
         {
           "id": "food-indian-027",
           "name": "Lehsuni Palak Paneer",
-          "description": "Cottage cheese in garlic-flavored spinach gravy",
+          "description": "Cottage cheese in garlic-flavored spinach gravy (Serves 3)",
           "price": 599,
           "category": "indian-mains",
           "dietary": [
@@ -1061,7 +1061,7 @@
         {
           "id": "food-indian-033",
           "name": "Khumbi Hara Pyaz",
-          "description": "Fresh mushrooms and spring onions cooked in rich Indian chopped gravy with aromatic spices",
+          "description": "Fresh mushrooms and spring onions cooked in rich Indian chopped gravy with aromatic spices (Serves 3)",
           "price": 499,
           "category": "indian-mains",
           "dietary": [
