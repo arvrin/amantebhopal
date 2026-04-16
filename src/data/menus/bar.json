@@ -1474,6 +1474,14 @@
           "price": 649,
           "category": "beers",
           "isAvailable": true
+        },
+        {
+          "id": "bar-beer-010",
+          "name": "KINGFISHER ULTRA MAX",
+          "description": "Premium strong beer",
+          "price": 629,
+          "category": "beers",
+          "isAvailable": true
         }
       ]
     },

@@ -333,6 +333,28 @@
             "non-veg"
           ],
           "isAvailable": true
+        },
+        {
+          "id": "food-app-033",
+          "name": "Tandoori Veg Platter",
+          "description": "A sizzling assortment of tandoor-grilled vegetarian delights including paneer tikka, marinated vegetables, and flavorful kebabs, cooked in a traditional clay oven for a smoky aroma and rich taste—perfect for sharing.",
+          "price": 899,
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-app-034",
+          "name": "Non-Veg Tandoori Platter",
+          "description": "A flavorful assortment of tandoor-grilled specialties including juicy chicken tikka, and other marinated meats, cooked in a traditional clay oven for a smoky aroma and rich, authentic taste—perfect for sharing.",
+          "price": 1399,
+          "category": "appetizers",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
         }
       ]
     },
@@ -639,6 +661,17 @@
             "non-veg"
           ],
           "isAvailable": true
+        },
+        {
+          "id": "food-soup-017",
+          "name": "Cream of Broccoli Soup",
+          "description": "A smooth and creamy soup made with fresh broccoli, blended with herbs, butter, and a touch of cream for a rich, comforting flavor.",
+          "price": 499,
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
         }
       ]
     },
@@ -786,8 +819,14 @@
             "veg"
           ],
           "sizes": [
-            { "name": "6 inch", "price": 399 },
-            { "name": "12 inch", "price": 599 }
+            {
+              "name": "6 inch",
+              "price": 399
+            },
+            {
+              "name": "12 inch",
+              "price": 599
+            }
           ],
           "isAvailable": true
         },
@@ -800,8 +839,14 @@
             "veg"
           ],
           "sizes": [
-            { "name": "6 inch", "price": 399 },
-            { "name": "12 inch", "price": 599 }
+            {
+              "name": "6 inch",
+              "price": 399
+            },
+            {
+              "name": "12 inch",
+              "price": 599
+            }
           ],
           "isAvailable": true
         },
@@ -814,8 +859,14 @@
             "veg"
           ],
           "sizes": [
-            { "name": "6 inch", "price": 399 },
-            { "name": "12 inch", "price": 599 }
+            {
+              "name": "6 inch",
+              "price": 399
+            },
+            {
+              "name": "12 inch",
+              "price": 599
+            }
           ],
           "isRecommended": true,
           "isAvailable": true
@@ -829,8 +880,14 @@
             "veg"
           ],
           "sizes": [
-            { "name": "6 inch", "price": 399 },
-            { "name": "12 inch", "price": 599 }
+            {
+              "name": "6 inch",
+              "price": 399
+            },
+            {
+              "name": "12 inch",
+              "price": 599
+            }
           ],
           "isAvailable": true
         },
@@ -843,8 +900,14 @@
             "non-veg"
           ],
           "sizes": [
-            { "name": "6 inch", "price": 499 },
-            { "name": "12 inch", "price": 699 }
+            {
+              "name": "6 inch",
+              "price": 499
+            },
+            {
+              "name": "12 inch",
+              "price": 699
+            }
           ],
           "isAvailable": true
         },
@@ -857,8 +920,14 @@
             "non-veg"
           ],
           "sizes": [
-            { "name": "6 inch", "price": 499 },
-            { "name": "12 inch", "price": 699 }
+            {
+              "name": "6 inch",
+              "price": 499
+            },
+            {
+              "name": "12 inch",
+              "price": 699
+            }
           ],
           "isAvailable": true
         }
@@ -1018,7 +1087,7 @@
           "id": "food-indian-024",
           "name": "Shahi Paneer",
           "description": "Cottage cheese in rich, creamy cashew and tomato gravy (Serves 3)",
-          "price": 699,
+          "price": 549,
           "category": "indian-mains",
           "dietary": [
             "veg"
@@ -1182,6 +1251,116 @@
           "name": "Grilled Chicken with Baby Potato",
           "description": "Tender grilled chicken served with roasted baby potatoes",
           "price": 799,
+          "category": "indian-mains",
+          "dietary": [
+            "non-veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-033",
+          "name": "Banarsi Dum Aloo",
+          "description": "Baby potatoes slow-cooked in a rich, spiced gravy with aromatic Indian flavors.",
+          "price": 449,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-034",
+          "name": "Kashmiri Dum Aloo",
+          "description": "A royal Kashmiri-style potato curry cooked in yogurt-based gravy with mild spices.",
+          "price": 449,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-035",
+          "name": "Bhindi Masala",
+          "description": "Stir-fried okra cooked with onions, tomatoes, and traditional spices.",
+          "price": 399,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-036",
+          "name": "Sev Tamatar",
+          "description": "Tangy tomato curry topped with crispy sev, a popular Gujarati-style dish.",
+          "price": 399,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-037",
+          "name": "Jeera Aloo",
+          "description": "Simple and flavorful potatoes sautéed with cumin seeds and spices.",
+          "price": 299,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-038",
+          "name": "Soya Chaap Masala",
+          "description": "Protein-rich soya chaap cooked in a thick, spicy masala gravy.",
+          "price": 449,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-039",
+          "name": "Chana Masala",
+          "description": "Chickpeas cooked in a spicy and tangy onion-tomato gravy.",
+          "price": 429,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-040",
+          "name": "Methi Malai Matar",
+          "description": "Creamy curry made with fenugreek leaves, green peas, and mild spices.",
+          "price": 449,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-041",
+          "name": "Navratan Korma",
+          "description": "Mixed vegetables and dry fruits cooked in a rich, creamy korma gravy.",
+          "price": 699,
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "isAvailable": true
+        },
+        {
+          "id": "food-indian-042",
+          "name": "Egg Curry",
+          "description": "Boiled eggs cooked in a rich, spiced onion-tomato gravy, infused with traditional Indian herbs and flavors for a comforting and flavorful dish.",
+          "price": 499,
           "category": "indian-mains",
           "dietary": [
             "non-veg"
