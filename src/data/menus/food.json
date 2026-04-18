@@ -338,7 +338,7 @@
           "id": "food-app-033",
           "name": "Tandoori Veg Platter",
           "description": "A sizzling assortment of tandoor-grilled vegetarian delights including paneer tikka, marinated vegetables, and flavorful kebabs, cooked in a traditional clay oven for a smoky aroma and rich taste—perfect for sharing.",
-          "price": 899,
+          "price": 999,
           "category": "appetizers",
           "dietary": [
             "veg"
@@ -349,7 +349,7 @@
           "id": "food-app-034",
           "name": "Non-Veg Tandoori Platter",
           "description": "A flavorful assortment of tandoor-grilled specialties including juicy chicken tikka, and other marinated meats, cooked in a traditional clay oven for a smoky aroma and rich, authentic taste—perfect for sharing.",
-          "price": 1399,
+          "price": 1599,
           "category": "appetizers",
           "dietary": [
             "non-veg"
