@@ -114,7 +114,7 @@ export default function HomePage() {
               style={{ gap: 'clamp(0.75rem, 1vw + 0.5rem, 1.25rem)' }}
             >
               {[
-                { icon: Instagram, href: 'https://www.instagram.com/cafe_amante_india/' },
+                { icon: Instagram, href: 'https://www.instagram.com/amante_bhopal' },
                 { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61566920782703' },
                 { icon: Youtube, href: 'https://youtube.com/@amantecafe?si=7LP7pNC2dhorzCX_' },
               ].map(({ icon: Icon, href }, idx) => (

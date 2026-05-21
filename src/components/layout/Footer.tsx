@@ -52,7 +52,7 @@ export default function Footer() {
             {/* Social Media */}
             <div className="flex gap-3">
               <a
-                href="https://www.instagram.com/cafe_amante_india/"
+                href="https://www.instagram.com/amante_bhopal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-gradient-to-br hover:from-amante-red hover:to-amante-pink transition-all duration-300 border border-white/10 hover:border-amante-pink/50 group"

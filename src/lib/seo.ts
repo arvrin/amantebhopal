@@ -31,7 +31,7 @@ export const BUSINESS_INFO = {
     club: 'Thu-Sat: 9:00 PM - 2:00 AM',
   },
   social: {
-    instagram: '@amantebhopal',
+    instagram: '@amante_bhopal',
     facebook: '/amantebhopal',
     twitter: '@amantebhopal',
   },

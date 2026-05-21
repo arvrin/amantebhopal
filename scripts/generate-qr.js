@@ -50,6 +50,19 @@ const urls = [
     name: 'menu-cafe-production',
     size: 800,
     description: 'Direct to Café Menu (Production)'
+  },
+  // --- Satvik / Jain menu (separate QR) ---
+  {
+    url: `${PRODUCTION_URL}/amantesatvik`,
+    name: 'menu-satvik-production',
+    size: 1000,
+    description: 'Satvik Menu Landing — Food + Café + Bar (Production)'
+  },
+  {
+    url: `${PRODUCTION_URL}/amantesatvik/satvik`,
+    name: 'menu-satvik-food-production',
+    size: 800,
+    description: 'Direct to Satvik Food Menu (Production)'
   }
 ];
 

@@ -1,0 +1,1959 @@
+{
+  "venue": "amantesatvik",
+  "name": "Satvik Menu",
+  "description": "Pure vegetarian • Jain & Satvik delicacies",
+  "tagline": "Shuddh, soulful & satvik",
+  "categories": [
+    {
+      "id": "soups",
+      "name": "Soups, Broth & Ramen",
+      "description": "Comforting broths, soups & ramen",
+      "displayOrder": 1,
+      "items": [
+        {
+          "id": "satvik-soups-001",
+          "name": "Cream of Tomato Soup",
+          "description": "Oven roasted tomato basil creamy soup",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-soups-002",
+          "name": "Tomato Dhaniya Ka Shorba",
+          "description": "Vegetable stock tomato coriander Indian spice broth",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-soups-003",
+          "name": "Hong Kong Hot and Sour Soup",
+          "description": "Vegetable stock bamboo shoot coriander scallion and Asian bread",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-soups-004",
+          "name": "Wild Mushroom Quinoa Soup",
+          "description": "Mushroom, quinoa and broth",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-soups-005",
+          "name": "Thai Signature Tom Yum Soup (Veg)",
+          "description": "Thai herb, basil, spice signature broth",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "spiceLevel": 3,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-soups-006",
+          "name": "Cream of Broccoli Soup",
+          "description": "A smooth and creamy soup made with fresh broccoli, blended with herbs, butter, and a touch of cream for a rich, comforting flavor.",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-soups-007",
+          "name": "Vegetable Ramen",
+          "description": "Ponzu broth, tofu, bamboo shoots, bok choy, mushroom",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-soups-008",
+          "name": "Hungarian Mushroom Soup",
+          "description": "Hungarian style cream of Mushroom soup",
+          "category": "soups",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "salads",
+      "name": "Salads",
+      "description": "Fresh, wholesome garden salads",
+      "displayOrder": 2,
+      "items": [
+        {
+          "id": "satvik-salads-001",
+          "name": "Indian Garden Green Salad",
+          "description": "Seasonal local vegetable salad",
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-salads-002",
+          "name": "Bamboo Shoots Avocado Salad",
+          "description": "Baby spinach, chimichurri, smoked avocado, miso yuzu, lemon zest dressing, cherry tomato, fresh blueberry",
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-salads-003",
+          "name": "Chef Interactive Greek Salad",
+          "description": "Fresh garden green capsicum, feta, onion, cucumber, Cherry tomato",
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-salads-004",
+          "name": "Nachos King Founded Platter",
+          "description": "Avocado salsa, tomato salsa crispy nachos, sour cream, Dijon mustard mayo",
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-salads-005",
+          "name": "Healthy Garden Green Sprout Salad",
+          "description": "Mix sprout flax seed and pumpkin seed, version olive oil with caramelized walnuts",
+          "category": "salads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "appetizers",
+      "name": "Appetizers & Starters",
+      "description": "Start your culinary journey",
+      "displayOrder": 3,
+      "items": [
+        {
+          "id": "satvik-appetizers-001",
+          "name": "Peri Peri Truffle Fries",
+          "description": "Peri peri spiced truffle fries",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-002",
+          "name": "Tandoori Grilled Pineapple",
+          "description": "Sweet and tangy pineapple chunks marinated with aromatic spices and grilled in tandoor",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 429,
+          "spiceLevel": 1,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-003",
+          "name": "Silken Tofu Tempura Tacos Bao",
+          "description": "Sriracha spicy mayo, roasted chili sauce, teriyaki sauce",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-004",
+          "name": "Hunan Chilli Crispy Corn Kernels",
+          "description": "Stir fry crispy corn, celery and burnt chili, togarashi",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "spiceLevel": 4,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-005",
+          "name": "Crispy Togarashi Fried Corn Kernels",
+          "description": "Japanese shichimi spice crispy corn chili oil",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-006",
+          "name": "Crispy Chilli Baby Corn",
+          "description": "Crispy baby corn tossed in spicy chili sauce",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-007",
+          "name": "Bhutte De Kebab",
+          "description": "Crispy fried corn patties served with dip",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-008",
+          "name": "Tandoori Khumbi (Mushroom)",
+          "description": "Marinated stuffed fresh mushroom with Indian spices, grilled to perfection in tandoor",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "spiceLevel": 2,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-009",
+          "name": "Yasai Yakitori",
+          "description": "Zucchini, broccoli, bell pepper, tofu, spring onion, yakitori sauce - Japanese vegetable skewers",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 549,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-010",
+          "name": "Crispy Lotus Stem Plum Chili Sauce",
+          "description": "Crispy fried imported lotus stem tossed in plum chili sauce",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 549,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-011",
+          "name": "Vegetable Togarashi Tempura",
+          "description": "Broccoli, bamboo shoots, carrot, zucchini, onion, bell pepper, togarashi spice sauce",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 549,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-012",
+          "name": "Truffle Mushroom Bruschetta",
+          "description": "Tossed mushroom, brown bread, parmesan, truffle oil",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-013",
+          "name": "Thai Glass Noodle Vegetable Spring Roll",
+          "description": "Crunchy sheets, Asian greens, glass noodle, sweet chili sauce",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-014",
+          "name": "Paneer Peshawari Tikka",
+          "description": "Marinated stuffed cottage cheese with Indian spices",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-015",
+          "name": "Hunan Chilli Cottage Cheese",
+          "description": "Sliced cottage cheese, celery and burnt chili",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-016",
+          "name": "Soya Chaap Achari",
+          "description": "Yogurt, creamy, garlic, Indian spice with tangy pickle flavor",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-017",
+          "name": "Soya Chaap Malai",
+          "description": "Creamy yogurt and garlic marinated soya chaap with hari chutney",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-018",
+          "name": "Hunan Chilli Tofu",
+          "description": "Sliced Silken Tofu, cottage cheese celery and burnt chili",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-019",
+          "name": "Veg Galouti Kebab",
+          "description": "Melt-in-mouth vegetarian kebab with aromatic spices, served with warqi paratha",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-appetizers-020",
+          "name": "Tandoori Veg Platter",
+          "description": "A sizzling assortment of tandoor-grilled vegetarian delights including paneer tikka, marinated vegetables, and flavorful kebabs, cooked in a traditional clay oven for a smoky aroma and rich taste—perfect for sharing.",
+          "category": "appetizers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 899,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "dimsum",
+      "name": "Dim Sums, Bao & Gyoza",
+      "description": "Hand-crafted dumplings, bao & gyoza",
+      "displayOrder": 4,
+      "items": [
+        {
+          "id": "satvik-dimsum-001",
+          "name": "Vegetable Edamame Asparagus Gyoza",
+          "description": "Pok choy, Asian vegetables, edamame, asparagus, fried dumpling, coral tuile",
+          "category": "dimsum",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-dimsum-002",
+          "name": "Wild Mushroom Asparagus Crystal Dumpling",
+          "description": "Black fungus shitake, Asian vegetables, asparagus, tomato garlic sauce",
+          "category": "dimsum",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-dimsum-003",
+          "name": "Mushroom Cream Cheese Dimsum",
+          "description": "Delicate dumplings filled with mushroom and cream cheese",
+          "category": "dimsum",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "sushi",
+      "name": "Sushi",
+      "description": "Vegetarian sushi rolls",
+      "displayOrder": 5,
+      "items": [
+        {
+          "id": "satvik-sushi-001",
+          "name": "Amante Midori Roll",
+          "description": "Avocado, asparagus, tender spinach, dry miso and Japanese mayo",
+          "category": "sushi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 899,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-sushi-002",
+          "name": "Crisp Amante Uramaki",
+          "description": "Avocado & asparagus tempura, teriyaki sauce, cream cheese",
+          "category": "sushi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 1199,
+          "isRecommended": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "description": "Artisan wood-fired pizzas",
+      "displayOrder": 6,
+      "items": [
+        {
+          "id": "satvik-pizza-001",
+          "name": "Classic Burrata Pizza",
+          "description": "Burrata, Napolitana sauce, rocket leaves, olive dust, drizzle with basil oil. Make your pizza cheese burst for just Rs.149/-",
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pizza-002",
+          "name": "Classic Margarita Pizza",
+          "description": "Thin base, basil leaves, pesto oil, and drizzle. Make your pizza cheese burst for just Rs.149/-",
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pizza-003",
+          "name": "Pizza Paneer Tikka",
+          "description": "Grilled vegetable, paneer tikka, tomato sauce, mozzarella. Make your pizza cheese burst for just Rs.149/-",
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pizza-004",
+          "name": "Pizza Latin Aioli & Quattro Fromage",
+          "description": "Grilled seasonal vegetable olives, ricotta, tomato sauce, basil, mozzarella. Make your pizza cheese burst for just Rs.149/-",
+          "category": "pizza",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "pasta",
+      "name": "Pasta, Ravioli & Risotto",
+      "description": "Pasta, ravioli & creamy risotto",
+      "displayOrder": 7,
+      "items": [
+        {
+          "id": "satvik-pasta-001",
+          "name": "Penne Arrabbiata",
+          "description": "Penne pasta tossed in spicy tomato sauce with garlic, red chili flakes and fresh basil",
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "price": 649,
+          "spiceLevel": 3,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pasta-002",
+          "name": "Fusilli Alfredo",
+          "description": "Spiral fusilli pasta in rich creamy Alfredo sauce with parmesan cheese and herbs",
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pasta-003",
+          "name": "Fettuccini Primavera with Basil Pesto Pasta",
+          "description": "Homemade fettuccini pasta, asparagus, cherry tomato, zucchini",
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "price": 799,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pasta-004",
+          "name": "Wild Mushroom Risotto with Porcini Cream",
+          "description": "Mushroom, parmesan, porcini dust",
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "price": 799,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pasta-005",
+          "name": "Wild Mushroom Risotto",
+          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "price": 799,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-pasta-006",
+          "name": "Amante Classic Vegetable Lasagna",
+          "description": "Homemade lasagna pasta, asparagus, broccoli, zucchini cheese sauce",
+          "category": "pasta",
+          "dietary": [
+            "veg"
+          ],
+          "price": 899,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "noodles",
+      "name": "Noodle Bowls",
+      "description": "Asian-style noodle bowls",
+      "displayOrder": 8,
+      "items": [
+        {
+          "id": "satvik-noodles-001",
+          "name": "Hakka Noodle Bowl (Veg)",
+          "description": "Asian vegetable, wild mushroom",
+          "category": "noodles",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-noodles-002",
+          "name": "Pad Thai Noodle Bowl (Veg)",
+          "description": "Rice stick noodle, vegetable, peanut, bean sprout",
+          "category": "noodles",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isRecommended": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "burgers",
+      "name": "Burgers & Sandwiches",
+      "description": "Burgers & loaded sandwiches",
+      "displayOrder": 9,
+      "items": [
+        {
+          "id": "satvik-burgers-001",
+          "name": "Amante Special Vegetable Burger",
+          "description": "Minced grilled vegetable patties, iceberg lettuce and tomato",
+          "category": "burgers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-burgers-002",
+          "name": "Amante Chef Special Vegetable Grilled Sandwich",
+          "description": "Grilled vegetable lettuce tomato cucumber with French fries and mustard sauce",
+          "category": "burgers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-burgers-003",
+          "name": "Amante Chef Special Vegetable Club Sandwich",
+          "description": "Toasted bread, cheese, vegetable served with French fries and mustard sauce",
+          "category": "burgers",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "grills",
+      "name": "Grills & Mains",
+      "description": "Grills & hearty mains",
+      "displayOrder": 10,
+      "items": [
+        {
+          "id": "satvik-grills-001",
+          "name": "Japanese Curry Bowl – Vegetarian Donburi",
+          "description": "Teppanyaki style vegetables, mushroom, bamboo shoots, fried rice and pumpkin crackers",
+          "category": "grills",
+          "dietary": [
+            "veg"
+          ],
+          "price": 899,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "south-indian",
+      "name": "South Indian",
+      "description": "South Indian classics",
+      "displayOrder": 11,
+      "items": [
+        {
+          "id": "satvik-south-indian-001",
+          "name": "Idli (Plain / Button)",
+          "description": "Soft steamed rice cakes with sambar and chutneys",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 189,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-002",
+          "name": "Plain Dosa",
+          "description": "Crispy golden dosa served with sambar and chutneys",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-003",
+          "name": "Ragi Idli",
+          "description": "Steamed ragi idlis, healthy and nutritious",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-004",
+          "name": "Veg Masala Dosa",
+          "description": "Crispy dosa filled with spiced potato masala",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 229,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-005",
+          "name": "Veg Paneer Dosa",
+          "description": "Crispy dosa filled with spiced paneer masala",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 229,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-006",
+          "name": "Cut Dosa",
+          "description": "Crispy cut dosa pieces served with accompaniments",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-007",
+          "name": "Ragi Dosa",
+          "description": "Healthy ragi flour dosa, rich in nutrients",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-008",
+          "name": "Medu vada",
+          "description": "savory, doughnut-shaped fritters feature a golden, crispy exterior and a fluffy, soft interior.",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-009",
+          "name": "Mysore Masala Dosa",
+          "description": "rispy, golden-brown South Indian crepe made from fermented rice and lentil batter.",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-south-indian-010",
+          "name": "Oats Idli",
+          "description": "soft, steamed cakes made from roasted oats, semolina (sooji), and yogurt",
+          "category": "south-indian",
+          "dietary": [
+            "veg"
+          ],
+          "price": 199,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "indian-mains",
+      "name": "Indian Main Course",
+      "description": "Rich, soulful Indian curries",
+      "displayOrder": 12,
+      "items": [
+        {
+          "id": "satvik-indian-mains-001",
+          "name": "Jeera Aloo",
+          "description": "Simple and flavorful potatoes sautéed with cumin seeds and spices.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-002",
+          "name": "Dal Double Tadka",
+          "description": "Lentil cooked in tomato, Indian spice (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-003",
+          "name": "Aloo Gobhi Adrak",
+          "description": "Mixed seasonal local vegetables with spinach and Indian spices (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-004",
+          "name": "Bhindi Masala",
+          "description": "Stir-fried okra cooked with onions, tomatoes, and traditional spices.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-005",
+          "name": "Sev Tamatar",
+          "description": "Tangy tomato curry topped with crispy sev, a popular Gujarati-style dish.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-006",
+          "name": "Chana Masala",
+          "description": "Chickpeas cooked in a spicy and tangy onion-tomato gravy.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 429,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-007",
+          "name": "Banarsi Dum Aloo",
+          "description": "Baby potatoes slow-cooked in a rich, spiced gravy with aromatic Indian flavors.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 449,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-008",
+          "name": "Kashmiri Dum Aloo",
+          "description": "A royal Kashmiri-style potato curry cooked in yogurt-based gravy with mild spices.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 449,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-009",
+          "name": "Soya Chaap Masala",
+          "description": "Protein-rich soya chaap cooked in a thick, spicy masala gravy.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 449,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-010",
+          "name": "Methi Malai Matar",
+          "description": "Creamy curry made with fenugreek leaves, green peas, and mild spices.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 449,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-011",
+          "name": "Amante Gunchaw Subzi",
+          "description": "Minced cauliflower with vilayeti subzi, green chili coriander (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-012",
+          "name": "Chefs' Special Vegetable Korma",
+          "description": "Seasonal local vegetable potato, green peas (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-013",
+          "name": "Lehsuni Bhuna Palak",
+          "description": "Minced spinach with garlic tomato and chili (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-014",
+          "name": "Vilayti Subzi",
+          "description": "Minced cauliflower with exotic vegetables, green chili and coriander (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-015",
+          "name": "Khumbi Hara Pyaz",
+          "description": "Fresh mushrooms and spring onions cooked in rich Indian chopped gravy with aromatic spices (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 499,
+          "spiceLevel": 2,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-016",
+          "name": "Shahi Paneer",
+          "description": "Cottage cheese in rich, creamy cashew and tomato gravy (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 549,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-017",
+          "name": "Faldaari Kofta Curry",
+          "description": "Cottage cheese, dry fruits, fresh fruits with creamy cashew gravy (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-018",
+          "name": "Paneer Makhani",
+          "description": "Spicy cottage cheese, tomato, Indian spice (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-019",
+          "name": "Amante Chef Special Dal Makhani",
+          "description": "Black lentil cooked in creamy tomato, Indian spice (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isChefSpecial": true,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-020",
+          "name": "Subz Nizami Handi",
+          "description": "Mix seasonal local vegetable spinach Indian spice (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-021",
+          "name": "Paneer Lababdar",
+          "description": "Rich cottage cheese curry in creamy tomato gravy (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-022",
+          "name": "Paneer Butter Masala",
+          "description": "Cottage cheese in smooth butter tomato sauce (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-023",
+          "name": "Lehsuni Palak Paneer",
+          "description": "Cottage cheese in garlic-flavored spinach gravy (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-024",
+          "name": "Paneer Tikka Masala",
+          "description": "Grilled cottage cheese in spiced tomato curry (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 649,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-025",
+          "name": "Amante Chef Interactive Kaju Makhana Curry",
+          "description": "Roasted cashew, makhana, Amante rich gravy (Serves 3)",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-indian-mains-026",
+          "name": "Navratan Korma",
+          "description": "Mixed vegetables and dry fruits cooked in a rich, creamy korma gravy.",
+          "category": "indian-mains",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "breads",
+      "name": "Breads",
+      "description": "Tandoor-fresh Indian breads",
+      "displayOrder": 13,
+      "items": [
+        {
+          "id": "satvik-breads-001",
+          "name": "Tandoori Roti",
+          "description": "Classic tandoori roti",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 59,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-breads-002",
+          "name": "Missi Roti",
+          "description": "Gram flour roti",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 79,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-breads-003",
+          "name": "Naan",
+          "description": "Classic Indian flatbread baked in tandoor",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 79,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-breads-004",
+          "name": "Garlic Naan",
+          "description": "Naan topped with fresh garlic and butter",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 79,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-breads-005",
+          "name": "Butter Naan",
+          "description": "Soft naan brushed with butter",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 79,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-breads-006",
+          "name": "Lachha Paratha",
+          "description": "Multi-layered paratha",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 110,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-breads-007",
+          "name": "Cheese Chilli Naan",
+          "description": "Cheese stuffed naan with chili",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 149,
+          "isRecommended": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-breads-008",
+          "name": "Chef Signature Lachha Garlic Naan",
+          "description": "Special lachha naan with garlic",
+          "category": "breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 119,
+          "isChefSpecial": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "rice",
+      "name": "Rice, Pulao & Biryani",
+      "description": "Rice, pulao & biryani",
+      "displayOrder": 14,
+      "items": [
+        {
+          "id": "satvik-rice-001",
+          "name": "Steamed Rice",
+          "description": "Well cooked steamed basmati rice",
+          "category": "rice",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rice-002",
+          "name": "Curd Rice",
+          "description": "Cooling rice mixed with yogurt and tempered spices",
+          "category": "rice",
+          "dietary": [
+            "veg"
+          ],
+          "price": 349,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rice-003",
+          "name": "Jeera Rice",
+          "description": "Fragrant basmati rice tempered with cumin seeds",
+          "category": "rice",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rice-004",
+          "name": "Dum Pukht Vegetable Pulao",
+          "description": "Slow cooked vegetable pulao",
+          "category": "rice",
+          "dietary": [
+            "veg"
+          ],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rice-005",
+          "name": "Amante Chef Signature Pulao",
+          "description": "Dry fruits, long grain rice, saffron, khada masala",
+          "category": "rice",
+          "dietary": [
+            "veg"
+          ],
+          "price": 699,
+          "isChefSpecial": true,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "description": "Sweet endings",
+      "displayOrder": 15,
+      "items": [
+        {
+          "id": "satvik-desserts-001",
+          "name": "Baked Cheese Cake with Sour Cherry Compote",
+          "description": "Amante chef special desserts serve with choice of ice cream",
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "price": 349,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-desserts-002",
+          "name": "Mawa Bati",
+          "description": "Saffron & Pista, almond stuffed fried dip in syrup interactive desserts",
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "price": 399,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-desserts-003",
+          "name": "Belgium Chocolate Mousse",
+          "description": "Toasted marshmallow, caramelized nuts, served with choice of ice cream",
+          "category": "desserts",
+          "dietary": [
+            "veg"
+          ],
+          "price": 459,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "rajwadi",
+      "name": "Rajwadi Rasoi",
+      "description": "Royal Rajasthani & MP traditional fare",
+      "displayOrder": 16,
+      "items": [
+        {
+          "id": "satvik-rajwadi-001",
+          "name": "Extra Ghee",
+          "description": "Pure desi ghee topping.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 30,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-002",
+          "name": "Plain Bati",
+          "description": "Traditional baked wheat bati served hot.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 35,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-003",
+          "name": "Butter Bati",
+          "description": "Soft bati topped with fresh butter.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 45,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-004",
+          "name": "Masala Bati",
+          "description": "Spicy stuffed bati with rich traditional masala.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 59,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-005",
+          "name": "Masala Chaas",
+          "description": "Refreshing spiced buttermilk.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 69,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-006",
+          "name": "Extra Dal",
+          "description": "Additional serving of dal.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 99,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-007",
+          "name": "Sweet Lassi",
+          "description": "Thick sweet curd-based lassi.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 109,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-008",
+          "name": "Plain Rice",
+          "description": "Steamed basmati rice served fresh.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 129,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-009",
+          "name": "Churma (Sweet)",
+          "description": "Traditional sweet churma made with ghee and dry fruits.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 139,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-010",
+          "name": "Kesar Lassi",
+          "description": "Premium saffron flavored lassi with rich texture.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 139,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-011",
+          "name": "Jeera Rice",
+          "description": "Aromatic basmati rice tempered with cumin.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 159,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-012",
+          "name": "Sev Tamatar",
+          "description": "Tangy tomato curry topped with spicy sev.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 169,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-013",
+          "name": "Rajwadi Kadhi",
+          "description": "Traditional Rajasthani kadhi with authentic homemade flavors.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 169,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-014",
+          "name": "Papad ki Sabzi",
+          "description": "Crispy papad cooked in rich spicy gravy with traditional flavors.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 179,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-015",
+          "name": "Panchmel Dal",
+          "description": "Five lentils slow-cooked with desi spices and ghee tadka.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 179,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-016",
+          "name": "Gatte ki Sabzi",
+          "description": "Traditional Rajasthani gram flour dumplings cooked in spicy curd gravy.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-017",
+          "name": "Ker Sangri",
+          "description": "Authentic desert beans and berries cooked with royal Rajasthani spices.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 239,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-018",
+          "name": "Rajwadi Dal Baati Combo (Regular)",
+          "description": "Traditional dal, crispy baati, churma, salad, achar and pure desi ghee served.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 259,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-019",
+          "name": "Rajwadi Dal Bafla Combo (MP Special)",
+          "description": "Authentic MP style bafla with dal, chutney, salad and desi ghee.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-020",
+          "name": "Mini Rajwadi Thali",
+          "description": "Dal, sabzi, bati, rice, churma, papad, salad and achar included.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 329,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-rajwadi-021",
+          "name": "Royal Rajwadi Thali (Best Seller)",
+          "description": "Complete royal Rajasthani meal with multiple sabzi, dal, bati, rice, sweet, papad and salad.",
+          "category": "rajwadi",
+          "dietary": [
+            "veg"
+          ],
+          "price": 459,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "rajwadi-breads",
+      "name": "Rajwadi Breads",
+      "description": "Traditional millet breads",
+      "displayOrder": 17,
+      "items": [
+        {
+          "id": "satvik-rajwadi-breads-001",
+          "name": "Bajra Roti",
+          "description": "Healthy pearl millet roti served with butter.",
+          "category": "rajwadi-breads",
+          "dietary": [
+            "veg"
+          ],
+          "price": 59,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-sabzi",
+      "name": "Jain Sabzi (No Root Veg)",
+      "description": "Jain sabzi — no onion, garlic or root vegetables",
+      "displayOrder": 18,
+      "items": [
+        {
+          "id": "satvik-jain-sabzi-001",
+          "name": "Jain Lauki Masala",
+          "description": "Healthy lauki in light masala.",
+          "category": "jain-sabzi",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 209,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-sabzi-002",
+          "name": "Jain Tinda Sabzi",
+          "description": "Soft tinda with mild spices.",
+          "category": "jain-sabzi",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 209,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-sabzi-003",
+          "name": "Jain Sev Tamatar",
+          "description": "Tangy tomato curry topped with sev.",
+          "category": "jain-sabzi",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 239,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-sabzi-004",
+          "name": "Jain Capsicum Masala",
+          "description": "Capsicum cooked in Jain spices.",
+          "category": "jain-sabzi",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 259,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-sabzi-005",
+          "name": "Jain Mix Veg",
+          "description": "Seasonal Jain vegetables.",
+          "category": "jain-sabzi",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 259,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-sabzi-006",
+          "name": "Jain Paneer Tomato Curry",
+          "description": "Paneer in tomato gravy without onion garlic.",
+          "category": "jain-sabzi",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 299,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-dal",
+      "name": "Jain Dal & Kadhi",
+      "description": "Wholesome Jain dals & kadhi",
+      "displayOrder": 19,
+      "items": [
+        {
+          "id": "satvik-jain-dal-001",
+          "name": "Jain Moong Dal",
+          "description": "Light and protein-rich.",
+          "category": "jain-dal",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-dal-002",
+          "name": "Jain Gujarati Kadhi",
+          "description": "Sweet and tangy kadhi.",
+          "category": "jain-dal",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-dal-003",
+          "name": "Jain Panchmel Dal",
+          "description": "Five lentils blend.",
+          "category": "jain-dal",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 239,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-rice",
+      "name": "Jain Rice & Khichdi",
+      "description": "Jain rice & comforting khichdi",
+      "displayOrder": 20,
+      "items": [
+        {
+          "id": "satvik-jain-rice-001",
+          "name": "Steamed Rice",
+          "description": "Plain rice.",
+          "category": "jain-rice",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 159,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-rice-002",
+          "name": "Jeera Rice",
+          "description": "Cumin flavored rice.",
+          "category": "jain-rice",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-rice-003",
+          "name": "Jain Moong Dal Khichdi",
+          "description": "Comfort food.",
+          "category": "jain-rice",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 219,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-rice-004",
+          "name": "Jain Vegetable Pulao",
+          "description": "Rice with veggies.",
+          "category": "jain-rice",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 239,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-breads",
+      "name": "Jain Breads",
+      "description": "Fresh Jain breads",
+      "displayOrder": 21,
+      "items": [
+        {
+          "id": "satvik-jain-breads-001",
+          "name": "Plain Phulka",
+          "description": "Fresh wheat roti.",
+          "category": "jain-breads",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 49,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-breads-002",
+          "name": "Butter Phulka",
+          "description": "Roti with butter.",
+          "category": "jain-breads",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 59,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-breads-003",
+          "name": "Missi Roti (Jain)",
+          "description": "Gram flour roti.",
+          "category": "jain-breads",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 59,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-light",
+      "name": "Jain Light Meals",
+      "description": "Light & healthy Jain meals",
+      "displayOrder": 22,
+      "items": [
+        {
+          "id": "satvik-jain-light-001",
+          "name": "Jain Daliya Bowl",
+          "description": "Healthy meal.",
+          "category": "jain-light",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 209,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-light-002",
+          "name": "Jain Simple Meal",
+          "description": "Dal with rice.",
+          "category": "jain-light",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 239,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-light-003",
+          "name": "Jain Khichdi Combo",
+          "description": "Khichdi with kadhi.",
+          "category": "jain-light",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 299,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-thali",
+      "name": "Jain Thali & Combos",
+      "description": "Complete Jain thalis & combos",
+      "displayOrder": 23,
+      "items": [
+        {
+          "id": "satvik-jain-thali-001",
+          "name": "Jain Mini Meal",
+          "description": "Light Jain meal with dal, sabzi & roti.",
+          "category": "jain-thali",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 269,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-thali-002",
+          "name": "Shuddh Jain Thali",
+          "description": "Complete satvik meal with sabzi, dal, kadhi, roti, rice & sweet.",
+          "category": "jain-thali",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 359,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-thali-003",
+          "name": "Jain Deluxe Thali",
+          "description": "Premium thali with extra sabzi, papad & jeera rice.",
+          "category": "jain-thali",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 429,
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-thali-004",
+          "name": "Jain Family Combo (2 Pax)",
+          "description": "Perfect combo meal for two.",
+          "category": "jain-thali",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 599,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-sweets",
+      "name": "Jain Sweets",
+      "description": "Pure Jain sweets",
+      "displayOrder": 24,
+      "items": [
+        {
+          "id": "satvik-jain-sweets-001",
+          "name": "Jain Kesar Sheera",
+          "description": "Saffron dessert.",
+          "category": "jain-sweets",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 159,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-sweets-002",
+          "name": "Jain Moong Dal Halwa",
+          "description": "Rich halwa.",
+          "category": "jain-sweets",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 179,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "jain-beverages",
+      "name": "Jain Beverages",
+      "description": "Refreshing Jain beverages",
+      "displayOrder": 25,
+      "items": [
+        {
+          "id": "satvik-jain-beverages-001",
+          "name": "Masala Chaas",
+          "description": "Refreshing drink.",
+          "category": "jain-beverages",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 79,
+          "isAvailable": true
+        },
+        {
+          "id": "satvik-jain-beverages-002",
+          "name": "Sweet Lassi",
+          "description": "Creamy lassi.",
+          "category": "jain-beverages",
+          "dietary": [
+            "veg",
+            "jain"
+          ],
+          "price": 129,
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}

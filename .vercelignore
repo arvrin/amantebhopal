@@ -17,3 +17,14 @@ playwright.config.ts
 
 # Note: These directories are now in production, so .vercelignore is minimal
 # Only ignoring test-related files defined above
+
+# --- Unused heavy assets: keep them locally, but don't ship to production ---
+# Raw photo dump from Google Drive (not referenced in code) ~173MB
+public/drive-download-20251204T114131Z-1-001/
+# Working/edited source photos (not referenced in code) ~81MB
+public/EDITS/
+# Original full-res backups (not referenced in code) e.g. hero2-original-backup.jpg ~27MB
+public/*-original-backup.*
+# Heavy print-only PDFs (not referenced in code) ~100MB combined
+public/menus/restaurant-cafe-menu.pdf
+public/menus/amante-menu-print.pdf

@@ -261,6 +261,7 @@ export default function GalleryPage() {
                       src={item.image}
                       alt={item.title}
                       fill
+                      sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
                       className="object-cover"
                     />
 
@@ -343,6 +344,7 @@ export default function GalleryPage() {
                   src={selectedImage.image}
                   alt={selectedImage.title}
                   fill
+                  sizes="(min-width: 768px) 80vw, 100vw"
                   className="object-contain"
                 />
               </div>
