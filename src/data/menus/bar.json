@@ -697,6 +697,15 @@
           "bottlePrice": 4999,
           "category": "whisky",
           "isAvailable": true
+        },
+        {
+          "id": "bar-whisky-023",
+          "name": "SIGNATURE PREMIUM",
+          "price": 129,
+          "price60ml": 249,
+          "bottlePrice": 2999,
+          "category": "whisky",
+          "isAvailable": true
         }
       ]
     },
@@ -912,6 +921,15 @@
           "isAvailable": true,
           "bottlePrice": 5600,
           "price60ml": 499
+        },
+        {
+          "id": "bar-bourbon-004",
+          "name": "JACK DANIEL'S OLD NO. 7",
+          "price": 499,
+          "price60ml": 799,
+          "bottlePrice": 7999,
+          "category": "bourbon",
+          "isAvailable": true
         }
       ]
     },
