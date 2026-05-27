@@ -2,9 +2,9 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ChevronRight, UtensilsCrossed, Wine, Coffee, Sunrise } from 'lucide-react';
+import { ChevronRight, UtensilsCrossed, Wine, Coffee } from 'lucide-react';
 
-const baseCategories = [
+const categories = [
   {
     id: 'food',
     name: 'Food Menu',
@@ -26,18 +26,9 @@ const baseCategories = [
     description: 'Artisan coffee & fresh delights',
     href: '/menu/cafe',
   },
-  {
-    id: 'breakfast',
-    name: 'Breakfast Menu',
-    icon: Sunrise,
-    description: 'Start your day with delicious morning delights',
-    href: '/menu/breakfast',
-  }
 ];
 
 export default function MenuLanding() {
-  const [categories, setCategories] = useState(baseCategories);
-  const [isBreakfastTime, setIsBreakfastTime] = useState(false);
   const [greeting, setGreeting] = useState('');
 
   const getGreeting = (): string => {
@@ -48,40 +39,9 @@ export default function MenuLanding() {
     return 'Good Night';
   };
 
-  const checkBreakfastTime = (): boolean => {
-    const now = new Date();
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const currentTimeMinutes = hours * 60 + minutes;
-    // 7:30 AM (450 min) to 12:00 PM (720 min)
-    return currentTimeMinutes >= 450 && currentTimeMinutes < 720;
-  };
-
-  const updateCategories = () => {
-    const breakfastActive = checkBreakfastTime();
-    setIsBreakfastTime(breakfastActive);
-    setGreeting(getGreeting());
-
-    if (breakfastActive) {
-      // Move breakfast to top
-      const reordered = [
-        baseCategories.find(c => c.id === 'breakfast')!,
-        ...baseCategories.filter(c => c.id !== 'breakfast')
-      ];
-      setCategories(reordered);
-    } else {
-      setCategories(baseCategories);
-    }
-  };
-
   useEffect(() => {
-    updateCategories();
-
-    // Update every minute
-    const interval = setInterval(() => {
-      updateCategories();
-    }, 60000);
-
+    setGreeting(getGreeting());
+    const interval = setInterval(() => setGreeting(getGreeting()), 60000);
     return () => clearInterval(interval);
   }, []);
   return (
@@ -127,32 +87,9 @@ export default function MenuLanding() {
         {/* Content Area */}
         <div className="p-4 sm:p-6 md:p-8">
 
-          {/* Now Serving Breakfast Banner */}
-          {isBreakfastTime && (
-            <div className="mb-6 bg-gradient-to-r from-[#8B1538] to-[#6B0F28] rounded-xl p-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center">
-                    <Sunrise className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold text-sm">Now Serving Breakfast</p>
-                    <p className="text-white/70 text-xs">Available until 12:00 PM</p>
-                  </div>
-                </div>
-                <Link href="/menu/breakfast">
-                  <button className="bg-white text-[#8B1538] px-4 py-2 rounded-lg text-xs font-bold hover:bg-white/90 transition-colors">
-                    View
-                  </button>
-                </Link>
-              </div>
-            </div>
-          )}
-
           <div className="max-w-sm sm:max-w-md lg:max-w-lg mx-auto space-y-4 sm:space-y-6">
             {categories.map((category, index) => {
               const Icon = category.icon;
-              const isBreakfastCard = category.id === 'breakfast' && isBreakfastTime;
 
               return (
                 <Link key={category.id} href={category.href}>
@@ -163,36 +100,21 @@ export default function MenuLanding() {
                         {index + 1}
                       </div>
 
-                      <div className={`relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-4 sm:p-5 md:p-6 border transition-all duration-300 ${
-                        isBreakfastCard
-                          ? 'border-[#8B1538] shadow-lg ring-1 ring-[#8B1538]/20'
-                          : 'border-gray-100 group-hover:border-[#8B1538]/30 group-hover:shadow-xl'
-                      }`}>
+                      <div className="relative bg-gradient-to-br from-gray-50 to-white rounded-2xl p-4 sm:p-5 md:p-6 border border-gray-100 group-hover:border-[#8B1538]/30 group-hover:shadow-xl transition-all duration-300">
                         <div className="flex items-start gap-4">
                           {/* Icon */}
                           <div className="relative">
-                            <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center transition-all ${
-                              isBreakfastCard
-                                ? 'bg-[#8B1538]'
-                                : 'bg-gradient-to-br from-[#8B1538]/10 to-[#6B0F28]/10 group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20'
-                            }`}>
-                              <Icon className={`w-6 h-6 sm:w-7 sm:h-7 ${isBreakfastCard ? 'text-white' : 'text-[#8B1538]'}`} strokeWidth={1.5} />
+                            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#8B1538]/10 to-[#6B0F28]/10 group-hover:from-[#8B1538]/20 group-hover:to-[#6B0F28]/20 transition-all">
+                              <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-[#8B1538]" strokeWidth={1.5} />
                             </div>
                             {/* Decorative corner */}
                             <div className="absolute -top-1 -right-1 w-3 h-3 border-t-2 border-r-2 border-[#8B1538]/30" />
                           </div>
 
                           <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-2">
-                              <h3 className="text-lg sm:text-xl font-serif font-bold text-gray-900 group-hover:text-[#8B1538] transition-colors">
-                                {category.name}
-                              </h3>
-                              {isBreakfastCard && (
-                                <span className="px-2 py-0.5 bg-[#8B1538] text-white text-[10px] font-bold uppercase tracking-wide rounded-full animate-pulse">
-                                  Live
-                                </span>
-                              )}
-                            </div>
+                            <h3 className="text-lg sm:text-xl font-serif font-bold text-gray-900 group-hover:text-[#8B1538] transition-colors mb-2">
+                              {category.name}
+                            </h3>
                             <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-3">
                               {category.description}
                             </p>

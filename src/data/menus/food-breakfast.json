@@ -1,0 +1,383 @@
+{
+  "venue": "amantesatvik",
+  "name": "Breakfast Menu",
+  "tagline": "Morning specials, fresh & wholesome",
+  "description": "Available 7:00 AM – 12:00 PM",
+  "categories": [
+    {
+      "id": "indian-breakfast",
+      "name": "Indian Breakfast",
+      "description": "Hearty Indian morning classics",
+      "displayOrder": 1,
+      "items": [
+        {
+          "id": "breakfast-indian-001",
+          "name": "Aloo Paratha",
+          "description": "Whole wheat flatbread stuffed with spiced potato",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-002",
+          "name": "Chhole Bhature",
+          "description": "Spiced chickpea curry with fluffy fried bread",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-003",
+          "name": "Chhole Kulche",
+          "description": "Spiced chickpea curry with leavened bread",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-004",
+          "name": "Gobhi Paratha",
+          "description": "Whole wheat flatbread stuffed with spiced cauliflower",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 219,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-005",
+          "name": "Medu Vada",
+          "description": "Crisp lentil doughnuts with sambar and chutney",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 135,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-006",
+          "name": "Mini Meals",
+          "description": "A compact breakfast platter with assorted morning favourites",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 300,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-007",
+          "name": "Mix Veg Paratha",
+          "description": "Whole wheat flatbread stuffed with seasoned mixed vegetables",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 229,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-008",
+          "name": "Paneer Kulcha",
+          "description": "Leavened bread stuffed with spiced cottage cheese",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-009",
+          "name": "Paneer Paratha",
+          "description": "Whole wheat flatbread stuffed with spiced cottage cheese",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 249,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-010",
+          "name": "Pav Bhaji",
+          "description": "Spiced mashed vegetable curry with buttered buns",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-011",
+          "name": "Pongal",
+          "description": "South Indian rice and lentil porridge with ghee and pepper",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 180,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-indian-012",
+          "name": "Upma",
+          "description": "Savoury semolina with tempered spices and vegetables",
+          "category": "indian-breakfast",
+          "dietary": ["veg"],
+          "price": 149,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "south-indian-breakfast",
+      "name": "South Indian",
+      "description": "Idli, dosa & southern morning classics",
+      "displayOrder": 2,
+      "items": [
+        {
+          "id": "breakfast-south-001",
+          "name": "Idli (Plain / Butter)",
+          "description": "Steamed rice and lentil cakes with sambar and chutney",
+          "category": "south-indian-breakfast",
+          "dietary": ["veg"],
+          "price": 189,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-south-002",
+          "name": "Mysore Masala Dosa",
+          "description": "Crisp dosa with red chutney and spiced potato filling",
+          "category": "south-indian-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-south-003",
+          "name": "Oats Idli",
+          "description": "Steamed oats and lentil cakes with sambar and chutney",
+          "category": "south-indian-breakfast",
+          "dietary": ["veg"],
+          "price": 159,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-south-004",
+          "name": "Plain Dosa",
+          "description": "Crisp rice and lentil crepe with sambar and chutney",
+          "category": "south-indian-breakfast",
+          "dietary": ["veg"],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-south-005",
+          "name": "Ragi Dosa",
+          "description": "Finger millet crepe with sambar and chutney",
+          "category": "south-indian-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-south-006",
+          "name": "Ragi Idli",
+          "description": "Steamed finger millet cakes with sambar and chutney",
+          "category": "south-indian-breakfast",
+          "dietary": ["veg"],
+          "price": 199,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-south-007",
+          "name": "Veg Paneer Dosa",
+          "description": "Dosa filled with spiced cottage cheese and vegetables",
+          "category": "south-indian-breakfast",
+          "dietary": ["veg"],
+          "price": 229,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "continental-breakfast",
+      "name": "Continental Breakfast",
+      "description": "Sandwiches, pasta, pizza & western morning favourites",
+      "displayOrder": 3,
+      "items": [
+        {
+          "id": "breakfast-conti-001",
+          "name": "Amante Chef Special Vegetable Grilled Sandwich",
+          "description": "Grilled sandwich layered with seasoned vegetables and cheese",
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "price": 499,
+          "isChefSpecial": true,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-conti-002",
+          "name": "Amante Special Vegetable Burger",
+          "description": "Amante's signature vegetable patty burger with house sauce",
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "price": 499,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-conti-003",
+          "name": "Classic Margherita Pizza",
+          "description": "Tomato, mozzarella and fresh basil on hand-stretched base",
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "price": 599,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-conti-004",
+          "name": "French Toast",
+          "description": "Brioche dipped in vanilla custard, griddled golden",
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-conti-005",
+          "name": "Fusilli Alfredo",
+          "description": "Fusilli pasta in classic creamy parmesan sauce",
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-conti-006",
+          "name": "Penne Arrabbiata",
+          "description": "Penne in spicy tomato and garlic sauce",
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "price": 649,
+          "spiceLevel": 2,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-conti-007",
+          "name": "Vegetable Sauté",
+          "description": "Seasonal vegetables sautéed with herbs and butter",
+          "category": "continental-breakfast",
+          "dietary": ["veg"],
+          "price": 349,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "healthy-breakfast",
+      "name": "Healthy Breakfast",
+      "description": "Light, fresh & nourishing",
+      "displayOrder": 4,
+      "items": [
+        {
+          "id": "breakfast-healthy-001",
+          "name": "Healthy Garden Green Sprout Salad",
+          "description": "Mixed sprouts, garden greens and citrus dressing",
+          "category": "healthy-breakfast",
+          "dietary": ["veg"],
+          "price": 699,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-healthy-002",
+          "name": "Indian Garden Green Salad",
+          "description": "Classic Indian salad — cucumber, tomato, onion and lemon",
+          "category": "healthy-breakfast",
+          "dietary": ["veg"],
+          "price": 299,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-healthy-003",
+          "name": "Jain Daliya Bowl",
+          "description": "Broken wheat porridge cooked with Jain-friendly spices",
+          "category": "healthy-breakfast",
+          "dietary": ["veg", "jain"],
+          "price": 209,
+          "isAvailable": true
+        }
+      ]
+    },
+    {
+      "id": "breakfast-beverages",
+      "name": "Beverages",
+      "description": "Coffee, tea, lassi & morning refreshers",
+      "displayOrder": 5,
+      "items": [
+        {
+          "id": "breakfast-bev-001",
+          "name": "Cold Coffee",
+          "description": "Chilled blended coffee with milk",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 150,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-bev-002",
+          "name": "Filter Coffee",
+          "description": "Traditional South Indian decoction coffee",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 60,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-bev-003",
+          "name": "Green Tea",
+          "description": "Steeped green tea",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 60,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-bev-004",
+          "name": "Masala Chaas",
+          "description": "Spiced buttermilk with cumin and mint",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 79,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-bev-005",
+          "name": "Sweet Lassi",
+          "description": "Chilled sweetened yogurt drink",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 129,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-bev-006",
+          "name": "Tea",
+          "description": "Classic Indian milk tea",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 45,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-bev-007",
+          "name": "Punjabi Lassi",
+          "description": "Thick, creamy Punjabi-style sweet lassi",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 149,
+          "isAvailable": true
+        },
+        {
+          "id": "breakfast-bev-008",
+          "name": "Kesar Dudh",
+          "description": "Warm milk infused with saffron and cardamom",
+          "category": "breakfast-beverages",
+          "dietary": ["veg"],
+          "price": 149,
+          "isAvailable": true
+        }
+      ]
+    }
+  ]
+}

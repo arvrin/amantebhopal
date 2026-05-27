@@ -21,20 +21,17 @@ const scrollbarHideStyles = `
 import foodMenu from '@/data/menus/food.json';
 import barMenu from '@/data/menus/bar.json';
 import cafeMenu from '@/data/menus/cafe.json';
-import breakfastMenu from '@/data/menus/breakfast.json';
 
 const menus = {
   food: foodMenu,
   bar: barMenu,
-  cafe: cafeMenu,
-  breakfast: breakfastMenu
+  cafe: cafeMenu
 };
 
 const categoryColors = {
   food: '#8B1538',
   bar: '#8B1538',
-  cafe: '#8B1538',
-  breakfast: '#8B1538'
+  cafe: '#8B1538'
 };
 
 interface MenuItem {
@@ -327,7 +324,7 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
-                  transition={{ delay: index * 0.05 }}
+                  transition={{ delay: Math.min(index * 0.02, 0.3) }}
                   className="relative bg-gradient-to-br from-white via-[#FFF9F5] to-white rounded-2xl p-4 sm:p-5 md:p-6 shadow-xl border border-[#8B1538]/10 hover:shadow-2xl transition-all duration-500 overflow-hidden group"
                 >
                   {/* Decorative corner accents */}

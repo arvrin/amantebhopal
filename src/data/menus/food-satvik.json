@@ -487,7 +487,7 @@
         },
         {
           "id": "satvik-pizza-002",
-          "name": "Classic Margarita Pizza",
+          "name": "Classic Margherita Pizza",
           "description": "Thin base, basil leaves, pesto oil, and drizzle. Make your pizza cheese burst for just Rs.149/-",
           "category": "pizza",
           "dietary": [
@@ -564,24 +564,13 @@
         {
           "id": "satvik-pasta-004",
           "name": "Wild Mushroom Risotto with Porcini Cream",
-          "description": "Mushroom, parmesan, porcini dust",
+          "description": "Creamy arborio rice with wild mushrooms, parmesan and porcini cream",
           "category": "pasta",
           "dietary": [
             "veg"
           ],
           "price": 799,
           "isRecommended": true,
-          "isAvailable": true
-        },
-        {
-          "id": "satvik-pasta-005",
-          "name": "Wild Mushroom Risotto",
-          "description": "Creamy arborio rice with mushrooms, parmesan and cream",
-          "category": "pasta",
-          "dietary": [
-            "veg"
-          ],
-          "price": 799,
           "isAvailable": true
         },
         {
@@ -1575,7 +1564,7 @@
         {
           "id": "satvik-jain-sabzi-001",
           "name": "Jain Lauki Masala",
-          "description": "Healthy lauki in light masala.",
+          "description": "Bottle gourd in light Jain-friendly masala, no onion or garlic",
           "category": "jain-sabzi",
           "dietary": [
             "veg",
@@ -1587,7 +1576,7 @@
         {
           "id": "satvik-jain-sabzi-002",
           "name": "Jain Tinda Sabzi",
-          "description": "Soft tinda with mild spices.",
+          "description": "Apple gourd cooked in mild Jain spices, no root vegetables",
           "category": "jain-sabzi",
           "dietary": [
             "veg",
@@ -1599,7 +1588,7 @@
         {
           "id": "satvik-jain-sabzi-003",
           "name": "Jain Sev Tamatar",
-          "description": "Tangy tomato curry topped with sev.",
+          "description": "Tangy tomato curry topped with crisp sev, no onion or garlic",
           "category": "jain-sabzi",
           "dietary": [
             "veg",
@@ -1611,7 +1600,7 @@
         {
           "id": "satvik-jain-sabzi-004",
           "name": "Jain Capsicum Masala",
-          "description": "Capsicum cooked in Jain spices.",
+          "description": "Bell peppers in tangy Jain-spiced gravy, no root vegetables",
           "category": "jain-sabzi",
           "dietary": [
             "veg",
@@ -1623,7 +1612,7 @@
         {
           "id": "satvik-jain-sabzi-005",
           "name": "Jain Mix Veg",
-          "description": "Seasonal Jain vegetables.",
+          "description": "Seasonal vegetables in light Jain-friendly gravy, no onion or garlic",
           "category": "jain-sabzi",
           "dietary": [
             "veg",
@@ -1635,7 +1624,7 @@
         {
           "id": "satvik-jain-sabzi-006",
           "name": "Jain Paneer Tomato Curry",
-          "description": "Paneer in tomato gravy without onion garlic.",
+          "description": "Cottage cheese in rich tomato gravy, no onion or garlic",
           "category": "jain-sabzi",
           "dietary": [
             "veg",
@@ -1655,7 +1644,7 @@
         {
           "id": "satvik-jain-dal-001",
           "name": "Jain Moong Dal",
-          "description": "Light and protein-rich.",
+          "description": "Yellow moong lentils tempered with ghee and Jain-friendly spices",
           "category": "jain-dal",
           "dietary": [
             "veg",
@@ -1667,7 +1656,7 @@
         {
           "id": "satvik-jain-dal-002",
           "name": "Jain Gujarati Kadhi",
-          "description": "Sweet and tangy kadhi.",
+          "description": "Gujarati-style sweet and tangy yogurt curry, no onion or garlic",
           "category": "jain-dal",
           "dietary": [
             "veg",
@@ -1679,7 +1668,7 @@
         {
           "id": "satvik-jain-dal-003",
           "name": "Jain Panchmel Dal",
-          "description": "Five lentils blend.",
+          "description": "Traditional Rajasthani blend of five lentils, slow-cooked Jain style",
           "category": "jain-dal",
           "dietary": [
             "veg",
@@ -1699,7 +1688,7 @@
         {
           "id": "satvik-jain-rice-001",
           "name": "Steamed Rice",
-          "description": "Plain rice.",
+          "description": "Steamed long-grain basmati rice",
           "category": "jain-rice",
           "dietary": [
             "veg",
@@ -1711,7 +1700,7 @@
         {
           "id": "satvik-jain-rice-002",
           "name": "Jeera Rice",
-          "description": "Cumin flavored rice.",
+          "description": "Basmati rice tempered with cumin and ghee",
           "category": "jain-rice",
           "dietary": [
             "veg",
@@ -1723,7 +1712,7 @@
         {
           "id": "satvik-jain-rice-003",
           "name": "Jain Moong Dal Khichdi",
-          "description": "Comfort food.",
+          "description": "One-pot moong dal and rice, lightly spiced",
           "category": "jain-rice",
           "dietary": [
             "veg",
@@ -1735,7 +1724,7 @@
         {
           "id": "satvik-jain-rice-004",
           "name": "Jain Vegetable Pulao",
-          "description": "Rice with veggies.",
+          "description": "Aromatic basmati pulao with seasonal vegetables, no onion or garlic",
           "category": "jain-rice",
           "dietary": [
             "veg",
@@ -1755,7 +1744,7 @@
         {
           "id": "satvik-jain-breads-001",
           "name": "Plain Phulka",
-          "description": "Fresh wheat roti.",
+          "description": "Fresh whole-wheat phulka, soft and dry-roasted",
           "category": "jain-breads",
           "dietary": [
             "veg",
@@ -1767,7 +1756,7 @@
         {
           "id": "satvik-jain-breads-002",
           "name": "Butter Phulka",
-          "description": "Roti with butter.",
+          "description": "Whole-wheat phulka brushed with melted butter",
           "category": "jain-breads",
           "dietary": [
             "veg",
@@ -1779,7 +1768,7 @@
         {
           "id": "satvik-jain-breads-003",
           "name": "Missi Roti (Jain)",
-          "description": "Gram flour roti.",
+          "description": "Gram flour and wheat flatbread spiced Jain style",
           "category": "jain-breads",
           "dietary": [
             "veg",
@@ -1799,7 +1788,7 @@
         {
           "id": "satvik-jain-light-001",
           "name": "Jain Daliya Bowl",
-          "description": "Healthy meal.",
+          "description": "Broken wheat porridge cooked with Jain-friendly spices and vegetables",
           "category": "jain-light",
           "dietary": [
             "veg",
@@ -1811,7 +1800,7 @@
         {
           "id": "satvik-jain-light-002",
           "name": "Jain Simple Meal",
-          "description": "Dal with rice.",
+          "description": "Comforting plate of dal, rice and roti",
           "category": "jain-light",
           "dietary": [
             "veg",
@@ -1823,7 +1812,7 @@
         {
           "id": "satvik-jain-light-003",
           "name": "Jain Khichdi Combo",
-          "description": "Khichdi with kadhi.",
+          "description": "Moong dal khichdi served with Gujarati kadhi",
           "category": "jain-light",
           "dietary": [
             "veg",
@@ -1880,7 +1869,7 @@
         {
           "id": "satvik-jain-thali-004",
           "name": "Jain Family Combo (2 Pax)",
-          "description": "Perfect combo meal for two.",
+          "description": "Generous combo platter portioned for two — sabzi, dal, rice, breads and sweet",
           "category": "jain-thali",
           "dietary": [
             "veg",
@@ -1900,7 +1889,7 @@
         {
           "id": "satvik-jain-sweets-001",
           "name": "Jain Kesar Sheera",
-          "description": "Saffron dessert.",
+          "description": "Warm semolina pudding fragrant with saffron and ghee",
           "category": "jain-sweets",
           "dietary": [
             "veg",
@@ -1912,7 +1901,7 @@
         {
           "id": "satvik-jain-sweets-002",
           "name": "Jain Moong Dal Halwa",
-          "description": "Rich halwa.",
+          "description": "Slow-cooked moong dal halwa with ghee and dry fruits",
           "category": "jain-sweets",
           "dietary": [
             "veg",
@@ -1932,7 +1921,7 @@
         {
           "id": "satvik-jain-beverages-001",
           "name": "Masala Chaas",
-          "description": "Refreshing drink.",
+          "description": "Spiced buttermilk with cumin and mint",
           "category": "jain-beverages",
           "dietary": [
             "veg",
@@ -1944,7 +1933,7 @@
         {
           "id": "satvik-jain-beverages-002",
           "name": "Sweet Lassi",
-          "description": "Creamy lassi.",
+          "description": "Chilled sweetened yogurt drink",
           "category": "jain-beverages",
           "dietary": [
             "veg",

@@ -2,9 +2,16 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ChevronRight, Leaf, Coffee, Wine, Sparkles } from 'lucide-react';
+import { ChevronRight, Leaf, Coffee, Wine, Sparkles, Sunrise } from 'lucide-react';
 
 const categories = [
+  {
+    id: 'breakfast',
+    name: 'Breakfast Menu',
+    icon: Sunrise,
+    description: 'Morning specials — available 7 AM to 12 PM',
+    href: '/amantesatvik/breakfast',
+  },
   {
     id: 'satvik',
     name: 'Satvik Food Menu',
