@@ -137,6 +137,9 @@
           "id": "bar-sig-016",
           "name": "SOUR STORY",
           "description": "Bourbon whisky with egg white, bitter, sweet and sour, orange blossom water",
+          "dietary": [
+            "egg"
+          ],
           "price": 699,
           "category": "signature-cocktails",
           "isAvailable": true

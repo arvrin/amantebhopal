@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { ChevronRight, Leaf, Coffee, Wine, Sparkles, Sunrise } from 'lucide-react';
+import { ChevronRight, Leaf, Coffee, Wine, Sparkles, Sunrise, Flower2 } from 'lucide-react';
 
 const categories = [
   {
@@ -16,8 +16,15 @@ const categories = [
     id: 'satvik',
     name: 'Satvik Food Menu',
     icon: Leaf,
-    description: 'Pure vegetarian, Jain & satvik delicacies — including Rajwadi thalis',
+    description: 'Pure vegetarian satvik delicacies — including Rajwadi Rasoi & thalis',
     href: '/amantesatvik/satvik',
+  },
+  {
+    id: 'jain',
+    name: 'Satvik Jain Menu',
+    icon: Flower2,
+    description: 'No onion, garlic or root vegetables — sabzis, thalis & more',
+    href: '/amantesatvik/jain',
   },
   {
     id: 'cafe',

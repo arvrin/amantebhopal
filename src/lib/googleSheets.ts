@@ -362,9 +362,9 @@ export async function readSheet(sheetName: string): Promise<any[]> {
     const dataRows = rows.slice(1);
 
     // Convert to array of objects
-    return dataRows.map(row => {
+    return dataRows.map((row: string[]) => {
       const obj: any = {};
-      headers.forEach((header, index) => {
+      headers.forEach((header: string, index: number) => {
         obj[header] = row[index] || '';
       });
       return obj;

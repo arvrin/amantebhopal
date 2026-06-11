@@ -3,7 +3,7 @@
 import { useState, useMemo, use, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowLeft, Search, X, Leaf, Circle, Volume2, Sparkles } from 'lucide-react';
+import { ArrowLeft, Search, X, Circle, Volume2 } from 'lucide-react';
 
 // Scrollbar hide styles
 const scrollbarHideStyles = `
@@ -18,12 +18,14 @@ const scrollbarHideStyles = `
 
 // Import menu data
 import satvikMenu from '@/data/menus/food-satvik.json';
+import jainMenu from '@/data/menus/food-jain.json';
 import barMenu from '@/data/menus/bar.json';
 import cafeMenu from '@/data/menus/cafe.json';
 import breakfastMenu from '@/data/menus/food-breakfast.json';
 
 const menus = {
   satvik: satvikMenu,
+  jain: jainMenu,
   bar: barMenu,
   cafe: cafeMenu,
   breakfast: breakfastMenu,
@@ -71,7 +73,6 @@ interface Menu {
 export default function SatvikMenuPage({ params }: { params: Promise<{ category: string }> }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [showJainOnly, setShowJainOnly] = useState(false);
   const [speakingItemId, setSpeakingItemId] = useState<string | null>(null);
   const [navbarVisible, setNavbarVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -106,14 +107,13 @@ export default function SatvikMenuPage({ params }: { params: Promise<{ category:
     const utterance = new SpeechSynthesisUtterance(item.name);
 
     const voices = window.speechSynthesis.getVoices();
-    const preferredVoice = voices.find(voice =>
-      (voice.name.includes('Veena') ||
-       voice.name.includes('Indian') && voice.name.includes('Female') ||
-       voice.lang === 'en-IN' && voice.name.toLowerCase().includes('female')) ||
-      (voice.lang === 'en-GB' && voice.name.toLowerCase().includes('female'))
-    ) || voices.find(voice =>
-      voice.lang.startsWith('en') && voice.name.toLowerCase().includes('female')
-    );
+    const isFemale = (v: SpeechSynthesisVoice) => v.name.toLowerCase().includes('female');
+    const preferredVoice =
+      voices.find(v => v.name.includes('Veena')) ||
+      voices.find(v => v.lang === 'en-IN' && isFemale(v)) ||
+      voices.find(v => v.lang === 'en-IN') ||
+      voices.find(v => v.lang === 'en-GB' && isFemale(v)) ||
+      voices.find(v => v.lang.startsWith('en') && isFemale(v));
 
     if (preferredVoice) {
       utterance.voice = preferredVoice;
@@ -134,10 +134,13 @@ export default function SatvikMenuPage({ params }: { params: Promise<{ category:
   const menu = menus[category as keyof typeof menus] as Menu | undefined;
 
   // Flatten all items and filter (hook must run before any early return)
+  // Satvik venue: hide non-veg/egg items coming from menus shared with the main venue
   const allItems = useMemo(() => {
     if (!menu) return [];
     return menu.categories.flatMap(cat =>
-      cat.items.map(item => ({ ...item, categoryName: cat.name, categoryNote: cat.note }))
+      cat.items
+        .filter(item => !item.dietary?.some(d => d === 'non-veg' || d === 'egg'))
+        .map(item => ({ ...item, categoryName: cat.name, categoryNote: cat.note }))
     );
   }, [menu]);
 
@@ -158,12 +161,8 @@ export default function SatvikMenuPage({ params }: { params: Promise<{ category:
       items = items.filter(item => item.categoryName === selectedCategory);
     }
 
-    if (showJainOnly) {
-      items = items.filter(item => item.dietary?.includes('jain'));
-    }
-
     return items;
-  }, [allItems, searchQuery, selectedCategory, showJainOnly]);
+  }, [allItems, searchQuery, selectedCategory]);
 
   // Unknown category → friendly fallback
   if (!menu) {
@@ -258,22 +257,6 @@ export default function SatvikMenuPage({ params }: { params: Promise<{ category:
 
           {/* Filters */}
           <div className="flex gap-2 mt-3 overflow-x-auto pb-2 scrollbar-hide snap-x snap-mandatory">
-            {category === 'satvik' && (
-              <button
-                onClick={() => setShowJainOnly(!showJainOnly)}
-                className={`px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors ${
-                  showJainOnly
-                    ? 'text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
-                style={{ backgroundColor: showJainOnly ? ACCENT : undefined }}
-              >
-                <span className="flex items-center gap-1.5">
-                  <Sparkles size={16} />
-                  Jain Only
-                </span>
-              </button>
-            )}
             {menu.categories.map(cat => (
               <button
                 key={cat.id}
@@ -311,7 +294,6 @@ export default function SatvikMenuPage({ params }: { params: Promise<{ category:
                 onClick={() => {
                   setSearchQuery('');
                   setSelectedCategory(null);
-                  setShowJainOnly(false);
                 }}
                 className="mt-4 text-sm underline"
                 style={{ color: THEME }}

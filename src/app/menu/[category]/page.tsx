@@ -110,16 +110,15 @@ export default function MenuPage({ params }: { params: Promise<{ category: strin
     setSpeakingItemId(item.id);
     const utterance = new SpeechSynthesisUtterance(item.name);
 
-    // Try to find Indian or British English female voice
+    // Voice preference: Veena (Indian English) → en-IN female → en-IN → en-GB female → any English female
     const voices = window.speechSynthesis.getVoices();
-    const preferredVoice = voices.find(voice =>
-      (voice.name.includes('Veena') || // Indian English female
-       voice.name.includes('Indian') && voice.name.includes('Female') ||
-       voice.lang === 'en-IN' && voice.name.toLowerCase().includes('female')) ||
-      (voice.lang === 'en-GB' && voice.name.toLowerCase().includes('female')) // British English female fallback
-    ) || voices.find(voice =>
-      voice.lang.startsWith('en') && voice.name.toLowerCase().includes('female')
-    );
+    const isFemale = (v: SpeechSynthesisVoice) => v.name.toLowerCase().includes('female');
+    const preferredVoice =
+      voices.find(v => v.name.includes('Veena')) ||
+      voices.find(v => v.lang === 'en-IN' && isFemale(v)) ||
+      voices.find(v => v.lang === 'en-IN') ||
+      voices.find(v => v.lang === 'en-GB' && isFemale(v)) ||
+      voices.find(v => v.lang.startsWith('en') && isFemale(v));
 
     if (preferredVoice) {
       utterance.voice = preferredVoice;

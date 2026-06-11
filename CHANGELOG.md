@@ -6,6 +6,187 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [1.7.0] - 2026-06-11
+
+### Dedicated Satvik Jain Menu
+
+#### New: `/amantesatvik/jain` — Satvik Jain Menu
+- Extracted all 8 Jain categories (27 items) from the Satvik food menu into a new dedicated menu
+- New data file `src/data/menus/food-jain.json` ("Satvik Jain Menu" — no onion, garlic or root vegetables)
+- Category names de-prefixed for cleaner filter pills (e.g., "Jain Sabzi (No Root Veg)" → "Sabzi (No Root Veg)"); item ids, `jain` dietary tags and intentional Jain price tiers unchanged
+- Registered `jain` in the menus map (`src/app/amantesatvik/[category]/page.tsx`) — search, filter pills, TTS and badges work via the shared renderer
+- New `Flower2`-icon tile on the `/amantesatvik` landing page between Satvik Food and Café
+
+#### Changed: Satvik food menu trimmed
+- `food-satvik.json` drops from 154 → 127 items (25 → 17 categories); description now "Pure vegetarian • Satvik delicacies & Rajwadi Rasoi"
+- Removed the now-redundant "Jain Only" toggle (and its state/filter logic) from the category page
+
+#### Fix: non-veg item visible on the Satvik bar menu
+- Tagged SOUR STORY (`bar-sig-016`, contains egg white) with `dietary: ["egg"]` in `bar.json`
+- The `/amantesatvik` renderer now filters out any item tagged `non-veg` or `egg` from shared menus (bar/café), protecting the pure-veg promise against future bar/café additions
+- Main red `/menu` is unaffected (it shows the full bar menu)
+- Note: WHISKY SOUR (`bar-classic-011`) lists egg white as optional and remains visible
+
+#### Fix: TTS voice picker precedence
+- Rewrote the voice selection in both `/amantesatvik/[category]` and `/menu/[category]` as an explicit priority ladder: Veena (Indian English) → en-IN female → en-IN → en-GB female → any English female
+- Previous mixed `&&`/`||` expression made the intended match order ambiguous
+
+#### Fix: build error in Google Sheets helper
+- Added explicit parameter types in `src/lib/googleSheets.ts` `readSheet` row mapping (implicit-`any` build failure with current `googleapis` types)
+
+---
+
+## [1.6.0] - 2026-01-31
+
+### Bug Fixes, Search Improvements, Contact Update & Menu Cleanup
+
+#### Fix: Search bar crash on bar menu
+- Fixed `TypeError: Cannot read properties of undefined (reading 'toLowerCase')` when typing in the search bar on the bar menu
+- Added optional chaining (`?.`) to handle menu items with missing `description` fields (80+ bar items affected)
+- **Commit**: `f8aa4c6`
+
+#### New: Second contact number added site-wide
+- Added `+91 99811 23101` alongside existing `+91 98937 79100` in:
+  - Footer (`src/components/layout/Footer.tsx`)
+  - Header mobile menu (`src/components/layout/HeaderGlobal.tsx`)
+  - Contact page (`src/app/contact/page.tsx`)
+  - SEO config (`src/lib/seo.ts`)
+- **Commit**: `89c73a8`
+
+#### Improvement: Menu search now matches category names
+- Search filter now includes `item.categoryName` in addition to `item.name` and `item.description`
+- Typing "beer" now shows all items in the Beers category, "whisky" shows all whisky items, etc.
+- **Commit**: `54f3c8f`
+
+#### Menu Cleanup: Removed 23 discontinued items
+
+**Food Menu (12 items removed)**:
+
+| ID | Name | Category |
+|----|------|----------|
+| food-app-023 | Spinach Ricotta Vol-au-vent | Appetizers |
+| food-app-027 | Dry Nuts Gilafi Mutton Seekh Kebab | Appetizers |
+| food-app-040 | Lukhnawi Mutton Galouti Kebab | Appetizers |
+| food-salad-003 | Lebanese Mezze Platter | Salads |
+| food-salad-006 | Mélange of Nuts Mix Fruits Chat | Salads |
+| food-sushi-008 | Sushi Fish Tempura Rolls | Sushi |
+| food-pasta-007 | Corn and Truffle Mushroom Crispy Ravioli | Pasta |
+| food-grill-003 | Grilled Moroccan Lamb Chop | Grills |
+| food-grill-007 | Lemon & Thyme Chicken Milanese | Grills |
+| food-noodle-004 | Pad Thai Noodle Bowl (Prawns) | Noodles |
+| food-dessert-008 | Classic Pistachio Shahi Kunafa | Desserts |
+| food-dessert-016 | Mix Fruits Cremieux | Desserts |
+
+**Cafe Menu (11 items removed)**:
+
+| ID | Name | Category |
+|----|------|----------|
+| cafe-cake-005 | Vanilla Praline Cake | Cakes |
+| cafe-cake-017 | Dark Truffle Cake | Cakes |
+| cafe-cake-019 | Tropical Pineapple Cake | Cakes |
+| cafe-cake-020 | Dubai Chocolate Cake | Cakes |
+| cafe-cake-022 | Decadent Chocolate Cake | Cakes |
+| cafe-cake-023 | Crimson Velvet Cake | Cakes |
+| cafe-cake-024 | Cappuccino Cake | Cakes |
+| cafe-pastry-003 | Pineapple Pastry | Pastries |
+| cafe-pastry-005 | Roast Roasted Almond Pastry | Pastries |
+| cafe-jar-001 | Red Velvet Jar | Jar Desserts |
+| cafe-jar-002 | Fudge Chocolate Jar | Jar Desserts |
+
+- **Commit**: `f0b5df7`
+
+**Files Modified**:
+- `src/app/menu/[category]/page.tsx`
+- `src/components/layout/Footer.tsx`
+- `src/components/layout/HeaderGlobal.tsx`
+- `src/app/contact/page.tsx`
+- `src/lib/seo.ts`
+- `src/data/menus/food.json`
+- `src/data/menus/cafe.json`
+
+**Build Status**: Pushed to origin/main
+
+---
+
+## [1.6.1] - 2026-01-31
+
+### Bakery Menu Updates & Veg Main Course Serving Info
+
+#### New Categories Added to Café & Bakery Menu
+
+**Bento Cakes** (4 items, all ₹249, 250 grms):
+
+| ID | Name | Description |
+|----|------|-------------|
+| cafe-bento-001 | Hazelnut Chocolate Cake | Rich chocolate cake with smooth hazelnut flavor |
+| cafe-bento-002 | Pistachio Milk Cake | Soft milk cake infused with real pistachio taste |
+| cafe-bento-003 | Salted Caramel Cake | Moist cake layered with sweet-salty caramel |
+| cafe-bento-004 | Lotus Biscoff | Creamy cake made with Lotus Biscoff spread |
+
+**Cheese Cake** (2 items, all ₹249, 250 grms):
+
+| ID | Name | Description |
+|----|------|-------------|
+| cafe-cheesecake-001 | Blueberry Cold Cheese Cake | Chilled cheesecake topped with blueberry sauce |
+| cafe-cheesecake-002 | Dark Cherry Cold Cheese Cake | Creamy cold cheesecake with dark cherry topping |
+
+**Commit**: `acecbe1`
+
+#### Bakery Price Updates
+
+**Cakes (½kg / 1kg)**:
+
+| Item | Old Price | New Price |
+|------|-----------|-----------|
+| Pineapple Cake | ₹650 / ₹1,300 | ₹450 / ₹800 |
+| Black Forest Cake | ₹499 / ₹1,300 | ₹499 / ₹900 |
+| Belgian Chocolate Cake | ₹750 / ₹1,500 | ₹650 / ₹1,200 |
+| Chocolate Strawberry Cake | ₹750 / ₹1,500 | ₹700 / ₹1,300 |
+| Mango Vanilla Cake | ₹800 / ₹1,600 | ₹549 / ₹1,000 |
+| Mixed Fruit Cake | ₹750 / ₹1,500 | ₹600 / ₹1,100 |
+| Hazelnut Cake | ₹850 / ₹1,700 | ₹700 / ₹1,300 |
+| Cold Cheesecake | ₹700 / ₹1,400 | ₹600 / ₹1,100 |
+| Red Velvet Cake | ₹800 / ₹1,600 | ₹550 / ₹1,000 |
+| Rose Milk Cake | ₹499 / — | ₹449 / ₹800 |
+| Triple Layer Chocolate Cake | ₹699 / — | ₹699 / ₹1,200 |
+| Mix Fruite Cake | ₹649 / — | ₹599 / ₹1,100 |
+| Dry Fruite Cake | ₹399 | ₹299 |
+
+**Cake Tubs**:
+
+| Item | Old Price | New Price |
+|------|-----------|-----------|
+| Tiramisu Tub | ₹300 | ₹250 |
+| Tres Leches Tub | ₹320 | ₹200 |
+| Red Velvet Tub | ₹300 | ₹250 |
+| Fudge Tub | ₹350 | ₹250 |
+
+**Pastries**:
+
+| Item | Old Price | New Price |
+|------|-----------|-----------|
+| Choco Truffle Pastry | ₹250 | ₹199 |
+| NY Cheese Cake Pastry | ₹299 | ₹220 |
+
+#### Serving Size Added to Veg Indian Main Course
+
+- Added "(Serves 3)" to descriptions of all 17 veg items in Indian Main Course category
+- Items updated: Faldaari Kofta Curry, Kaju Makhana Curry, Paneer Makhani, Dal Double Tadka, Dal Makhani, Gunchaw Subzi, Vegetable Korma, Lehsuni Bhuna Palak, Subz Nizami Handi, Vilayti Subzi, Aloo Gobhi Adrak, Paneer Lababdar, Shahi Paneer, Paneer Butter Masala, Paneer Tikka Masala, Lehsuni Palak Paneer, Khumbi Hara Pyaz
+- **Commit**: `6cebf1d`
+
+#### Excel Export
+
+- **Generated**: `Amante_Complete_Menu_2026-01-31.xlsx`
+- **Contents**: Food (135), Bar (182), Cafe (84), Breakfast (61) — 462 total items
+
+**Files Modified**:
+- `src/data/menus/cafe.json`
+- `src/data/menus/food.json`
+
+**Build Status**: Pushed to origin/main
+
+---
+
 ## [1.5.0] - 2026-01-16
 
 ### Pizza Menu Overhaul - Size Variants & Pricing Update
